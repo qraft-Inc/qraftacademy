@@ -39,9 +39,9 @@ export default function Navbar() {
                     {/* logo */}
                     <div className="flex items-center">
                         <div>
-                            <Link href="/"><a><Image src="/img/logo.png" alt="Qraft Academy" layout="fixed" width={90} height={62} /></a></Link>
+                            <Link href="https://www.qraftacademy.com"><a><Image src="/img/logo.png" alt="Qraft Academy" layout="fixed" width={90} height={62} /></a></Link>
                         </div>
-                        {user && <Link href="https://dashboard-qraftacademy.com/dashboard"><a className=" ml-4 hidden lg:flex hover:border-b-2 border-blue-400">Dashboard</a></Link>}
+                        {user && <Link href="https://www.dashboard-qraftacademy.com/dashboard"><a className=" ml-4 hidden lg:flex hover:border-b-2 border-blue-400">Dashboard</a></Link>}
                     </div>
                     {/* primary nav */}
                     <div className="flex space-x-10 items-center">
@@ -84,9 +84,9 @@ export default function Navbar() {
 
                         {user && (
                             <div className="flex justify-around">
-                                <Link href="https://dashboard-qraftacademy.com/dashboard"><a><AiFillDashboard size="1.5rem" /></a></Link>
-                                <Link href="https://dashboard-qraftacademy.com/dashboard"><a><IoIosChatbubbles size="1.5rem" /></a></Link>
-                                <Link href="https://dashboard-qraftacademy.com/dashboard"><a><MdNotifications size="1.5rem" /></a></Link>
+                                <Link href="https://www.dashboard-qraftacademy.com/dashboard"><a><AiFillDashboard size="1.5rem" /></a></Link>
+                                <Link href="https://www.dashboard-qraftacademy.com/dashboard"><a><IoIosChatbubbles size="1.5rem" /></a></Link>
+                                <Link href="https://www.dashboard-qraftacademy.com/dashboard"><a><MdNotifications size="1.5rem" /></a></Link>
                             </div>
                         )}
                         <Link href="https://www.qraftacademy.com"><a className="border-b">Home</a></Link>
