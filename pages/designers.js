@@ -8,7 +8,6 @@ export default function Designers() {
     //get loggedIn user
     const { user } = useUser();
 
-
     return (
         <>
             <Head>
