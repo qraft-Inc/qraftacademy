@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import Head from "next/head";
-import { useUser } from '@auth0/nextjs-auth0';
+// import { useUser } from '@auth0/nextjs-auth0';
 
 export default function Developers() {
     
@@ -38,26 +38,25 @@ export default function Developers() {
                     </div>
                     {!user &&
                         <span className="inline-flex w-full md:w-auto mt-12">
-                            <Link href="/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
+                            <Link href="/developerForm"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
                                 Sign in to apply
                             </a></Link>
                         </span>
                     }
                       {user &&
                     <span className="inline-flex w-full md:w-auto mt-12">
-                        <Link href="/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
+                        <Link href="/developerForm"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
                             Apply</a></Link>
                     </span>
                 }
 
                 </div>
             </header>
+
+                  {/* content section */}
             <div className="flex flex-col space-y-4 p-8">
                 <blockquote>
                     <h1 className="text-blue-900 font-black text-3xl">Software Developers</h1>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTajoSJcvZSi0_DRitJ_CQvCIHA7xGeoeRSU-PMFXJZhniJg/viewform?embedded=true" 
-                    width="1500" height="2655" frameBorder="0" marginHeight="0" marginWidth="0">
-                        Loading…</iframe>
                     <p>Incididunt ex incididunt magna officia et. Ut ipsum anim sunt magna nulla.
                         Officia sint deserunt consectetur aliquip mollit tempor sit adipisicing magna dolore voluptate reprehenderit.
                         Veniam sunt cupidatat minim laboris aliqua commodo. In sint incididunt commodo magna aliquip exercitation deserunt.
@@ -98,13 +97,13 @@ export default function Developers() {
 
                 {!user &&
                     <span className="inline-flex w-full md:w-auto mt-12">
-                        <Link href="/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
+                        <Link href="/developerForm"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
                             Sign in to apply</a></Link>
                     </span>
                 }
                   {user &&
                     <span className="inline-flex w-full md:w-auto mt-12">
-                        <Link href="/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
+                        <Link href="/developerForm"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
                             Apply</a></Link>
                     </span>
                 }
