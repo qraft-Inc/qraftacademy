@@ -49,12 +49,12 @@ export default function Courses() {
           <SwiperSlide>
             <figure className="md:grid md:grid-cols-2 mb-12">
               <article className="px-4 md:pl-24 md:flex md:flex-col md:justify-center pt-4">
-                <h2 className="text-xl font-semibold leading-tight">Visual Artists</h2>
+                <h2 className="text-xl font-semibold leading-tight">Digital Marketing</h2>
                 <p className="leading-7 m-0 sm:pr-10 lg:text-lg pt-4 pb-8">
                   Beat the stats and stereotypes, explore and stand out.
                   Build products and a porfolio you are proud to show off and earn from it.
                 </p>
-                <Link href="./artists">
+                <Link href="./marketing">
                   <a className="rounded-lg w-24 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply</a>
                 </Link>
               </article>

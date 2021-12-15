@@ -15,7 +15,7 @@ export default function Register() {
             <div className="h-auto">
                
                     <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSdTajoSJcvZSi0_DRitJ_CQvCIHA7xGeoeRSU-PMFXJZhniJg/viewform?embedded=true"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdYtAUfamwYqGCw00lVK0nbetvqha2A0s8sb3Ha1Btl4nS4Pg/viewform?embedded=true"
                         width="100%" height="3000" frameBorder="0" marginHeight="0" marginWidth="0" 
                         className="mt-24">
                         Loading…

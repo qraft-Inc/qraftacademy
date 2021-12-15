@@ -52,6 +52,8 @@ export default function Designers() {
                     }
                 </div>
             </header>
+
+            {/* content section */}
             <div className="flex flex-col space-y-4 p-8">
                 <blockquote>
                     <h1 className="text-blue-900 font-black text-3xl">UI/UX Designers</h1>
