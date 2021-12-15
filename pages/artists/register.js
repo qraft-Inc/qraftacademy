@@ -1,12 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
 import Head from "next/head";
-import { useUser } from '@auth0/nextjs-auth0';
+import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 
-export default function Developers() {
-
-    //get loggedIn user
-    const { user } = useUser();
+export default function Register() {
 
     return (
         <>
@@ -19,7 +16,6 @@ export default function Developers() {
                
                     <iframe
                         src="https://docs.google.com/forms/d/e/1FAIpQLSdTajoSJcvZSi0_DRitJ_CQvCIHA7xGeoeRSU-PMFXJZhniJg/viewform?embedded=true"
-                        scrolling="no"
                         width="100%" height="3000" frameBorder="0" marginHeight="0" marginWidth="0" 
                         className="mt-24">
                         Loading…
@@ -29,4 +25,4 @@ export default function Developers() {
         </>
     );
 }
-
+export const getServerSideProps = withPageAuthRequired();

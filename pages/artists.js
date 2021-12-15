@@ -38,14 +38,14 @@ export default function Artists() {
                     </div>
                     {!user &&
                         <span className="inline-flex w-full md:w-auto mt-12">
-                            <Link href="/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
+                            <Link href="artists/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
                                 Sign in to apply
                             </a></Link>
                         </span>
                     }
                     {user &&
                         <span className="inline-flex w-full md:w-auto mt-12">
-                            <Link href="/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
+                            <Link href="artists/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
                                 Apply</a></Link>
                         </span>
                     }
@@ -94,14 +94,14 @@ export default function Artists() {
                 {!user &&
 
                     <span className="inline-flex w-full md:w-auto mt-12">
-                        <Link href="/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
+                        <Link href="artists/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
                             Sign in to apply</a></Link>
                     </span>
                 }
 
                 {user &&
                     <span className="inline-flex w-full md:w-auto mt-12">
-                        <Link href="/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
+                        <Link href="artists/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
                             Apply</a></Link>
                     </span>
                 }
