@@ -13,7 +13,7 @@ const Footer = () => {
       
         <ul className="grid grid-cols-3 p-8 md:grid-cols-6 gap-5 md:gap-0">
           <li className="flex items-center">
-            <Link href="/"><a><Image src="/img/logo.png" width={90} height={62} /></a></Link>
+            <Link href="/"><a><Image src="/img/logo.png" width={90} height={62} alt=""/></a></Link>
           </li>
 
           <li className="flex flex-col">
