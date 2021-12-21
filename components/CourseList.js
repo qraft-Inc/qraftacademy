@@ -7,7 +7,7 @@ const data = [
     {
         id: 1,
         courseImg: "/img/img1.png",
-        text1: "Some text 1",
+        text1: "3 months",
         text2: "Some text 2",
         courseTitle: "Software Development",
         text3: "Some text 3",
@@ -16,16 +16,16 @@ const data = [
     {
         id: 2,
         courseImg: "/img/img2.png",
-        text1: "Some text 4",
+        text1: "3 months",
         text2: "Some text 5",
         courseTitle: "Digital Marketing",
         text3: "Some text 6",
-        altText: "Digital Marketeers"
+        altText: "Digital Marketers"
     },
     {
         id: 3,
         courseImg: "/img/img1.png",
-        text1: "Some text 7",
+        text1: "3 months",
         text2: "Some text 8",
         courseTitle: "UI/UX Design",
         text3: "Some text 9",
@@ -39,13 +39,13 @@ export default function CourseList() {
                 <h2 className="font-medium text-blue-900 text-xl">Course List</h2>
                 <div className="mt-4 grid gap-y-6 md:gap-x-10 xl:grid-cols-3 sm:grid-cols-2 sm:gap-10">
                     {data.map(course => (
-                            <div key={course.id} className=" flex justify-center xl:justify-between">
-                                <div className=" rounded-lg shadow-2xl max-w-sm hover:-translate-y-2 transform transition-500" >
+                            <div key={course.id} className=" flex justify-center xl:justify-even">
+                                <div className=" rounded-lg shadow-2xl max-w-sm xl:max-w-ls hover:-translate-y-2 transform transition-500" >
                                     <Image 
                                         src={course.courseImg}
                                         alt={course.altText}
-                                        width={400}
-                                        height={400}
+                                        width={500}
+                                        height={500}
                                         quality={100}
                                         className="rounded-t-lg"
                                     />
@@ -55,7 +55,7 @@ export default function CourseList() {
                                             <span className="text-lg font-sm">{course.text2}</span>
                                         </div>
                     
-                                        <h3 className="text-lg font-medium mb-4 mt-2">{course.courseTitle}</h3>
+                                        <h3 className="text-lg font-semibold mb-4 mt-2">{course.courseTitle}</h3>
                     
                                         <p className="text-lg font-sm mb-2">{course.text3}</p>
                     
