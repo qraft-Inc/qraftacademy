@@ -8,31 +8,24 @@ import {AiFillInstagram} from "react-icons/ai";
 const data = [
     {
         id: 1,
-        courseImg: "/img/pic.png",
-        name: "Samuel Jackson",
+        courseImg: "/img/Andrew Tugume.jpeg",
+        name: "Andrew Tugume",
         role: "Software Developer",
-        altText: "Software Developer"
+        altText: "Andrew Tugume - Software Developer"
     },
     {
         id: 2,
-        courseImg: "/img/pic.png",
-        name: "Samuel Jackson",
-        role: "Visual Artist",
-        altText: "Digital Marketeer"
+        courseImg: "/img/Rachel.jpeg",
+        name: "Rachel Ainembabazi",
+        role: "Digital Marketer",
+        altText: "Rachel Ainembabazi - Digital Marketer"
     },
     {
         id: 3,
         courseImg: "/img/pic.png",
-        name: "Samuel Jackson",
+        name: "Samuel Mabonga",
         role: "UI/UX Designer",
-        altText: "UI/UX Designer"
-    },
-    {
-        id: 3,
-        courseImg: "/img/pic.png",
-        name: "Samuel Jackson",
-        role: "Course Creator",
-        altText: "Course Creator"
+        altText: "Samuel Mabonga - UI/UX Designer"
     }
 ]
 
@@ -40,11 +33,11 @@ export default function CourseList() {
     return (
         <div className="mb-6 pb-8 px-0 pt-0">
                 <h2 className="font-medium text-blue-900 text-xl">Mentors</h2>
-                <div className=" mt-6 grid gap-y-6 md:grid-cols-3 md:gap-x-10 xl:grid-cols-4 sm:grid-cols-2 sm:gap-10 ">
+                <div className=" mt-6 grid gap-y-6 md:grid-cols-3 md:gap-x-10  sm:grid-cols-2 sm:gap-10 ">
                 {
                     data.map(mentor => (
                         <div key={mentor.id} className="flex justify-center">
-                            <div className="hover:-translate-y-2 transform transition-500">
+                            <div>
                                 <div className="flex justify-center">
                                     <Image 
                                             src={mentor.courseImg} alt={mentor.altText} 

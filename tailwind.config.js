@@ -10,6 +10,9 @@ module.exports = {
       spacing: {
         '35': '7rem'
       },
+      maxWidth:{
+        'ls': '20rem'
+      },
     },
   },
   variants: {
