@@ -13,6 +13,9 @@ module.exports = {
       maxWidth:{
         'ls': '20rem'
       },
+      fontWeight:{
+        'semiMedium': '400'
+      },
     },
   },
   variants: {
