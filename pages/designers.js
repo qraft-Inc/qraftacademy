@@ -2,6 +2,8 @@ import Link from "next/link"
 import Image from "next/image"
 import Head from "next/head";
 import { useUser } from '@auth0/nextjs-auth0';
+import CourseList from "../components/CourseList";
+import MentorList from "../components/MentorList";
 
 export default function Designers() {
 
@@ -36,6 +38,7 @@ export default function Designers() {
                         industry experts and earn badges that matter, while building
                         products that actually fix the world&#39;s biggest bugs.
                     </div>
+
                     {!user &&
                         <span className="inline-flex w-full md:w-auto mt-12">
                             <Link href="designers/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
@@ -94,6 +97,10 @@ export default function Designers() {
                         Veniam sunt cupidatat minim laboris aliqua commodo. In sint incididunt commodo magna aliquip exercitation deserunt.
                         Incididunt cupidatat eiusmod nulla voluptate aliquip ea quis consectetur nisi.</p>
                 </blockquote>
+
+                <CourseList />
+                
+                <MentorList />
 
                 {!user &&
                     <span className="inline-flex w-full md:w-auto mt-12">

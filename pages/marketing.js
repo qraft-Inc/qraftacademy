@@ -3,6 +3,8 @@ import Link from "next/link"
 import Image from "next/image"
 import Head from "next/head";
 import { useUser } from '@auth0/nextjs-auth0';
+import CourseList from "../components/CourseList";
+import MentorList from "../components/MentorList";
 
 export default function Marketing() {
 
@@ -93,6 +95,11 @@ export default function Marketing() {
                         Veniam sunt cupidatat minim laboris aliqua commodo. In sint incididunt commodo magna aliquip exercitation deserunt.
                         Incididunt cupidatat eiusmod nulla voluptate aliquip ea quis consectetur nisi.</p>
                 </blockquote>
+
+                <CourseList />
+                
+                <MentorList />
+
                 {!user &&
 
                     <span className="inline-flex w-full md:w-auto mt-12">
