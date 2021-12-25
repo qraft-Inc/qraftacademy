@@ -16,9 +16,15 @@ const data = [
     {
         id: 2,
         courseImg: "/img/Rachel.jpeg",
+<<<<<<< HEAD
         name: "Rachel Ainembabazi",
         role: "Digital Marketer",
         altText: "Rachel Ainembabazi - Digital Marketer"
+=======
+        name: "Recheal Ainembabazi",
+        role: "Digital Marketer",
+        altText: "Recheal Ainembabazi - Digital Marketer"
+>>>>>>> b4235cf851611d1f0c7a207f030522dcf424e0e9
     },
     {
         id: 3,
@@ -49,7 +55,7 @@ export default function CourseList() {
                                 </div>
                                 <div className="flex flex-col justify-center p-2">
                                     <h3 className="text-md font-medium flex justify-center mb-0">{mentor.name}</h3>
-                                    <h3 className="text-sm font-sm uppercase flex justify-center">{mentor.role}</h3>
+                                    <h3 className="text-sm uppercase flex justify-center">{mentor.role}</h3>
                                     <ul className="text-light-blue flex justify-center w-full">
                                         <li className=""> 
                                             <Link href="#"> 

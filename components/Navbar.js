@@ -47,7 +47,7 @@ export default function Navbar() {
                     <div className="flex space-x-10 items-center">
                         <div className="hidden lg:flex space-x-10">
                             <Link href="https://www.qraftacademy.com"><a className="hover:border-b-2 border-blue-400 py-1 ">Home</a></Link>
-                            <Link href="https://www.qraftacademy.com/about"><a className="hover:border-b-2 border-blue-400 py-1">About Us</a></Link>
+                            <Link href="http://localhost/about"><a className="hover:border-b-2 border-blue-400 py-1">About Us</a></Link>
                             <Link href="https://www.qraftacademy.com/tracks"><a className="hover:border-b-2 border-blue-400 py-1">Tracks</a></Link>
                             <Link href="https://www.qraftacademy.com/careers"><a className="hover:border-b-2 border-blue-400 py-1">Careers</a></Link>
                             <Link href="https://www.qraftacademy.com/contact"><a className="hover:border-b-2 border-blue-400 py-1">Contact Us</a></Link>
