@@ -41,9 +41,9 @@ export default function AboutUs() {
             <div classsName="flex justify-center">
                 <div className="flex justify-center ">
                     <Image 
-                        src="/img/team qraftAcademy.jpg" 
+                        src="/img/team qraftacademy.jpg"
                         alt="Team Qraft Academy - About us image background" 
-                        width={450}
+                        width={550}
                         height={450}
                         quality={100}
                         objectFit="cover"
