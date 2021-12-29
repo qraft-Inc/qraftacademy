@@ -90,6 +90,13 @@ const data = [
         name: "Stuart",
         role: "Software Developer",
         altText: "Stuart - Developer"
+    },
+    {
+        id: 13,
+        courseImg: "/img/Samuel Mabonga(UX-UI Designer).jpg",
+        name: "Samuel",
+        role: "UX/UI Designer",
+        altText: "Samuel - UX/UI"
     }
 ]
 

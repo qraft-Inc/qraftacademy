@@ -13,12 +13,12 @@ module.exports = {
       maxWidth:{
         'ls': '20rem'
       },
-<<<<<<< HEAD
-=======
       fontWeight:{
         'semiMedium': '400'
       },
->>>>>>> b4235cf851611d1f0c7a207f030522dcf424e0e9
+      fontWeight:{
+        'semiMedium': '400'
+      },
     },
   },
   variants: {

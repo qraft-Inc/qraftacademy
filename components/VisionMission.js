@@ -45,6 +45,7 @@ export default function VisionMission() {
                             <div className="leading-3">
                                 <Image 
                                     src="/img/logo.png" 
+                                    // src="/img/logo.png" 
                                     alt="qraft-academy logo"
                                     width={60}
                                     height={60} 

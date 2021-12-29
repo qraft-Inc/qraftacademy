@@ -41,13 +41,14 @@ export default function Navbar() {
                         <div>
                             <Link href="https://www.qraftacademy.com"><a><Image src="/img/logo.png" alt="Qraft Academy" layout="fixed" width={90} height={62} /></a></Link>
                         </div>
-                        {user && <Link href="https://www.dashboard.qraftacademy.com/dashboard"><a className=" ml-4 hidden lg:flex hover:border-b-2 border-blue-400">Dashboard</a></Link>}
+                        {/* {user && <Link href="https://www.dashboard.qraftacademy.com/dashboard"><a className=" ml-4 hidden lg:flex hover:border-b-2 border-blue-400">Dashboard</a></Link>} */}
+                        {user && <Link href="/"><a className=" ml-4 hidden lg:flex hover:border-b-2 border-blue-400">Dashboard</a></Link>}
                     </div>
                     {/* primary nav */}
                     <div className="flex space-x-10 items-center">
                         <div className="hidden lg:flex space-x-10">
                             <Link href="https://www.qraftacademy.com"><a className="hover:border-b-2 border-blue-400 py-1 ">Home</a></Link>
-                            <Link href="http://localhost/about"><a className="hover:border-b-2 border-blue-400 py-1">About Us</a></Link>
+                            <Link href="https://www.qraftacademy.com/about"><a className="hover:border-b-2 border-blue-400 py-1">About Us</a></Link>
                             <Link href="https://www.qraftacademy.com/tracks"><a className="hover:border-b-2 border-blue-400 py-1">Tracks</a></Link>
                             <Link href="https://www.qraftacademy.com/careers"><a className="hover:border-b-2 border-blue-400 py-1">Careers</a></Link>
                             <Link href="https://www.qraftacademy.com/contact"><a className="hover:border-b-2 border-blue-400 py-1">Contact Us</a></Link>

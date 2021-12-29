@@ -16,15 +16,9 @@ const data = [
     {
         id: 2,
         courseImg: "/img/Rachel.jpeg",
-<<<<<<< HEAD
         name: "Rachel Ainembabazi",
         role: "Digital Marketer",
         altText: "Rachel Ainembabazi - Digital Marketer"
-=======
-        name: "Recheal Ainembabazi",
-        role: "Digital Marketer",
-        altText: "Recheal Ainembabazi - Digital Marketer"
->>>>>>> b4235cf851611d1f0c7a207f030522dcf424e0e9
     },
     {
         id: 3,
