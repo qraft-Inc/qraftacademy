@@ -124,7 +124,7 @@ export default function OurTeam() {
                                     <h3 className="text-xl text-gray-700 font-medium flex justify-center mb-0">{mentor.name}</h3>
                                     <h3 className="text-medium font-semibold flex text-blue-900 justify-center mt-2">{mentor.role}</h3>
                                     <ul className=" flex justify-center w-full mt-2">
-                                        <li className="text-blue-600"> 
+                                        <li className="text-blue-600 "> 
                                             <Link href="#"> 
                                                 <a className="text-2xl">
                                                     <AiFillLinkedin className="mr-1" ></AiFillLinkedin>
