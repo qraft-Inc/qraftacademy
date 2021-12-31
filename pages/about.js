@@ -42,7 +42,7 @@ export default function About() {
                                 <MdNavigateNext></MdNavigateNext>
                             </span>
                             <span className="inline-flex items-center flex-nowrap justify-center w-full px-2 py-20 text-2xl font-light leading-6 md:w-auto">
-                                About us
+                                About Us
                             </span>
                         </span>
                     </div>
