@@ -58,7 +58,7 @@ const data = [
     },
     {
         id: 8,
-        courseImg: "/img/phillip Mambo(Developer).png",
+        courseImg: "/img/phillip Mambo(Developer).jpeg",
         name: "Phillip Mambo",
         role: "Software Developer",
         altText: "Phillip Mambo - Developer"
