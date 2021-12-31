@@ -31,7 +31,7 @@ export default function Contact() {
 
                     <div className="mx-auto mt-5 md:mt-12 md:max-w-xl md:text-center lg:text-lg">
                         <span className="inline-flex w-full md:w-auto mt:12">
-                            <Link href="/">
+                            <Link href="https://www.qraftacademy.com">
                                 <a className="inline-flex items-center justify-center w-full px-2 py-20 text-2xl font-light leading-6 md:w-auto">Home</a>
                             </Link>
                             <span className="inline-flex  items-center justify-center px-px py-20 text-2xl font-medium leading-6 md:w-auto">
