@@ -3,7 +3,7 @@
 export default function MailSection() {
   return (
     <div className="bg-light-blue min-h-screen lg:w-1/2 mb-10">
-      <div className="mx-14 my-12">
+      <div className="mx-8 xsm:mx-14 my-12">
         <h3 className="mb-12 text-3xl font-bold text-white lg:w-2/3">SEND YOUR MESSAGE</h3>
         <div>
           <form>

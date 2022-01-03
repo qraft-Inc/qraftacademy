@@ -19,6 +19,10 @@ module.exports = {
       fontWeight:{
         'semiMedium': '400'
       },
+      screens:{
+        'xsm': '390px',
+      // => @media (min-width: 390px) { ... }
+      },
     },
   },
   variants: {
