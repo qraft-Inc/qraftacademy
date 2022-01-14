@@ -59,15 +59,15 @@ export default function Developers() {
             <div className="flex flex-col space-y-4 p-8">
                 <blockquote className="space-y-2">
                     <h1 className="text-blue-900 font-black text-3xl">Software Developers</h1>
-                    <p>" Apprenticeship is a proven model for developing a skilled workforce " <span className="font-black">Eugene Scalia.</span></p>
+                    <p>&quot; Apprenticeship is a proven model for developing a skilled workforce &quot; <span className="font-black">Eugene Scalia.</span></p>
                     <p>The technologist track is a 3 months apprenticeships program offering training and development of individuals looking to <span className="font-black">start a career in technology</span></p>
                     <p className="font-black">Apply</p>
                 </blockquote>
 
                 <CourseList />
-                
+
                 <MentorList />
-                
+
                 {!user &&
                     <span className="inline-flex w-full md:w-auto mt-12">
                         <Link href="developer/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
