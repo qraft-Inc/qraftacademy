@@ -94,7 +94,7 @@ const data = [
     {
         id: 13,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Samuel_Mabonga_UX-UI_Designer_uiwc2q.jpg",
-        name: "Samuel",
+        name: "Samuel Mabonga",
         role: "UX/UI Designer",
         altText: "Samuel - UX/UI"
     }

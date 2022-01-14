@@ -22,10 +22,10 @@ const data = [
     },
     {
         id: 3,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Samuel_Mabonga_UX-UI_Designer_uiwc2q.jpg",
-        name: "Samuel Mabonga",
-        role: "UI/UX Designer",
-        altText: "Samuel Mabonga - UI/UX Designer"
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172204/qraftstore/Denny_Wong_cpczks.png",
+        name: "Danny Wong",
+        role: "Entrepreneur",
+        altText: "Danny Wong - Entrepreneur"
     }
 ]
 
