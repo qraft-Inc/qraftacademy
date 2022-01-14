@@ -22,7 +22,7 @@ export default function Designers() {
                 <div className=" absolute inset-0 overflow-hidden top-12 ">
                     <Image
                         alt="Background Image"
-                        src="/img/hero-bg.png"
+                        src="https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/hero-bg_ytthxj.png"
                         layout="fill"
                         objectFit="cover"
                         quality={100}
@@ -58,44 +58,11 @@ export default function Designers() {
 
             {/* content section */}
             <div className="flex flex-col space-y-4 p-8">
-                <blockquote>
+                <blockquote className="space-y-2">
                     <h1 className="text-blue-900 font-black text-3xl">UI/UX Designers</h1>
-                    <p>Incididunt ex incididunt magna officia et. Ut ipsum anim sunt magna nulla.
-                        Officia sint deserunt consectetur aliquip mollit tempor sit adipisicing magna dolore voluptate reprehenderit.
-                        Veniam sunt cupidatat minim laboris aliqua commodo. In sint incididunt commodo magna aliquip exercitation deserunt.
-                        Incididunt cupidatat eiusmod nulla voluptate aliquip ea quis consectetur nisi.</p>
-                </blockquote>
-
-                <blockquote>
-                    <h2 className="font-medium text-blue-900 text-xl">Where To Start</h2>
-                    <p>Incididunt ex incididunt magna officia et. Ut ipsum anim sunt magna nulla.
-                        Officia sint deserunt consectetur aliquip mollit tempor sit adipisicing magna dolore voluptate reprehenderit.
-                        Veniam sunt cupidatat minim laboris aliqua commodo. In sint incididunt commodo magna aliquip exercitation deserunt.
-                        Incididunt cupidatat eiusmod nulla voluptate aliquip ea quis consectetur nisi.</p>
-                </blockquote>
-
-                <blockquote>
-                    <h2 className="font-medium text-blue-900 text-xl">What It Takes</h2>
-                    <p>Incididunt ex incididunt magna officia et. Ut ipsum anim sunt magna nulla.
-                        Officia sint deserunt consectetur aliquip mollit tempor sit adipisicing magna dolore voluptate reprehenderit.
-                        Veniam sunt cupidatat minim laboris aliqua commodo. In sint incididunt commodo magna aliquip exercitation deserunt.
-                        Incididunt cupidatat eiusmod nulla voluptate aliquip ea quis consectetur nisi.</p>
-                </blockquote>
-
-                <blockquote>
-                    <h2 className="font-medium text-blue-900 text-xl">What You Will Do</h2>
-                    <p>Incididunt ex incididunt magna officia et. Ut ipsum anim sunt magna nulla.
-                        Officia sint deserunt consectetur aliquip mollit tempor sit adipisicing magna dolore voluptate reprehenderit.
-                        Veniam sunt cupidatat minim laboris aliqua commodo. In sint incididunt commodo magna aliquip exercitation deserunt.
-                        Incididunt cupidatat eiusmod nulla voluptate aliquip ea quis consectetur nisi.</p>
-                </blockquote>
-
-                <blockquote>
-                    <h2 className="font-medium text-blue-900 text-xl">Career Path And Progression</h2>
-                    <p>Incididunt ex incididunt magna officia et. Ut ipsum anim sunt magna nulla.
-                        Officia sint deserunt consectetur aliquip mollit tempor sit adipisicing magna dolore voluptate reprehenderit.
-                        Veniam sunt cupidatat minim laboris aliqua commodo. In sint incididunt commodo magna aliquip exercitation deserunt.
-                        Incididunt cupidatat eiusmod nulla voluptate aliquip ea quis consectetur nisi.</p>
+                    <p>" Apprenticeship is a proven model for developing a skilled workforce " <span className="font-black">Eugene Scalia.</span></p>
+                    <p>The UX/UI track is a 3 months apprenticeships program offering training and development of individuals looking to <span className="font-black">start a career in product design</span></p>
+                    <p className="font-black">Apply</p>
                 </blockquote>
 
                 <CourseList />

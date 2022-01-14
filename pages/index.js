@@ -1,11 +1,6 @@
 import { makePublicRouterInstance } from "next/dist/client/router";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { useState, useEffect } from "react";
-import { AiOutlineFieldNumber } from "react-icons/ai";
 import Testimonies from "../components/Testimonies";
-import styles from "../styles/index.module.css";
 import Hero from "../components/Hero";
 import Courses from "../components/Courses";
 

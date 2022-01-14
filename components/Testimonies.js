@@ -10,39 +10,25 @@ import 'swiper/css/effect-cards';
 const data = [
   {
     id: 1,
-    name: "Samuel Jackson",
+    name: "Timothy Olili",
     course: "Software Developer",
-    testimonial: "Qraft Academy is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist.",
-    img: "/img/pic.png"
+    testimonial: "I’ve learned so much from a variety of different technologies. Andrew's great at telling us when to dive deeper into a topic or when to step back or move on to different solution. Phillip’s help has been invaluable as well. I couldn’t have asked for a better experience.",
+    img: "https://res.cloudinary.com/filipe256/image/upload/v1642173782/qraftstore/Timothy_momyx0.jpg"
   },
   {
     id: 2,
-    name: "Samuel Jackson",
+    name: "Samuel Mabonga",
     course: "UI/UX Designer",
-    testimonial: "Qraft Academy is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist.",
-    img: "/img/pic.png"
+    testimonial: "Qraft Academy was a great upskilling experience for me. The staff and instructors are all super pros, and getting to dive right into client work was perfect for a learn-by-doing student like myself. Highly recommended!",
+    img: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Samuel_Mabonga_UX-UI_Designer_uiwc2q.jpg"
   },
   {
     id: 3,
-    name: "Samuel Jackson",
-    course: " Visual Artist",
-    testimonial: "Qraft Academy is an online education platform that delivers video courses.",
-    img: "/img/pic.png"
+    name: "Juliyana Woldeab",
+    course: "Digital Marketing",
+    testimonial: "Qraft Academy allowed me to get involved in various parts of the business as well as experience different job roles allowing me to broaden my industry knowledge as well as my education.",
+    img: "https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/Juliyana_woldeab_pwoiyd.jpg"
   },
-  {
-    id: 4,
-    name: "Samuel Jackson",
-    course: "Course Creator",
-    testimonial: "Qraft Academy is an online education platform that delivers video courses.",
-    img: "/img/pic.png"
-  },
-  {
-    id: 5,
-    name: "Samuel Jackson",
-    course: "Software Developer",
-    testimonial: "Qraft Academy is an online education platform that delivers video courses Qraft Academy is an online education platform that delivers video courses.",
-    img: "/img/pic.png"
-  }
 ]
 export default function Testimonies() {
   return (
@@ -69,7 +55,7 @@ export default function Testimonies() {
               &quot;<i>{user.testimonial}</i>&quot;
               </p>
               <div className="flex items-center">
-                <div className="block rounded-full">
+                <div className="block rounded-full  w-14 h-14">
                   <img src={user.img} alt={user.name} />
                 </div>
                 <figcaption className="ml-2 text-sm">

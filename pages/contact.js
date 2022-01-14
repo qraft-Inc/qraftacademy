@@ -17,7 +17,7 @@ export default function Contact() {
                <div className="absolute inset-0 overflow-hidden top-12">
                    <Image 
                     alt="Background Image"
-                    src="/img/hero-bg.png"
+                    src="https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/hero-bg_ytthxj.png"
                     layout="fill"
                     objectFit="cover"
                     quality={100}
