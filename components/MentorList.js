@@ -8,24 +8,24 @@ import {AiFillInstagram} from "react-icons/ai";
 const data = [
     {
         id: 1,
-        courseImg: "/img/Andrew Tugume.jpeg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172203/qraftstore/Andrew_Tugume_nq4evy.jpg",
         name: "Andrew Tugume",
         role: "Software Developer",
         altText: "Andrew Tugume - Software Developer"
     },
     {
         id: 2,
-        courseImg: "/img/Rachel.jpeg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Rachel_og4v6r.jpg",
         name: "Rachel Ainembabazi",
         role: "Digital Marketer",
         altText: "Rachel Ainembabazi - Digital Marketer"
     },
     {
         id: 3,
-        courseImg: "/img/pic.png",
-        name: "Samuel Mabonga",
-        role: "UI/UX Designer",
-        altText: "Samuel Mabonga - UI/UX Designer"
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172204/qraftstore/Denny_Wong_cpczks.png",
+        name: "Danny Wong",
+        role: "Entrepreneur",
+        altText: "Danny Wong - Entrepreneur"
     }
 ]
 

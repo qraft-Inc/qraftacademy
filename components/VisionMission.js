@@ -16,7 +16,7 @@ export default function VisionMission() {
                             </div>
                             <div className="leading-3">
                                 <Image 
-                                    src="/img/logo.png" 
+                                    src="https://res.cloudinary.com/filipe256/image/upload/v1641806795/qraftstore/Artboard_4_mpr4mh_yrk1sm.png" 
                                     alt="qraft-academy logo"
                                     width={60}
                                     height={60} 
@@ -44,8 +44,7 @@ export default function VisionMission() {
                             </div>
                             <div className="leading-3">
                                 <Image 
-                                    src="/img/logo.png" 
-                                    // src="/img/logo.png" 
+                                    src="https://res.cloudinary.com/filipe256/image/upload/v1641806795/qraftstore/Artboard_4_mpr4mh_yrk1sm.png" 
                                     alt="qraft-academy logo"
                                     width={60}
                                     height={60} 

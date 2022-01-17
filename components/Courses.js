@@ -23,11 +23,11 @@ export default function Courses() {
             <figure className="md:grid md:grid-cols-2 mb-12">
               <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
                 <Image
-                  src="/img/img1.png"
+                  src="https://res.cloudinary.com/filipe256/image/upload/v1641976467/qraftstore/software_development_d7hnzc.jpg"
                   alt="Software Developers"
                   layout="responsive"
-                  width={400}
-                  height={420}
+                  width={300}
+                  height={320}
                   quality={100}
                 />
               </div>
@@ -45,7 +45,7 @@ export default function Courses() {
             </figure>
           </SwiperSlide>
 
-          {/* visual artists */}
+          {/* digital marketing */}
           <SwiperSlide>
             <figure className="md:grid md:grid-cols-2 mb-12">
               <article className="px-4 md:pl-24 md:flex md:flex-col md:justify-center pt-4">
@@ -60,7 +60,7 @@ export default function Courses() {
               </article>
               <div className="pl-4 sm:pr-10 xl:pl-10 lg:pr-32">
                 <Image
-                  src="/img/img2.png"
+                  src="https://res.cloudinary.com/filipe256/image/upload/v1641976468/qraftstore/digital_marketing_lotoma.jpg"
                   alt="Course Creators"
                   layout="responsive"
                   width={500}
@@ -76,7 +76,7 @@ export default function Courses() {
             <figure className="md:grid md:grid-cols-2 mb-12">
                 <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
                 <Image
-                  src="/img/img1.png"
+                  src="https://res.cloudinary.com/filipe256/image/upload/v1641976469/qraftstore/product_design_pxlkdh.jpg"
                   alt="Software Developers"
                   layout="responsive"
                   width={400}
