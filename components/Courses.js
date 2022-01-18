@@ -19,7 +19,7 @@ export default function Courses() {
           parallax={true}
         >
           {/* software developers */}
-          <SwiperSlide>
+          <SwiperSlide  className="p-8">
             <figure className="md:grid md:grid-cols-2 mb-12">
               <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
                 <Image
@@ -46,9 +46,18 @@ export default function Courses() {
           </SwiperSlide>
 
           {/* digital marketing */}
-          <SwiperSlide>
+          <SwiperSlide className="p-8">
             <figure className="md:grid md:grid-cols-2 mb-12">
-              <article className="px-4 md:pl-24 md:flex md:flex-col md:justify-center pt-4">
+            <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 order-2">
+                <Image
+                  src="https://res.cloudinary.com/filipe256/image/upload/v1641976468/qraftstore/digital_marketing_lotoma.jpg"
+                  alt="Course Creators"
+                  layout="responsive"
+                  width={500}
+                  height={520}
+                />
+              </div>
+              <article className="px-4 md:pl-24 md:flex md:flex-col md:justify-center pt-4 order-1">
                 <h2 className="text-xl font-semibold leading-tight">Digital Marketing</h2>
                 <p className="leading-7 m-0 sm:pr-10 lg:text-lg pt-4 pb-8">
                   Beat the stats and stereotypes, explore and stand out.
@@ -58,21 +67,11 @@ export default function Courses() {
                   <a className="rounded-lg w-24 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply</a>
                 </Link>
               </article>
-              <div className="pl-4 sm:pr-10 xl:pl-10 lg:pr-32">
-                <Image
-                  src="https://res.cloudinary.com/filipe256/image/upload/v1641976468/qraftstore/digital_marketing_lotoma.jpg"
-                  alt="Course Creators"
-                  layout="responsive"
-                  width={500}
-                  height={520}
-                />
-              </div>
-
             </figure>
           </SwiperSlide> 
 
           {/*UI/UX Designers*/}
-          <SwiperSlide>
+          <SwiperSlide className="p-8">
             <figure className="md:grid md:grid-cols-2 mb-12">
                 <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
                 <Image
