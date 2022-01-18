@@ -1,4 +1,5 @@
 
+import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
 import 'swiper/css';
@@ -25,7 +26,7 @@ const data = [
   {
     id: 3,
     name: "Juliyana Woldeab",
-    course: "Digital Marketing",
+    course: "Digital Marketer",
     testimonial: "Qraft Academy allowed me to get involved in various parts of the business as well as experience different job roles allowing me to broaden my industry knowledge as well as my education.",
     img: "https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/Juliyana_woldeab_pwoiyd.jpg"
   },
@@ -48,15 +49,20 @@ export default function Testimonies() {
         className="md:w-9/12 h-full"
       >
         {data.map(user => (
-          <SwiperSlide key={user.id} className="pb-4">
-            <figure className=" flex flex-col justify-center items-center h-56">
+          <SwiperSlide key={user.id}>
+            <figure className=" flex flex-col justify-center items-center h-full">
 
               <p className="py-2 px-12 text-base md:w-2/3">
               &quot;<i>{user.testimonial}</i>&quot;
               </p>
-              <div className="flex items-center">
+              <div className="flex items-center mb-10">
                 <div className="block rounded-full  w-14 h-14">
-                  <img src={user.img} alt={user.name} />
+                  <Image 
+                    src={user.img} 
+                    alt={user.name} 
+                    width={500}
+                    height={500}
+                  />
                 </div>
                 <figcaption className="ml-2 text-sm">
                   <h1 className="font-bold">{user.name}</h1>
