@@ -37,9 +37,7 @@ export default function Trucks() {
                     </h1>
 
                     <div className="mx-auto mt-5 md:mt-12 md:max-w-xl lg:text-lg mb-12">
-                        Great talent and products are made, not born. Collaborate with
-                        industry experts and earn badges that matter, while building
-                        products that actually fix the world&#39;s biggest bugs
+                        Collaborate with industry experts and earn badges that matter, while building products that actually fix the world&#39;s biggest bugs
                     </div>
 
                 </div>
