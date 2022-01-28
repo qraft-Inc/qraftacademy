@@ -23,7 +23,7 @@ export default function Courses() {
             <figure className="md:grid md:grid-cols-2 mb-12">
               <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
                 <Image
-                  src="https://res.cloudinary.com/filipe256/image/upload/v1641976467/qraftstore/software_development_d7hnzc.jpg"
+                  src="https://res.cloudinary.com/filipe256/image/upload/v1643388795/qraftstore/software_development_gz8lpn.jpg"
                   alt="Software Developers"
                   layout="responsive"
                   width={300}
