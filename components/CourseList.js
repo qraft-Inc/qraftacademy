@@ -7,7 +7,7 @@ import Link from 'next/link';
 const data = [
     {
         id: 1,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1641976467/qraftstore/software_development_d7hnzc.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1643388795/qraftstore/software_development_gz8lpn.jpg",
         courseTitle: "Software Development",
         text1: "Start",
         text2: "07.Feb.2022",
