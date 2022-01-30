@@ -10,7 +10,7 @@ const data = [
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1643388795/qraftstore/software_development_gz8lpn.jpg",
         courseTitle: "Software Development",
         text1: "Start",
-        text2: "07.Feb.2022",
+        text2: "07.Mar.2022",
         text3: "3 Months",
         altText: "Software Developers",
         url: "/developers"
