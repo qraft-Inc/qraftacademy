@@ -3,8 +3,7 @@ import Image from "next/image"
 import Head from "next/head";
 import { useUser } from '@auth0/nextjs-auth0';
 import ReactPlayer from 'react-player/lazy';
-// import CourseList from "../components/CourseList";
-// import MentorList from "../components/MentorList";
+
 
 export default function Developers() {
 
@@ -58,7 +57,6 @@ export default function Developers() {
 
             {/* card section */}
             <div className="grid sm:max-w-full sm:grid-cols-2 gap-y-8 place-content-center p-8">
-            {/* <div className="bg-red-200 grid sm:max-w-full sm:grid-cols-2 gap-y-8 place-content-center p-8"> */}
                 <div className="flex justify-center">
                     <div className="block p-6 rounded-2xl shadow-lg bg-white w-72 bg-gray-300">
                         <h5 className="text-gray-900 leading-tight font-bold mb-2 text-sm">Product Design Course</h5>
@@ -108,7 +106,7 @@ export default function Developers() {
 
                 <blockquote>
                     <h1 className="text-blue-900 font-bold">Goal</h1>
-                    <ul class="list-disc px-4 sm:px-0">
+                    <ul className="list-disc px-4 sm:px-0">
                         <li>Become an entry-level software developer</li>
                         <li>Become job ready</li>
                         <li>Identify the type of developer or developer role you want top pursue </li>
@@ -117,7 +115,7 @@ export default function Developers() {
 
                 <blockquote className="flex flex-col space-y-2">
                     <div>
-                        <h1 className="text-blue-900 font-bold">What You'll Learn</h1>
+                        <h1 className="text-blue-900 font-bold">What You&#39;ll Learn</h1>
                         <p className="font-bold inline">Fundamentals of Product Design: </p><span>Explore Tools, and frameworks, principle in UX design and identify alternatives roles of designers</span>
                     </div>
                     <div>
