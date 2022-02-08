@@ -55,6 +55,27 @@ const data = [
             role: "Talent developer - Software Development",
             altText: "Edina - Talent developer"
         },
+        {
+            id: 15,
+            courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644347489/qraftstore/158854473_1603665173324654_5737127259273495880_n_uaxoyi.jpg",
+            name: "Peter Ojwang",
+            role: "Mentor & Trainer - Digital Marketing",
+            altText: "Peter - Mentor & Trainer"
+        },
+        {
+            id: 16,
+            courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Samuel_Mabonga_UX-UI_Designer_uiwc2q.jpg",
+            name: "Samuel Mabonga",
+            role: "Mentor & Trainer - UI/UX Design",
+            altText: "Samuel - Mentor & Trainer"
+        },
+        {
+            id: 17,
+            courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172208/qraftstore/phillip_Mambo_Developer_wpw8ez.jpg",
+            name: "Phillip Mambo",
+            role: "Mentor & Trainer - Software Development",
+            altText: "Phillip - Mentor & Trainer"
+        }
 ]
 
 export default function CourseList() {
