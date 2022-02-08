@@ -56,7 +56,7 @@ export default function About() {
 
                 <VisionMission />
 
-                <FunFactor />
+                {/* <FunFactor /> */}
 
                 <OurTeam />
             </div>

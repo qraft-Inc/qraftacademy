@@ -4,6 +4,15 @@ import Head from "next/head";
 import { useUser } from '@auth0/nextjs-auth0';
 import CourseList from "../components/CourseList";
 import MentorList from "../components/MentorList";
+import { FaAward } from "react-icons/fa";
+import { AiOutlineCalendar } from "react-icons/ai";
+import { FaRegHandshake } from "react-icons/fa";
+import { AiOutlineClockCircle } from "react-icons/ai";
+import { GiSpeaker } from "react-icons/gi";
+import { AiOutlineSafetyCertificate } from "react-icons/ai";
+import ReactPlayer from 'react-player/lazy';
+
+
 
 export default function Designers() {
 
@@ -18,41 +27,77 @@ export default function Designers() {
             </Head>
 
             {/* hero section */}
-            <header className="h-screen">
-                <div className=" absolute inset-0 overflow-hidden top-12 ">
-                    <Image
-                        alt="Background Image"
-                        src="https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/hero-bg_ytthxj.png"
-                        layout="fill"
-                        objectFit="cover"
-                        quality={100}
-                    />
-                </div>
-                <div className="px-4 py-36 text-left text-white md:max-w-none md:text-center z-10 relative">
-                    <h1 className="text-4xl font-extrabold leading-10 tracking-tight md:text-center sm:leading-none md:text-6xl lg:text-7xl">
-                        <span className="inline-block md:block">UI/UX Designers</span>
-                    </h1>
+            <div className="pt-24 flex flex-col items-center">
+                <h1 className="inline-block px-6 py-2 border-2 border-[#4092CF] text-[#4092CF] font-medium font-bold text-center text-sm leading-tight uppercase rounded-full">PRODUCT DESIGN COURSE</h1>
+                <h2 className="text-4xl font-extrabold leading-10 tracking-tight md:text-center sm:leading-none md:text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-red-400 w-4/6 text-center">Launch your Product Design career in just <br />12 weeks
+                </h2>
+            </div>
 
-                    <div className="mx-auto mt-5 md:mt-12 md:max-w-xl md:text-center lg:text-lg">
-                        Great talent and products are made, not born. Collaborate with
-                        industry experts and earn badges that matter, while building
-                        products that actually fix the world&#39;s biggest bugs.
+            <header className="h-auto bg-black relative">
+                <div className="z-0 absolute inset-0 overflow-hidden pt-[0.6px] z-0">
+
+                    <ReactPlayer
+                     controls
+                     light="https://res.cloudinary.com/filipe256/image/upload/v1641976469/qraftstore/product_design_pxlkdh.jpg"
+                     playing
+                     url="https://res.cloudinary.com/filipe256/video/upload/v1643972099/videos/product_design_ltfkbs.mp4"
+                     width='100%'
+                     height='100%'
+                        absolute top-0 left-0 />
+                </div>
+
+                <div className="flex flex-col space-y-8">
+                    <div className="flex justify-evenly mt-4 w-96 bg-black text-white container mx-auto text-xs">
+                        <div className="flex items-center space-x-2">
+                            <AiOutlineClockCircle size={20} />
+                            <span className="font-bold">12 weeks</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                            <GiSpeaker size={20} />
+                            <span className="font-bold">English</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                            <AiOutlineSafetyCertificate size={20} />
+                            <span className="font-bold">Certified Course</span>
+                        </div>
                     </div>
 
-                    {!user &&
-                        <span className="inline-flex w-full md:w-auto mt-12">
-                            <Link href="designers/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
-                                Sign in to apply
-                            </a></Link>
-                        </span>
-                    }
-                    {user &&
-                        <span className="inline-flex w-full md:w-auto mt-12">
-                            <Link href="designers/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
-                                Apply
-                            </a></Link>
-                        </span>
-                    }
+                    <div className="pointer-events-auto w-[300px] mt-10 ml-auto mr-12 p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px]">
+                        <div className="flex flex-col p-8 space-y-4 bg-white w-72 rounded-[15px]">
+                            <h1 className="text-center">The next course starts Early March 2022</h1>
+                            <span className="text-center">~5hrs/wk for 12 weeks</span>
+                            <Link href="designers/register">
+                                <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">Get Started</a>
+                            </Link>
+                            <p>
+                                You don’t need to commit to a four year degree and endless tuition fees to become a Product Designer. Learn your craft and launch your career with Dribbble.
+                            </p>
+                            <ul className="list-disc">
+                                <li>Beginner friendly</li>
+                                <li>8 hours on-demand video</li>
+                                <li>Weekly 2 hr live sessions</li>
+                                <li>Lifetime community access</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="opacity-82 bg-black flex justify-evenly w-full container mx-auto text-white pb-10">
+                        <div className="w-64 text-center">
+                            <AiOutlineCalendar size={20} className="mx-auto" />
+                            <h1 className="font-bold mb-4">Flexible learning</h1>
+                            <p>No need to quit your job with our mix of video & live learning</p>
+                        </div>
+                        <div className="w-64 text-center">
+                            <FaAward size={20} className="mx-auto" />
+                            <h1 className="font-bold mb-4">Mentorship</h1>
+                            <p>Weekly live & interactive sessions with your design mentor</p>
+                        </div>
+                        <div className="w-64 text-center">
+                            <FaRegHandshake size={20} className="mx-auto" />
+                            <h1 className="font-bold mb-4">Hiring Company Network</h1>
+                            <p>Get your portfolio in front of our vast network of top employers</p>
+                        </div>
+                    </div>
                 </div>
             </header>
 
@@ -66,7 +111,7 @@ export default function Designers() {
                 </blockquote>
 
                 <CourseList />
-                
+
                 <MentorList />
 
                 {!user &&

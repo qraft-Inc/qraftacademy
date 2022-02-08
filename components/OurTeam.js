@@ -11,64 +11,99 @@ const data = [
         id: 1,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172208/qraftstore/Ainembabazi_Recheal_ra1tj4.jpg",
         name: "Recheal Ainembabazi",
-        role: "FOUNDER",
-        altText: "Recheal Ainembabazi - Founder"
-    },
-    {
-        id: 2,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172215/qraftstore/Natukunda_Marcella_xiezuy.jpg",
-        name: "Natukunda Marcella",
-        role: "CO-FOUNDER",
-        altText: "Natukunda Marcella - Co-founder"
+        role: "Personal & Professional Development",
+        altText: "Recheal - Personal & Professional Development"
     },
     {
         id: 3,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172204/qraftstore/Denny_Wong_cpczks.png",
         name: "Denny Wong",
-        role: "Partner",
-        altText: "Denny Wong - Partner"
+        role: "Global Partner & Advisor",
+        altText: "Denny - Global Partner & Advisor"
     },
     {
         id: 4,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172203/qraftstore/Andrew_Tugume_nq4evy.jpg",
         name: "Andrew Tugume",
-        role: "Software Engineer",
-        altText: "Andrew Tugume - Software Engineer"
+        role: "Talent Developer - Software Development",
+        altText: "Andrew - Talent Developer "
+    },
+    {
+        id: 15,
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644157368/qraftstore/igxjeiazjt5oiv8ejwwn.png",
+        name: "Susan Mwiine ",
+        role: "Finance",
+        altText: "Susan - Finance"
     },
     {
         id: 5,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172216/qraftstore/Kyasiimire_Caroline_kphog8.jpg",
-        name: "Kyasiimire Caroline",
-        role: "Social Worker",
-        altText: "Kyasiimire Caroline - Social Worker"
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153416/qraftstore/Ronald_Bataringaya_bgwwj7.jpg",
+        name: "Ronald Bataringaya ",
+        role: "Management & Operations",
+        altText: "Ronald - Management & Operations"
+    },
+    {
+        id: 2,
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153415/qraftstore/Arnold_Muwanguzi_mt2pti.jpg",
+        name: "Arnold Muwanguzi",
+        role: "Talent Developer - Visual Art",
+        altText: "Arnold - Talent Developer "
+    },
+    {
+        id: 15,
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153413/qraftstore/Bill_Kabanga_wwvzpg.jpg",
+        name: "Bill Kabanga",
+        role: "Talent developer - Software Development",
+        altText: "Bill - Talent developer"
+    },
+    {
+        id: 15,
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153413/qraftstore/mathew_murungi_p2kw7w.jpg",
+        name: "Mathew Murungi ",
+        role: "Talent developer - Product Design",
+        altText: "Mathew - Product Design"
+    },
+    {
+        id: 14,
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153782/qraftstore/TUCMNMYKD-UUSCBRVE2-dd26f37d103e-512_orbiv4.jpg",
+        name: "Edina Nakanjako ",
+        role: "Talent developer - Software Development",
+        altText: "Edina - Talent developer"
+    },
+    {
+        id: 15,
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644157368/qraftstore/igxjeiazjt5oiv8ejwwn.png",
+        name: "Joshua Makubuya ",
+        role: "Graphics Designer",
+        altText: "Joshua - Graphics Designer"
+    },
+    {
+        id: 7,
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/Juliyana_woldeab_pwoiyd.jpg",
+        name: "Juliyana Woldeab",
+        role: "Digital Marketer",
+        altText: "Juliyana - Digital Marketing"
     },
     {
         id: 6,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/Precious_Kasasira_Developer_mqxjdy.jpg",
         name: "Precious Kasasira",
         role: "Software Developer",
-        altText: "Precious Kasasira - Developer"
-    },
-    {
-        id: 7,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/Juliyana_woldeab_pwoiyd.jpg",
-        name: "Juliyana Woldeab",
-        role: "Head Digital Marketing",
-        altText: "Juliyana Woldeab - Head Digital Marketing"
+        altText: "Precious - Developer"
     },
     {
         id: 8,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172208/qraftstore/phillip_Mambo_Developer_wpw8ez.jpg",
         name: "Phillip Mambo",
         role: "Software Developer",
-        altText: "Phillip Mambo - Developer"
+        altText: "Phillip - Developer"
     },
     {
         id: 9,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172204/qraftstore/Anold_Kalema_Developer_bwknkb.jpg",
         name: "Anold Kalema",
         role: "Software Developer",
-        altText: "Anold Kalema - Developer"
+        altText: "Anold - Developer"
     },
     {
         id: 10,
@@ -87,7 +122,7 @@ const data = [
     {
         id: 12,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172211/qraftstore/Stuart_Stuart_Developer_vmciej.jpg",
-        name: "Stuart",
+        name: "Stuart Kalema",
         role: "Software Developer",
         altText: "Stuart - Developer"
     },
@@ -127,28 +162,28 @@ export default function OurTeam() {
                                         <li className="text-blue-600 "> 
                                             <Link href="#"> 
                                                 <a className="text-2xl">
-                                                    <AiFillLinkedin className="mr-1" ></AiFillLinkedin>
+                                                    <AiFillLinkedin className="mr-1" />
                                                 </a>
                                             </Link> 
                                         </li>
                                         <li className="text-light-blue"> 
                                             <Link href="#"> 
                                                 <a className="text-2xl">
-                                                    <AiFillTwitterSquare className="mr-1" ></AiFillTwitterSquare>
+                                                    <AiFillTwitterSquare className="mr-1" />
                                                 </a>
                                             </Link> 
                                         </li>
                                         <li className="text-blue-900 "> 
                                             <Link href="#"> 
                                                 <a className="text-2xl">
-                                                    <AiFillFacebook className="mr-1"></AiFillFacebook>
+                                                    <AiFillFacebook className="mr-1"/>
                                                 </a>
                                             </Link> 
                                         </li>
                                         <li className="text-red-400 "> 
                                             <Link href="#">
                                             <a className="text-2xl">
-                                                <AiFillInstagram className="mr-1"></AiFillInstagram>
+                                                <AiFillInstagram className="mr-1"/>
                                             </a>    
                                             </Link> 
                                         </li>

@@ -6,27 +6,55 @@ import {AiFillInstagram} from "react-icons/ai";
 
 // data to be displayed on each mentor card
 const data = [
-    {
-        id: 1,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172203/qraftstore/Andrew_Tugume_nq4evy.jpg",
-        name: "Andrew Tugume",
-        role: "Software Developer",
-        altText: "Andrew Tugume - Software Developer"
-    },
-    {
-        id: 2,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Rachel_og4v6r.jpg",
-        name: "Rachel Ainembabazi",
-        role: "Digital Marketer",
-        altText: "Rachel Ainembabazi - Digital Marketer"
-    },
-    {
-        id: 3,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172204/qraftstore/Denny_Wong_cpczks.png",
-        name: "Danny Wong",
-        role: "Entrepreneur",
-        altText: "Danny Wong - Entrepreneur"
-    }
+        {
+            id: 1,
+            courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172208/qraftstore/Ainembabazi_Recheal_ra1tj4.jpg",
+            name: "Recheal Ainembabazi",
+            role: "Personal & Professional Development",
+            altText: "Recheal - Personal & Professional Development"
+        },
+        {
+            id: 3,
+            courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172204/qraftstore/Denny_Wong_cpczks.png",
+            name: "Denny Wong",
+            role: "Global Partner & Advisor",
+            altText: "Denny - Global Partner & Advisor"
+        },
+        {
+            id: 4,
+            courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172203/qraftstore/Andrew_Tugume_nq4evy.jpg",
+            name: "Andrew Tugume",
+            role: "Talent Developer - Software Development",
+            altText: "Andrew - Talent Developer "
+        },
+        {
+            id: 2,
+            courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153415/qraftstore/Arnold_Muwanguzi_mt2pti.jpg",
+            name: "Arnold Muwanguzi",
+            role: "Talent Developer - Visual Art",
+            altText: "Arnold - Talent Developer "
+        },
+        {
+            id: 15,
+            courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153413/qraftstore/Bill_Kabanga_wwvzpg.jpg",
+            name: "Bill Kabanga",
+            role: "Talent developer - Software Development",
+            altText: "Bill - Talent developer"
+        },
+        {
+            id: 15,
+            courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153413/qraftstore/mathew_murungi_p2kw7w.jpg",
+            name: "Mathew Murungi ",
+            role: "Talent developer - Product Design",
+            altText: "Mathew - Product Design"
+        },
+        {
+            id: 14,
+            courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153782/qraftstore/TUCMNMYKD-UUSCBRVE2-dd26f37d103e-512_orbiv4.jpg",
+            name: "Edina Nakanjako ",
+            role: "Talent developer - Software Development",
+            altText: "Edina - Talent developer"
+        },
 ]
 
 export default function CourseList() {
@@ -49,7 +77,7 @@ export default function CourseList() {
                                 </div>
                                 <div className="flex flex-col justify-center p-2">
                                     <h3 className="text-md font-medium flex justify-center mb-0">{mentor.name}</h3>
-                                    <h3 className="text-sm uppercase flex justify-center">{mentor.role}</h3>
+                                    <h3 className="text-sm flex justify-center">{mentor.role}</h3>
                                     <ul className="text-light-blue flex justify-center w-full">
                                         <li className=""> 
                                             <Link href="#"> 

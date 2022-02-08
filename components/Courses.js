@@ -39,7 +39,7 @@ export default function Courses() {
                   products that actually fix the world&#39;s biggest bugs.
                 </p>
                 <Link href="./developers">
-                  <a className="rounded-lg w-24 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply</a>
+                  <a className="rounded-lg w-32 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Get Started</a>
                 </Link>
               </article>
             </figure>
@@ -64,7 +64,7 @@ export default function Courses() {
                   Build products and a porfolio you are proud to show off and earn from it.
                 </p>
                 <Link href="./marketing">
-                  <a className="rounded-lg w-24 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply</a>
+                  <a className="rounded-lg w-32 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Get Started</a>
                 </Link>
               </article>
             </figure>
@@ -92,7 +92,7 @@ export default function Courses() {
                   products that actually fix the world&#39;s biggest bugs.
                 </p>
                 <Link href="./designers">
-                  <a className="rounded-lg w-24 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply</a>
+                  <a className="rounded-lg w-32 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Get Started</a>
                 </Link>
               </article>
             </figure>
