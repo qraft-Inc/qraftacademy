@@ -24,7 +24,7 @@ export default function AboutUs() {
                             Qraft Academy is an initiative from Qraft Mind, a modern work award winner.
                         </blockquote>
                     </div>
-                    <div className="accordion" id="accordionExample">
+                    <div className="accordion pb-4" id="accordionExample">
                         <div className="accordion-item">
                             <h2 className="accordion-header mb-0" id="headingOne">
                                 <button className="accordion-button collapsed relative flex items-center w-auto py-4 px-5 text-base text-left transition focus:outline-none bg-blue-900 text-white "
