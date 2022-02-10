@@ -9,6 +9,13 @@ import {AiFillLinkedin} from "react-icons/ai";
 const data = [
     {
         id: 1,
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172203/qraftstore/Andrew_Tugume_nq4evy.jpg",
+        name: "Andrew Tugume",
+        role: "Product Manager - Team Lead",
+        altText: "Andrew - Team Lead"
+    },
+    {
+        id: 2,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172208/qraftstore/Ainembabazi_Recheal_ra1tj4.jpg",
         name: "Recheal Ainembabazi",
         role: "Personal & Professional Development",
@@ -22,116 +29,116 @@ const data = [
         altText: "Denny - Global Partner & Advisor"
     },
     {
-        id: 4,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172203/qraftstore/Andrew_Tugume_nq4evy.jpg",
-        name: "Andrew Tugume",
-        role: "Talent Developer - Software Development",
-        altText: "Andrew - Talent Developer "
-    },
-    {
-        id: 15,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644157368/qraftstore/igxjeiazjt5oiv8ejwwn.png",
-        name: "Susan Mwiine ",
+        id: 3,
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644434332/qraftstore/WhatsApp_Image_2022-02-09_at_10.14.23_PM_r5u2cq.jpg",
+        name: "Susan Akantambira",
         role: "Finance",
         altText: "Susan - Finance"
     },
     {
-        id: 5,
+        id: 4,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153416/qraftstore/Ronald_Bataringaya_bgwwj7.jpg",
         name: "Ronald Bataringaya ",
         role: "Management & Operations",
         altText: "Ronald - Management & Operations"
     },
     {
-        id: 2,
+        id: 5,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153415/qraftstore/Arnold_Muwanguzi_mt2pti.jpg",
         name: "Arnold Muwanguzi",
         role: "Talent Developer - Visual Art",
         altText: "Arnold - Talent Developer "
     },
     {
-        id: 15,
+        id: 6,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153413/qraftstore/Bill_Kabanga_wwvzpg.jpg",
         name: "Bill Kabanga",
         role: "Talent developer - Software Development",
         altText: "Bill - Talent developer"
     },
     {
-        id: 15,
+        id: 7,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153413/qraftstore/mathew_murungi_p2kw7w.jpg",
         name: "Mathew Murungi ",
         role: "Talent developer - Product Design",
         altText: "Mathew - Product Design"
     },
     {
-        id: 14,
+        id: 8,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153782/qraftstore/TUCMNMYKD-UUSCBRVE2-dd26f37d103e-512_orbiv4.jpg",
         name: "Edina Nakanjako ",
         role: "Talent developer - Software Development",
         altText: "Edina - Talent developer"
     },
     {
-        id: 15,
+        id: 9,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644157368/qraftstore/igxjeiazjt5oiv8ejwwn.png",
         name: "Joshua Makubuya ",
         role: "Graphics Designer",
         altText: "Joshua - Graphics Designer"
     },
     {
-        id: 7,
+        id: 10,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/Juliyana_woldeab_pwoiyd.jpg",
         name: "Juliyana Woldeab",
         role: "Digital Marketer",
         altText: "Juliyana - Digital Marketing"
     },
     {
-        id: 6,
+        id: 11,
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Samuel_Mabonga_UX-UI_Designer_uiwc2q.jpg",
+        name: "Samuel Mabonga",
+        role: "UX/UI Designer",
+        altText: "Samuel - UX/UI"
+    },
+    {
+        id: 12,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/Precious_Kasasira_Developer_mqxjdy.jpg",
         name: "Precious Kasasira",
         role: "Software Developer",
         altText: "Precious - Developer"
     },
     {
-        id: 8,
+        id: 13,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172208/qraftstore/phillip_Mambo_Developer_wpw8ez.jpg",
         name: "Phillip Mambo",
         role: "Software Developer",
         altText: "Phillip - Developer"
     },
     {
-        id: 9,
+        id: 14,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172204/qraftstore/Anold_Kalema_Developer_bwknkb.jpg",
         name: "Anold Kalema",
         role: "Software Developer",
         altText: "Anold - Developer"
     },
     {
-        id: 10,
+        id: 15,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172206/qraftstore/Joshua_Kasasira_Developer_ehgije.jpg",
         name: "Joshua Kasasira",
         role: "Software Developer",
         altText: "Joshua Kasasira - Developer"
     },
     {
-        id: 11,
+        id: 16,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Shakira_Ndagire_Developer_pmgrge.jpg",
-        name: "Shakira Ndagire",
+        name: "Mwaka Ceaser.",
         role: "Software Developer",
         altText: "Shakira Ndagire - Developer"
     },
     {
-        id: 12,
+        id: 17,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172211/qraftstore/Stuart_Stuart_Developer_vmciej.jpg",
         name: "Stuart Kalema",
         role: "Software Developer",
         altText: "Stuart - Developer"
     },
     {
-        id: 13,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Samuel_Mabonga_UX-UI_Designer_uiwc2q.jpg",
-        name: "Samuel Mabonga",
-        role: "UX/UI Designer",
-        altText: "Samuel - UX/UI"
+        id: 18,
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644157368/qraftstore/igxjeiazjt5oiv8ejwwn.png",
+        name: "Ceaser Mwaka",
+        role: "Talent Developer - Visual Art",
+        altText: "Ceaser - Visual Art"
     }
 ]
 

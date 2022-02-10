@@ -26,7 +26,7 @@ export default function AboutUs() {
                             </blockquote>
                         </div>
                         <Link href="/">
-                            <a className="text-white bg-blue-900 inline-flex items-center justify-center  px-8 py-4 text-base font-semibold leading-6 rounded-full w-auto uppercase mt-2 mb-2  hover:bg-blue-500 transition duration-300">Learn Now</a>
+                            <a className="text-white bg-blue-900 inline-flex items-center justify-center  px-8 py-4 text-base font-semibold leading-6 rounded-full w-auto mt-2 mb-2  hover:bg-blue-500 transition duration-300">Learn More..</a>
                         </Link>
                         <h3 className="text-xl font-bold mb-6 lg:mt-8 text-light-blue">
                             Through our online qraft academy platform young people access;
@@ -38,11 +38,44 @@ export default function AboutUs() {
                             <li>MOOCs for personal , professional and business development</li>
                             <li>One on one career mentorship and guidance</li>
                         </ul>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
 
                 {/*start of about image area*/}
-                <div classsName="flex justify-center">
+                <div className="flex justify-center">
                     <div className="flex justify-center ">
                         <Image
                             src="https://res.cloudinary.com/filipe256/image/upload/v1642172211/qraftstore/team_qraftacademy_boqbc4.jpg"

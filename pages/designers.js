@@ -34,15 +34,15 @@ export default function Designers() {
             </div>
 
             <header className="h-auto bg-black relative">
-                <div className="z-0 absolute inset-0 overflow-hidden pt-[0.6px] z-0">
+                <div className="z-0 absolute inset-0 overflow-hidden pt-[0.6px] z-0 brightness-75">
 
                     <ReactPlayer
                      controls
                      light="https://res.cloudinary.com/filipe256/image/upload/v1641976469/qraftstore/product_design_pxlkdh.jpg"
                      playing
                      url="https://res.cloudinary.com/filipe256/video/upload/v1643972099/videos/product_design_ltfkbs.mp4"
-                     width='100%'
-                     height='100%'
+                     width='95%'
+                     height='95%'
                         absolute top-0 left-0 />
                 </div>
 

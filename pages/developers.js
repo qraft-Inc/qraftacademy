@@ -4,7 +4,6 @@ import Head from "next/head";
 import { useUser } from '@auth0/nextjs-auth0';
 import ReactPlayer from 'react-player/lazy';
 
-
 export default function Developers() {
 
     //get loggedIn user
@@ -86,7 +85,8 @@ export default function Developers() {
                     </div>
                 </div>
                 {/*start of about video area*/}
-                <div className="overflow-hidden h-48 sm:h-auto sm:w-10/12">
+                <div className="overflow-hidden h-48 sm:h-auto sm:w-10/12 brightness-75 hover:brightness-90">
+                {/* <AiFillPlayCircle size={50} title="Test" className="absolute left-40 top-40 -z-50 "/> */}
                     <ReactPlayer
                         controls
                         light="https://res.cloudinary.com/filipe256/image/upload/v1643388795/qraftstore/software_development_gz8lpn.jpg"
