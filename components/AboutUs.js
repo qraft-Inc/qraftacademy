@@ -31,12 +31,12 @@ export default function AboutUs() {
                                     type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne"
-                                    aria-expanded="true"
+                                    aria-expanded="false"
                                     aria-controls="collapseOne">Learn More..</button>
                             </h2>
                             <div
                                 id="collapseOne"
-                                className="accordion-collapse collapse show"
+                                className="accordion-collapse collapse"
                                 aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample"
                             >
