@@ -86,15 +86,14 @@ export default function Developers() {
                 </div>
                 {/*start of about video area*/}
                 <div className="overflow-hidden h-48 sm:h-auto sm:w-10/12 brightness-75 hover:brightness-90">
-                {/* <AiFillPlayCircle size={50} title="Test" className="absolute left-40 top-40 -z-50 "/> */}
                     <ReactPlayer
                         controls
                         light="https://res.cloudinary.com/filipe256/image/upload/v1643388795/qraftstore/software_development_gz8lpn.jpg"
                         playing
                         url="https://res.cloudinary.com/filipe256/video/upload/v1643972099/videos/product_design_ltfkbs.mp4"
                         width='100%'
-                        height='100%'/>
-                        
+                        height='100%' />
+
                 </div>
 
             </div>
@@ -128,7 +127,7 @@ export default function Developers() {
                         <p className="font-bold inline">Personal Branding: </p><span>Create an online portfolio to showcase UX design work and also learn best practices for building a professional network</span>
                     </div>
                 </blockquote>
-{/* ----------------------------------------------------------- */}
+                {/* ----------------------------------------------------------- */}
                 <blockquote>
                     <div>
                         <div className="pb-4">
@@ -192,8 +191,8 @@ export default function Developers() {
                             </div>
                         </div>
                     </div>
-                </blockquote> 
-            </div> 
+                </blockquote>
+            </div>
         </>
     );
 }

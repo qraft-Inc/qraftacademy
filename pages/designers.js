@@ -10,6 +10,7 @@ import { FaRegHandshake } from "react-icons/fa";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { GiSpeaker } from "react-icons/gi";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
+import { AiFillPlayCircle } from "react-icons/ai";
 import ReactPlayer from 'react-player/lazy';
 
 
@@ -33,21 +34,25 @@ export default function Designers() {
                 </h2>
             </div>
 
-            <header className="h-auto bg-black relative">
-                <div className="z-0 absolute inset-0 overflow-hidden pt-[0.6px] z-0 brightness-75">
+            <header className="h-64 md:h-auto bg-black relative brightness-100 w-full">
+                <div className="z-0 overflow-hidden absolute insert-0 h-full w-full">
 
                     <ReactPlayer
-                     controls
-                     light="https://res.cloudinary.com/filipe256/image/upload/v1641976469/qraftstore/product_design_pxlkdh.jpg"
-                     playing
-                     url="https://res.cloudinary.com/filipe256/video/upload/v1643972099/videos/product_design_ltfkbs.mp4"
-                     width='95%'
-                     height='95%'
-                        absolute top-0 left-0 />
+                        controls
+                        light="https://res.cloudinary.com/filipe256/image/upload/v1641976469/qraftstore/product_design_pxlkdh.jpg"
+                        playing
+                        url="https://res.cloudinary.com/filipe256/video/upload/v1643972099/videos/product_design_ltfkbs.mp4"
+                        
+                        playIcon={<AiFillPlayCircle size={80}/>}
+                        width='100%'
+                        height='100%'
+                        
+                        
+                        />
                 </div>
 
-                <div className="flex flex-col space-y-8">
-                    <div className="flex justify-evenly mt-4 w-96 bg-black text-white container mx-auto text-xs">
+                <div className="flex flex-col space-y-8 ">
+                    <div className="flex justify-evenly mt-4 w-96 bg-black text-white container mx-auto text-xs z-10">
                         <div className="flex items-center space-x-2">
                             <AiOutlineClockCircle size={20} />
                             <span className="font-bold">12 weeks</span>
@@ -62,7 +67,7 @@ export default function Designers() {
                         </div>
                     </div>
 
-                    <div className="pointer-events-auto w-[300px] mt-10 ml-auto mr-12 p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px]">
+                    <div className="pointer-events-auto w-[300px] mt-10 ml-auto mr-12 p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] z-10 invisible lg:visible">
                         <div className="flex flex-col p-8 space-y-4 bg-white w-72 rounded-[15px]">
                             <h1 className="text-center">The next course starts Early March 2022</h1>
                             <span className="text-center">~5hrs/wk for 12 weeks</span>
@@ -81,7 +86,7 @@ export default function Designers() {
                         </div>
                     </div>
 
-                    <div className="opacity-82 bg-black flex justify-evenly w-full container mx-auto text-white pb-10">
+                    <div className="opacity-82 bg-black flex justify-evenly w-full container mx-auto text-white pb-10 z-10 invisible md:visible">
                         <div className="w-64 text-center">
                             <AiOutlineCalendar size={20} className="mx-auto" />
                             <h1 className="font-bold mb-4">Flexible learning</h1>
