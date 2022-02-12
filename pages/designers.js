@@ -140,7 +140,7 @@ export default function Designers() {
                             </div>
                             <div className="flex justify-around rounded-2xl p-5 border-2 w-96">
                                 <span className="text-4xl font-bold text-blue-500">70%</span>
-                                <p className="text-sm ml-8">of hiring managers increased their design teams&#39;' headcount in the past year.</p>
+                                <p className="text-sm ml-8">of hiring managers increased their design teams&#39; headcount in the past year.</p>
                             </div>
                         </div>
                     </div>
