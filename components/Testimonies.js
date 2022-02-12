@@ -11,10 +11,10 @@ import 'swiper/css/effect-cards';
 const data = [
   {
     id: 1,
-    name: "Precious",
-    course: "Software Developer",
+    name: "Peter",
+    course: "UI/UX Designer",
     testimonial: "The program was scary and yet exciting. The program pushed me out of my comfort zone to try out new things and it was exciting to see myself executing. The free-style of this program gave me a glimpse of the work world and helped me to handle anxiety of work without thinking about the actual repercussions. I have learnt alot from samuel during the design phase.",
-    img: "https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/Precious_Kasasira_Developer_mqxjdy.jpg"
+    img: "https://res.cloudinary.com/filipe256/image/upload/v1644157368/qraftstore/igxjeiazjt5oiv8ejwwn.png"
   },
   {
     id: 1,
@@ -42,7 +42,7 @@ const data = [
     name: "Phillip",
     course: "Software Developer",
     testimonial: "My passion was to always be a developer but was never sure if to leave my  job to pursue my career because I had bills to pay. The program helped me to balance my life, career and work because it's flexible. It helped me to utilize my time and have discovered myself through career session  to pursue software development as a career putting my passion into action.",
-    img: "https://res.cloudinary.com/filipe256/image/upload/v1642172208/qraftstore/phillip_Mambo_Developer_wpw8ez.jpg"
+    img: "https://res.cloudinary.com/filipe256/image/upload/v1644604596/qraftstore/WhatsApp_Image_2022-02-11_at_8.50.24_PM_lyuqye.jpg"
   },
   {
     id: 3,

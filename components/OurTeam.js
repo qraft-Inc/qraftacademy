@@ -16,14 +16,14 @@ const data = [
     },
     {
         id: 2,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172208/qraftstore/Ainembabazi_Recheal_ra1tj4.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Rachel_og4v6r.jpg",
         name: "Recheal Ainembabazi",
         role: "Personal & Professional Development",
         altText: "Recheal - Personal & Professional Development"
     },
     {
         id: 3,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172204/qraftstore/Denny_Wong_cpczks.png",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644658800/qraftstore/denny_wong_kvpk20.jpg",
         name: "Denny Wong",
         role: "Global Partner & Advisor",
         altText: "Denny - Global Partner & Advisor"
@@ -156,15 +156,15 @@ export default function OurTeam() {
                                 <div className="flex justify-center">
                                     <Image
                                         src={mentor.courseImg} alt={mentor.altText}
-                                        width={230}
-                                        height={220}
+                                        width={150}
+                                        height={150}
                                         quality={100}
                                         className="flex justify-center"
                                     />
                                 </div>
                                 <div className="flex flex-col justify-center p-2">
                                     <h3 className="text-xl text-gray-700 font-medium flex justify-center mb-0">{mentor.name}</h3>
-                                    <h3 className="text-medium font-semibold flex text-blue-900 justify-center mt-2">{mentor.role}</h3>
+                                    <h3 className="text-medium font-semibold flex text-blue-900 justify-center mt-1">{mentor.role}</h3>
                                     <ul className=" flex justify-center w-full mt-2">
                                         <li className="text-blue-600 ">
                                             <Link href="#">
