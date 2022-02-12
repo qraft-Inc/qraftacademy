@@ -114,7 +114,7 @@ const data = [
     },
     {
         id: 15,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172208/qraftstore/phillip_Mambo_Developer_wpw8ez.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644604217/qraftstore/WhatsApp_Image_2022-02-11_at_8.50.24_PM_lyuqye.jpg",
         name: "Phillip Mambo",
         role: "Software Developer",
         altText: "Phillip - Developer"

@@ -11,6 +11,7 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import { GiSpeaker } from "react-icons/gi";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { AiFillPlayCircle } from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
 import ReactPlayer from 'react-player/lazy';
 
 
@@ -42,13 +43,13 @@ export default function Designers() {
                         light="https://res.cloudinary.com/filipe256/image/upload/v1641976469/qraftstore/product_design_pxlkdh.jpg"
                         playing
                         url="https://res.cloudinary.com/filipe256/video/upload/v1643972099/videos/product_design_ltfkbs.mp4"
-                        
-                        playIcon={<AiFillPlayCircle size={80}/>}
+
+                        playIcon={<AiFillPlayCircle size={80} />}
                         width='100%'
                         height='100%'
-                        
-                        
-                        />
+
+
+                    />
                 </div>
 
                 <div className="flex flex-col space-y-8 ">
@@ -75,7 +76,7 @@ export default function Designers() {
                                 <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">Get Started</a>
                             </Link>
                             <p>
-                                You don’t need to commit to a four year degree and endless tuition fees to become a Product Designer. Learn your craft and launch your career with Dribbble.
+                                You don’t need to commit to a four year degree and endless tuition fees to become a Product Designer. Learn your craft and launch your career with Qraft academy.
                             </p>
                             <ul className="list-disc">
                                 <li>Beginner friendly</li>
@@ -88,17 +89,17 @@ export default function Designers() {
 
                     <div className="opacity-82 bg-black flex justify-evenly w-full container mx-auto text-white pb-10 z-10 invisible md:visible">
                         <div className="w-64 text-center">
-                            <AiOutlineCalendar size={20} className="mx-auto" />
+                            <AiOutlineCalendar size={20} className="mx-auto mt-2" />
                             <h1 className="font-bold mb-4">Flexible learning</h1>
                             <p>No need to quit your job with our mix of video & live learning</p>
                         </div>
                         <div className="w-64 text-center">
-                            <FaAward size={20} className="mx-auto" />
+                            <FaAward size={20} className="mx-auto mt-2" />
                             <h1 className="font-bold mb-4">Mentorship</h1>
                             <p>Weekly live & interactive sessions with your design mentor</p>
                         </div>
                         <div className="w-64 text-center">
-                            <FaRegHandshake size={20} className="mx-auto" />
+                            <FaRegHandshake size={20} className="mx-auto mt-2" />
                             <h1 className="font-bold mb-4">Hiring Company Network</h1>
                             <p>Get your portfolio in front of our vast network of top employers</p>
                         </div>
@@ -107,7 +108,101 @@ export default function Designers() {
             </header>
 
             {/* content section */}
-            <div className="flex flex-col space-y-4 p-8">
+            <div className="flex justify-around space-y-2">
+                <div className="pointer-events-auto w-[300px] p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] z-10 invisible lg:visible">
+                    <div className="flex flex-col p-8 space-y-4 bg-white w-72 rounded-[15px]">
+                        <h1 className="text-center">The next course starts Early March 2022</h1>
+                        <span className="text-center">~5hrs/wk for 12 weeks</span>
+                        <Link href="designers/register">
+                            <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">Get Started</a>
+                        </Link>
+                        <p>
+                            You don’t need to commit to a four year degree and endless tuition fees to become a Product Designer. Learn your craft and launch your career with Qraft academy.
+                        </p>
+                        <ul className="list-disc">
+                            <li>Beginner friendly</li>
+                            <li>8 hours on-demand video</li>
+                            <li>Weekly 2 hr live sessions</li>
+                            <li>Lifetime community access</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className=" w-7/12 space-y-4">
+                    <div className="">
+                        <h1 className="text-gray-400 text-sm font-black">COURSE OVERVIEW</h1>
+                        <h2 className="text-3xl font-bold">Kickstart your product design career today</h2>
+                        <p>Our 12 week zero-to-career-ready Product Design course teaches students everything they need to land their first job in Product Design. Our flexible curriculum includes a mix of video lectures, assignments, and weekly live sessions with an expert mentor. Learn alongside an intimate group of other designers, master essential design tools and practices, get your hands on projects, and ask the important questions that will help kickstart your product design career.</p>
+                        <p>This course is designed so you can fit it into your own schedule, on your own time. You’ll leave with an interview ready portfolio, and the confidence to solve real world design challenges. Plus, we’ll get you in front of our active network of hiring managers, so you can get a headstart on your journey as a Product Designer, the fastest-growing career in the design industry.</p>
+                        <div className="flex justify-between">
+                            <div className="flex justify-around rounded-2xl p-5 border-2 w-96">
+                                <span className="text-4xl font-bold text-blue-500">$115k</span>
+                                <p className="text-sm ml-8">is the average salary a product designer can make in the United States.</p>
+                            </div>
+                            <div className="flex justify-around rounded-2xl p-5 border-2 w-96">
+                                <span className="text-4xl font-bold text-blue-500">70%</span>
+                                <p className="text-sm ml-8">of hiring managers increased their design teams' headcount in the past year.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className="text-3xl font-bold border-b pb-4">What you’ll learn</h1>
+                        <ul>
+                            <li className="flex items-center p-4 border-b pb-4"><AiOutlineArrowRight className="text-blue-500 mr-2" /><h2 className="font-bold mr-1">Design thinking:</h2>Learn different approaches to design thinking and how you can implement it</li>
+                            <li className="flex items-center p-4 border-b pb-4"><AiOutlineArrowRight className="text-blue-500 mr-2" /><h2 className="font-bold mr-1">UX and UI research: </h2>Conduct and analyze UX and UI research to inform your design decisions</li>
+                            <li className="flex items-center p-4 border-b pb-4"><AiOutlineArrowRight className="text-blue-500 mr-2" /><h2 className="font-bold mr-1">Wireframes, flow diagrams & prototypes:</h2>Learn how to bring product design projects to life</li>
+                            <li className="flex items-center p-4 border-b pb-4"><AiOutlineArrowRight className="text-blue-500 mr-2" /><h2 className="font-bold mr-1">Designing in Figma:</h2>You’ll master Figma’s tools, libraries, systems & techniques</li>
+                            <li className="flex items-center p-4 border-b pb-4"><AiOutlineArrowRight className="text-blue-500 mr-2" /><h2 className="font-bold mr-1">Career prep: </h2>Guidance on your resumes, portfolios, and interviews to land your dream job</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 className="text-2xl font-bold pb-4">Learn everything from basic to advanced techniques</h1>
+                        <p>
+                            You’ll gain an expert understanding of how to design, wireframe, create user flows, prototype and much more in Figma, the most collaborative designing tool in the industry, and third fastest growing app in 2020. Mastering Figma is essential to the success of any designer. You will learn by doing, and graduate with an advanced level of Figma knowledge.
+                        </p>
+                        <div className=" h-11/12 w-full bg-red-100 p-8">
+                            {/* <ReactPlayer
+                                controls
+                                light="https://res.cloudinary.com/filipe256/image/upload/v1641872095/qraftstore/Course_Detail_Desktop_1_rbt9hd_930630dacc.jpg"
+                                playing
+                                url="https://res.cloudinary.com/filipe256/video/upload/v1644609732/videos/figma_sfbpjk.mp4"
+                                playIcon={<AiFillPlayCircle size={80} />}
+                                width='100%'
+                                height='100%'
+                            /> */}
+                        </div>
+                    </div>
+                    <div className="space-y-4">
+                        <h1 className="text-gray-400 text-sm font-black">MEET YOUR MENTOR</h1>
+                        <h2 className="text-3xl font-bold">Dedicated mentorship</h2>
+                        <p>You’re not in this alone, as part of this course you’ll be matched with a mentor from our network. Mentors are hand-picked and have at least 4 years of product design experience in reputable design forward companies. Learn from the best in the space, create alongside them, and receive weekly live & asynchronous feedback on real-world projects.</p>
+                        <div className="flex justify-between">
+                            <div className="flex flex-col md:flex-row md:max-w-4xl rounded-lg bg-white shadow-lg">
+                                <img className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="https://res.cloudinary.com/filipe256/image/upload/v1644637736/qraftstore/w9nkdvva1o1epttvhstt.jpg" alt="" />
+                                <div className="p-6 flex flex-col justify-start ">
+                                    <h5 className="text-gray-900 text-xl font-medium mb-2">The mentor network</h5>
+                                    <p className="text-gray-700 text-base mb-4">
+                                        We have carefully curated a network of mentors who we trust and admire for their design career. We will match you with a mentor who is right for you, and who will provide support and guidance throughout your course.
+                                    </p>
+                                    <p className="text-gray-700 text-base mb-4">
+                                        Not only will you meet with your mentor once a week to learn key design concepts, ask questions and discuss your projects, but they will also be available to you with feedback and advice to take you from enrollment to graduation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-3xl font-bold">About the course</h2>
+                            <p>Over 12 weeks, you will build your product design skillset from the bottom up with lessons, mentorship sessions, and career advice from some of the design community’s most accomplished product design professionals. This flexible learning experience that combines guided video and live virtual sessions, lets you learn on your terms and around your schedule. This is your path to launching a career in product design.</p>
+
+                            <div>
+                            <h1 className="text-2xl font-bold pb-4">Weekly video lessons</h1>
+                            <p>Each week you will get hours of high-quality, guided, video content taught by Senior Product Designer at Nike & Adobe, Jesse Showalter.</p>
+                            <p>Our flexible curriculum structure has been thoughtfully designed, so you don’t need to quit your job to learn your craft and launch your Product Design career. You can watch these videos and complete practice exercises in your own time, before meeting with your mentor in your live session.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* <div className="flex flex-col space-y-4 p-8">
                 <blockquote className="space-y-2">
                     <h1 className="text-blue-900 font-black text-3xl">UI/UX Designers</h1>
                     <p>&quot; Apprenticeship is a proven model for developing a skilled workforce &quot; <span className="font-black">Eugene Scalia.</span></p>
@@ -133,7 +228,7 @@ export default function Designers() {
                 }
 
 
-            </div>
+            </div> */}
         </>
     );
 }
