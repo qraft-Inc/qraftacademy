@@ -15,14 +15,14 @@ const data = [
     },
     {
         id: 2,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172208/qraftstore/Ainembabazi_Recheal_ra1tj4.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Rachel_og4v6r.jpg",
         name: "Recheal Ainembabazi",
         role: "Personal & Professional Development",
         altText: "Recheal - Personal & Professional Development"
     },
     {
         id: 3,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172204/qraftstore/Denny_Wong_cpczks.png",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644658800/qraftstore/denny_wong_kvpk20.jpg",
         name: "Denny Wong",
         role: "Global Partner & Advisor",
         altText: "Denny - Global Partner & Advisor"
@@ -71,7 +71,7 @@ const data = [
     },
     {
         id: 10,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172208/qraftstore/phillip_Mambo_Developer_wpw8ez.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644604596/qraftstore/WhatsApp_Image_2022-02-11_at_8.50.24_PM_lyuqye.jpg",
         name: "Phillip Mambo",
         role: "Mentor & Trainer - Software Development",
         altText: "Phillip - Mentor & Trainer"
