@@ -11,34 +11,13 @@ import 'swiper/css/effect-cards';
 const data = [
   {
     id: 1,
-    name: "Peter",
-    course: "UI/UX Designer",
-    testimonial: "The program was scary and yet exciting. The program pushed me out of my comfort zone to try out new things and it was exciting to see myself executing. The free-style of this program gave me a glimpse of the work world and helped me to handle anxiety of work without thinking about the actual repercussions. I have learnt alot from samuel during the design phase.",
-    img: "https://res.cloudinary.com/filipe256/image/upload/v1644157368/qraftstore/igxjeiazjt5oiv8ejwwn.png"
-  },
-  {
-    id: 1,
-    name: "Joshua",
-    course: "Software Developer",
-    testimonial: "Crafting my career path has been the greatest lesson I have picked out from the career development content. The Design Phase was a game changer for me. I had knowledge with figma but  this experience  gave me  exposure on how to use it to develop prototypes and this triggered my passion of design into action which I had long held back .",
-    img: "https://res.cloudinary.com/filipe256/image/upload/v1642172206/qraftstore/Joshua_Kasasira_Developer_ehgije.jpg"
-  },
-  {
-    id: 1,
-    name: "Timothy Olili",
-    course: "Software Developer",
-    testimonial: "I’ve learned so much from a variety of different technologies. Andrew's great at telling us when to dive deeper into a topic or when to step back or move on to different solution. Phillip’s help has been invaluable as well. I couldn’t have asked for a better experience.",
-    img: "https://res.cloudinary.com/filipe256/image/upload/v1642173782/qraftstore/Timothy_momyx0.jpg"
-  },
-  {
-    id: 2,
     name: "Samuel Mabonga",
     course: "UI/UX Designer",
     testimonial: "Qraft Academy was a great upskilling experience for me. The staff and instructors are all super pros, and getting to dive right into client work was perfect for a learn-by-doing student like myself. Highly recommended!",
     img: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Samuel_Mabonga_UX-UI_Designer_uiwc2q.jpg"
   },
   {
-    id: 3,
+    id: 2,
     name: "Phillip",
     course: "Software Developer",
     testimonial: "My passion was to always be a developer but was never sure if to leave my  job to pursue my career because I had bills to pay. The program helped me to balance my life, career and work because it's flexible. It helped me to utilize my time and have discovered myself through career session  to pursue software development as a career putting my passion into action.",
@@ -46,6 +25,27 @@ const data = [
   },
   {
     id: 3,
+    name: "Timothy Olili",
+    course: "Software Developer",
+    testimonial: "I’ve learned so much from a variety of different technologies. Andrew's great at telling us when to dive deeper into a topic or when to step back or move on to different solution. Phillip’s help has been invaluable as well. I couldn’t have asked for a better experience.",
+    img: "https://res.cloudinary.com/filipe256/image/upload/v1642173782/qraftstore/Timothy_momyx0.jpg"
+  },
+  {
+    id: 4,
+    name: "Joshua",
+    course: "Software Developer",
+    testimonial: "Crafting my career path has been the greatest lesson I have picked out from the career development content. The Design Phase was a game changer for me. I had knowledge with figma but  this experience  gave me  exposure on how to use it to develop prototypes and this triggered my passion of design into action which I had long held back .",
+    img: "https://res.cloudinary.com/filipe256/image/upload/v1642172206/qraftstore/Joshua_Kasasira_Developer_ehgije.jpg"
+  },
+  {
+  id: 5,
+  name: "Peter",
+  course: "UI/UX Designer",
+  testimonial: "The program was scary and yet exciting. The program pushed me out of my comfort zone to try out new things and it was exciting to see myself executing. The free-style of this program gave me a glimpse of the work world and helped me to handle anxiety of work without thinking about the actual repercussions. I have learnt alot from samuel during the design phase.",
+  img: "https://res.cloudinary.com/filipe256/image/upload/v1644157368/qraftstore/igxjeiazjt5oiv8ejwwn.png"
+  },
+  {
+    id: 6,
     name: "Shakira",
     course: "Software Developer",
     testimonial: "I have explored design which has sparked an interest that I wish to look into in the future. I have been able to come up with ideas for the projects that we are embarking on.",

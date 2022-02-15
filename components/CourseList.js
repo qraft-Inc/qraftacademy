@@ -7,30 +7,30 @@ import Link from 'next/link';
 const data = [
     {
         id: 1,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1643388795/qraftstore/software_development_gz8lpn.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644905941/qraftstore/software_development_ci3tns.jpg",
         courseTitle: "Software Development",
         text1: "Start",
-        text2: "07.Mar.2022",
+        text2: "04.April.2022",
         text3: "3 Months",
         altText: "Software Developers",
         url: "/developers"
     },
     {
         id: 2,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1641976468/qraftstore/digital_marketing_lotoma.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644905940/qraftstore/digital_marketing_aib4qd.jpg",
         courseTitle: "Digital Marketing",
         text1: "Start",
-        text2: "07.March.2022",
+        text2: "11.April.2022",
         text3: "3 Months",
         altText: "Digital Marketers",
         url: "/marketing"
     },
     {
         id: 3,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1641976469/qraftstore/product_design_pxlkdh.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644905941/qraftstore/product_design_gmmoj6.jpg",
         courseTitle: "UI/UX Design",
         text1: "Start",
-        text2: "07.April.2022",
+        text2: "18.April.2022",
         text3: "3 Months",
         altText: "UI/UX designers",
         url: "/designers"

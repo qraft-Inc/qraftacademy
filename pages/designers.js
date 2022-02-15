@@ -40,9 +40,9 @@ export default function Designers() {
 
                     <ReactPlayer
                         controls
-                        light="https://res.cloudinary.com/filipe256/image/upload/v1641976469/qraftstore/product_design_pxlkdh.jpg"
+                        light="https://res.cloudinary.com/filipe256/image/upload/v1644672440/videos/thumbnail2_llzns4.gif"
                         playing
-                        url="https://res.cloudinary.com/filipe256/video/upload/v1643972099/videos/product_design_ltfkbs.mp4"
+                        url="https://res.cloudinary.com/filipe256/video/upload/v1644908419/videos/product_design_vc5jny.mp4"
 
                         playIcon={<AiFillPlayCircle size={80} />}
                         width='100%'
@@ -68,11 +68,11 @@ export default function Designers() {
                         </div>
                     </div>
 
-                    <div className="pointer-events-auto w-[300px] mt-10 ml-auto mr-12 p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] z-10 invisible lg:visible">
+                    <div className="pointer-events-auto w-[300px] mt-10 ml-auto mr-12 p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] z-10 hidden lg:block">
                         <div className="flex flex-col p-8 space-y-4 bg-white w-72 rounded-[15px]">
                             <h1 className="text-center">The next course starts Early March 2022</h1>
                             <span className="text-center">~5hrs/wk for 12 weeks</span>
-                            <Link href="designers/register">
+                            <Link href="#">
                                 <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">Get Started</a>
                             </Link>
                             <p>
@@ -109,11 +109,11 @@ export default function Designers() {
 
             {/* content section */}
             <div className="flex justify-around space-y-2">
-                <div className="pointer-events-auto w-[300px] p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] z-10 invisible lg:visible">
+                <div className="mt-8 w-[300px]  h-[32.2rem]  p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] z-10 hidden lg:block">
                     <div className="flex flex-col p-8 space-y-4 bg-white w-72 rounded-[15px]">
                         <h1 className="text-center">The next course starts Early March 2022</h1>
                         <span className="text-center">~5hrs/wk for 12 weeks</span>
-                        <Link href="designers/register">
+                        <Link href="#">
                             <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">Get Started</a>
                         </Link>
                         <p>

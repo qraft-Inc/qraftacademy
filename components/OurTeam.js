@@ -107,7 +107,7 @@ const data = [
     },
     {
         id: 14,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/Precious_Kasasira_Developer_mqxjdy.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644907378/qraftstore/WhatsApp_Image_2022-02-14_at_5.00.40_PM_diebj5.jpg",
         name: "Precious Kasasira",
         role: "Software Developer",
         altText: "Precious - Developer"
@@ -121,7 +121,7 @@ const data = [
     },
     {
         id: 16,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172211/qraftstore/Stuart_Stuart_Developer_vmciej.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644907296/qraftstore/IMG_1611_2_sisj4y.jpg",
         name: "Stuart Kalema",
         role: "Software Developer",
         altText: "Stuart - Developer"
