@@ -59,22 +59,22 @@ const data = [
         id: 8,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644427177/qraftstore/peter_dz3vro.jpg",
         name: "Peter Ojwang",
-        role: "Mentor & Trainer - Digital Marketing",
+        role: "Trainer - Digital Marketing",
         altText: "Peter - Mentor & Trainer"
     },
     {
         id: 9,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1642172210/qraftstore/Samuel_Mabonga_UX-UI_Designer_uiwc2q.jpg",
         name: "Samuel Mabonga",
-        role: "Mentor & Trainer - UI/UX Design",
-        altText: "Samuel - Mentor & Trainer"
+        role: "Trainer - UI/UX Design",
+        altText: "Samuel - Trainer"
     },
     {
         id: 10,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644604596/qraftstore/WhatsApp_Image_2022-02-11_at_8.50.24_PM_lyuqye.jpg",
         name: "Phillip Mambo",
-        role: "Mentor & Trainer - Software Development",
-        altText: "Phillip - Mentor & Trainer"
+        role: "Trainer - Software Development",
+        altText: "Phillip - Trainer"
     }
 ]
 

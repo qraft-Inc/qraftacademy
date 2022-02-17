@@ -17,7 +17,7 @@ const data = [
     },
     {
         id: 2,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644905940/qraftstore/digital_marketing_aib4qd.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Digital_Marketing_dbkrx8.jpg",
         courseTitle: "Digital Marketing",
         text1: "Start",
         text2: "11.April.2022",
@@ -27,7 +27,7 @@ const data = [
     },
     {
         id: 3,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644905941/qraftstore/product_design_gmmoj6.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Product_Design_utd76i.jpg",
         courseTitle: "UI/UX Design",
         text1: "Start",
         text2: "18.April.2022",

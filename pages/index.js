@@ -1,4 +1,4 @@
-import { makePublicRouterInstance } from "next/dist/client/router";
+
 import Head from "next/head";
 import Testimonies from "../components/Testimonies";
 import Hero from "../components/Hero";

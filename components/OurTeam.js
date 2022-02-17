@@ -150,12 +150,12 @@ export default function OurTeam() {
             <p className="font-normal text-gray-700 text-xl mb-14">Having more experienced members and mentors that have devoted to the Vision</p>
             <div className=" mt-6 grid gap-y-6 md:grid-cols-4 md:gap-x-10  sm:grid-cols-2 sm:gap-10 ">
                 {
-                    data.map(mentor => (
-                        <div key={mentor.id} className="flex justify-center">
+                    data.map(team => (
+                        <div key={team.id} className="flex justify-center">
                             <div>
                                 <div className="flex justify-center">
                                     <Image
-                                        src={mentor.courseImg} alt={mentor.altText}
+                                        src={team.courseImg} alt={team.altText}
                                         width={150}
                                         height={150}
                                         quality={100}
@@ -163,8 +163,8 @@ export default function OurTeam() {
                                     />
                                 </div>
                                 <div className="flex flex-col justify-center p-2">
-                                    <h3 className="text-xl text-gray-700 font-medium flex justify-center mb-0">{mentor.name}</h3>
-                                    <h3 className="text-medium font-semibold flex text-blue-900 justify-center mt-1">{mentor.role}</h3>
+                                    <h3 className="text-xl text-gray-700 font-medium flex justify-center mb-0">{team.name}</h3>
+                                    <h3 className="text-medium font-semibold flex text-blue-900 justify-center mt-1">{team.role}</h3>
                                     <ul className=" flex justify-center w-full mt-2">
                                         <li className="text-blue-600 ">
                                             <Link href="#">

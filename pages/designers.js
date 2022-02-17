@@ -2,8 +2,6 @@ import Link from "next/link"
 import Image from "next/image"
 import Head from "next/head";
 import { useUser } from '@auth0/nextjs-auth0';
-import CourseList from "../components/CourseList";
-import MentorList from "../components/MentorList";
 import { FaAward } from "react-icons/fa";
 import { AiOutlineCalendar } from "react-icons/ai";
 import { FaRegHandshake } from "react-icons/fa";
@@ -13,7 +11,6 @@ import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import ReactPlayer from 'react-player/lazy';
-
 
 
 export default function Designers() {
@@ -70,19 +67,32 @@ export default function Designers() {
 
                     <div className="pointer-events-auto w-[300px] mt-10 ml-auto mr-12 p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] z-10 hidden lg:block">
                         <div className="flex flex-col p-8 space-y-4 bg-white w-72 rounded-[15px]">
-                            <h1 className="text-center">The next course starts Early March 2022</h1>
-                            <span className="text-center">~5hrs/wk for 12 weeks</span>
-                            <Link href="#">
-                                <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">Get Started</a>
-                            </Link>
+                            <h1 className="text-center">The next course starts Early April 2022</h1>
+                            <span className="text-center">for 12 weeks</span>
+                            {!user &&
+                                <span className="mx-auto">
+                                    <Link
+                                        type="button"
+                                        data-mdb-ripple="true"
+                                        data-mdb-ripple-color="light"
+                                        href="#">
+                                        <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-2 bg-light-blue hover:bg-blue-400 transition duration-300">Sign in to apply</a>
+                                    </Link>
+                                </span>
+                            }
+                            {user &&
+                                <span className="mx-auto">
+                                    <Link href="#">
+                                        <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">apply now</a>
+                                    </Link>
+                                </span>
+                            }
                             <p>
-                                You don’t need to commit to a four year degree and endless tuition fees to become a Product Designer. Learn your craft and launch your career with Qraft academy.
+                                Life is an ongoing learning process and this Night school gives you an opportunity to learn a new skill that will help you remain relevant in your field, earn more money through side hustles or realize big dreams and transition of career.
                             </p>
                             <ul className="list-disc">
-                                <li>Beginner friendly</li>
-                                <li>8 hours on-demand video</li>
-                                <li>Weekly 2 hr live sessions</li>
-                                <li>Lifetime community access</li>
+                                <li>Become an entry-level product designer</li>
+                                <li>Become job ready</li>
                             </ul>
                         </div>
                     </div>
@@ -107,128 +117,159 @@ export default function Designers() {
                 </div>
             </header>
 
-            {/* content section */}
+            {/* left side section */}
             <div className="flex justify-around space-y-2">
-                <div className="mt-8 w-[300px]  h-[32.2rem]  p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] z-10 hidden lg:block">
+                <div className="mt-8 w-[300px]  h-[33.6rem]  p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] z-10 hidden lg:block">
                     <div className="flex flex-col p-8 space-y-4 bg-white w-72 rounded-[15px]">
-                        <h1 className="text-center">The next course starts Early March 2022</h1>
-                        <span className="text-center">~5hrs/wk for 12 weeks</span>
-                        <Link href="#">
-                            <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">Get Started</a>
-                        </Link>
+                        <h1 className="text-center">The next course starts Early April 2022</h1>
+                        <span className="text-center">for 12 weeks</span>
+
+                        {!user &&
+                            <span className="mx-auto">
+                                <Link
+                                    type="button"
+                                    data-mdb-ripple="true"
+                                    data-mdb-ripple-color="light"
+                                    href="#">
+                                    <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-2 bg-light-blue hover:bg-blue-400 transition duration-300">Sign in to apply</a>
+                                </Link>
+                            </span>
+                        }
+                        {user &&
+                            <span className="mx-auto">
+                                <Link href="#">
+                                    <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">apply now</a>
+                                </Link>
+                            </span>
+                        }
                         <p>
-                            You don’t need to commit to a four year degree and endless tuition fees to become a Product Designer. Learn your craft and launch your career with Qraft academy.
+                            Life is an ongoing learning process and this Night school gives you an opportunity to learn a new skill that will help you remain relevant in your field, earn more money through side hustles or realize big dreams and transition of career.
                         </p>
                         <ul className="list-disc">
-                            <li>Beginner friendly</li>
-                            <li>8 hours on-demand video</li>
-                            <li>Weekly 2 hr live sessions</li>
-                            <li>Lifetime community access</li>
+                            <li>Become an entry-level product designer</li>
+                            <li>Become job ready</li>
                         </ul>
                     </div>
                 </div>
-                <div className=" w-7/12 space-y-4">
+                {/* right side section */}
+                <div className=" w-7/12 space-y-4 pt-8">
                     <div className="">
-                        <h1 className="text-gray-400 text-sm font-black">COURSE OVERVIEW</h1>
-                        <h2 className="text-3xl font-bold">Kickstart your product design career today</h2>
-                        <p>Our 12 week zero-to-career-ready Product Design course teaches students everything they need to land their first job in Product Design. Our flexible curriculum includes a mix of video lectures, assignments, and weekly live sessions with an expert mentor. Learn alongside an intimate group of other designers, master essential design tools and practices, get your hands on projects, and ask the important questions that will help kickstart your product design career.</p>
-                        <p>This course is designed so you can fit it into your own schedule, on your own time. You’ll leave with an interview ready portfolio, and the confidence to solve real world design challenges. Plus, we’ll get you in front of our active network of hiring managers, so you can get a headstart on your journey as a Product Designer, the fastest-growing career in the design industry.</p>
-                        <div className="flex justify-between">
-                            <div className="flex justify-around rounded-2xl p-5 border-2 w-96">
-                                <span className="text-4xl font-bold text-blue-500">$115k</span>
-                                <p className="text-sm ml-8">is the average salary a product designer can make in the United States.</p>
-                            </div>
-                            <div className="flex justify-around rounded-2xl p-5 border-2 w-96">
-                                <span className="text-4xl font-bold text-blue-500">70%</span>
-                                <p className="text-sm ml-8">of hiring managers increased their design teams&#39; headcount in the past year.</p>
-                            </div>
-                        </div>
+                        <h1 className="text-gray-400 text-3xl font-black">COURSE OVERVIEW</h1>
+                        <p>Our curriculum includes a career development to help you put to use the skills leant, a video and audio lectures, assignments, and live sessions, hands on projects and mentors to help you grow</p>
                     </div>
+
                     <div>
-                        <h1 className="text-3xl font-bold border-b pb-4">What you’ll learn</h1>
-                        <ul>
-                            <li className="flex items-center p-4 border-b pb-4"><AiOutlineArrowRight className="text-blue-500 mr-2" /><h2 className="font-bold mr-1">Design thinking:</h2>Learn different approaches to design thinking and how you can implement it</li>
-                            <li className="flex items-center p-4 border-b pb-4"><AiOutlineArrowRight className="text-blue-500 mr-2" /><h2 className="font-bold mr-1">UX and UI research: </h2>Conduct and analyze UX and UI research to inform your design decisions</li>
-                            <li className="flex items-center p-4 border-b pb-4"><AiOutlineArrowRight className="text-blue-500 mr-2" /><h2 className="font-bold mr-1">Wireframes, flow diagrams & prototypes:</h2>Learn how to bring product design projects to life</li>
-                            <li className="flex items-center p-4 border-b pb-4"><AiOutlineArrowRight className="text-blue-500 mr-2" /><h2 className="font-bold mr-1">Designing in Figma:</h2>You’ll master Figma’s tools, libraries, systems & techniques</li>
-                            <li className="flex items-center p-4 border-b pb-4"><AiOutlineArrowRight className="text-blue-500 mr-2" /><h2 className="font-bold mr-1">Career prep: </h2>Guidance on your resumes, portfolios, and interviews to land your dream job</li>
+                        <h1 className="text-gray-400 text-3xl font-black">Goal</h1>
+                        <ul className="space-y-2">
+                            <li className="flex items-center p-4 border-b "><AiOutlineArrowRight className="text-blue-500 mr-2" /><p>Become an entry-level product designer</p></li>
+                            <li className="flex items-center p-4 border-b"><AiOutlineArrowRight className="text-blue-500 mr-2" /><p>Become job ready</p></li>
+                            {/* <li className="flex items-center p-4 border-b"><AiOutlineArrowRight className="text-blue-500 mr-2" /><p>Identify the type of developer or developer role you want top pursue</p></li> */}
                         </ul>
                     </div>
+
                     <div>
-                        <h1 className="text-2xl font-bold pb-4">Learn everything from basic to advanced techniques</h1>
-                        <p>
-                            You’ll gain an expert understanding of how to design, wireframe, create user flows, prototype and much more in Figma, the most collaborative designing tool in the industry, and third fastest growing app in 2020. Mastering Figma is essential to the success of any designer. You will learn by doing, and graduate with an advanced level of Figma knowledge.
-                        </p>
-                        <div className=" h-11/12 w-full bg-red-100 p-8">
-                            {/* <ReactPlayer
-                                controls
-                                light="https://res.cloudinary.com/filipe256/image/upload/v1641872095/qraftstore/Course_Detail_Desktop_1_rbt9hd_930630dacc.jpg"
-                                playing
-                                url="https://res.cloudinary.com/filipe256/video/upload/v1644609732/videos/figma_sfbpjk.mp4"
-                                playIcon={<AiFillPlayCircle size={80} />}
-                                width='100%'
-                                height='100%'
-                            /> */}
-                        </div>
-                    </div>
-                    <div className="space-y-4">
-                        <h1 className="text-gray-400 text-sm font-black">MEET YOUR MENTOR</h1>
-                        <h2 className="text-3xl font-bold">Dedicated mentorship</h2>
-                        <p>You’re not in this alone, as part of this course you’ll be matched with a mentor from our network. Mentors are hand-picked and have at least 4 years of product design experience in reputable design forward companies. Learn from the best in the space, create alongside them, and receive weekly live & asynchronous feedback on real-world projects.</p>
-                        <div className="flex justify-between">
-                            <div className="flex flex-col md:flex-row md:max-w-4xl rounded-lg bg-white shadow-lg">
-                                <img className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="https://res.cloudinary.com/filipe256/image/upload/v1644637736/qraftstore/w9nkdvva1o1epttvhstt.jpg" alt="" />
-                                <div className="p-6 flex flex-col justify-start ">
-                                    <h5 className="text-gray-900 text-xl font-medium mb-2">The mentor network</h5>
-                                    <p className="text-gray-700 text-base mb-4">
-                                        We have carefully curated a network of mentors who we trust and admire for their design career. We will match you with a mentor who is right for you, and who will provide support and guidance throughout your course.
-                                    </p>
-                                    <p className="text-gray-700 text-base mb-4">
-                                        Not only will you meet with your mentor once a week to learn key design concepts, ask questions and discuss your projects, but they will also be available to you with feedback and advice to take you from enrollment to graduation.
-                                    </p>
+                        <h1 className="text-gray-400 text-3xl font-black">What you’ll learn</h1>
+                        <ol className="border-l-2 border-blue-600 mt-4">
+                            <li>
+                                <div className="flex flex-start items-center">
+                                    <div className="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
+                                    <h4 className="text-gray-800 font-semibold text-lg -mt-2">Fundamentals of Product Design:</h4>
                                 </div>
+                                <div className="ml-6 mb-2 pb-2">
+                                    <p className="text-gray-700 mt-2 mb-4">Explore Tools, and frameworks, principle in UX design and identify alternatives roles of designers.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="flex flex-start items-center">
+                                    <div className="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
+                                    <h4 className="text-gray-800 font-semibold text-lg -mt-2">Low-Fidelity Design</h4>
+                                </div>
+                                <div className="ml-6 mb-2 pb-2">
+                                    <p className="text-gray-700 mt-2 mb-4">To create simple and low-tech concepts, all you need to get started is a pen and paper. The goal is to turn your ideas into testable artifacts that you can then use to collect and analyze feedback in the early stages.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="flex flex-start items-center">
+                                    <div className="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
+                                    <h4 className="text-gray-800 font-semibold text-lg -mt-2">High-Fidelity Design</h4>
+                                </div>
+                                <div className="ml-6 mb-2 pb-2">
+                                    <p className="text-gray-700 mt-2 mb-4">Create computer-based, and allow realistic (mouse-keyboard) user interactions. High-fidelity prototypes take you as close as possible to a true representation of the user interface.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="flex flex-start items-center">
+                                    <div className="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
+                                    <h4 className="text-gray-800 font-semibold text-lg -mt-2">Personal Branding</h4>
+                                </div>
+                                <div className="ml-6 mb-2 pb-2">
+                                    <p className="text-gray-700 mt-2 mb-4">Create an online portfolio to showcase UX design work and also learn best practices for building a professional network.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div className="">
+                        <h1 className="text-gray-400 text-3xl font-black">Projects</h1>
+                        <p>Each Participant will select the Project to work on throughout the course</p>
+                    </div>
+                    <div className="flex flex-col items-center sm:flex-row space-y-2 sm:space-x-8 pb-8">
+                        <div>
+                            <h1 className="text-blue-900 font-bold text-center mb-2">Benefits</h1>
+                            <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
+                                <ul className="space-y-8 text-baset text-center font-medium">
+                                    <li>One one career mentorship</li>
+                                    <li>Free Apprenticeship</li>
+                                    <li>Community of Designers</li>
+                                </ul>
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-3xl font-bold">About the course</h2>
-                            <p>Over 12 weeks, you will build your product design skillset from the bottom up with lessons, mentorship sessions, and career advice from some of the design community’s most accomplished product design professionals. This flexible learning experience that combines guided video and live virtual sessions, lets you learn on your terms and around your schedule. This is your path to launching a career in product design.</p>
-
-                            <div>
-                            <h1 className="text-2xl font-bold pb-4">Weekly video lessons</h1>
-                            <p>Each week you will get hours of high-quality, guided, video content taught by Senior Product Designer at Nike & Adobe, Jesse Showalter.</p>
-                            <p>Our flexible curriculum structure has been thoughtfully designed, so you don’t need to quit your job to learn your craft and launch your Product Design career. You can watch these videos and complete practice exercises in your own time, before meeting with your mentor in your live session.</p>
+                            <h1 className="text-blue-900 font-bold text-center mb-2">Pricing</h1>
+                            <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
+                                <ul className="space-y-8 text-baset text-center font-medium">
+                                    <li className="font-bold">Beginner Level</li>
+                                    <li className="font-bold">$200</li>
+                                    <li>Best Value for entry</li>
+                                    <li>
+                                        {!user &&
+                                            <span className="">
+                                                <Link href="developer/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Sign in to apply</a></Link>
+                                            </span>
+                                        }
+                                        {user &&
+                                            <span className="">
+                                                <Link href="developer/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply Now</a></Link>
+                                            </span>
+                                        }
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                        <div>
+                            <h1 className="text-blue-900 font-bold text-center mb-2">Pricing</h1>
+                            <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
+                                <ul className="space-y-8 text-baset text-center font-medium">
+                                    <li className="font-bold">Advanced Level</li>
+                                    <li className="font-bold">$250</li>
+                                    <li>Advance your career</li>
+                                    <li>
+                                        {!user &&
+                                            <span className="">
+                                                <Link href="developer/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Sign in to apply</a></Link>
+                                            </span>
+                                        }
+                                        {user &&
+                                            <span className="">
+                                                <Link href="developer/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply Now</a></Link>
+                                            </span>
+                                        }
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* <div className="flex flex-col space-y-4 p-8">
-                <blockquote className="space-y-2">
-                    <h1 className="text-blue-900 font-black text-3xl">UI/UX Designers</h1>
-                    <p>&quot; Apprenticeship is a proven model for developing a skilled workforce &quot; <span className="font-black">Eugene Scalia.</span></p>
-                    <p>The UX/UI track is a 3 months apprenticeships program offering training and development of individuals looking to <span className="font-black">start a career in product design</span></p>
-                    <p className="font-black">Apply</p>
-                </blockquote>
-
-                <CourseList />
-
-                <MentorList />
-
-                {!user &&
-                    <span className="inline-flex w-full md:w-auto mt-12">
-                        <Link href="designers/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
-                            Sign in to apply</a></Link>
-                    </span>
-                }
-                {user &&
-                    <span className="inline-flex w-full md:w-auto mt-12">
-                        <Link href="designers/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
-                            Apply</a></Link>
-                    </span>
-                }
-
-
-            </div> */}
         </>
     );
 }

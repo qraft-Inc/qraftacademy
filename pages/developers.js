@@ -88,9 +88,9 @@ export default function Developers() {
                 <div className="overflow-hidden h-48 sm:h-auto sm:w-10/12 brightness-75 hover:brightness-90">
                     <ReactPlayer
                         controls
-                        light="https://res.cloudinary.com/filipe256/image/upload/v1643388795/qraftstore/software_development_gz8lpn.jpg"
+                        light="https://res.cloudinary.com/filipe256/image/upload/v1644672440/videos/thumbnail2_llzns4.gif"
                         playing
-                        url="https://res.cloudinary.com/filipe256/video/upload/v1643972099/videos/product_design_ltfkbs.mp4"
+                        url="https://res.cloudinary.com/filipe256/video/upload/v1644908419/videos/product_design_vc5jny.mp4"
                         width='100%'
                         height='100%' />
 
@@ -127,7 +127,7 @@ export default function Developers() {
                         <p className="font-bold inline">Personal Branding: </p><span>Create an online portfolio to showcase UX design work and also learn best practices for building a professional network</span>
                     </div>
                 </blockquote>
-                {/* ----------------------------------------------------------- */}
+        
                 <blockquote>
                     <div>
                         <div className="pb-4">
