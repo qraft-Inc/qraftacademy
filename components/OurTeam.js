@@ -44,7 +44,7 @@ const data = [
     },
     {
         id: 5,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644153415/qraftstore/Arnold_Muwanguzi_mt2pti.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1645557843/qraftstore/1644839103875_gkrihx.jpg",
         name: "Arnold Muwanguzi",
         role: "Talent Developer - Visual Art",
         altText: "Arnold - Talent Developer "
