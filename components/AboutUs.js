@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function AboutUs() {
     return (
-        //start of  about area 
+        // start of  about area 
         <div className="flex justify-items-center text-gray-700 justify-center items-center font-semiMedium text-lg font-sans text-left tracking-normal leading-relaxed mb-6 lg:mb-0">
             <div className="grid max-w-xl lg:min-w-full lg:grid-cols-2 gap-x-8 justify-between min-h-full px-10">
                 <div>
