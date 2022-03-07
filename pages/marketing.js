@@ -37,10 +37,10 @@ export default function Marketing() {
 
                     <ReactPlayer
                         controls
-                        light="https://res.cloudinary.com/filipe256/image/upload/v1644672440/videos/thumbnail2_llzns4.gif"
+                        light="https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Digital_Marketing_dbkrx8.jpg"
                         playing
-                        url="https://res.cloudinary.com/filipe256/video/upload/v1644908419/videos/product_design_vc5jny.mp4"
-                        playIcon={<AiFillPlayCircle size={80} />}
+                        url="https://res.cloudinary.com/filipe256/video/upload/v1646627782/videos/Qraftacademy_vid.mp4"
+                        playIcon={<AiFillPlayCircle size={80} className="text-white"/>}
                         width='100%'
                         height='100%' />
                 </div>
@@ -201,16 +201,16 @@ export default function Marketing() {
                                     <li className="font-bold">$200</li>
                                     <li>Best Value for entry</li>
                                     <li>
-                                        {!user &&
+                                        {/* {!user &&
                                             <span className="">
                                                 <Link href="marketing/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Sign in to apply</a></Link>
                                             </span>
-                                        }
-                                        {user &&
+                                        } */}
+                                        {/* {user && */}
                                             <span className="">
                                                 <Link href="marketing/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply Now</a></Link>
                                             </span>
-                                        }
+                                        {/* } */}
                                     </li>
                                 </ul>
                             </div>

@@ -36,13 +36,13 @@ export default function Designers() {
 
                     <ReactPlayer
                         controls
-                        light="https://res.cloudinary.com/filipe256/image/upload/v1644672440/videos/thumbnail2_llzns4.gif"
+                        light="https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Product_Design_utd76i.jpg"
                         playing
-                        url="https://res.cloudinary.com/filipe256/video/upload/v1644908419/videos/product_design_vc5jny.mp4"
-
-                        playIcon={<AiFillPlayCircle size={80} />}
+                        url="https://res.cloudinary.com/filipe256/video/upload/v1646627782/videos/Qraftacademy_vid.mp4"
+                        playIcon={<AiFillPlayCircle size={80}/>}
                         width='100%'
-                        height='100%' />
+                        height='100%'
+                        />
                 </div>
 
                 <div className="flex flex-col space-y-8 ">

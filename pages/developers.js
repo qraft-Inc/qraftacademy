@@ -36,9 +36,9 @@ export default function Developers() {
 
                     <ReactPlayer
                         controls
-                        light="https://res.cloudinary.com/filipe256/image/upload/v1644672440/videos/thumbnail2_llzns4.gif"
+                        light="https://res.cloudinary.com/filipe256/image/upload/v1644905941/qraftstore/software_development_ci3tns.jpg"
                         playing
-                        url="https://res.cloudinary.com/filipe256/video/upload/v1644908419/videos/product_design_vc5jny.mp4"
+                        url="https://res.cloudinary.com/filipe256/video/upload/v1646627782/videos/Qraftacademy_vid.mp4"
                         playIcon={<AiFillPlayCircle size={80} />}
                         width='100%'
                         height='100%' />
