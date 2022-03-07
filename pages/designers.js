@@ -72,20 +72,20 @@ export default function Designers() {
                                 <li className="px-6 py-2 border-b border-gray-200 w-full">Hands on Projects</li>
                                 <li className="px-6 py-2 w-full rounded-b-lg">FAQ</li>
                             </ul>
-                            {!user &&
+                            {/* {!user &&
                                 <span className="mx-auto">
                                     <Link href="designers/register">
                                         <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-2 bg-light-blue hover:bg-blue-400 transition duration-300">Sign in to apply</a>
                                     </Link>
                                 </span>
-                            }
-                            {user &&
-                                <span className="mx-auto">
-                                    <Link href="designers/register">
-                                        <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">apply now</a>
-                                    </Link>
-                                </span>
-                            }
+                            } */}
+                            {/* {user && */}
+                            <span className="mx-auto">
+                                <Link href="designers/register">
+                                    <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">apply now</a>
+                                </Link>
+                            </span>
+                            {/* } */}
                         </div>
                     </div>
 
@@ -110,8 +110,8 @@ export default function Designers() {
             </header>
 
             {/* left side section */}
-            <div className="flex justify-around space-y-2">
-                <div className="mt-8 w-[300px] h-[27.5rem] p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] z-10 hidden lg:block sticky sticky top-28">
+            <div className="flex flex-col md:flex-row justify-around space-y-2">
+                <div className="mt-8 w-[300px] h-[27.5rem] p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] md:sticky top-28 mx-auto">
                     <div className="flex flex-col p-8 space-y-4 bg-white w-72 rounded-[15px]">
                         <h1 className="text-center font-semibold">The next course starts 18.April.2022</h1>
                         <span className="text-center font-semibold">for 12 weeks</span>
@@ -122,24 +122,24 @@ export default function Designers() {
                             <li className="px-6 py-2 border-b border-gray-200 w-full">Hands on Projects</li>
                             <li className="px-6 py-2 w-full rounded-b-lg">FAQ</li>
                         </ul>
-                        {!user &&
+                        {/* {!user &&
                             <span className="mx-auto">
                                 <Link href="designers/register">
                                     <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-2 bg-light-blue hover:bg-blue-400 transition duration-300">Sign in to apply</a>
                                 </Link>
                             </span>
-                        }
-                        {user &&
-                            <span className="mx-auto">
-                                <Link href="designers/register">
-                                    <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">apply now</a>
-                                </Link>
-                            </span>
-                        }
+                        } */}
+                        {/* {user && */}
+                        <span className="mx-auto">
+                            <Link href="designers/register">
+                                <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">apply now</a>
+                            </Link>
+                        </span>
+                        {/* } */}
                     </div>
                 </div>
                 {/* right side section */}
-                <div className=" md:w-7/12 p-4 space-y-4 pt-8">
+                <div className="md:w-8/12 p-4 space-y-4 pt-8">
                     <div className="">
                         <h1 className="text-gray-400 text-xl md:text-3xl font-black">Course Overview</h1>
                         <p>Our curriculum includes a career development to help you put to use the skills leant, a video and audio lectures, assignments, and live sessions, hands on projects and mentors to help you grow</p>
@@ -150,6 +150,7 @@ export default function Designers() {
                         <ul className="space-y-2">
                             <li className="flex items-center p-4 border-b "><AiOutlineArrowRight className="text-blue-500 mr-2" /><p>Become an entry-level product designer</p></li>
                             <li className="flex items-center p-4 border-b"><AiOutlineArrowRight className="text-blue-500 mr-2" /><p>Become job ready</p></li>
+                            <li className="flex items-center p-4 border-b"><AiOutlineArrowRight className="text-blue-500 mr-2" /><p>Indentify the type of design or designers role you want to pursue</p></li>
                         </ul>
                     </div>
 
@@ -194,7 +195,7 @@ export default function Designers() {
                             </li>
                         </ol>
                     </div>
-                    <div className="">
+                    <div>
                         <h1 className="text-gray-400 text-xl md:text-3xl font-black">Projects</h1>
                         <p>Each Participant will select the Project to work on throughout the course</p>
                         <ul className="list-disc space-y-1 ml-8">
@@ -203,7 +204,7 @@ export default function Designers() {
                             <li>Other suggested projects </li>
                         </ul>
                     </div>
-                    <div className="flex flex-col items-center sm:flex-row space-y-2 sm:space-x-8 pb-8">
+                    <div className="flex flex-col items-center md:flex-wrap sm:flex-row space-y-5 sm:space-x-8 pb-8">
                         <div>
                             <h1 className="text-blue-900 font-bold text-center mb-2">Benefits</h1>
                             <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
@@ -219,19 +220,19 @@ export default function Designers() {
                             <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
                                 <ul className="space-y-8 text-baset text-center font-medium">
                                     <li className="font-bold">Beginner Level</li>
-                                    <li className="font-bold">$200</li>
+                                    <li className="font-bold">$82</li>
                                     <li>Best Value for entry</li>
                                     <li>
-                                        {!user &&
+                                        {/* {!user &&
                                             <span className="">
                                                 <Link href="designers/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Sign in to apply</a></Link>
                                             </span>
-                                        }
-                                        {user &&
+                                        } */}
+                                        {/* {user && */}
                                             <span className="">
                                                 <Link href="designers/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply Now</a></Link>
                                             </span>
-                                        }
+                                           {/* } */}
                                     </li>
                                 </ul>
                             </div>
@@ -241,19 +242,19 @@ export default function Designers() {
                             <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
                                 <ul className="space-y-8 text-baset text-center font-medium">
                                     <li className="font-bold">Advanced Level</li>
-                                    <li className="font-bold">$250</li>
+                                    <li className="font-bold">$82</li>
                                     <li>Advance your career</li>
                                     <li>
-                                        {!user &&
+                                        {/* {!user &&
                                             <span className="">
                                                 <Link href="designers/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Sign in to apply</a></Link>
                                             </span>
-                                        }
-                                        {user &&
-                                            <span className="">
+                                        } */}
+                                        {/* {user && */}
+                                            <span>
                                                 <Link href="designers/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply Now</a></Link>
                                             </span>
-                                        }
+                                            {/* } */}
                                     </li>
                                 </ul>
                             </div>

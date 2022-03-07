@@ -71,20 +71,20 @@ export default function Developers() {
                                 <li className="px-6 py-2 border-b border-gray-200 w-full">Hands on Projects</li>
                                 <li className="px-6 py-2 w-full rounded-b-lg">FAQ</li>
                             </ul>
-                            {!user &&
+                            {/* {!user &&
                                 <span className="mx-auto">
                                     <Link href="developer/register">
                                         <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-2 bg-light-blue hover:bg-blue-400 transition duration-300">Sign in to apply</a>
                                     </Link>
                                 </span>
-                            }
-                            {user &&
+                            } */}
+                            {/* {user && */}
                                 <span className="mx-auto">
                                     <Link href="developer/register">
                                         <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">Apply now</a>
                                     </Link>
                                 </span>
-                            }
+                            {/* } */}
                         </div>
                     </div>
 
@@ -109,8 +109,8 @@ export default function Developers() {
             </header>
 
             {/* left side section */}
-            <div className="flex justify-around space-y-2">
-                <div className="mt-8 w-[300px] h-[27.5rem] p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] z-10 hidden lg:block sticky sticky top-28">
+            <div className="flex flex-col md:flex-row justify-around space-y-2">
+                <div className="mt-8 w-[300px] h-[27.5rem] p-[5px] bg-gradient-to-r from-blue-500 to-red-400 rounded-[15px] md:sticky top-28 mx-auto">
                     <div className="flex flex-col p-8 space-y-4 bg-white w-72 rounded-[15px]">
                         <h1 className="text-center font-semibold">The next course starts 04.April.2022</h1>
                         <span className="text-center font-semibold">for 12 weeks</span>
@@ -121,24 +121,24 @@ export default function Developers() {
                             <li className="px-6 py-2 border-b border-gray-200 w-full">Hands on Projects</li>
                             <li className="px-6 py-2 w-full rounded-b-lg">FAQ</li>
                         </ul>
-                        {!user &&
+                        {/* {!user &&
                             <span className="mx-auto">
                                 <Link href="developer/register">
                                     <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-2 bg-light-blue hover:bg-blue-400 transition duration-300">Sign in to apply</a>
                                 </Link>
                             </span>
-                        }
-                        {user &&
+                        } */}
+                        {/* {user && */}
                             <span className="mx-auto">
                                 <Link href="developer/register">
                                     <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">Apply now</a>
                                 </Link>
                             </span>
-                        }
+                        {/* } */}
                     </div>
                 </div>
                 {/* right side section */}
-                <div className=" md:w-7/12 p-4 space-y-4 pt-8">
+                <div className="md:w-8/12 p-4 space-y-4 pt-8">
                     <div className="">
                         <h1 className="text-gray-400 text-xl md:text-3xl font-black">Course Overview</h1>
                         <p>Our curriculum includes a career development to help you put to use the skills leant, a video and audio lectures, assignments, and live sessions, hands on projects and mentors to help you grow</p>
@@ -168,19 +168,10 @@ export default function Developers() {
                             <li>
                                 <div className="flex flex-start items-center">
                                     <div className="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
-                                    <h4 className="text-gray-800 font-semibold md:text-lg -mt-2">Low-Fidelity Design</h4>
+                                    <h4 className="text-gray-800 font-semibold md:text-lg -mt-2">Advanced Front-End Web Development</h4>
                                 </div>
                                 <div className="ml-6 mb-2 pb-2">
-                                    <p className="text-gray-700 mt-2 mb-4">To create simple and low-tech concepts, all you need to get started is a pen and paper. The goal is to turn your ideas into testable artifacts that you can then use to collect and analyze feedback in the early stages.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="flex flex-start items-center">
-                                    <div className="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
-                                    <h4 className="text-gray-800 font-semibold md:text-lg -mt-2">High-Fidelity Design</h4>
-                                </div>
-                                <div className="ml-6 mb-2 pb-2">
-                                    <p className="text-gray-700 mt-2 mb-4">Create computer-based, and allow realistic (mouse-keyboard) user interactions. High-fidelity prototypes take you as close as possible to a true representation of the user interface.</p>
+                                    <p className="text-gray-700 mt-2 mb-4">Understand JAM Stack, Reactjs, Nextjs, Firebase, Fetch API, Strapi, Capstone Project to be able to build and host A product on netlify: An interactive and dynamic single page application with Reatjs and Firebase and build and host A product on vercel:An interactive and dynamic production ready application with Nextjs and headless CMS(Strapi).</p>
                                 </div>
                             </li>
                             <li>
@@ -189,7 +180,7 @@ export default function Developers() {
                                     <h4 className="text-gray-800 font-semibold md:text-lg -mt-2">Personal Branding</h4>
                                 </div>
                                 <div className="ml-6 mb-2 pb-2">
-                                    <p className="text-gray-700 mt-2 mb-4">Create an online portfolio to showcase UX design work and also learn best practices for building a professional network.</p>
+                                    <p className="text-gray-700 mt-2 mb-4">Create an online portfolio to showcase work and also learn best practices for building a professional network.</p>
                                 </div>
                             </li>
                         </ol>
@@ -198,7 +189,7 @@ export default function Developers() {
                         <h1 className="text-gray-400 text-xl md:text-3xl font-black">Projects</h1>
                         <p>Each Participant will select the Project to work on throughout the course</p>
                     </div>
-                    <div className="flex flex-col items-center sm:flex-row space-y-2 sm:space-x-8 pb-8">
+                    <div className="flex flex-col items-center md:flex-wrap sm:flex-row space-y-5 sm:space-x-8 pb-8">
                         <div>
                             <h1 className="text-blue-900 font-bold text-center mb-2">Benefits</h1>
                             <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
@@ -217,16 +208,16 @@ export default function Developers() {
                                     <li className="font-bold">$200</li>
                                     <li>Best Value for entry</li>
                                     <li>
-                                        {!user &&
+                                        {/* {!user &&
                                             <span className="">
                                                 <Link href="developer/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Sign in to apply</a></Link>
                                             </span>
-                                        }
-                                        {user &&
+                                        } */}
+                                        {/* {user && */}
                                             <span className="">
                                                 <Link href="developer/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply Now</a></Link>
                                             </span>
-                                        }
+                                        {/* } */}
                                     </li>
                                 </ul>
                             </div>
@@ -239,16 +230,16 @@ export default function Developers() {
                                     <li className="font-bold">$250</li>
                                     <li>Advance your career</li>
                                     <li>
-                                        {!user &&
+                                        {/* {!user &&
                                             <span className="">
                                                 <Link href="developer/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Sign in to apply</a></Link>
                                             </span>
-                                        }
-                                        {user &&
+                                          } */}
+                                        {/* {user && */}
                                             <span className="">
                                                 <Link href="developer/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply Now</a></Link>
                                             </span>
-                                        }
+                                         {/* } */}
                                     </li>
                                 </ul>
                             </div>
