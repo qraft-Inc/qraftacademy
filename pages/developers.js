@@ -149,7 +149,7 @@ export default function Developers() {
                         <ul className="space-y-2">
                             <li className="flex items-center p-4 border-b "><AiOutlineArrowRight className="text-blue-500 mr-2" /><p>Become an entry-level software developer</p></li>
                             <li className="flex items-center p-4 border-b"><AiOutlineArrowRight className="text-blue-500 mr-2" /><p>Become job ready</p></li>
-                            <li className="flex items-center p-4 border-b"><AiOutlineArrowRight className="text-blue-500 mr-2" /><p>Identify the type of developer or developer role you want top pursue</p></li>
+                            <li className="flex items-center p-4 border-b"><AiOutlineArrowRight className="text-blue-500 mr-2" /><p>Identify the type of developer or developer role you want to pursue</p></li>
                         </ul>
                     </div>
 
@@ -159,10 +159,10 @@ export default function Developers() {
                             <li>
                                 <div className="flex flex-start items-center">
                                     <div className="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
-                                    <h4 className="text-gray-800 font-semibold md:text-lg -mt-2">Fundamentals Of Software Developement</h4>
+                                    <h4 className="text-gray-800 font-semibold md:text-lg -mt-2">Front-End Web Development</h4>
                                 </div>
                                 <div className="ml-6 mb-2 pb-2">
-                                    <p className="text-gray-700 mt-2 mb-4">Explore Tools, and frameworks, principle in UX design and identify alternatives roles of designers.</p>
+                                    <p className="text-gray-700 mt-2 mb-4">Understand HTML, CSS, Javascript, Git, Github and Netlify, Capstone Project, to be able to Build and Host A Static Personal Portfolio Website on netlify with HTML, CSS, and version control and give your static personal Portfolio Website interactive features with vanilla Javascript.</p>
                                 </div>
                             </li>
                             <li>
@@ -194,9 +194,9 @@ export default function Developers() {
                             <h1 className="text-blue-900 font-bold text-center mb-2">Benefits</h1>
                             <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
                                 <ul className="space-y-8 text-baset text-center font-medium">
-                                    <li>One on career mentorship</li>
+                                    <li>One on one career mentorship</li>
                                     <li>Free Apprenticeship</li>
-                                    <li>Community of Designers</li>
+                                    <li>A Community of like minded people</li>
                                 </ul>
                             </div>
                         </div>
@@ -205,7 +205,7 @@ export default function Developers() {
                             <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
                                 <ul className="space-y-8 text-baset text-center font-medium">
                                     <li className="font-bold">Beginner Level</li>
-                                    <li className="font-bold">$200</li>
+                                    <li className="font-bold">$68</li>
                                     <li>Best Value for entry</li>
                                     <li>
                                         {/* {!user &&
@@ -227,7 +227,7 @@ export default function Developers() {
                             <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
                                 <ul className="space-y-8 text-baset text-center font-medium">
                                     <li className="font-bold">Advanced Level</li>
-                                    <li className="font-bold">$250</li>
+                                    <li className="font-bold">$68</li>
                                     <li>Advance your career</li>
                                     <li>
                                         {/* {!user &&

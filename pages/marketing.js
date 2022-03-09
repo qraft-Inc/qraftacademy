@@ -187,7 +187,7 @@ export default function Marketing() {
                             <h1 className="text-blue-900 font-bold text-center mb-2">Benefits</h1>
                             <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
                                 <ul className="space-y-8 text-baset text-center font-medium">
-                                    <li>One on career mentorship</li>
+                                    <li>One on one career mentorship</li>
                                     <li>Free Apprenticeship</li>
                                     <li>Community of Designers</li>
                                 </ul>
@@ -198,7 +198,7 @@ export default function Marketing() {
                             <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
                                 <ul className="space-y-8 text-baset text-center font-medium">
                                     <li className="font-bold">Beginner Level</li>
-                                    <li className="font-bold">$200</li>
+                                    <li className="font-bold">$68</li>
                                     <li>Best Value for entry</li>
                                     <li>
                                         {/* {!user &&
@@ -220,7 +220,7 @@ export default function Marketing() {
                             <div className="block p-6 rounded-2xl shadow-lg bg-white w-48 bg-gray-300">
                                 <ul className="space-y-8 text-baset text-center font-medium">
                                     <li className="font-bold">Advanced Level</li>
-                                    <li className="font-bold">$250</li>
+                                    <li className="font-bold">$68</li>
                                     <li>Advance your career</li>
                                     <li>
                                         {/* {!user &&
