@@ -30,17 +30,27 @@
    |----pages
    |   |-- api
    |   | |-- auth
-   |   |   |-- auth0
+   |   | | |-- auth0.js
    |   |-- designers
-   |   | |-- register
+   |   | |-- register.js
    |   |-- developer
-   |   | |-- register
+   |   | |-- register.js
    |   |-- marketing
-   |   | |-- register
+   |   | |-- register.js
+   |   |-- app.js
+   |   |-- about.js
+   |   |-- careers.js
+   |   |-- contact.js
+   |   |-- designers.js
+   |   |-- developers.js
+   |   |-- index.js
+   |   |-- marketing.js
+   |   |-- tracks.js
    |----public
-   |   |-- 
+   |   |--favicon.ico
    |----styles
-   |   |-- 
+   |   |--global.css
+   |   |--index.module.css
 ```
 
 ## Usage
