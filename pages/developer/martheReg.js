@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const martheReg = () => {
+export default function martheReg() {
   return (
     <div>martheReg</div>
   )

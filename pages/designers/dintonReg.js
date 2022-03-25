@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const dintonReg = () => {
+export default function dintonReg() {
   return (
     <div>dintonReg</div>
   )
