@@ -28,5 +28,17 @@
     "eslint-config-next": "11.1.0",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qraft-Inc/the-apprentice-cycle.git"
+  },
+  "author": "Dinton Harold Ainemukama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qraft-Inc/the-apprentice-cycle/issues"
+  },
+  "homepage": "https://github.com/qraft-Inc/the-apprentice-cycle#readme"
 }
