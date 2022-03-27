@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function dintonReg() {
-  return (
-    <div>dintonReg</div>
-  )
+  return <div>dintonReg</div>;
 }
