@@ -32,3 +32,5 @@ yarn-error.log*
 
 # vercel
 .vercel
+#Trial file for my registration page
+/pages/designers/dintonRegTrial.js
