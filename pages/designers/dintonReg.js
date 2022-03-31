@@ -21,39 +21,187 @@ export default function dintonReg() {
           and transition of career
         </p>
       </div>
-      {/* EMAIL CARD */}
+
       <form action="">
+        {/* EMAIL CARD */}
         <div
           className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
           style={{ width: 900, height: 176 }}
         >
           {/* email title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <p className="text-2xl font-medium">Email</p>
+            <label className="text-2xl font-medium" for="email">
+              Email
+            </label>
             <FaAsterisk color="red" />
           </div>
           {/* email input with placeholder */}
-          {/* <div
-          className="flex flex-col space-y-6 items-start justify-start py-2"
-          style={{ width: 560, height: 59 }}
-        >
-          <p className="text-base font-light text-gray-400">Your email</p>
-          <div className="border-gray-400" style={{ width: 560, height: 1 }} />
-        </div> */}
           <div
-            className=" flex flex-col space-y-6 items-start justify-start py-2"
+            className=" flex flex-col  items-start justify-start  border-b border-gray-400"
             style={{ width: 560, height: 59 }}
           >
             <input
-              class="appearance-none bg-transparent  w-full text-gray-700 mr-3  leading-tight border-b border-gray-400 "
+              class="appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight  "
               type="email"
               placeholder="Your email"
               aria-label="email"
+              id="email"
             />
+          </div>
+        </div>
+        {/* NAME CARD */}
+        <div
+          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
+          style={{ width: 900, height: 176 }}
+        >
+          {/* Full name title and asterik icon */}
+          <div className="inline-flex space-x-2 items-center justify-start ">
+            <label className="text-2xl font-medium" for="fullname">
+              Full Name
+            </label>
+            <FaAsterisk color="red" />
+          </div>
+          {/* Full name input with placeholder */}
+          <div
+            className=" flex flex-col  items-start justify-start  border-b border-gray-400"
+            style={{ width: 560, height: 59 }}
+          >
+            <input
+              class="appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight  "
+              type="text"
+              placeholder="Your answer"
+              aria-label="fullname"
+              id="fullname"
+              name="fullname"
+            />
+          </div>
+        </div>
+        {/* CONTACT CARD */}
+        <div
+          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
+          style={{ width: 900, height: 176 }}
+        >
+          {/* phone number title and asterik icon */}
+          <div className="inline-flex space-x-2 items-center justify-start ">
+            <label className="text-2xl font-medium" for="telephone">
+              Phone Number
+            </label>
+            <FaAsterisk color="red" />
+          </div>
+          {/* telephone input with placeholder */}
+          <div
+            className=" flex flex-col  items-start justify-start  border-b border-gray-400"
+            style={{ width: 560, height: 59 }}
+          >
+            <input
+              class="appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight  "
+              type="tel"
+              placeholder="Your answer"
+              aria-label="telephone"
+              id="telephone"
+              name="telephone"
+            />
+          </div>
+        </div>
+        {/*CV CARD */}
+        <div
+          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
+          style={{ width: 900, height: 176 }}
+        >
+          {/* cv title and asterik icon */}
+          <div className="inline-flex space-x-2 items-center justify-start ">
+            <label className="text-2xl font-medium" for="cv">
+              Link your CV
+            </label>
+            <FaAsterisk color="red" />
+          </div>
+          {/* cv input with placeholder */}
+          <div
+            className=" flex flex-col  items-start justify-start  border-b border-gray-400"
+            style={{ width: 560, height: 59 }}
+          >
+            <input
+              class="appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight  "
+              type="url"
+              placeholder="Your answer"
+              aria-label="cv"
+              id="cv"
+              name="cv"
+            />
+          </div>
+        </div>
+        {/* COVER LETTER CARD */}
+        <div
+          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
+          style={{ width: 900, height: 176 }}
+        >
+          {/* cover letter title and asterik icon */}
+          <div className="inline-flex space-x-2 items-center justify-start ">
+            <label className="text-2xl font-medium" for="letter">
+              Link to your Cover Letter
+            </label>
+            <FaAsterisk color="red" />
+          </div>
+          {/* cover letter input with placeholder */}
+          <div
+            className=" flex flex-col  items-start justify-start  border-b border-gray-400"
+            style={{ width: 560, height: 59 }}
+          >
+            <input
+              class="appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight  "
+              type="url"
+              placeholder="Your answer"
+              aria-label="letter"
+              id="letter"
+              name="letter"
+            />
+          </div>
+        </div>
+        {/* PROGRAM CARD */}
+        <div
+          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
+          style={{ width: 900, height: 270 }}
+        >
+          {/* program title and asterik icon */}
+          <div className="inline-flex space-x-2 items-center justify-start ">
+            <p className="text-2xl font-medium">
+              What Program are you enrolling for?
+            </p>
+            <FaAsterisk color="red" />
+          </div>
+          {/* Different programs and their radio buttons */}
+          <div className="flex flex-col" style={{ width: 560, height: 59 }}>
+            {/* <input type="radio" id="html" name="fav_language" value="HTML"> */}
+            <input
+              type="radio"
+              name="program"
+              id="product_design"
+              value="Product Design"
+            />
+            <label for="product_design" className="ml-4">
+              Product Design
+            </label>
+            <input
+              type="radio"
+              name="program"
+              id="digital_marketing"
+              value="Digital Marketing"
+            />
+            <label for="digital_marketing" className="ml-4">
+              Digital Marketing
+            </label>
+            <input
+              type="radio"
+              name="program"
+              id="software_development"
+              value="Software Development"
+            />
+            <label for="software_development" className="ml-4">
+              Software Development
+            </label>
           </div>
         </div>
       </form>
     </div>
   );
-  
 }
