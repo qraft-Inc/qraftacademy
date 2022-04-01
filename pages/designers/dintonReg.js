@@ -5,16 +5,16 @@ export default function dintonReg() {
     // INTRODUCTION
     <div className="container mt-40 mx-auto mb-40">
       <div
-        className="flex flex-col space-y-6 items-start justify-center px-6 py-10 border rounded border-black mx-auto"
-        style={{ width: 900, height: 498.34 }}
+        className="container flex flex-col space-y-6 items-start justify-center px-6 py-10 border rounded border-black mx-auto"
+        // style={{ width: 900, height: 498.34 }}
       >
         <p
-          className="text-5xl font-extrabold leading-10"
-          style={{ width: 852, height: 194.34 }}
+          className="text-5xl font-extrabold leading-10 sm:w-1/2 xl:w-full"
+          // style={{ width: 852, height: 194.34 }}
         >
           QRAFT NIGHT SCHOOL APPLICATION FORM-UI/UX Track 2022
         </p>
-        <p className="text-4xl font-semibold leading-10" style={{ width: 852 }}>
+        <p className="text-4xl font-semibold leading-10" >
           Life is an ongoing learning process and this Night school gives you an
           opportunity to learn a new skill that will help you remain relevant in
           your field, earn more money through side hustles or realize big dreams
@@ -22,7 +22,7 @@ export default function dintonReg() {
         </p>
       </div>
 
-      <form action="">
+      <form action="" className="w-full">
         {/* EMAIL CARD */}
         <div
           className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
@@ -41,7 +41,7 @@ export default function dintonReg() {
             style={{ width: 560, height: 59 }}
           >
             <input
-              className="appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight  "
+              className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight outline-none focus:border-gray-400"
               type="email"
               placeholder="Your email"
               aria-label="email"
@@ -171,10 +171,11 @@ export default function dintonReg() {
             <FaAsterisk color="red" />
           </div>
           {/* Different programs and their radio buttons */}
-          <div className="flex flex-col" style={{ width: 560, height: 59 }}>
+          <div className="" style={{ width: 560, height: 59 }}>
             {/* <input type="radio" id="html" name="fav_language" value="HTML"> */}
             <input
               type="radio"
+              className="form-radio"
               name="program"
               id="product_design"
               value="Product Design"
@@ -182,6 +183,7 @@ export default function dintonReg() {
             <label for="product_design" className="ml-4">
               Product Design
             </label>
+            <br></br>
             <input
               type="radio"
               name="program"
@@ -191,11 +193,13 @@ export default function dintonReg() {
             <label for="digital_marketing" className="ml-4">
               Digital Marketing
             </label>
+            <br></br>
             <input
               type="radio"
               name="program"
               id="software_development"
               value="Software Development"
+              className="form-radio"
             />
             <label for="software_development" className="ml-4">
               Software Development
@@ -230,8 +234,8 @@ export default function dintonReg() {
         form-control
         block
         w-full
-        px-3
-        py-1.5
+        px-4
+        py-3
         text-base
         font-normal
         text-gray-700
@@ -276,8 +280,8 @@ export default function dintonReg() {
         form-control
         block
         w-full
-        px-3
-        py-1.5
+        px-4
+        py-3
         text-base
         font-normal
         text-gray-700
@@ -323,8 +327,8 @@ export default function dintonReg() {
         form-control
         block
         w-full
-        px-3
-        py-1.5
+        px-4
+        py-3
         text-base
         font-normal
         text-gray-700
@@ -369,8 +373,8 @@ export default function dintonReg() {
         form-control
         block
         w-full
-        px-3
-        py-1.5
+        px-4
+        py-3
         text-base
         font-normal
         text-gray-700
@@ -415,8 +419,8 @@ export default function dintonReg() {
         form-control
         block
         w-full
-        px-3
-        py-1.5
+        px-4
+        py-3
         text-base
         font-normal
         text-gray-700
@@ -447,7 +451,7 @@ export default function dintonReg() {
             <FaAsterisk color="red" />
           </div>
           {/* Different roles and their radio buttons */}
-          <div className="flex flex-col" style={{ width: 560, height: 59 }}>
+          <div className="" style={{ width: 560, height: 59 }}>
             {/* <input type="radio" id="html" name="fav_language" value="HTML"> */}
             <input
               type="radio"
@@ -458,6 +462,8 @@ export default function dintonReg() {
             <label for="highly_independent_role" className="ml-4">
               Highly independent role
             </label>
+            <br></br>
+
             <input
               type="radio"
               name="role"
@@ -467,6 +473,7 @@ export default function dintonReg() {
             <label for="team_based" className="ml-4">
               Team Based
             </label>
+            <br></br>
             <input
               type="radio"
               name="role"
@@ -476,6 +483,7 @@ export default function dintonReg() {
             <label for="strong_people_skills" className="ml-4">
               Strong people skills Role
             </label>
+            <br></br>
             <input
               type="radio"
               name="role"
@@ -579,6 +587,14 @@ export default function dintonReg() {
               placeholder="Your Answer"
             ></textarea>
           </div>
+        </div>
+        <div className="container mx-auto">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-auto"
+            type="submit"
+          >
+            Submit
+          </button>
         </div>
       </form>
     </div>
