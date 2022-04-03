@@ -3,45 +3,42 @@ import { FaAsterisk } from "react-icons/fa";
 export default function dintonReg() {
   return (
     // INTRODUCTION
-    <div className="container mt-40 mx-auto mb-40">
+    <div className="container mt-40 mx-auto mb-40 w-1/2">
       <div
-        className="container flex flex-col space-y-6 items-start justify-center px-6 py-10 border rounded border-black mx-auto"
+        className="container flex flex-col space-y-6 items-start justify-center px-6 py-10 border rounded border-black"
         // style={{ width: 900, height: 498.34 }}
       >
         <p
-          className="text-5xl font-extrabold leading-10 sm:w-1/2 xl:w-full"
+          className="text-3xl sm:text-4xl font-extrabold w-full"
           // style={{ width: 852, height: 194.34 }}
         >
           QRAFT NIGHT SCHOOL APPLICATION FORM-UI/UX Track 2022
         </p>
-        <p className="text-4xl font-semibold leading-10" >
+        <p className="text-xl sm:text-2xl font-semibold w-full">
           Life is an ongoing learning process and this Night school gives you an
           opportunity to learn a new skill that will help you remain relevant in
           your field, earn more money through side hustles or realize big dreams
-          and transition of career
+          and transition of career.
         </p>
       </div>
 
       <form action="" className="w-full">
         {/* EMAIL CARD */}
         <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 176 }}
+          className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
+          // style={{ width: 900, height: 176 }}
         >
           {/* email title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <label className="text-2xl font-medium" for="email">
+            <label className="text-lg sm:text-xl font-medium" for="email">
               Email
             </label>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
           {/* email input with placeholder */}
-          <div
-            className=" flex flex-col  items-start justify-start  border-b border-gray-400"
-            style={{ width: 560, height: 59 }}
-          >
+          <div className=" flex flex-col  items-start justify-start  border-b border-gray-400">
             <input
-              className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight outline-none focus:border-gray-400"
+              className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight outline-none focus:border-gray-400 placeholder:italic"
               type="email"
               placeholder="Your email"
               aria-label="email"
@@ -51,22 +48,16 @@ export default function dintonReg() {
           </div>
         </div>
         {/* NAME CARD */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 176 }}
-        >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* Full name title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <label className="text-2xl font-medium" for="fullname">
+            <label className="text-lg sm:text-xl font-medium" for="fullname">
               Full Name
             </label>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
           {/* Full name input with placeholder */}
-          <div
-            className=" flex flex-col  items-start justify-start  border-b border-gray-400"
-            style={{ width: 560, height: 59 }}
-          >
+          <div className=" flex flex-col  items-start justify-start  border-b border-gray-400">
             <input
               className="appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight  "
               type="text"
@@ -78,22 +69,16 @@ export default function dintonReg() {
           </div>
         </div>
         {/* CONTACT CARD */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 176 }}
-        >
+        <div className="container flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* phone number title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <label className="text-2xl font-medium" for="telephone">
+            <label className="text-lg sm:text-xl font-medium" for="telephone">
               Phone Number
             </label>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
           {/* telephone input with placeholder */}
-          <div
-            className=" flex flex-col  items-start justify-start  border-b border-gray-400"
-            style={{ width: 560, height: 59 }}
-          >
+          <div className=" flex flex-col  items-start justify-start  border-b border-gray-400">
             <input
               className="appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight  "
               type="tel"
@@ -105,22 +90,16 @@ export default function dintonReg() {
           </div>
         </div>
         {/*CV CARD */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 176 }}
-        >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* cv title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <label className="text-2xl font-medium" for="cv">
+            <label className="text-lg sm:text-xl font-medium" for="cv">
               Link your CV
             </label>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
           {/* cv input with placeholder */}
-          <div
-            className=" flex flex-col  items-start justify-start  border-b border-gray-400"
-            style={{ width: 560, height: 59 }}
-          >
+          <div className=" flex flex-col  items-start justify-start  border-b border-gray-400">
             <input
               className="appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight  "
               type="url"
@@ -132,22 +111,16 @@ export default function dintonReg() {
           </div>
         </div>
         {/* COVER LETTER CARD */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 176 }}
-        >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* cover letter title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <label className="text-2xl font-medium" for="letter">
+            <label className="text-lg sm:text-xl font-medium" for="letter">
               Link to your Cover Letter
             </label>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
           {/* cover letter input with placeholder */}
-          <div
-            className=" flex flex-col  items-start justify-start  border-b border-gray-400"
-            style={{ width: 560, height: 59 }}
-          >
+          <div className=" flex flex-col  items-start justify-start  border-b border-gray-400">
             <input
               className="appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight  "
               type="url"
@@ -159,19 +132,16 @@ export default function dintonReg() {
           </div>
         </div>
         {/* PROGRAM CARD */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 270 }}
-        >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* program title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <p className="text-2xl font-medium">
+            <p className="text-lg sm:text-xl font-medium">
               What Program are you enrolling for?
             </p>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
           {/* Different programs and their radio buttons */}
-          <div className="" style={{ width: 560, height: 59 }}>
+          <div className="">
             {/* <input type="radio" id="html" name="fav_language" value="HTML"> */}
             <input
               type="radio"
@@ -207,28 +177,18 @@ export default function dintonReg() {
           </div>
         </div>
         {/* HOW YOU GOT TO KNOW ABOUT QRAFT CARD */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 205 }}
-        >
-          <div
-            className="inline-flex space-x-2 items-start justify-start"
-            style={{ width: 635, height: 58 }}
-          >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
+          <div className="inline-flex space-x-2 items-start justify-start">
             <label
               for="inspiration_to_apply"
-              className="text-2xl font-medium leading-loose"
-              style={{ width: 800, height: 58 }}
+              className="text-lg sm:text-xl font-medium leading-loose"
             >
               How did you learn about Qraft Academy. What inspired /motivated
               you to apply for this program?
             </label>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
-          <div
-            className="flex flex-col space-y-6 items-start justify-start py-2"
-            style={{ width: 560, height: 59 }}
-          >
+          <div className="flex flex-col space-y-6 items-start justify-start py-2">
             <textarea
               className="
         form-control
@@ -254,27 +214,17 @@ export default function dintonReg() {
           </div>
         </div>
         {/* EXPECTATIONS FROM THE PROGRAM */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 205 }}
-        >
-          <div
-            className="inline-flex space-x-2 items-start justify-start"
-            style={{ width: 635, height: 58 }}
-          >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
+          <div className="inline-flex space-x-2 items-start justify-start">
             <label
               for="expectations_from_program"
-              className="text-2xl font-medium leading-loose"
-              style={{ width: 800, height: 58 }}
+              className="text-lg sm:text-xl font-medium leading-loose"
             >
               What are your expectations from this program?
             </label>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
-          <div
-            className="flex flex-col space-y-6 items-start justify-start py-2"
-            style={{ width: 560, height: 59 }}
-          >
+          <div className="flex flex-col space-y-6 items-start justify-start py-2">
             <textarea
               className="
         form-control
@@ -300,28 +250,18 @@ export default function dintonReg() {
           </div>
         </div>
         {/* WHAT ARE YOU CURRENTLY WORKING ON */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 205 }}
-        >
-          <div
-            className="inline-flex space-x-2 items-start justify-start"
-            style={{ width: 635, height: 58 }}
-          >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
+          <div className="inline-flex space-x-2 items-start justify-start">
             <label
               for="currently_working_on"
-              className="text-2xl font-medium leading-loose"
-              style={{ width: 800, height: 58 }}
+              className="text-lg sm:text-xl font-medium leading-loose"
             >
               What are you working on currently? and How do you keep your
               designing skills current?
             </label>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
-          <div
-            className="flex flex-col space-y-6 items-start justify-start py-2"
-            style={{ width: 560, height: 59 }}
-          >
+          <div className="flex flex-col space-y-6 items-start justify-start py-2">
             <textarea
               className="
         form-control
@@ -347,27 +287,17 @@ export default function dintonReg() {
           </div>
         </div>
         {/* DESIGN TOOLS */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 205 }}
-        >
-          <div
-            className="inline-flex space-x-2 items-start justify-start"
-            style={{ width: 635, height: 58 }}
-          >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
+          <div className="inline-flex space-x-2 items-start justify-start">
             <label
               for="design_tools"
-              className="text-2xl font-medium leading-loose"
-              style={{ width: 800, height: 58 }}
+              className="text-lg sm:text-xl font-medium leading-loose"
             >
               What are your favorite and least favorite design tools, and why?
             </label>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
-          <div
-            className="flex flex-col space-y-6 items-start justify-start py-2"
-            style={{ width: 560, height: 59 }}
-          >
+          <div className="flex flex-col space-y-6 items-start justify-start py-2">
             <textarea
               className="
         form-control
@@ -393,27 +323,17 @@ export default function dintonReg() {
           </div>
         </div>
         {/* PROUD ACHIEVEMENT */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 205 }}
-        >
-          <div
-            className="inline-flex space-x-2 items-start justify-start"
-            style={{ width: 635, height: 58 }}
-          >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
+          <div className="inline-flex space-x-2 items-start justify-start">
             <label
               for="proud_achievement"
-              className="text-2xl font-medium leading-loose"
-              style={{ width: 800, height: 58 }}
+              className="text-lg sm:text-xl font-medium leading-loose"
             >
               what is your most proud of achievement so far?
             </label>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
-          <div
-            className="flex flex-col space-y-6 items-start justify-start py-2"
-            style={{ width: 560, height: 59 }}
-          >
+          <div className="flex flex-col space-y-6 items-start justify-start py-2">
             <textarea
               className="
         form-control
@@ -439,19 +359,16 @@ export default function dintonReg() {
           </div>
         </div>
         {/* ROLE */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 350 }}
-        >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* role title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <p className="text-2xl font-medium">
+            <p className="text-lg sm:text-xl font-medium">
               What type of role best suits you?
             </p>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
           {/* Different roles and their radio buttons */}
-          <div className="" style={{ width: 560, height: 59 }}>
+          <div className="">
             {/* <input type="radio" id="html" name="fav_language" value="HTML"> */}
             <input
               type="radio"
@@ -496,28 +413,18 @@ export default function dintonReg() {
           </div>
         </div>
         {/* SOMETHING YOU BELIEVED IN */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 205 }}
-        >
-          <div
-            className="inline-flex space-x-2 items-start justify-start"
-            style={{ width: 635, height: 58 }}
-          >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
+          <div className="inline-flex space-x-2 items-start justify-start">
             <label
               for="something_you_believed_in"
-              className="text-2xl font-medium leading-loose"
-              style={{ width: 800, height: 58 }}
+              className="text-lg sm:text-xl font-medium leading-loose"
             >
               When was the last time you stood up for something that you
               believed in? What was your motivation? How did it turn out?
             </label>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
-          <div
-            className="flex flex-col space-y-6 items-start justify-start py-2"
-            style={{ width: 560, height: 59 }}
-          >
+          <div className="flex flex-col space-y-6 items-start justify-start py-2">
             <textarea
               className="
         form-control
@@ -543,27 +450,17 @@ export default function dintonReg() {
           </div>
         </div>
         {/*YOUR GOAL */}
-        <div
-          className="flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          style={{ width: 900, height: 205 }}
-        >
-          <div
-            className="inline-flex space-x-2 items-start justify-start"
-            style={{ width: 635, height: 58 }}
-          >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
+          <div className="inline-flex space-x-2 items-start justify-start">
             <label
               for="your_goal"
-              className="text-2xl font-medium leading-loose"
-              style={{ width: 800, height: 58 }}
+              className="text-lg sm:text-xl font-medium leading-loose"
             >
               Professionally, what’s your goal?
             </label>
-            <FaAsterisk color="red" />
+            <FaAsterisk size="0.5em" color="red" />
           </div>
-          <div
-            className="flex flex-col space-y-6 items-start justify-start py-2"
-            style={{ width: 560, height: 59 }}
-          >
+          <div className="flex flex-col space-y-6 items-start justify-start py-2">
             <textarea
               className="
         form-control
