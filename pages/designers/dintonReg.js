@@ -4,14 +4,8 @@ export default function dintonReg() {
   return (
     // INTRODUCTION
     <div className="container mt-40 mx-auto mb-40 w-4/5 sm:w-3/5">
-      <div
-        className="container flex flex-col space-y-6 items-start justify-center px-6 py-10 border rounded border-black"
-        // style={{ width: 900, height: 498.34 }}
-      >
-        <p
-          className="text-3xl sm:text-4xl font-extrabold w-full"
-          // style={{ width: 852, height: 194.34 }}
-        >
+      <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-10 border rounded border-black">
+        <p className="text-3xl sm:text-4xl font-extrabold w-full">
           QRAFT NIGHT SCHOOL APPLICATION FORM-UI/UX TRACK 2022
         </p>
         <p className="text-xl sm:text-2xl font-semibold w-full">
@@ -24,10 +18,7 @@ export default function dintonReg() {
 
       <form action="" className="w-full">
         {/* EMAIL CARD */}
-        <div
-          className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16"
-          // style={{ width: 900, height: 176 }}
-        >
+        <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* email title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
             <label className="text-lg sm:text-xl font-medium" for="email">
@@ -142,7 +133,6 @@ export default function dintonReg() {
           </div>
           {/* Different programs and their radio buttons */}
           <div className="">
-            {/* <input type="radio" id="html" name="fav_language" value="HTML"> */}
             <input
               type="radio"
               className="form-radio"
@@ -184,15 +174,15 @@ export default function dintonReg() {
         </div>
         {/* HOW YOU GOT TO KNOW ABOUT QRAFT CARD */}
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
-          <div className="inline-flex space-x-2 items-start justify-start">
+          <div className="inline-flex items-start justify-start">
             <label
               for="inspiration_to_apply"
-              className="text-lg sm:text-xl font-medium leading-loose"
+              className="text-lg sm:text-xl font-medium  w-5/6"
             >
               How did you learn about Qraft Academy. What inspired /motivated
               you to apply for this program?
             </label>
-            <FaAsterisk size="0.5em" color="red" />
+            <FaAsterisk size="0.5em" color="red" className="w-1/6" />
           </div>
           <div className="flex flex-col space-y-6 items-start justify-start py-2 w-5/6">
             <textarea
@@ -296,7 +286,7 @@ export default function dintonReg() {
           <div className="inline-flex space-x-2 items-start justify-start">
             <label
               for="design_tools"
-              className="text-lg sm:text-xl font-medium leading-loose"
+              className="text-lg sm:text-xl font-medium"
             >
               What are your favorite and least favorite design tools, and why?
             </label>
@@ -374,7 +364,6 @@ export default function dintonReg() {
           </div>
           {/* Different roles and their radio buttons */}
           <div className="">
-            {/* <input type="radio" id="html" name="fav_language" value="HTML"> */}
             <input
               type="radio"
               name="role"
@@ -428,15 +417,15 @@ export default function dintonReg() {
         </div>
         {/* SOMETHING YOU BELIEVED IN */}
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
-          <div className="inline-flex space-x-2 items-start justify-start">
+          <div className="flex space-x-2 items-start justify-start">
             <label
               for="something_you_believed_in"
-              className="text-lg sm:text-xl font-medium leading-loose"
+              className="text-lg sm:text-xl font-medium w-5/6"
             >
               When was the last time you stood up for something that you
               believed in? What was your motivation? How did it turn out?
             </label>
-            <FaAsterisk size="0.5em" color="red" />
+            <FaAsterisk size="0.5em" color="red" className="w-1/6" />
           </div>
           <div className="flex flex-col space-y-6 items-start justify-start py-2 w-5/6">
             <textarea
