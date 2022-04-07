@@ -324,7 +324,7 @@ export default function dintonReg() {
               for="proud_achievement"
               className="text-lg sm:text-xl font-medium leading-loose"
             >
-              what is your most proud of achievement so far?
+              What is your most proud of achievement so far?
             </label>
             <FaAsterisk size="0.5em" color="red" />
           </div>
