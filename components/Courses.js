@@ -97,6 +97,33 @@ export default function Courses() {
               </article>
             </figure>
           </SwiperSlide>
+
+           {/*Data Literacy*/}
+           <SwiperSlide className="p-8">
+            <figure className="md:grid md:grid-cols-2 mb-12">
+                <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
+                <Image
+                  src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.qlik.com%2Fblog%2Fsolving-the-data-literacy-gap&psig=AOvVaw2VVdH5yi05064suPDQyc8N&ust=1651053537918000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOCkz_C7sfcCFQAAAAAdAAAAABAI"
+                  alt="Data Literacy"
+                  layout="responsive"
+                  width={400}
+                  height={420}
+                  quality={100}
+                />
+
+              </div>
+              <article className="pl-4 md:flex md:flex-col md:justify-center">
+                <h2 className="text-xl font-semibold leading-tight">Free Data Literacy For Organisations</h2>
+               <p className="leading-7 sm:pr-12 xl:pr-32 lg:text-lg pt-4 pb-8 m-0">
+                  Learn how to build a data driven culture in your organisation. The reason why organisations are not data driven is not just technical but also cultural.
+                </p>
+                <Link href="./designers">
+                  <a className="rounded-lg w-32 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Contact Us</a>
+                </Link>
+              </article>
+            </figure>
+          </SwiperSlide>
+
         </Swiper>
       </section>
     </>
