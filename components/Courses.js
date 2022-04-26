@@ -115,9 +115,11 @@ export default function Courses() {
               <article className="pl-4 md:flex md:flex-col md:justify-center">
                 <h2 className="text-xl font-semibold leading-tight">Free Data Literacy For Organisations</h2>
                <p className="leading-7 sm:pr-12 xl:pr-32 lg:text-lg pt-4 pb-8 m-0">
-                  Learn how to build a data driven culture in your organisation. The reason why organisations are not data driven is not just technical but also cultural.
+                  Learn how to build a data driven culture in your organisation. 
+                  The reason why organisations are not data driven is not just technical but also cultural.
+                  Normalise using data in your decision making process.
                 </p>
-                <Link href="./designers">
+                <Link href="./datascientists">
                   <a className="rounded-lg w-32 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Contact Us</a>
                 </Link>
               </article>

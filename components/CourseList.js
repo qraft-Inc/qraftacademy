@@ -34,7 +34,18 @@ const data = [
         text3: "3 Months",
         altText: "UI/UX designers",
         url: "/designers"
+    },
+    {
+        id: 4,
+        courseImg: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.qlik.com%2Fblog%2Fsolving-the-data-literacy-gap&psig=AOvVaw2VVdH5yi05064suPDQyc8N&ust=1651053537918000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOCkz_C7sfcCFQAAAAAdAAAAABAI",
+        courseTitle: "Data Literacy",
+        text1: "Start",
+        text2: "18.April.2022",
+        text3: "3 Months",
+        altText: "data scientists",
+        url: "/datascientists"
     }
+
 ]
 
 export default function CourseList(props) {
