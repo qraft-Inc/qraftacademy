@@ -19,15 +19,15 @@ export default function Courses() {
           parallax={true}
         >
           {/* software developers */}
-          <SwiperSlide>
+          <SwiperSlide  className="p-8">
             <figure className="md:grid md:grid-cols-2 mb-12">
               <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
                 <Image
-                  src="/img/img1.png"
+                  src="https://res.cloudinary.com/filipe256/image/upload/v1644905941/qraftstore/software_development_ci3tns.jpg"
                   alt="Software Developers"
                   layout="responsive"
-                  width={400}
-                  height={420}
+                  width={300}
+                  height={320}
                   quality={100}
                 />
               </div>
@@ -39,45 +39,44 @@ export default function Courses() {
                   products that actually fix the world&#39;s biggest bugs.
                 </p>
                 <Link href="./developers">
-                  <a className="rounded-lg w-24 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply</a>
+                  <a className="rounded-lg w-32 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Get Started</a>
                 </Link>
               </article>
             </figure>
           </SwiperSlide>
 
-          {/* visual artists */}
-          <SwiperSlide>
+          {/* digital marketing */}
+          <SwiperSlide className="p-8">
             <figure className="md:grid md:grid-cols-2 mb-12">
-              <article className="px-4 md:pl-24 md:flex md:flex-col md:justify-center pt-4">
+            <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 order-2">
+                <Image
+                  src="https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Digital_Marketing_dbkrx8.jpg"
+                  alt="digital marketing"
+                  layout="responsive"
+                  width={500}
+                  height={520}
+                />
+              </div>
+              <article className="px-4 md:pl-24 md:flex md:flex-col md:justify-center pt-4 order-1">
                 <h2 className="text-xl font-semibold leading-tight">Digital Marketing</h2>
                 <p className="leading-7 m-0 sm:pr-10 lg:text-lg pt-4 pb-8">
                   Beat the stats and stereotypes, explore and stand out.
                   Build products and a porfolio you are proud to show off and earn from it.
                 </p>
                 <Link href="./marketing">
-                  <a className="rounded-lg w-24 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply</a>
+                  <a className="rounded-lg w-32 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Get Started</a>
                 </Link>
               </article>
-              <div className="pl-4 sm:pr-10 xl:pl-10 lg:pr-32">
-                <Image
-                  src="/img/img2.png"
-                  alt="Course Creators"
-                  layout="responsive"
-                  width={500}
-                  height={520}
-                />
-              </div>
-
             </figure>
           </SwiperSlide> 
 
           {/*UI/UX Designers*/}
-          <SwiperSlide>
+          <SwiperSlide className="p-8">
             <figure className="md:grid md:grid-cols-2 mb-12">
                 <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
                 <Image
-                  src="/img/img1.png"
-                  alt="Software Developers"
+                  src="https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Product_Design_utd76i.jpg"
+                  alt="UI/UX Designers"
                   layout="responsive"
                   width={400}
                   height={420}
@@ -93,7 +92,7 @@ export default function Courses() {
                   products that actually fix the world&#39;s biggest bugs.
                 </p>
                 <Link href="./designers">
-                  <a className="rounded-lg w-24 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply</a>
+                  <a className="rounded-lg w-32 text-center text-white font-bold text-base p-2.5 bg-[#4092CF] hover:bg-blue-400 transition duration-300">Get Started</a>
                 </Link>
               </article>
             </figure>

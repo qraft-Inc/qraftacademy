@@ -29,7 +29,7 @@ export default function Careers() {
         <div className=" h-full absolute inset-0 top-14 bg-light-blue-300 opacity-95 ">
           <Image
             alt="Background Image"
-            src="/img/hero-bg.png"
+            src="https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/hero-bg_ytthxj.png"
             layout="fill"
             objectFit="cover"
             quality={100}

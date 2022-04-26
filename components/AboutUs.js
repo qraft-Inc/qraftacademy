@@ -2,11 +2,10 @@ import Link from "next/link";
 import Image from 'next/image';
 
 export default function AboutUs() {
-  return (
-    //start of  about area 
-    <div className="flex justify-items-center text-gray-700 justify-center items-center font-semiMedium text-lg font-sans text-left tracking-normal leading-relaxed mb-6 lg:mb-0">
-        <div className="grid max-w-xl lg:min-w-full lg:grid-cols-2 gap-x-8 justify-between min-h-full px-10">
-            <div className="">
+    return (
+        // start of  about area 
+        <div className="flex justify-items-center text-gray-700 justify-center items-center font-semiMedium text-lg font-sans text-left tracking-normal leading-relaxed mb-6 lg:mb-0">
+            <div className="grid max-w-xl lg:min-w-full lg:grid-cols-2 gap-x-8 justify-between min-h-full px-10">
                 <div>
                     <h3 className="text-4xl font-bold mb-6 lg:mt-8 text-light-blue">
                         What
@@ -14,35 +13,57 @@ export default function AboutUs() {
                         <span className="">Is </span>
                         For You
                     </h3>
-                    <p className="mb-3">
-                        Qraft Academy Uganda is a Social Enterprise that helps the youth
-                        to discover and achieve their full potential, advocates for
-                        community social change by overseering Innovative, adaptable
-                        solutions with hands on 21st century business and digital Skill
-                        trainings.
-                    </p>
-                    <p className="mb-3">
-                        Qraft Acacdemy is a subsidiary enterprise of Qraft Mind which began in June 2018, Rachel the Founder after graduating from Kyambogo University with a Bachelor&#39;s Degree in
-                        social sciences, she devoted her time to career Development
-                        research and social entrepreneurship, she was inspired to put
-                        the ideas that her, and her friends Carol and Marcella had
-                        dreamed of since University into action, that is, Mindset
-                        transformation. Qraft Mind as a name was inspired from the
-                        concept of Crafting people&#39;s Mindset into better attitude,
-                        values, knowledge and skills.
-                    </p>
-                    <Link href="/">
-                        <a className="text-white bg-blue-900 inline-flex items-center justify-center  px-8 py-4 text-base font-semibold leading-6 rounded-full w-auto uppercase mt-4 mb-10  hover:bg-blue-500 transition duration-300">Learn Now</a>
-                    </Link>
-                </div>
-            </div>
+                    <div className=" space-y-4 mb-3">
+                        <blockquote>Qraft Academy is an education startup that provides participants with an opportunity for self-discovery, access to experiential learning opportunities, and meaningful work.
+                            <br />
+                            The objective is to expose participants to a diverse range of opportunities to build experience, clarity about their career goals, and achieve them.
+                        </blockquote>
+                        <blockquote>
+                            This is done through hands-on training, mentorship, and apprenticeship programs. Upon graduation some are maintained, others connected to paid work opportunities.
+                            <br />
+                            Qraft Academy is an initiative from Qraft Mind, a modern work award winner.
+                        </blockquote>
+                    </div>
+                    <div className="accordion pb-4" id="accordionExample">
+                        <div className="accordion-item">
+                            <h2 className="accordion-header mb-0" id="headingOne">
+                                <button className="accordion-button collapsed relative flex items-center w-auto py-4 px-5 text-base text-left transition focus:outline-none bg-blue-900 text-white "
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne">Learn More..</button>
+                            </h2>
+                            <div
+                                id="collapseOne"
+                                className="accordion-collapse collapse"
+                                aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div className="accordion-body py-4 px-5">
+                                    <h3 className="text-xl font-bold mb-6 lg:mt-8 text-light-blue">
+                                        Through our online qraft academy platform young people access;
+                                    </h3>
+                                    <ul className="list-disc space-y-2">
+                                        <li>Online remote apprenticeships to gain work experience and work based learning with tracked competencies. This comes with deliberate talent development and matching or access to  opportunities like paid employment, freelance and scholarships.</li>
+                                        <li>Hybrid business design sprints for venture development to start or accelerate self employment/ entrepreneurship as a career </li>
+                                        <li>E-commerce to sell their products</li>
+                                        <li>MOOCs for personal , professional and business development</li>
+                                        <li>One on one career mentorship and guidance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-            {/*start of about image area*/}
-            <div classsName="flex justify-center">
-                <div className="flex justify-center ">
-                    <Image 
-                        src="/img/team qraftacademy.jpg"
-                        alt="Team Qraft Academy - About us image background" 
+                    </div>
+                </div>
+
+                {/*start of about image area*/}
+
+                <div>
+                    <Image
+                        src="https://res.cloudinary.com/filipe256/image/upload/v1642172211/qraftstore/team_qraftacademy_boqbc4.jpg"
+                        alt="Team Qraft Academy - About us image background"
                         width={550}
                         height={450}
                         quality={100}
@@ -50,11 +71,10 @@ export default function AboutUs() {
                         className="object-cover mt-4 md:object-none"
                     />
                 </div>
-            </div>
-            {/* about image area end */}
+                {/* about image area end */}
 
+            </div>
         </div>
-    </div>
-    // end of about area 
-  );
+        // end of about area
+    );
 }

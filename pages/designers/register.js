@@ -25,4 +25,4 @@ export default function Register() {
         </>
     );
 }
-export const getServerSideProps = withPageAuthRequired();
+// export const getServerSideProps = withPageAuthRequired();

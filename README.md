@@ -1,34 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# qraft-academy-api
 
-## Getting Started
+## Tech Stack
 
-First, run the development server:
+- nextjs
+- tailwindCSS
+- auth0
 
-```bash
-npm run dev
-# or
-yarn dev
+## Project Structure
+
+```the-apprentice-cycle
+   |----components
+   |   |-- About.js
+   |   |-- AddressSetion.js
+   |   |-- CourseList.js
+   |   |-- Courses.js
+   |   |-- EmailSection.js
+   |   |-- FooterSection.js
+   |   |-- Footer.js
+   |   |-- FunFactor.js
+   |   |-- GetStarted.js
+   |   |-- Hero.js
+   |   |-- Layout.js
+   |   |-- MentorList.js
+   |   |-- Navbar.js
+   |   |-- OurTeam.js
+   |   |-- Rating.js
+   |   |-- Testimonies.js
+   |   |-- VisionMisson.js
+   |----pages
+   |   |-- api
+   |   | |-- auth
+   |   | | |-- auth0.js
+   |   |-- designers
+   |   | |-- register.js
+   |   |-- developer
+   |   | |-- register.js
+   |   |-- marketing
+   |   | |-- register.js
+   |   |-- app.js
+   |   |-- about.js
+   |   |-- careers.js
+   |   |-- contact.js
+   |   |-- designers.js
+   |   |-- developers.js
+   |   |-- index.js
+   |   |-- marketing.js
+   |   |-- tracks.js
+   |----public
+   |   |--favicon.ico
+   |----styles
+   |   |--global.css
+   |   |--index.module.css
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. `clone` this repository.
+2. `cd` into project root directory.
+3. run `yarn install` OR `npm install`  to install all dependencies.
+4. Run `yarn run dev` OR `npm run dev` to start the server.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## GIT Best Practises
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `Feat` : a new feature
+- `Fix` : a bug fix
+- `Style` : style changes, formating, missing semicolons or white spaces
+- `Refactor` : code changes that neither fixes a bug or add a feature
+- `Test` : everything related to testing 
+- `Docs` : changes in documentation
+- `Chore` : regular code maintenance
+- `Perf` : changes that improve perfomance
