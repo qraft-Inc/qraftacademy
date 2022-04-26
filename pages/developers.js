@@ -45,6 +45,7 @@ export default function Developers() {
                             </a></Link>
                         </span>
                     }
+                    
                     {user &&
                         <span className="inline-flex w-full md:w-auto mt-12">
                             <Link href="developer/register"><a className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
