@@ -103,7 +103,7 @@ export default function Courses() {
             <figure className="md:grid md:grid-cols-2 mb-12">
                 <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
                 <Image
-                  src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.qlik.com%2Fblog%2Fsolving-the-data-literacy-gap&psig=AOvVaw2VVdH5yi05064suPDQyc8N&ust=1651053537918000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOCkz_C7sfcCFQAAAAAdAAAAABAI"
+                  src="https://res.cloudinary.com/dwa3soopc/image/upload/v1651080074/qraft%20/data_f8bhh1.jpg"
                   alt="Data Literacy"
                   layout="responsive"
                   width={400}
