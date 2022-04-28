@@ -465,7 +465,7 @@ export default function register() {
         </div>
         <div className="container">
           <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 sm:py-2 sm:px-4 rounded mx-auto"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 sm:py-2 sm:px-4 rounded mx-auto"
             type="submit"
           >
             Submit
