@@ -32,19 +32,19 @@
    |   | |-- auth
    |   | | |-- auth0.js
    |   |-- designers
+   |   | |-- index.js
    |   | |-- register.js
-   |   |-- developer
+   |   |-- developers
+   |   | |-- index.js
    |   | |-- register.js
    |   |-- marketing
+   |   | |-- index.js
    |   | |-- register.js
    |   |-- app.js
    |   |-- about.js
    |   |-- careers.js
    |   |-- contact.js
-   |   |-- designers.js
-   |   |-- developers.js
    |   |-- index.js
-   |   |-- marketing.js
    |   |-- tracks.js
    |----public
    |   |--favicon.ico
