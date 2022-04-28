@@ -73,14 +73,14 @@ export default function Developers() {
                             </ul>
                             {/* {!user &&
                                 <span className="mx-auto">
-                                    <Link href="developer/register">
+                                    <Link href="developers/register">
                                         <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-2 bg-light-blue hover:bg-blue-400 transition duration-300">Sign in to apply</a>
                                     </Link>
                                 </span>
                             } */}
                             {/* {user && */}
                                 <span className="mx-auto">
-                                    <Link href="developer/register">
+                                    <Link href="developers/register">
                                         <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">Apply now</a>
                                     </Link>
                                 </span>
@@ -123,14 +123,14 @@ export default function Developers() {
                         </ul>
                         {/* {!user &&
                             <span className="mx-auto">
-                                <Link href="developer/register">
+                                <Link href="developers/register">
                                     <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-2 bg-light-blue hover:bg-blue-400 transition duration-300">Sign in to apply</a>
                                 </Link>
                             </span>
                         } */}
                         {/* {user && */}
                             <span className="mx-auto">
-                                <Link href="developer/register">
+                                <Link href="developers/register">
                                     <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">Apply now</a>
                                 </Link>
                             </span>
@@ -210,12 +210,12 @@ export default function Developers() {
                                     <li>
                                         {/* {!user &&
                                             <span className="">
-                                                <Link href="developer/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Sign in to apply</a></Link>
+                                                <Link href="developers/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Sign in to apply</a></Link>
                                             </span>
                                         } */}
                                         {/* {user && */}
                                             <span className="">
-                                                <Link href="developer/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply Now</a></Link>
+                                                <Link href="developers/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply Now</a></Link>
                                             </span>
                                         {/* } */}
                                     </li>
@@ -232,12 +232,12 @@ export default function Developers() {
                                     <li>
                                         {/* {!user &&
                                             <span className="">
-                                                <Link href="developer/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Sign in to apply</a></Link>
+                                                <Link href="developers/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Sign in to apply</a></Link>
                                             </span>
                                           } */}
                                         {/* {user && */}
                                             <span className="">
-                                                <Link href="developer/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply Now</a></Link>
+                                                <Link href="developers/register"><a className="inline-block px-6 py-2.5 rounded-full text-white font-medium text-xs bg-[#4092CF] hover:bg-blue-400 transition duration-300">Apply Now</a></Link>
                                             </span>
                                          {/* } */}
                                     </li>

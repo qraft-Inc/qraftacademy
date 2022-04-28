@@ -1,6 +1,6 @@
 import React from "react";
 import { FaAsterisk } from "react-icons/fa";
-export default function dintonReg() {
+export default function register() {
   return (
     // INTRODUCTION
     <div className="container mt-40 mx-auto mb-40 w-4/5 sm:w-3/5">
