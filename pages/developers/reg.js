@@ -495,7 +495,7 @@ function register() {
             className="ml-1 text-sm font-medium text-gray-900 dark:text-gray-300 leading-loose"
           >
             {" "}
-            Professionally, what's your goal? &#x26B9;
+            Professionally, what&apos;s your goal? &#x26B9;
           </label>{" "}
           <br></br>
           <input
