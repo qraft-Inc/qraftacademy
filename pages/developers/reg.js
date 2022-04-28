@@ -1,6 +1,6 @@
 import React from "react";
 
-function martheReg() {
+function register() {
   return (
     <div className="flex flex-wrap justify-center p-40  min-h-screen bg-purple-100">
       <div className="grid gap-x-20 grid-cols-1 ">
@@ -21,19 +21,16 @@ function martheReg() {
           </a>
 
           <p className="subpixel-antialiased">
-            Le nom et la photo associés à votre compte Google seront enregistrés
-            lorsque vous importerez des fichiers et que vous enverrez ce
-            formulaire. Seule l'adresse e-mail que vous entrez fait partie de
-            votre réponse.
+            The name and photo associated with your Google account will be recorded when you upload files and submit this form. Only the email you enter is part of your response.
           </p>
           <br></br>
-          <h6 className="text-red-600">&#x26B9;Obligatoire</h6>
+          <h6 className="text-red-600">&#x26B9;Required</h6>
         </div>
         <br></br>
 
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2 box-content h-30">
           <label
-            for="floating_email"
+            htmlFor="floating_email"
             className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 leading-loose"
           >
             {" "}
@@ -49,7 +46,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2 box-content h-30">
           <label
-            for="floating_full_name"
+            htmlFor="floating_full_name"
             className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 leading-loose"
           >
             {" "}
@@ -65,7 +62,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2 box-content h-30">
           <label
-            for="floating_phone_number"
+            htmlFor="floating_phone_number"
             className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 leading-loose "
           >
             {" "}
@@ -82,7 +79,7 @@ function martheReg() {
 
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2 box-content h-38 ">
           <label
-            for="checkbox-1"
+            htmlFor="checkbox-1"
             className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300 leading-loose  "
           >
             {" "}
@@ -96,7 +93,7 @@ function martheReg() {
           />
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2 "> Night School </span>
           </label>
@@ -108,7 +105,7 @@ function martheReg() {
           />{" "}
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose "
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2 "> Apprenticeship </span>
           </label>
@@ -116,7 +113,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2 box-content h-40 ">
           <label
-            for="checkbox-1"
+            htmlFor="checkbox-1"
             className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300 leading-loose "
           >
             {" "}
@@ -130,7 +127,7 @@ function martheReg() {
           />
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Software Development </span>
           </label>
@@ -142,7 +139,7 @@ function martheReg() {
           />{" "}
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Digital Marketing </span>
           </label>
@@ -154,7 +151,7 @@ function martheReg() {
           />{" "}
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Product Design </span>
           </label>
@@ -162,7 +159,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2  box-content">
           <label
-            for="checkbox-1"
+            htmlFor="checkbox-1"
             className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300 leading-loose "
           >
             {" "}
@@ -176,7 +173,7 @@ function martheReg() {
           />
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Default checkbox</span>
           </label>
@@ -188,7 +185,7 @@ function martheReg() {
           />{" "}
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Default checkbox</span>
           </label>
@@ -196,7 +193,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2  box-content">
           <label
-            for="checkbox-1"
+            htmlFor="checkbox-1"
             className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300 leading-loose"
           >
             {" "}
@@ -210,7 +207,7 @@ function martheReg() {
           />
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Default checkbox</span>
           </label>
@@ -222,7 +219,7 @@ function martheReg() {
           />{" "}
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Default checkbox</span>
           </label>
@@ -230,7 +227,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2  box-content">
           <label
-            for="floating_link"
+            htmlFor="floating_link"
             className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 leading-loose"
           >
             {" "}
@@ -246,7 +243,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2  box-content">
           <label
-            for="floating_text_name"
+            htmlFor="floating_text_name"
             className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 leading-loose "
           >
             {" "}
@@ -262,7 +259,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2 box-content">
           <label
-            for="checkbox-1"
+            htmlFor="checkbox-1"
             className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300 leading-loose"
           >
             {" "}
@@ -277,7 +274,7 @@ function martheReg() {
           />
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Full Stack Developer </span>
           </label>
@@ -289,7 +286,7 @@ function martheReg() {
           />{" "}
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Back End Developer </span>
           </label>
@@ -301,7 +298,7 @@ function martheReg() {
           />{" "}
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Font End Developer </span>
           </label>
@@ -313,7 +310,7 @@ function martheReg() {
           />
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Mobile Developer </span>
           </label>
@@ -325,7 +322,7 @@ function martheReg() {
           />
           <label
             className="form-check-label inline-block text-gray-800 inline-flex  leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2 "> Other: </span>
           </label>
@@ -334,7 +331,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2 box-content ">
           <label
-            for="floating_text"
+            htmlFor="floating_text"
             className="ml-0.5 text-sm font-medium text-gray-900 dark:text-gray-300 leading-loose"
           >
             {" "}
@@ -351,7 +348,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2  box-content">
           <label
-            for="floating_full_name"
+            htmlFor="floating_full_name"
             className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300 leading-loose"
           >
             {" "}
@@ -367,7 +364,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2  box-content h-30">
           <label
-            for="floating_full_name"
+            htmlFor="floating_full_name"
             className="ml-0.5 text-sm font-medium text-gray-900 dark:text-gray-300 leading-loose"
           >
             {" "}
@@ -384,7 +381,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2 box-content">
           <label
-            for="floating_text"
+            htmlFor="floating_text"
             className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 leading-loose"
           >
             {" "}
@@ -401,7 +398,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2 box-content">
           <label
-            for="floating_text"
+            htmlFor="floating_text"
             className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 leading-loose"
           >
             {" "}
@@ -417,7 +414,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2 box-content h-48">
           <label
-            for="checkbox-1"
+            htmlFor="checkbox-1"
             className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300 leading-loose"
           >
             {" "}
@@ -432,7 +429,7 @@ function martheReg() {
           />
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Highly independant role </span>
           </label>
@@ -444,7 +441,7 @@ function martheReg() {
           />{" "}
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Team Based </span>
           </label>
@@ -456,7 +453,7 @@ function martheReg() {
           />{" "}
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Strong people skills Role </span>
           </label>
@@ -468,7 +465,7 @@ function martheReg() {
           />
           <label
             className="form-check-label inline-block text-gray-800 inline-flex leading-loose"
-            for="flexCheckDefault"
+            htmlFor="flexCheckDefault"
           >
             <span className="ml-2"> Less people focused Role </span>
           </label>
@@ -477,7 +474,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2 box-content h-33">
           <label
-            for="floating_full_name"
+            htmlFor="floating_full_name"
             className="ml-1 text-sm font-medium text-gray-900 dark:text-gray-300 leading-loose"
           >
             {" "}
@@ -494,7 +491,7 @@ function martheReg() {
         <br></br>
         <div className="bg-white shadow-md rounded-md px-8 py-4 mx-40 mt-3 text-left md:w-1/2 lg:w-1/2 box-content">
           <label
-            for="floating_text_name"
+            htmlFor="floating_text_name"
             className="ml-1 text-sm font-medium text-gray-900 dark:text-gray-300 leading-loose"
           >
             {" "}
@@ -513,4 +510,4 @@ function martheReg() {
   );
 }
 
-export default martheReg;
+export default register;

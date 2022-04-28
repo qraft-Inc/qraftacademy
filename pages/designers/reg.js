@@ -21,7 +21,7 @@ export default function register() {
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* email title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <label className="text-lg sm:text-xl font-medium" for="email">
+            <label className="text-lg sm:text-xl font-medium" htmlFor="email">
               Email
             </label>
             <FaAsterisk size="0.5em" color="red" />
@@ -42,7 +42,7 @@ export default function register() {
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* Full name title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <label className="text-lg sm:text-xl font-medium" for="fullname">
+            <label className="text-lg sm:text-xl font-medium" htmlFor="fullname">
               Full Name
             </label>
             <FaAsterisk size="0.5em" color="red" />
@@ -63,7 +63,7 @@ export default function register() {
         <div className="container flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* phone number title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <label className="text-lg sm:text-xl font-medium" for="telephone">
+            <label className="text-lg sm:text-xl font-medium" htmlFor="telephone">
               Phone Number
             </label>
             <FaAsterisk size="0.5em" color="red" />
@@ -84,7 +84,7 @@ export default function register() {
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* cv title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <label className="text-lg sm:text-xl font-medium" for="cv">
+            <label className="text-lg sm:text-xl font-medium" htmlFor="cv">
               Link your CV
             </label>
             <FaAsterisk size="0.5em" color="red" />
@@ -105,7 +105,7 @@ export default function register() {
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* cover letter title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <label className="text-lg sm:text-xl font-medium" for="letter">
+            <label className="text-lg sm:text-xl font-medium" htmlFor="letter">
               Link to your Cover Letter
             </label>
             <FaAsterisk size="0.5em" color="red" />
@@ -140,7 +140,7 @@ export default function register() {
               id="product_design"
               value="Product Design"
             />
-            <label for="product_design" className="ml-4 text-sm sm:text-base">
+            <label htmlFor="product_design" className="ml-4 text-sm sm:text-base">
               Product Design
             </label>
             <br></br>
@@ -151,7 +151,7 @@ export default function register() {
               value="Digital Marketing"
             />
             <label
-              for="digital_marketing"
+              htmlFor="digital_marketing"
               className="ml-4 text-sm sm:text-base"
             >
               Digital Marketing
@@ -165,7 +165,7 @@ export default function register() {
               className="form-radio"
             />
             <label
-              for="software_development"
+              htmlFor="software_development"
               className="ml-4 text-sm sm:text-base"
             >
               Software Development
@@ -176,7 +176,7 @@ export default function register() {
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           <div className="inline-flex items-start justify-start">
             <label
-              for="inspiration_to_apply"
+              htmlFor="inspiration_to_apply"
               className="text-lg sm:text-xl font-medium  w-5/6"
             >
               How did you learn about Qraft Academy. What inspired /motivated
@@ -212,7 +212,7 @@ export default function register() {
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           <div className="inline-flex space-x-2 items-start justify-start">
             <label
-              for="expectations_from_program"
+              htmlFor="expectations_from_program"
               className="text-lg sm:text-xl font-medium leading-loose"
             >
               What are your expectations from this program?
@@ -248,7 +248,7 @@ export default function register() {
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           <div className="inline-flex space-x-2 items-start justify-start">
             <label
-              for="currently_working_on"
+              htmlFor="currently_working_on"
               className="text-lg sm:text-xl font-medium leading-loose"
             >
               What are you working on currently? and How do you keep your
@@ -285,7 +285,7 @@ export default function register() {
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           <div className="inline-flex space-x-2 items-start justify-start">
             <label
-              for="design_tools"
+              htmlFor="design_tools"
               className="text-lg sm:text-xl font-medium"
             >
               What are your favorite and least favorite design tools, and why?
@@ -321,7 +321,7 @@ export default function register() {
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           <div className="inline-flex space-x-2 items-start justify-start">
             <label
-              for="proud_achievement"
+              htmlFor="proud_achievement"
               className="text-lg sm:text-xl font-medium leading-loose"
             >
               What is your most proud of achievement so far?
@@ -371,7 +371,7 @@ export default function register() {
               value="Highly independent role"
             />
             <label
-              for="highly_independent_role"
+              htmlFor="highly_independent_role"
               className="ml-4 text-sm sm:text-base"
             >
               Highly independent role
@@ -384,7 +384,7 @@ export default function register() {
               id="team_based"
               value="Team Based"
             />
-            <label for="team_based" className="ml-4 text-sm sm:text-base">
+            <label htmlFor="team_based" className="ml-4 text-sm sm:text-base">
               Team Based
             </label>
             <br></br>
@@ -395,7 +395,7 @@ export default function register() {
               value="Strong people skills Role"
             />
             <label
-              for="strong_people_skills"
+              htmlFor="strong_people_skills"
               className="ml-4 text-sm sm:text-base"
             >
               Strong people skills Role
@@ -408,7 +408,7 @@ export default function register() {
               value="Less people focused Role"
             />
             <label
-              for="less_people_focused"
+              htmlFor="less_people_focused"
               className="ml-4 text-sm sm:text-base"
             >
               Less people focused Role
@@ -419,7 +419,7 @@ export default function register() {
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           <div className="flex space-x-2 items-start justify-start">
             <label
-              for="something_you_believed_in"
+              htmlFor="something_you_believed_in"
               className="text-lg sm:text-xl font-medium w-5/6"
             >
               When was the last time you stood up for something that you
@@ -456,7 +456,7 @@ export default function register() {
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           <div className="inline-flex space-x-2 items-start justify-start">
             <label
-              for="your_goal"
+              htmlFor="your_goal"
               className="text-lg sm:text-xl font-medium leading-loose"
             >
               Professionally, what’s your goal?
