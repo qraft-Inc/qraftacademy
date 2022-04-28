@@ -6,13 +6,15 @@ export default function dintonReg() {
     <div className="container mt-40 mx-auto mb-40 w-4/5 sm:w-3/5">
       <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-10 border rounded border-black">
         <p className="text-3xl sm:text-4xl font-extrabold w-full">
-          QRAFT NIGHT SCHOOL APPLICATION FORM-UI/UX TRACK 2022
+          QRAFT NIGHT SCHOOL APPLICATION FORM-DIGITAL MARKETING TRACK 2022
         </p>
         <p className="text-xl sm:text-2xl font-semibold w-full">
-          Life is an ongoing learning process and this Night school gives you an
-          opportunity to learn a new skill that will help you remain relevant in
-          your field, earn more money through side hustles or realize big dreams
-          and transition of career.
+          The Qraft academy digital marketing apprenticeship program is a 3
+          months program offering training and development of individuals
+          looking to start a career in technology.
+        </p>
+        <p className="text-xl sm:text-2xl font-semibold w-full">
+          These include software developers and data scientists
         </p>
       </div>
 
@@ -122,56 +124,28 @@ export default function dintonReg() {
             />
           </div>
         </div>
-        {/* PROGRAM CARD */}
+        {/* LINKEDIN CARD */}
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
-          {/* program title and asterik icon */}
+          {/* cover letter title and asterik icon */}
           <div className="inline-flex space-x-2 items-center justify-start ">
-            <p className="text-lg sm:text-xl font-medium">
-              What Program are you enrolling for?
-            </p>
+            <label className="text-lg sm:text-xl font-medium" for="linkedIn">
+              Link to your LinkedIn
+            </label>
             <FaAsterisk size="0.5em" color="red" />
           </div>
-          {/* Different programs and their radio buttons */}
-          <div className="">
+          {/* linkedIn input with placeholder */}
+          <div className=" flex flex-col  items-start justify-start  border-b border-gray-400 w-5/6">
             <input
-              type="radio"
-              className="form-radio"
-              name="program"
-              id="product_design"
-              value="Product Design"
+              className="appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight focus:ring-0 "
+              type="url"
+              placeholder="Your answer"
+              aria-label="linkedIn"
+              id="linkedIn"
+              name="linkedIn"
             />
-            <label for="product_design" className="ml-4 text-sm sm:text-base">
-              Product Design
-            </label>
-            <br></br>
-            <input
-              type="radio"
-              name="program"
-              id="digital_marketing"
-              value="Digital Marketing"
-            />
-            <label
-              for="digital_marketing"
-              className="ml-4 text-sm sm:text-base"
-            >
-              Digital Marketing
-            </label>
-            <br></br>
-            <input
-              type="radio"
-              name="program"
-              id="software_development"
-              value="Software Development"
-              className="form-radio"
-            />
-            <label
-              for="software_development"
-              className="ml-4 text-sm sm:text-base"
-            >
-              Software Development
-            </label>
           </div>
         </div>
+
         {/* HOW YOU GOT TO KNOW ABOUT QRAFT CARD */}
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           <div className="inline-flex items-start justify-start">
@@ -252,7 +226,7 @@ export default function dintonReg() {
               className="text-lg sm:text-xl font-medium leading-loose"
             >
               What are you working on currently? and How do you keep your
-              designing skills current?
+              marketing skills current?
             </label>
             <FaAsterisk size="0.5em" color="red" />
           </div>
@@ -281,14 +255,15 @@ export default function dintonReg() {
             ></textarea>
           </div>
         </div>
-        {/* DESIGN TOOLS */}
+        {/* MARKETING TOOLS */}
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           <div className="inline-flex space-x-2 items-start justify-start">
             <label
               for="design_tools"
               className="text-lg sm:text-xl font-medium"
             >
-              What are your favorite and least favorite design tools, and why?
+              What are your favorite and least favorite marketing Platforms, and
+              why?
             </label>
             <FaAsterisk size="0.5em" color="red" />
           </div>
