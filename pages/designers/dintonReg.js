@@ -1,8 +1,30 @@
+
 import React from "react";
 import { FaAsterisk } from "react-icons/fa";
+import { useFormik } from "formik";
+import {formSchema} from "./validationSchema"
 export default function dintonReg() {
+  
+const {values,errors, handleBlur, handleChange, handleSubmit,touched,isSubmitting} = useFormik({
+  initialValues: {
+    email: "",
+    fullname: "",
+    telephone: "",
+    cv: "",
+    letter: "",
+    program: "",
+    role: "",
+  },
+  validationSchema:formSchema,
+  onSubmit: (values) => {
+    alert(JSON.stringify(values, null, 2));
+  },
+});
+
   return (
+    
     // INTRODUCTION
+
     <div className="container mt-40 mx-auto mb-40 w-4/5 sm:w-3/5">
       <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-10 border rounded border-black">
         <p className="text-3xl sm:text-4xl font-extrabold w-full">
@@ -16,7 +38,7 @@ export default function dintonReg() {
         </p>
       </div>
 
-      <form action="" className="w-full">
+      <form onSubmit={handleSubmit} action="" className="w-full">
         {/* EMAIL CARD */}
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
           {/* email title and asterik icon */}
@@ -29,13 +51,17 @@ export default function dintonReg() {
           {/* email input with placeholder */}
           <div className=" flex flex-col  items-start justify-start  border-b border-gray-400 w-5/6">
             <input
-              className="appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight mt-0 px-0.5 border-b border-gray-400 focus:ring-0 focus:border-gray-700"
+              className={`appearance-none bg-transparent  w-full text-gray-700  border-none leading-tight mt-0 px-0.5 border-b border-gray-400 focus:ring-0 focus:border-gray-700 ${errors.email && touched.email ?"border-b border-red-500":""}`}
               type="email"
               placeholder="Your email"
               aria-label="email"
               id="email"
               name="email"
+              onChange={handleChange}
+              value={values.email}
+              onBlur={handleBlur}
             />
+            {errors.email && touched.email && <p className="text-sm text-red-500">{errors.email}</p>}
           </div>
         </div>
         {/* NAME CARD */}
@@ -56,6 +82,9 @@ export default function dintonReg() {
               aria-label="fullname"
               id="fullname"
               name="fullname"
+              onChange={handleChange}
+              value={values.fullname}
+              onBlur={handleBlur}
             />
           </div>
         </div>
@@ -77,6 +106,9 @@ export default function dintonReg() {
               aria-label="telephone"
               id="telephone"
               name="telephone"
+              onChange={handleChange}
+              value={values.telephone}
+              onBlur={handleBlur}
             />
           </div>
         </div>
@@ -98,6 +130,9 @@ export default function dintonReg() {
               aria-label="cv"
               id="cv"
               name="cv"
+              onChange={handleChange}
+              value={values.cv}
+              onBlur={handleBlur}
             />
           </div>
         </div>
@@ -119,6 +154,9 @@ export default function dintonReg() {
               aria-label="letter"
               id="letter"
               name="letter"
+              onChange={handleChange}
+              value={values.letter}
+              onBlur={handleBlur}
             />
           </div>
         </div>
@@ -134,6 +172,8 @@ export default function dintonReg() {
           {/* Different programs and their radio buttons */}
           <div className="">
             <input
+              onChange={handleChange}
+              onBlur={handleBlur}
               type="radio"
               className="form-radio"
               name="program"
@@ -492,6 +532,7 @@ export default function dintonReg() {
           <button
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 sm:py-2 sm:px-4 rounded mx-auto"
             type="submit"
+            disabled={isSubmitting}
           >
             Submit
           </button>
@@ -500,3 +541,36 @@ export default function dintonReg() {
     </div>
   );
 }
+<Formik
+  // This handles initial state
+  initialValues={{}}
+  validate={(values) => {
+    const errors = {};
+    if (!values.email) {
+      errors.email = "Required";
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
+      errors.email = "Invalid email address";
+    }
+    return errors;
+  }}
+  onSubmit={(values, { setSubmitting }) => {
+    setTimeout(() => {
+      alert(JSON.stringify(values, null, 2));
+      setSubmitting(false);
+    }, 400);
+  }}
+></Formik>;
+const {values, handleBlur, handleChange} = useFormik({
+  initialValues: {
+    email: "",
+    fullname: "",
+    telephone: "",
+    cv: "",
+    letter: "",
+    program: "",
+    role: "",
+  },
+  onSubmit: (values) => {
+    alert(JSON.stringify(values, null, 2));
+  },
+});
