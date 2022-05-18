@@ -6,7 +6,7 @@ export const formSchema = Yup.object().shape({
     .email("Invalid email address format")
 
     // Required Field Validation
-    .required("Email is required"),
+    .required(" Email is required"),
 
   fullname: Yup.string()
 

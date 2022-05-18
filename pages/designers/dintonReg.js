@@ -530,7 +530,7 @@ const {values,errors, handleBlur, handleChange, handleSubmit,touched,isSubmittin
         </div>
         <div className="container">
           <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 sm:py-2 sm:px-4 rounded mx-auto"
+            className="bg-red-500 hover:bg-blue-700 text-white font-bold py-1 px-3 sm:py-2 sm:px-4 rounded mx-auto"
             type="submit"
             disabled={isSubmitting}
           >
@@ -541,36 +541,3 @@ const {values,errors, handleBlur, handleChange, handleSubmit,touched,isSubmittin
     </div>
   );
 }
-<Formik
-  // This handles initial state
-  initialValues={{}}
-  validate={(values) => {
-    const errors = {};
-    if (!values.email) {
-      errors.email = "Required";
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-      errors.email = "Invalid email address";
-    }
-    return errors;
-  }}
-  onSubmit={(values, { setSubmitting }) => {
-    setTimeout(() => {
-      alert(JSON.stringify(values, null, 2));
-      setSubmitting(false);
-    }, 400);
-  }}
-></Formik>;
-const {values, handleBlur, handleChange} = useFormik({
-  initialValues: {
-    email: "",
-    fullname: "",
-    telephone: "",
-    cv: "",
-    letter: "",
-    program: "",
-    role: "",
-  },
-  onSubmit: (values) => {
-    alert(JSON.stringify(values, null, 2));
-  },
-});
