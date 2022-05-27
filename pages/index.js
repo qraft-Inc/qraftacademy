@@ -18,7 +18,6 @@ export default function Home() {
         <Hero />
         <Courses />
         <Testimonies />
-        
       </div>
     </>
   );

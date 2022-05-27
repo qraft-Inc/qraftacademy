@@ -4,9 +4,13 @@ import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import FormikControls from "../../components/formik/FormikControl";
 import axios from "axios";
+import SuccessModal from "../../components/SuccessModal";
+import ErrorModal from "../../components/ErrorModal";
 
 export default function test() {
-  const [values, setValues] = useState(null);
+  const [successModal, setSuccess] = useState(false);
+  const [errorModal, setError] = useState(false);
+  const [value, setValue] = useState("");
 
   // radio button options
   const radioOptions = [
@@ -33,22 +37,25 @@ export default function test() {
     answer: Yup.string().required("Required"),
   });
 
-  const onSubmit = async(values, onSubmitProps) => {
-    // console.log("Form data", values);
-    onSubmitProps.setSubmitting(false)
-    
-    axios.post("http://localhost:5000/api/designers/test/data",values)
-    .then(response => {
-      // console.log(response)
-      alert("User submitted");
-      onSubmitProps.resetForm()
-    })
-    .catch(error =>{
-      console.log(error)
-      alert(`User submitted ${error}`);
-    })
+  const onSubmit = async (values, onSubmitProps) => {
+    axios
+      .post("http://localhost:5000/api/designers/test/data", values)
+      .then((response) => {
+        setSuccess(true);
+        setValue(response.data.name)
+        onSubmitProps.resetForm();
+      })
+      .catch((error) => {
+        setError(true);
+        setValue(error.message)
+      });
   };
   return (
+    <>
+    {/* render success OR error modals  after registration*/}
+      {errorModal && <ErrorModal closeModal={setError} value={value}/>}
+      {successModal && <SuccessModal closeModal={setSuccess} value={value}/>}
+ 
     <div className="container mt-40 mx-auto mb-40 w-4/5 sm:w-3/5">
       <Formik
         initialValues={initialValues}
@@ -97,7 +104,6 @@ export default function test() {
               <div className="container">
                 <button
                   type="submit"
-                  disabled={!formik.isValid || formik.isSubmitting}
                   className="bg-blue-500 text-white font-bold py-1 px-3 sm:py-2 sm:px-4 rounded mx-auto"
                 >
                   Submit
@@ -108,5 +114,6 @@ export default function test() {
         }}
       </Formik>
     </div>
+    </>
   );
 }
