@@ -14,9 +14,15 @@ handler.post(async (req, res) => {
     program,
     answer,
   });
-  const user = await newUser.save();
+  const existingUser = await Register.findOne({ email: email });
+  if (existingUser) {
+    return res
+      .status(401)
+      .json({ errorMessage: "User account already exists" });
+  }
+  const savedUser = await newUser.save();
   await db.disconnect();
-  res.status(201).send(user);
+  res.status(201).send(savedUser);
 });
 
 export default handler;

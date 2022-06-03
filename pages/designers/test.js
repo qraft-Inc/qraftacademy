@@ -42,80 +42,81 @@ export default function test() {
       // .post("http://localhost:5000/api/designers/test/data", values)
       .post("http://localhost:3000/api/register/", values)
       .then((response) => {
-        console.log(response.data)
+        console.log(response.data);
         setSuccess(true);
-        setValue(response.data.name)
+        setValue(response.data.name);
         onSubmitProps.resetForm();
       })
       .catch((error) => {
         setError(true);
-        setValue(error.message)
+        setValue(error.response.status);
+        // console.log(error.response.data.errormessage)
       });
   };
   return (
     <>
-    {/* render success OR error modals  after registration*/}
-      {errorModal && <ErrorModal closeModal={setError} value={value}/>}
-      {successModal && <SuccessModal closeModal={setSuccess} value={value}/>}
- 
-    <div className="container mt-40 mx-auto mb-40 w-4/5 sm:w-3/5">
-      <Formik
-        initialValues={initialValues}
-        validationSchema={validatinSchema}
-        onSubmit={onSubmit}
-        className="w-full"
-      >
-        {(formik) => {
-          console.log(formik);
-          return (
-            // render the different form fields
-            <Form>
-              <FormikControls
-                control="input"
-                placeholder="Your email"
-                type="email"
-                label="Email"
-                name="email"
-              />
-              <FormikControls
-                control="input"
-                placeholder="Your full name"
-                type="text"
-                label="Full Name"
-                name="name"
-              />
-              <FormikControls
-                control="input"
-                placeholder="Your phone number"
-                type="text"
-                label="Phone Number"
-                name="phone"
-              />
-              <FormikControls
-                control="radio"
-                label="What program are you enrolling for?"
-                name="program"
-                options={radioOptions}
-              />
-              <FormikControls
-                control="textarea"
-                placeholder="Your Answer"
-                label=" How did you learn about Qraft Academy. What inspired /motivated you to apply for this answer?"
-                name="answer"
-              />
-              <div className="container">
-                <button
-                  type="submit"
-                  className="bg-blue-500 text-white font-bold py-1 px-3 sm:py-2 sm:px-4 rounded mx-auto"
-                >
-                  Submit
-                </button>
-              </div>
-            </Form>
-          );
-        }}
-      </Formik>
-    </div>
+      {/* render success OR error modals  after registration*/}
+      {errorModal && <ErrorModal closeModal={setError} value={value} />}
+      {successModal && <SuccessModal closeModal={setSuccess} value={value} />}
+
+      <div className="container mt-40 mx-auto mb-40 w-4/5 sm:w-3/5">
+        <Formik
+          initialValues={initialValues}
+          validationSchema={validatinSchema}
+          onSubmit={onSubmit}
+          className="w-full"
+        >
+          {(formik) => {
+            console.log(formik);
+            return (
+              // render the different form fields
+              <Form>
+                <FormikControls
+                  control="input"
+                  placeholder="Your email"
+                  type="email"
+                  label="Email"
+                  name="email"
+                />
+                <FormikControls
+                  control="input"
+                  placeholder="Your full name"
+                  type="text"
+                  label="Full Name"
+                  name="name"
+                />
+                <FormikControls
+                  control="input"
+                  placeholder="Your phone number"
+                  type="text"
+                  label="Phone Number"
+                  name="phone"
+                />
+                <FormikControls
+                  control="radio"
+                  label="What program are you enrolling for?"
+                  name="program"
+                  options={radioOptions}
+                />
+                <FormikControls
+                  control="textarea"
+                  placeholder="Your Answer"
+                  label=" How did you learn about Qraft Academy. What inspired /motivated you to apply for this answer?"
+                  name="answer"
+                />
+                <div className="container">
+                  <button
+                    type="submit"
+                    className="bg-blue-500 text-white font-bold py-1 px-3 sm:py-2 sm:px-4 rounded mx-auto"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </Form>
+            );
+          }}
+        </Formik>
+      </div>
     </>
   );
 }

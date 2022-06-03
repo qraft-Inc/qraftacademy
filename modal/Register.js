@@ -7,12 +7,6 @@ const registerSchema = new mongoose.Schema(
     phone: {type:String, required:true},
     program: {type:String, required:true},
     answer: {type:String, required:true}
-
-    // email: { type: String },
-    // name: { type: String },
-    // phone: { type: String },
-    // program: { type: String },
-    // answer: { type: String },
   },
   {
     timestamps: true,

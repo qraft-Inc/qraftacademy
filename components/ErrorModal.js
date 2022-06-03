@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ErrorModal({closeModal, value}) {
+export default function ErrorModal({ closeModal, value }) {
   return (
     <div
       className="relative z-10"
@@ -32,13 +32,11 @@ export default function ErrorModal({closeModal, value}) {
                 />
               </svg>
             </div>
-            <h3 className="text-lg leading-6 font-medium text-gray-900">
-              Error!
+            <h3 className="text-lg leading-6 font-bold text-gray-900">
+              {value} Error!
             </h3>
-            <div className="mt-2 px-7 py-3">
-              <p className="text-sm text-gray-500 font-bold">
-                {value}
-              </p>
+            <div className="mt-2 px-7 py-3 text-sm text-gray-500">
+              The network connection is lost, please try again
             </div>
             <div className="items-center px-4 py-3">
               <button
