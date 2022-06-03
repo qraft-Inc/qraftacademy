@@ -1,12 +1,22 @@
 import db from "../../../data/db";
+import nc from "next-connect";
+import Register from "../../../modal/Register";
 
+const handler = nc();
 
-export default async function handler(req, res){
-    await db.connect();
-    await db.disconnect();
-    res.status(200).json({name:"john doe"})
-}
+handler.post(async (req, res) => {
+  const {email,name,phone,program,answer} = req.body;
+  await db.connect();
+  const newUser = new Register({
+    email,
+    name,
+    phone,
+    program,
+    answer,
+  });
+  const user = await newUser.save();
+  await db.disconnect();
+  res.status(201).send(user);
+});
 
-// DB_USER = user
-// DB_PASSWORD = Lw4bEyJlh6KIFnK7
-// DB_URL = mongodb+srv://$DB_USER:$DB_PASSWORD@cluster0.jxwjo.mongodb.net/register?retryWrites=true&w=majority
+export default handler;

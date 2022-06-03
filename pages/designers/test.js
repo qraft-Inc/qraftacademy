@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaAsterisk } from "react-icons/fa";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
-import FormikControls from "../../components/formik/FormikControl";
+import FormikControls from "../../formik/FormikControl";
 import axios from "axios";
 import SuccessModal from "../../components/SuccessModal";
 import ErrorModal from "../../components/ErrorModal";
@@ -38,9 +38,11 @@ export default function test() {
   });
 
   const onSubmit = async (values, onSubmitProps) => {
-    axios
-      .post("http://localhost:5000/api/designers/test/data", values)
+    await axios
+      // .post("http://localhost:5000/api/designers/test/data", values)
+      .post("http://localhost:3000/api/register/", values)
       .then((response) => {
+        console.log(response.data)
         setSuccess(true);
         setValue(response.data.name)
         onSubmitProps.resetForm();
