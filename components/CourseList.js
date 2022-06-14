@@ -38,12 +38,32 @@ const data = [
     {
         id: 4,
         courseImg: "https://res.cloudinary.com/dwa3soopc/image/upload/v1651080074/qraft%20/data_f8bhh1.jpg",
-        courseTitle: "Data Literacy",
+        courseTitle: "Saturday Data Literacy",
         text1: "Start",
         text2: "18.April.2022",
         text3: "3 Months",
         altText: "data scientists",
         url: "/datascientists"
+    },
+    {
+        id: 5,
+        courseImg: "https://cdn.pixabay.com/photo/2018/09/18/11/19/artificial-intelligence-3685928_960_720.png",
+        courseTitle: "Data Science Courses",
+        // text1: "Start",
+        text2: "Learn scientific methods, processes, algorithms and systems to extract knowledge and insights from noisy, structured and unstructured data.",
+        // text3: "3 Months",
+        altText: "data scientists",
+        url: "/data-science-course"
+    },
+    {
+        id: 6,
+        courseImg: "https://cdn.pixabay.com/photo/2018/04/12/18/13/data-3314285_960_720.png",
+        courseTitle: "Data Corporate Trainings",
+        // text1: "Start",
+        text2: "Employees must embrace modern data techniques in order to realize the company's most important strategic initiatives and tackle business challenges using data.",
+        // text3: "3 Months",
+        altText: "data scientists",
+        url: "/data-corporate-training"
     }
 
 ]
