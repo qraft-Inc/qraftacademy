@@ -10,7 +10,7 @@ const data = [
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Product_Design_utd76i.jpg",
         courseTitle: "Product Design Night School",
         text1: "Start",
-        text2: "01.August.2022",
+        text2: "01.September.2022",
         text3: "1 Month",
         altText: "Software Developers",
         url: "/developers"
@@ -20,18 +20,17 @@ const data = [
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644905941/qraftstore/software_development_ci3tns.jpg",
         courseTitle: "Product Development Apprenticeship",
         text1: "Start",
-        text2: "04.July.2022",
+        text2: "05.September.2022",
         text3: "3 Months",
         altText: "Digital Marketers",
         url: "/marketing"
     },
     {
         id: 3,
-        // courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Product_Design_utd76i.jpg",
          courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Digital_Marketing_dbkrx8.jpg",
         courseTitle: "Product Growth Clinic",
         text1: "Start",
-        text2: "18.April.2022",
+        text2: "1.August.2022",
         text3: "2 Months",
         altText: "UI/UX designers",
         url: "/designers"
@@ -41,7 +40,7 @@ const data = [
         courseImg: "https://res.cloudinary.com/dwa3soopc/image/upload/v1651080074/qraft%20/data_f8bhh1.jpg",
         courseTitle: "Saturday Data Literacy",
         text1: "Start",
-        text2: "18.April.2022",
+        text2: "1.August.2022",
         text3: "3 Months",
         altText: "data scientists",
         url: "/datascientists"
