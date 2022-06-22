@@ -54,7 +54,7 @@ export default function Courses() {
             <figure className="md:grid md:grid-cols-2 mb-12">
               <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
                 <Image
-                  src="https://res.cloudinary.com/filipe256/image/upload/v1644905941/qraftstore/software_development_ci3tns.jpg"
+                  src="https://res.cloudinary.com/filipe256/image/upload/v1655885737/qraftstore/software_developmen_ooqmhl.jpg"
                   alt="Software Developers"
                   layout="responsive"
                   width={300}
@@ -85,7 +85,7 @@ export default function Courses() {
             <figure className="md:grid md:grid-cols-2 mb-12">
               <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 order-2">
                 <Image
-                  src="https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Digital_Marketing_dbkrx8.jpg"
+                  src="https://res.cloudinary.com/filipe256/image/upload/v1655885737/qraftstore/marketing_mmvixn.jpg"
                   alt="digital marketing"
                   layout="responsive"
                   width={500}
@@ -115,7 +115,7 @@ export default function Courses() {
             <figure className="md:grid md:grid-cols-2 mb-12">
               <div className="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
                 <Image
-                  src="https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Product_Design_utd76i.jpg"
+                  src="https://res.cloudinary.com/filipe256/image/upload/v1655885737/qraftstore/product_design_nf5mvk.jpg"
                   alt="UI/UX Designers"
                   layout="responsive"
                   width={400}
