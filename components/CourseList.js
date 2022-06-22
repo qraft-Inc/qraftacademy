@@ -7,7 +7,7 @@ import Link from 'next/link';
 const data = [
     {
         id: 1,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Product_Design_utd76i.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1655885737/qraftstore/product_design_nf5mvk.jpg",
         courseTitle: "Product Design Night School",
         text1: "Start",
         text2: "01.September.2022",
@@ -17,7 +17,7 @@ const data = [
     },
     {
         id: 2,
-        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1644905941/qraftstore/software_development_ci3tns.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1655885737/qraftstore/software_developmen_ooqmhl.jpg",
         courseTitle: "Product Development Apprenticeship",
         text1: "Start",
         text2: "05.September.2022",
@@ -27,7 +27,7 @@ const data = [
     },
     {
         id: 3,
-         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1645064225/qraftstore/Digital_Marketing_dbkrx8.jpg",
+        courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1655885737/qraftstore/product_design_nf5mvk.jpg",
         courseTitle: "Product Growth Clinic",
         text1: "Start",
         text2: "1.August.2022",
