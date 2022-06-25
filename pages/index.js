@@ -3,6 +3,7 @@ import Head from "next/head";
 import Testimonies from "../components/Testimonies";
 import Hero from "../components/Hero";
 import Courses from "../components/Courses";
+import CourseList from "../components/CourseList";
 
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
 
       <div>
         <Hero />
-        <Courses />
+        {/* <Courses /> */}
+        <CourseList />
         <Testimonies />
         
       </div>

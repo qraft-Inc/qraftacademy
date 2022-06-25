@@ -29,7 +29,7 @@ export default function Hero() {
           <span className="w-full md:w-auto">
             <Link
               activeClass="active"
-              to="courses"
+              to="courseList"
               spy={true}
               smooth={true}
               offset={50}

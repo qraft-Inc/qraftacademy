@@ -55,10 +55,10 @@ export default function Navbar() {
                                 <a className="hover:border-b-2 border-blue-400 py-1 ">Home</a></Link>
                             <Link href="https://www.qraftacademy.com/about">
                                 <a className="hover:border-b-2 border-blue-400 py-1">About Us</a></Link>
-                            <Link href="https://www.qraftacademy.com/tracks"><a className="hover:border-b-2 border-blue-400 py-1">Tracks</a></Link>
+                            {/* <Link href="https://www.qraftacademy.com/tracks"><a className="hover:border-b-2 border-blue-400 py-1">Tracks</a></Link> */}
                             <Link href="https://www.qraftacademy.com/careers"><a className="hover:border-b-2 border-blue-400 py-1">Careers</a></Link>
                             <Link href="https://www.qraftacademy.com/contact"><a className="hover:border-b-2 border-blue-400 py-1">Contact Us</a></Link>
-                            {!user && <Link href="/api/auth/login"><a className="rounded-lg bg-[#4092CF] text-base px-3 py-2 hover:bg-blue-400 transition duration-300">Login/Signup</a></Link>}
+                            {/* {!user && <Link href="/api/auth/login"><a className="rounded-lg bg-[#4092CF] text-base px-3 py-2 hover:bg-blue-400 transition duration-300">Login/Signup</a></Link>} */}
                         </div>
 
                         {user && (
@@ -69,7 +69,7 @@ export default function Navbar() {
                                     <div className="rounded-full border-2 border-[#4092CF] overflow-hidden w-12 h-12">
                                         <img className="" src={user.picture} alt={user.name} />
                                     </div>
-                                    <Link href="/api/auth/logout"><a className="hidden lg:flex  rounded-lg bg-[#4092CF] text-base px-3 py-2 hover:bg-blue-400 transition duration-300">Logout</a></Link>
+                                    {/* <Link href="/api/auth/logout"><a className="hidden lg:flex  rounded-lg bg-[#4092CF] text-base px-3 py-2 hover:bg-blue-400 transition duration-300">Logout</a></Link> */}
                                 </div>
                             </>
                         )}
@@ -98,7 +98,7 @@ export default function Navbar() {
                         )}
                         <Link href="https://www.qraftacademy.com"><a className="border-b">Home</a></Link>
                         <Link href="https://www.qraftacademy.com/about"><a className="border-b">About Us</a></Link>
-                        <Link href="https://www.qraftacademy.com/tracks"><a className="border-b">Tracks</a></Link>
+                        {/* <Link href="https://www.qraftacademy.com/tracks"><a className="border-b">Tracks</a></Link> */}
                         <Link href="https://www.qraftacademy.com/careers"><a className="border-b">Careers</a></Link>
                         <Link href="https://www.qraftacademy.com/contact"><a className="border-b">Contact Us</a></Link>
                         {!user && <Link href="/api/auth/login"><a className="border-b">Login/Signup</a></Link>}

@@ -70,7 +70,7 @@ const data = [
 
 export default function CourseList(props) {
     return (
-        <div className="mb-6 py-8 px-0 pt-0">
+        <div className="mb-6 py-8 px-0 pt-24" id="courseList">
             <h2 className="font-medium text-blue-900 text-xl">Course List</h2>
             <div className="mt-4 grid gap-y-6 md:gap-x-10 xl:grid-cols-3 sm:grid-cols-2 sm:gap-10">
                 {data.map(course => (
