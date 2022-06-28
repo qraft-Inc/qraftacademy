@@ -6,13 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "json-server": "json-server --watch data/db.json --port 5000 --routes data/routes.json"
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^1.5.0",
     "@formspree/react": "^2.2.4",
     "@tailwindcss/forms": "^0.3.4",
+    "axios": "^0.27.2",
+    "formik": "^2.2.9",
+    "json-server": "^0.17.0",
+    "mongoose": "^6.3.3",
     "next": "^11.1.4",
+    "next-connect": "^0.12.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
@@ -20,7 +26,8 @@
     "react-scroll": "^1.8.4",
     "swiper": "^7.0.5",
     "tw-elements": "^1.0.0-alpha10",
-    "vercel": "^23.1.2"
+    "vercel": "^23.1.2",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.3",

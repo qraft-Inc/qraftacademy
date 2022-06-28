@@ -20,7 +20,6 @@ export default function Home() {
         {/* <Courses /> */}
         <CourseList />
         <Testimonies />
-        
       </div>
     </>
   );
