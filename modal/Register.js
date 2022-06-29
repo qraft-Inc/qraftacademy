@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 const registerSchema = new mongoose.Schema(
   {
     email: {type:String, required:true, unique:true},
+    password: { type: String},
     name: {type:String, required:true},
     phone: {type:String, required:true},
     program: {type:String, required:true},
