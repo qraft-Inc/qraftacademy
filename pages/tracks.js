@@ -1,14 +1,11 @@
 import Link from "next/link"
 import Image from "next/image"
 import Head from "next/head";
-import { useUser } from '@auth0/nextjs-auth0';
 import CourseList from "../components/CourseList";
 import MentorList from "../components/MentorList";
 
 export default function Trucks() {
 
-    //get loggedIn user
-    const { user } = useUser();
 
     return (
         <>

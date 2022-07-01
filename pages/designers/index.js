@@ -1,6 +1,5 @@
 import Link from "next/link"
 import Head from "next/head";
-import { useUser } from '@auth0/nextjs-auth0';
 import { FaAward } from "react-icons/fa";
 import { AiOutlineCalendar } from "react-icons/ai";
 import { FaRegHandshake } from "react-icons/fa";
@@ -13,9 +12,6 @@ import ReactPlayer from 'react-player/lazy';
 
 
 export default function Designers() {
-
-    //get loggedIn user
-    const { user } = useUser();
 
     return (
         <>

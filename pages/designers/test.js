@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { FaAsterisk } from "react-icons/fa";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import FormikControls from "../../formik/FormikControl";
@@ -40,7 +39,7 @@ export default function test() {
   const onSubmit = async (values, onSubmitProps) => {
     await axios
       // .post("http://localhost:5000/api/designers/test/data", values)
-      .post("http://localhost:3000/api/register/", values)
+      .post("http://localhost:3000/api/user/", values)
       .then((response) => {
         console.log(response.data);
         setSuccess(true);
