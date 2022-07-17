@@ -4,6 +4,8 @@ import Testimonies from "../components/Testimonies";
 import Hero from "../components/Hero";
 import Courses from "../components/Courses";
 import CourseList from "../components/CourseList";
+import WorkList from "../components/WorkList";
+import TalentList from "../components/TalentList";
 
 export default function Home() {
   return (
@@ -19,6 +21,10 @@ export default function Home() {
         <Hero />
         {/* <Courses /> */}
         <CourseList />
+        <WorkList />
+        <TalentList />
+        
+       
         <Testimonies />
         
       </div>

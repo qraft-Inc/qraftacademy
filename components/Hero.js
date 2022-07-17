@@ -41,7 +41,7 @@ export default function Hero() {
               
               <Link
               activeClass="active"
-              to="courseList"
+              to="workList"
               spy={true}
               smooth={true}
               offset={50}
@@ -53,7 +53,7 @@ export default function Hero() {
 
               <Link
               activeClass="active"
-              to="courseList"
+              to="talentList"
               spy={true}
               smooth={true}
               offset={50}
