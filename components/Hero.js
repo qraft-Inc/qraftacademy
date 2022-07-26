@@ -59,6 +59,7 @@ export default function Hero() {
               offset={50}
               duration={500}
             >
+
               <a className="cursor-pointer inline-flex items-center justify-center w-full px-8 md:px-12 py-4 text-base md:text-lg font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
                 Hire Digital Talent
               </a></Link>

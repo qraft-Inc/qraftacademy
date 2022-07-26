@@ -13,7 +13,7 @@ const data = [
         text2: "01.September.2022",
         text3: "1 Month",
         altText: "Software Developers",
-        url: "/developers"
+        url: "/hire"
     },
     {
         id: 2,
