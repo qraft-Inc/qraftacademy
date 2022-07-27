@@ -12,6 +12,8 @@ export default function FormikControl({ control, ...rest }) {
       return <Textarea {...rest} />;
     case "radio":
       return <RadioBtn {...rest} />;
+      case "image":
+      return <Image {...rest} />;
     default:
       return null;
   }

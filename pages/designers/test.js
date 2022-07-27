@@ -25,6 +25,7 @@ export default function test() {
     phone: "",
     program: "",
     answer: "",
+    image: "",
   };
 
   // form validation with yup Lib
@@ -34,11 +35,11 @@ export default function test() {
     phone: Yup.string().required("Required"),
     program: Yup.string().required("Required"),
     answer: Yup.string().required("Required"),
+    image: Yup.string().required("Required"),
   });
 
   const onSubmit = async (values, onSubmitProps) => {
     await axios
-      // .post("http://localhost:5000/api/designers/test/data", values)
       .post("http://localhost:3000/api/user/", values)
       .then((response) => {
         console.log(response.data);
@@ -102,6 +103,12 @@ export default function test() {
                   placeholder="Your Answer"
                   label=" How did you learn about Qraft Academy. What inspired /motivated you to apply for this answer?"
                   name="answer"
+                />
+                   <FormikControls
+                  control="textarea"
+                  placeholder="Your Answer"
+                  label="Profile picture"
+                  name="image"
                 />
                 <div className="container">
                   <button
