@@ -37,15 +37,47 @@ export default async function handler(req, res) {
     // create new user
     case "POST":
       try {
+        // const { password, status, isAdmin, email, fullname, telephone, program,
+        //   textarea1, textarea2, textarea3, textarea4, textarea5, textarea6, textarea7, role, image, cv, letter } = req.body;
+        const { email } = req.body
         const newUser = new User({
-          email: req.body.email,
-          name: req.body.name,
-          phone: req.body.phone,
-          program: req.body.program,
-          isAdmin: req.body.isAdmin,
-          answer: req.body.answer,
-          status: req.body.status,
-          image: req.body.image,
+          // password,
+          // isAdmin,
+          // status,
+          email,
+          // fullname,
+          // telephone,
+          // program,
+          // textarea1,
+          // textarea2,
+          // textarea3,
+          // textarea4,
+          // textarea5,
+          // textarea6,
+          // textarea7,
+          // role,
+          // image,
+          // cv,
+          // letter
+
+          //  password: req.body.password,
+          // isAdmin: req.body.isAdmin,
+          // status: req.body.status,
+          // email: req.body.email,
+          // fullname: req.body.fullname,
+          // telephone: req.body.telephone,
+          // program: req.body.program,
+          // textarea1: req.body.textarea1,
+          // textarea2: req.body.textarea2,
+          // textarea3: req.body.textarea3,
+          // textarea4: req.body.textarea4,
+          // textarea5: req.body.textarea5,
+          // textarea6: req.body.textarea6,
+          // textarea7: req.body.textarea7,
+          // role: req.body.role,
+          // image: req.body.image,
+          // cv: req.body.cv,
+          // letter: req.body.letter
         });
         const user = await newUser.save();
         await db.disconnect();
