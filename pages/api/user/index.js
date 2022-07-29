@@ -38,7 +38,6 @@ export default async function handler(req, res) {
     case "POST":
       try {
         const {
-          // status,
           isAdmin,
           email,
           fullname,
@@ -58,7 +57,6 @@ export default async function handler(req, res) {
         } = req.body;
         const newUser = new User({
           isAdmin,
-          // status,
           email,
           fullname,
           telephone,
