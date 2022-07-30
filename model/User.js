@@ -18,6 +18,7 @@ const userSchema = new mongoose.Schema(
     cv: { type: String },
     letter: { type: String },
     isAdmin: { type: Boolean, required: true, default: false },
+    image: { type: String, default:""},
 
   },
   {
