@@ -1,11 +1,8 @@
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 import AboutUs from "../components/AboutUs";
 import VisionMission from "../components/VisionMission";
 import OurTeam from "../components/OurTeam";
-import FunFactor from "../components/FunFactor";
-import { MdNavigateNext } from "react-icons/md";
 
 export default function About() {
   return (
@@ -28,7 +25,6 @@ export default function About() {
                         quality={100}
                     />
                 </div>
-                {/* <div className="px-4 py-36 text-left text-white md:max-w-none md:text-center z-10 relative"> */}
 
                 <div className=" py-44 text-white text-center z-10 relative md:w-4/5 md:ml-32">
 
