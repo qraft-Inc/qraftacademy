@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import GetStarted from './GetStarted';
 import Rating from './Rating';
-import Link from 'next/link';
 
 // data to be displayed into each course card
 const data = [
