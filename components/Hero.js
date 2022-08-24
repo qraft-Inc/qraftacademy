@@ -18,7 +18,7 @@ export default function Hero() {
 
         <div className="px-4 py-44 text-left text-white md:max-w-none md:text-center z-10 relative">
           <h1 className="text-4xl font-extrabold leading-10 tracking-tight md:text-center sm:leading-none md:text-6xl lg:text-7xl">
-            <span className="inline-block md:block">Night School </span>
+            <span className="inline-block md:block">Placements </span>
             <span className="mt-2 sm:inline-block"> And Apprenticeships</span>
           </h1>
 
@@ -36,7 +36,7 @@ export default function Hero() {
               duration={500}
             >
               <a className="cursor-pointer inline-flex items-center justify-center w-full px-8 md:px-12 py-4 text-base md:text-lg font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
-                Available Tracks
+                Available Opportunities
               </a></Link>
           </span>
         </div>
