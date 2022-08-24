@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <>
       <header className="h-screen">
-        <div className=" h-full relative inset-0 top-14">
+        <div className=" h-full absolute inset-0 top-14">
           <Image
             alt="Background Image"
             src="https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/hero-bg_ytthxj.png"
@@ -27,7 +27,7 @@ export default function Hero() {
           </div>
 
 
-          <div class="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <div>
             <span className="w-full md:w-auto">
             <Link
