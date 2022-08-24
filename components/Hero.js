@@ -51,7 +51,6 @@ export default function Hero() {
   <span className="w-full md:w-auto">
             <Link
               activeClass="active"
-              to="https://www.qraftacademy.com/careers"
               spy={true}
               smooth={true}
               offset={50}
