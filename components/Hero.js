@@ -23,10 +23,13 @@ export default function Hero() {
           </h1>
 
           <div className="mx-auto mt-5 md:mt-12 md:max-w-xl md:text-center lg:text-lg mb-12">
-            Learn, Work And Grow Your Career With Industry Experts And Dynamic Teams!
+          Rely On Qraft Academy. The marketplace for tech talent.
           </div>
 
-          <span className="w-full md:w-auto">
+
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+            <span className="w-full md:w-auto">
             <Link
               activeClass="active"
               to="courseList"
@@ -39,9 +42,13 @@ export default function Hero() {
                 Join An Apprenticeship
               </a></Link>
           </span>
-<br></br>
 
-          <span className="w-full md:w-auto">
+            </div>
+         
+
+  <div>
+
+  <span className="w-full md:w-auto">
             <Link
               activeClass="active"
               to="courseList"
@@ -54,6 +61,12 @@ export default function Hero() {
                 Discover Talent
               </a></Link>
           </span>
+  </div>
+</div>
+          
+<br></br>
+
+         
 
         </div>
 
