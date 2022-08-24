@@ -55,13 +55,13 @@ export default function Navbar() {
               <Link href="https://www.qraftacademy.com">
                 <a className="hover:border-b-2 border-blue-400 py-1 ">Home</a>
               </Link>
+              <Link href="https://www.qraftacademy.com/careers">
+                <a className="hover:border-b-2 border-blue-400 py-1">Discover Talent</a>
+              </Link>
               <Link href="https://www.qraftacademy.com/about">
                 <a className="hover:border-b-2 border-blue-400 py-1">
                   About Us
                 </a>
-              </Link>
-              <Link href="https://www.qraftacademy.com/careers">
-                <a className="hover:border-b-2 border-blue-400 py-1">Careers</a>
               </Link>
               <Link href="https://www.qraftacademy.com/contact">
                 <a className="hover:border-b-2 border-blue-400 py-1">
