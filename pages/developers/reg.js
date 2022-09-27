@@ -18,6 +18,7 @@ export default function Register() {
     telephone: Yup.string().required("Required"),
     course: Yup.string().required("Required"),
     program: Yup.string().required("Required"),
+    position: Yup.string().required("Required"),
     textarea1: Yup.string().required("Required"),
     textarea2: Yup.string().required("Required"),
     textarea3: Yup.string().required("Required"),
@@ -37,6 +38,7 @@ export default function Register() {
     telephone: "",
     course: "",
     program: "",
+    position: "",
     textarea1: "",
     textarea2: "",
     textarea3: "",
@@ -304,6 +306,124 @@ export default function Register() {
                 >
                   Software Development
                 </label>
+              </div>
+              <div className="font-bold text-red-600 text-sm">
+                <ErrorMessage name="program" />
+              </div>
+            </div>
+
+            {/* PROGRAMMING STACK */}
+            <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
+              <div className="inline-flex space-x-2 items-center justify-start ">
+                <label
+                  className="text-lg sm:text-xl font-medium"
+                  htmlFor="fullname"
+                >
+                  What is your prefered programming stack ?
+                </label>
+                <FaAsterisk size="0.5em" color="red" />
+              </div>
+              <div className=" flex flex-col  items-start justify-start border-b border-gray-400 w-5/6">
+                <Field
+                  className="appearance-none bg-transparent  w-full text-gray-700 border-none leading-tight mt-0 px-0.5 border-b border-gray-400 focus:ring-0 focus:border-gray-700"
+                  type="text"
+                  placeholder="Your answer"
+                  aria-label="stack"
+                  id="stack"
+                  name="stack"
+                />
+              </div>
+              <div className="font-bold text-red-600 text-sm">
+                <ErrorMessage name="fullname" />
+              </div>
+            </div>
+
+            {/* POSITION CARD */}
+            <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-8 border rounded border-black mx-auto my-16">
+              <div className="inline-flex space-x-2 items-center justify-start ">
+                <p className="text-lg sm:text-xl font-medium">
+                  What is your ideal role ?
+                </p>
+                <FaAsterisk size="0.5em" color="red" />
+              </div>
+
+              <div className="w-full">
+                <Field
+                  type="radio"
+                  name="position"
+                  value="full stack"
+                  className="form-radio"
+                />
+                <label
+                  htmlFor="product_design"
+                  className="ml-4 text-sm sm:text-base"
+                >
+                  Full stack developer
+                </label>
+                <br></br>
+                <Field
+                  type="radio"
+                  name="position"
+                  value="back end"
+                  className="form-radio"
+                />
+                <label
+                  htmlFor="digital_marketing"
+                  className="ml-4 text-sm sm:text-base"
+                >
+                  Back End Developer
+                </label>
+                <br></br>
+                <Field
+                  type="radio"
+                  name="position"
+                  value="front end"
+                  className="form-radio"
+                />
+                <label
+                  htmlFor="digital_marketing"
+                  className="ml-4 text-sm sm:text-base"
+                >
+                  Front End Developer
+                </label>
+                <br></br>
+
+                <Field
+                  type="radio"
+                  name="position"
+                  value="mobile developer"
+                  className="form-radio"
+                />
+                <label
+                  htmlFor="digital_marketing"
+                  className="ml-4 text-sm sm:text-base"
+                >
+                  Mobile Developer
+                </label>
+                <br></br>
+
+                <div className="flex items-center">
+                  <Field
+                    type="radio"
+                    name="position"
+                    className="form-radio"
+                  />
+
+                  <label htmlFor="software_development" className="ml-4 text-sm sm:text-base">
+                    Other:
+                  </label>
+                  <div className="ml-2 border-b border-gray-400 w-5/6">
+                    <Field
+                      className="appearance-none bg-transparent w-full text-gray-700 border-none leading-tight mt-0 border-b border-gray-400 focus:ring-0 focus:border-gray-700"
+                      type="text"
+                      placeholder="Your answer"
+                      aria-label="position"
+                      id="position"
+                      name="position"
+                    />
+                  </div>
+                </div>
+
               </div>
               <div className="font-bold text-red-600 text-sm">
                 <ErrorMessage name="program" />

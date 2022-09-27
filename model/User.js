@@ -6,6 +6,8 @@ const userSchema = new mongoose.Schema(
     password: { type: String, default: "" },
     fullname: { type: String, required: true },
     telephone: { type: String, required: true },
+    course: { type: String, required: true },
+    stack: { type: String, required: true },
     program: { type: String, required: true },
     textarea1: { type: String, required: true },
     textarea2: { type: String, required: true },
