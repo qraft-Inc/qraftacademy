@@ -59,8 +59,8 @@ export default function Testimonies() {
     
     <section className="h-auto md:grid md:grid-cols-1 mb-8">
       <div className="flex flex-col items-center px-2">
-        <h1 className="text-xl font-semibold leading-tight">What Students Say</h1>
-        <p className="leading-7 sm:pr-12 xl:pr-32 lg:text-lg pt-4 pb-2 px-8" >Qraft Academy is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist.</p>
+        <h1 className="text-xl font-semibold leading-tight">What Apprentices Say</h1>
+        <p className="leading-7 sm:pr-12 xl:pr-32 lg:text-lg pt-4 pb-2 px-8" >Qraft Academy is an online marketplace for engineering,data,product and design teams.</p>
       </div>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar]}

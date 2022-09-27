@@ -8,7 +8,7 @@ const data = [
     {
         id: 1,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1655885737/qraftstore/product_design_nf5mvk.jpg",
-        courseTitle: "Product Design Night School",
+        courseTitle: "Product Design Apprenticeship",
         text1: "Start",
         text2: "01.September.2022",
         text3: "1 Month",
@@ -18,7 +18,7 @@ const data = [
     {
         id: 2,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1655885737/qraftstore/software_developmen_ooqmhl.jpg",
-        courseTitle: "Product Development Apprenticeship",
+        courseTitle: "Software Development Apprenticeship",
         text1: "Start",
         text2: "05.September.2022",
         text3: "3 Months",
@@ -28,7 +28,7 @@ const data = [
     {
         id: 3,
         courseImg: "https://res.cloudinary.com/filipe256/image/upload/v1655885737/qraftstore/product_design_nf5mvk.jpg",
-        courseTitle: "Product Growth Clinic",
+        courseTitle: "Product Management Apprenticeship",
         text1: "Start",
         text2: "1.August.2022",
         text3: "2 Months",
@@ -38,7 +38,7 @@ const data = [
     {
         id: 4,
         courseImg: "https://res.cloudinary.com/dwa3soopc/image/upload/v1651080074/qraft%20/data_f8bhh1.jpg",
-        courseTitle: "Saturday Data Literacy",
+        courseTitle: "Data Analysis Apprenticeship",
         text1: "Start",
         text2: "1.August.2022",
         text3: "3 Months",
@@ -48,7 +48,7 @@ const data = [
     {
         id: 5,
         courseImg: "https://cdn.pixabay.com/photo/2018/09/18/11/19/artificial-intelligence-3685928_960_720.png",
-        courseTitle: "Data Science Courses",
+        courseTitle: "Artificial Intelligence/Machine Learning Apprenticeship",
         // text1: "Start",
         text2: "Learn scientific methods, processes, algorithms and systems to extract knowledge and insights from noisy, structured and unstructured data.",
         // text3: "3 Months",
@@ -58,7 +58,7 @@ const data = [
     {
         id: 6,
         courseImg: "https://cdn.pixabay.com/photo/2018/04/12/18/13/data-3314285_960_720.png",
-        courseTitle: "Data Corporate Trainings",
+        courseTitle: "Events",
         // text1: "Start",
         text2: "Employees must embrace modern data techniques in order to realize the company's most important strategic initiatives and tackle business challenges using data.",
         // text3: "3 Months",

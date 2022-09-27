@@ -15,8 +15,15 @@ async function connect() {
     }
     await mongoose.disconnect();
   }
-  // const db = await mongoose.connect(process.env.DB_URL);
-  const db = await mongoose.connect(process.env.DB_URL_DEV);
+
+  let DB_URL;
+  const env = process.env.NODE_ENV;
+  if (env === "development") {
+    DB_URL = process.env.DB_URL_DEV;
+  } else if (env === "production") {
+    DB_URL = process.env.DB_URL_PROD;
+  }
+  const db = await mongoose.connect(DB_URL);
   console.log("New connection");
   connection.isConnected = db.connections[0].readyState;
 }

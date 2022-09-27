@@ -63,10 +63,10 @@ export default function Register() {
 
   return (
     <>
-      {/* render success OR error modals  after registration*/}
+      {/* render success OR error modals  after registration */}
       {errorModal && <ErrorModal closeModal={setError} value={value} />}
       {successModal && <SuccessModal closeModal={setSuccess} value={value} />}
-      // INTRODUCTION
+      
       <div className="container mt-40 mx-auto mb-40 w-4/5 sm:w-3/5">
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-10 border rounded border-black">
           <p className="text-3xl sm:text-4xl font-extrabold w-full">

@@ -79,14 +79,7 @@ export default function Designers() {
                 </li>
                 <li className="px-6 py-2 w-full rounded-b-lg">FAQ</li>
               </ul>
-              {/* {!user &&
-                                <span className="mx-auto">
-                                    <Link href="designers/register">
-                                        <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-2 bg-light-blue hover:bg-blue-400 transition duration-300">Sign in to apply</a>
-                                    </Link>
-                                </span>
-                            } */}
-              {/* {user && */}
+
               <span className="mx-auto">
                 <Link href="designers/register">
                   <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">
@@ -145,14 +138,6 @@ export default function Designers() {
               </li>
               <li className="px-6 py-2 w-full rounded-b-lg">FAQ</li>
             </ul>
-            {/* {!user &&
-                            <span className="mx-auto">
-                                <Link href="designers/register">
-                                    <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-2 bg-light-blue hover:bg-blue-400 transition duration-300">Sign in to apply</a>
-                                </Link>
-                            </span>
-                        } */}
-            {/* {user && */}
             <span className="mx-auto">
               <Link href="designers/register">
                 <a className="flex self-center justify-center rounded-lg w-36 text-center text-white font-bold text-base p-2 px-4 bg-light-blue hover:bg-blue-400 transition duration-300">
