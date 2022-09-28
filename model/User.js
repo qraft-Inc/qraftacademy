@@ -8,6 +8,9 @@ const userSchema = new mongoose.Schema(
     telephone: { type: String, required: true },
     course: { type: String, required: true },
     stack: { type: String, required: true },
+    linkedin: { type: String, required: true },
+    github: { type: String, required: true },
+    position: { type: String, required: true },
     program: { type: String, required: true },
     textarea1: { type: String, required: true },
     textarea2: { type: String, required: true },
@@ -20,8 +23,7 @@ const userSchema = new mongoose.Schema(
     cv: { type: String },
     letter: { type: String },
     isAdmin: { type: Boolean, required: true, default: false },
-    image: { type: String, default:""},
-
+    image: { type: String, default: "" },
   },
   {
     timestamps: true,
