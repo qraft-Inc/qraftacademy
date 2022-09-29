@@ -16,19 +16,20 @@ export default function Register() {
     email: Yup.string().email("Invalid email format").required("Required"),
     fullname: Yup.string().required("Required"),
     telephone: Yup.string().required("Required"),
-    course: Yup.string().required("Required"),
+    cv: Yup.string().required("Required"),
+    letter: Yup.string().required("Required"),
     program: Yup.string().required("Required"),
+    course: Yup.string().required("Required"),
+    stack: Yup.string().required("Required"),
     position: Yup.string().required("Required"),
     textarea1: Yup.string().required("Required"),
     textarea2: Yup.string().required("Required"),
     textarea3: Yup.string().required("Required"),
     textarea4: Yup.string().required("Required"),
     textarea5: Yup.string().required("Required"),
+    role: Yup.string().required("Required"),
     textarea6: Yup.string().required("Required"),
     textarea7: Yup.string().required("Required"),
-    letter: Yup.string().required("Required"),
-    role: Yup.string().required("Required"),
-    cv: Yup.string().required("Required"),
   });
 
   // initial form value
@@ -36,24 +37,25 @@ export default function Register() {
     email: "",
     fullname: "",
     telephone: "",
-    course: "",
+    cv: "",
+    letter: "",
     program: "",
+    course: "",
+    stack: "",
     position: "",
     textarea1: "",
     textarea2: "",
     textarea3: "",
     textarea4: "",
     textarea5: "",
+    role: "",
     textarea6: "",
     textarea7: "",
-    role: "",
-    cv: "",
-    letter: "",
   };
 
   const onSubmit = async (values, onSubmitProps) => {
     await axios
-      .post("http://localhost:3000/api/user", values)
+      .post("http://localhost:3000/api/developers", values)
       .then((response) => {
         setSuccess(true);
         setValue(response.data.name);

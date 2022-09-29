@@ -1,5 +1,5 @@
-import db from "../../../data/db";
-import User from "../../../model/User";
+import db from "../../data/db";
+import Designers from "../../model/designers"
 
 // display all users
 export default async function handler(req, res) {
@@ -12,50 +12,41 @@ export default async function handler(req, res) {
     case "POST":
       try {
         const {
-          isAdmin,
           email,
           fullname,
           telephone,
+          cv,
+          letter,
           program,
-          course,
-          stack,
-          linkedin,
-          github,
-          position,
           textarea1,
           textarea2,
           textarea3,
           textarea4,
           textarea5,
+          role,
           textarea6,
           textarea7,
-          role,
           image,
-          cv,
-          letter,
+          isAdmin,
+
         } = req.body;
-        const newUser = new User({
-          isAdmin,
+        const newUser = new Designers({
           email,
           fullname,
           telephone,
+          cv,
+          letter,
           program,
-          course,
-          stack,
-          linkedin,
-          github,
-          position,
           textarea1,
           textarea2,
           textarea3,
           textarea4,
           textarea5,
+          role,
           textarea6,
           textarea7,
-          role,
           image,
-          cv,
-          letter,
+          isAdmin,
         });
         const user = await newUser.save();
         await db.disconnect();
