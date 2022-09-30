@@ -50,7 +50,7 @@ export default function Register() {
 
   const onSubmit = async (values, onSubmitProps) => {
     await axios
-      .post("http://localhost:3000/api/marketing", values)
+      .post("http://localhost:3000/api/user", values)
       .then((response) => {
         setSuccess(true);
         setValue(response.data.name);
