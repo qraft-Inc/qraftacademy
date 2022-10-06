@@ -19,7 +19,8 @@ async function connect() {
   let DB_URL;
   const env = process.env.NODE_ENV;
   if (env === "development") {
-    DB_URL = process.env.DB_URL_DEV;
+    // DB_URL = process.env.DB_URL_DEV;
+       DB_URL = process.env.DB_URL_PROD;
   } else if (env === "production") {
     DB_URL = process.env.DB_URL_PROD;
   }

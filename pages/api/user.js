@@ -1,5 +1,5 @@
 import db from "../../data/db";
-import Designers from "../../model/designers"
+import UserModel from "../../model/User";
 
 // display all users
 export default async function handler(req, res) {
@@ -17,7 +17,11 @@ export default async function handler(req, res) {
           telephone,
           cv,
           letter,
+          linkedin,
           program,
+          course,
+          stack,
+          position,
           textarea1,
           textarea2,
           textarea3,
@@ -28,15 +32,18 @@ export default async function handler(req, res) {
           textarea7,
           image,
           isAdmin,
-
         } = req.body;
-        const newUser = new Designers({
+        const newUser = new UserModel({
           email,
           fullname,
           telephone,
           cv,
           letter,
+          linkedin,
           program,
+          course,
+          stack,
+          position,
           textarea1,
           textarea2,
           textarea3,
