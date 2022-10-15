@@ -2,11 +2,11 @@ import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
   {
-    email: { type: String, required: true, unique: true },
-    fullname: { type: String, required: true },
-    telephone: { type: String, required: true },
-    cv: { type: String },
-    letter: { type: String },
+    // email: { type: String, required: true, unique: true },
+    // fullname: { type: String, required: true },
+    // telephone: { type: String, required: true },
+    // cv: { type: String },
+    // letter: { type: String },
     program: { type: String, required: true },
     course: { type: String, required: true },
     stack: { type: String, required: true },
@@ -16,11 +16,11 @@ const userSchema = new mongoose.Schema(
     textarea3: { type: String, required: true },
     textarea4: { type: String, required: true },
     textarea5: { type: String, required: true },
-    role: { type: String, required: true },
+    // role: { type: String, required: true },
     textarea6: { type: String, required: true },
     textarea7: { type: String, required: true },
-    image: { type: String, default: "" },
-    isAdmin: { type: Boolean, required: true, default: false },
+    // image: { type: String, default: "" },
+    // isAdmin: { type: Boolean, required: true, default: false },
 
   },
   {
