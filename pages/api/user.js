@@ -1,5 +1,5 @@
 import db from "../../data/db";
-import User from "../../model/user";
+import UserModel from "../../model/User";
 
 // display all users
 export default async function handler(req, res) {
@@ -17,11 +17,11 @@ export default async function handler(req, res) {
       //     telephone,
       //     cv,
       //     letter,
+      //     linkedin,
       //     program,
       //     course,
       //     stack,
       //     position,
-      //     linkedin,
       //     textarea1,
       //     textarea2,
       //     textarea3,
@@ -33,17 +33,17 @@ export default async function handler(req, res) {
       //     image,
       //     isAdmin,
       //   } = req.body;
-      //   const newUser = new User({
+      //   const newUser = new UserModel({
       //     email,
       //     fullname,
       //     telephone,
       //     cv,
       //     letter,
+      //     linkedin,
       //     program,
       //     course,
       //     stack,
       //     position,
-      //     linkedin,
       //     textarea1,
       //     textarea2,
       //     textarea3,
@@ -60,7 +60,7 @@ export default async function handler(req, res) {
       //   return res.status(200).json(user);
       // }
       try {
-        const newUser = new User({
+        const newUser = new UserModel({
           ...req.body,
         });
         const user = await newUser.save();

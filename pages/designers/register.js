@@ -51,7 +51,7 @@ export default function Register() {
 
   const onSubmit = async (values, onSubmitProps) => {
     await axios
-      .post("http://localhost:3000/api/user", values)
+      .post("/api/user", values)
       .then((response) => {
         setSuccess(true);
         setValue(response.data.name);
