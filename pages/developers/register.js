@@ -13,49 +13,59 @@ export default function Register() {
 
   // form validation with yup Lib
   const validationSchema = Yup.object({
-    email: Yup.string().email("Invalid email format").required("Required"),
-    fullname: Yup.string().required("Required"),
-    telephone: Yup.string().required("Required"),
-    cv: Yup.string().required("Required"),
-    letter: Yup.string().required("Required"),
-    program: Yup.string().required("Required"),
-    course: Yup.string().required("Required"),
-    stack: Yup.string().required("Required"),
-    position: Yup.string().required("Required"),
-    textarea1: Yup.string().required("Required"),
-    textarea2: Yup.string().required("Required"),
-    textarea3: Yup.string().required("Required"),
-    textarea4: Yup.string().required("Required"),
-    textarea5: Yup.string().required("Required"),
-    role: Yup.string().required("Required"),
-    textarea6: Yup.string().required("Required"),
-    textarea7: Yup.string().required("Required"),
+    user: Yup.object({
+      email: Yup.string().email("Invalid email format").required("Required"),
+      fullname: Yup.string().required("Required"),
+    }),
+
+    developers: Yup.object({
+      telephone: Yup.string().required("Required"),
+      cv: Yup.string().required("Required"),
+      letter: Yup.string().required("Required"),
+      program: Yup.string().required("Required"),
+      course: Yup.string().required("Required"),
+      stack: Yup.string().required("Required"),
+      position: Yup.string().required("Required"),
+      textarea1: Yup.string().required("Required"),
+      textarea2: Yup.string().required("Required"),
+      textarea3: Yup.string().required("Required"),
+      textarea4: Yup.string().required("Required"),
+      textarea5: Yup.string().required("Required"),
+      role: Yup.string().required("Required"),
+      textarea6: Yup.string().required("Required"),
+      textarea7: Yup.string().required("Required"),
+    }),
   });
 
   // initial form value
   const initialValues = {
-    email: "",
-    fullname: "",
-    telephone: "",
-    cv: "",
-    letter: "",
-    program: "",
-    course: "",
-    stack: "",
-    position: "",
-    textarea1: "",
-    textarea2: "",
-    textarea3: "",
-    textarea4: "",
-    textarea5: "",
-    role: "",
-    textarea6: "",
-    textarea7: "",
+    user: {
+      email: "",
+      fullname: "",
+    },
+    
+    developers: {
+      telephone: "",
+      cv: "",
+      letter: "",
+      program: "",
+      course: "",
+      stack: "",
+      position: "",
+      textarea1: "",
+      textarea2: "",
+      textarea3: "",
+      textarea4: "",
+      textarea5: "",
+      role: "",
+      textarea6: "",
+      textarea7: "",
+    },
   };
 
   const onSubmit = async (values, onSubmitProps) => {
     await axios
-      .post("/api/user", values)
+      .post("/api/developers", values)
       .then((response) => {
         setSuccess(true);
         setValue(response.data.name);
@@ -110,12 +120,11 @@ export default function Register() {
                   type="email"
                   placeholder="Your email"
                   aria-label="email"
-                  id="email"
-                  name="email"
+                  name="user.email"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="email" />
+                <ErrorMessage name="user.email" />
               </div>
             </div>
 
@@ -136,12 +145,11 @@ export default function Register() {
                   type="text"
                   placeholder="Your answer"
                   aria-label="fullname"
-                  id="fullname"
-                  name="fullname"
+                  name="user.fullname"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="fullname" />
+                <ErrorMessage name="user.fullname" />
               </div>
             </div>
 
@@ -162,12 +170,11 @@ export default function Register() {
                   type="text"
                   placeholder="XXXX-XXXXXX"
                   aria-label="telephone"
-                  id="telephone"
-                  name="telephone"
+                  name="developers.telephone"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="telephone" />
+                <ErrorMessage name="developers.telephone" />
               </div>
             </div>
 
@@ -185,12 +192,11 @@ export default function Register() {
                   type="text"
                   placeholder="https://docs.google.com/cv"
                   aria-label="cv"
-                  id="cv"
-                  name="cv"
+                  name="developers.cv"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="cv" />
+                <ErrorMessage name="developers.cv" />
               </div>
             </div>
 
@@ -211,12 +217,11 @@ export default function Register() {
                   type="text"
                   placeholder="https://docs.google.com/cover_leter"
                   aria-label="letter"
-                  id="letter"
-                  name="letter"
+                  name="developers.letter"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="letter" />
+                <ErrorMessage name="developers.letter" />
               </div>
             </div>
 
@@ -232,7 +237,7 @@ export default function Register() {
               <div className="">
                 <Field
                   type="radio"
-                  name="program"
+                  name="developers.program"
                   value="night school"
                   className="form-radio"
                 />
@@ -245,7 +250,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="program"
+                  name="developers.program"
                   value="apprenticeship"
                   className="form-radio"
                 />
@@ -257,7 +262,7 @@ export default function Register() {
                 </label>
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="program" />
+                <ErrorMessage name="developers.program" />
               </div>
             </div>
             {/* COURSE CARD */}
@@ -272,7 +277,7 @@ export default function Register() {
               <div className="">
                 <Field
                   type="radio"
-                  name="course"
+                  name="developers.course"
                   value="product design"
                   className="form-radio"
                 />
@@ -285,7 +290,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="course"
+                  name="developers.course"
                   value="digital_marketing"
                   className="form-radio"
                 />
@@ -298,7 +303,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="course"
+                  name="developers.course"
                   value="software_development"
                   className="form-radio"
                 />
@@ -310,7 +315,7 @@ export default function Register() {
                 </label>
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="program" />
+                <ErrorMessage name="developers.course" />
               </div>
             </div>
 
@@ -332,11 +337,11 @@ export default function Register() {
                   placeholder="Your answer"
                   aria-label="stack"
                   id="stack"
-                  name="stack"
+                  name="developers.stack"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="fullname" />
+                <ErrorMessage name="developers.stack" />
               </div>
             </div>
 
@@ -352,7 +357,7 @@ export default function Register() {
               <div className="w-full">
                 <Field
                   type="radio"
-                  name="position"
+                  name="developers.position"
                   value="full stack"
                   className="form-radio"
                 />
@@ -365,7 +370,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="position"
+                  name="developers.position"
                   value="back end"
                   className="form-radio"
                 />
@@ -378,7 +383,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="position"
+                  name="developers.position"
                   value="front end"
                   className="form-radio"
                 />
@@ -392,7 +397,7 @@ export default function Register() {
 
                 <Field
                   type="radio"
-                  name="position"
+                  name="developers.position"
                   value="mobile developer"
                   className="form-radio"
                 />
@@ -405,7 +410,11 @@ export default function Register() {
                 <br></br>
 
                 <div className="flex items-center">
-                  <Field type="radio" name="position" className="form-radio" />
+                  <Field
+                    type="radio"
+                    name="developers.position"
+                    className="form-radio"
+                  />
 
                   <label
                     htmlFor="software_development"
@@ -420,13 +429,13 @@ export default function Register() {
                       placeholder="Your answer"
                       aria-label="position"
                       id="position"
-                      name="position"
+                      name="developers.position"
                     />
                   </div>
                 </div>
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="program" />
+                <ErrorMessage name="developers.answer" />
               </div>
             </div>
 
@@ -449,12 +458,12 @@ export default function Register() {
                   id="inspiration_to_apply"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea1"
+                  name="developers.textarea1"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea1" />
+                <ErrorMessage name="developers.textarea1" />
               </div>
             </div>
 
@@ -476,12 +485,12 @@ export default function Register() {
                   id="expectations_from_program"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea2"
+                  name="developers.textarea2"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea2" />
+                <ErrorMessage name="developers.textarea2" />
               </div>
             </div>
 
@@ -504,12 +513,12 @@ export default function Register() {
                   id="currently_working_on"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea3"
+                  name="developers.textarea3"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea3" />
+                <ErrorMessage name="developers.textarea3" />
               </div>
             </div>
 
@@ -532,12 +541,12 @@ export default function Register() {
                   id="design_tools"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea4"
+                  name="developers.textarea4"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea4" />
+                <ErrorMessage name="developers.textarea4" />
               </div>
             </div>
 
@@ -559,12 +568,12 @@ export default function Register() {
                   id="proud_achievement"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea5"
+                  name="developers.textarea5"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea5" />
+                <ErrorMessage name="developers.textarea5" />
               </div>
             </div>
 
@@ -579,7 +588,7 @@ export default function Register() {
               <div className="">
                 <Field
                   type="radio"
-                  name="role"
+                  name="developers.role"
                   value="highly independent role"
                   className="form-radio"
                 />
@@ -592,7 +601,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="role"
+                  name="developers.role"
                   value="Team Based"
                   className="form-radio"
                 />
@@ -605,7 +614,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="role"
+                  name="developers.role"
                   value="strong people skills"
                   className="form-radio"
                 />
@@ -618,7 +627,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="role"
+                  name="developers.role"
                   value="less people focused"
                   className="form-radio"
                 />
@@ -630,7 +639,7 @@ export default function Register() {
                 </label>
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="role" />
+                <ErrorMessage name="developers.role" />
               </div>
             </div>
 
@@ -653,12 +662,12 @@ export default function Register() {
                   id="something_you_believed_in"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea6"
+                  name="developers.textarea6"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea6" />
+                <ErrorMessage name="developers.textarea6" />
               </div>
             </div>
 
@@ -681,12 +690,12 @@ export default function Register() {
                   id="your_goal"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea7"
+                  name="developers.textarea7"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea7" />
+                <ErrorMessage name="developers.textarea7" />
               </div>
             </div>
 

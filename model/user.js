@@ -29,6 +29,7 @@ const userSchema = new mongoose.Schema(
       password: { type: String, default: "" },
       fullname: { type: String },
       isAdmin: { type: Boolean, required: true, default: false },
+      image: { type: String, default: "" },
     },
     developers: {
       fullname: { type: String },
@@ -47,7 +48,6 @@ const userSchema = new mongoose.Schema(
       role: { type: String },
       textarea6: { type: String },
       textarea7: { type: String },
-      image: { type: String, default: "" },
     },
     marketing: {
       telephone: { type: String },
@@ -62,7 +62,6 @@ const userSchema = new mongoose.Schema(
       role: { type: String },
       textarea6: { type: String },
       textarea7: { type: String },
-      image: { type: String, default: "" },
     },
     designers: {
       telephone: { type: String },
@@ -77,8 +76,6 @@ const userSchema = new mongoose.Schema(
       role: { type: String },
       textarea6: { type: String },
       textarea7: { type: String },
-      password: { type: String, default: "" },
-      image: { type: String, default: "" },
     },
   },
   {

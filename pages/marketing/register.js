@@ -13,44 +13,53 @@ export default function Register() {
 
   // form validation with yup Lib
   const validationSchema = Yup.object({
-    email: Yup.string().email("Invalid email format").required("Required"),
-    fullname: Yup.string().required("Required"),
-    telephone: Yup.string().required("Required"),
-    cv: Yup.string().required("Required"),
-    letter: Yup.string().required("Required"),
-    linkedin: Yup.string().required("Required"),
-    textarea1: Yup.string().required("Required"),
-    textarea2: Yup.string().required("Required"),
-    textarea3: Yup.string().required("Required"),
-    textarea4: Yup.string().required("Required"),
-    textarea5: Yup.string().required("Required"),
-    role: Yup.string().required("Required"),
-    textarea6: Yup.string().required("Required"),
-    textarea7: Yup.string().required("Required"),
+    user: Yup.object({
+      email: Yup.string().email("Invalid email format").required("Required"),
+      fullname: Yup.string().required("Required"),
+    }),
 
+    marketing: Yup.object({
+      telephone: Yup.string().required("Required"),
+      cv: Yup.string().required("Required"),
+      letter: Yup.string().required("Required"),
+      linkedin: Yup.string().required("Required"),
+      textarea1: Yup.string().required("Required"),
+      textarea2: Yup.string().required("Required"),
+      textarea3: Yup.string().required("Required"),
+      textarea4: Yup.string().required("Required"),
+      textarea5: Yup.string().required("Required"),
+      role: Yup.string().required("Required"),
+      textarea6: Yup.string().required("Required"),
+      textarea7: Yup.string().required("Required"),
+    }),
   });
 
   // initial form value
   const initialValues = {
-    email: "",
-    fullname: "",
-    telephone: "",
-    cv: "",
-    letter: "",
-    linkedin: "",
-    textarea1: "",
-    textarea2: "",
-    textarea3: "",
-    textarea4: "",
-    textarea5: "",
-    role: "",
-    textarea6: "",
-    textarea7: "",
+    user: {
+      email: "",
+      fullname: "",
+    },
+
+    marketing: {
+      telephone: "",
+      cv: "",
+      letter: "",
+      linkedin: "",
+      textarea1: "",
+      textarea2: "",
+      textarea3: "",
+      textarea4: "",
+      textarea5: "",
+      role: "",
+      textarea6: "",
+      textarea7: "",
+    },
   };
 
   const onSubmit = async (values, onSubmitProps) => {
     await axios
-      .post("/api/user", values)
+      .post("/api/marketing", values)
       .then((response) => {
         setSuccess(true);
         setValue(response.data.name);
@@ -105,12 +114,11 @@ export default function Register() {
                   type="email"
                   placeholder="Your email"
                   aria-label="email"
-                  id="email"
-                  name="email"
+                  name="user.email"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="email" />
+                <ErrorMessage name="user.email" />
               </div>
             </div>
 
@@ -131,12 +139,11 @@ export default function Register() {
                   type="text"
                   placeholder="Your answer"
                   aria-label="fullname"
-                  id="fullname"
-                  name="fullname"
+                  name="user.fullname"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="fullname" />
+                <ErrorMessage name="user.fullname" />
               </div>
             </div>
 
@@ -157,12 +164,11 @@ export default function Register() {
                   type="text"
                   placeholder="XXXX-XXXXXX"
                   aria-label="telephone"
-                  id="telephone"
-                  name="telephone"
+                  name="marketing.telephone"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="telephone" />
+                <ErrorMessage name="marketing.telephone" />
               </div>
             </div>
 
@@ -180,12 +186,11 @@ export default function Register() {
                   type="text"
                   placeholder="Your answer"
                   aria-label="cv"
-                  id="cv"
-                  name="cv"
+                  name="marketing.cv"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="cv" />
+                <ErrorMessage name="marketing.cv" />
               </div>
             </div>
 
@@ -206,12 +211,11 @@ export default function Register() {
                   type="text"
                   placeholder="Your answer"
                   aria-label="letter"
-                  id="letter"
-                  name="letter"
+                  name="marketing.letter"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="letter" />
+                <ErrorMessage name="marketing.letter" />
               </div>
             </div>
 
@@ -232,12 +236,11 @@ export default function Register() {
                   type="text"
                   placeholder="Your answer"
                   aria-label="linkedin"
-                  id="linkedin"
-                  name="linkedin"
+                  name="marketing.linkedin"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="linkedin" />
+                <ErrorMessage name="marketing.linkedin" />
               </div>
             </div>
 
@@ -260,12 +263,12 @@ export default function Register() {
                   id="inspiration_to_apply"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea1"
+                  name="marketing.textarea1"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea1" />
+                <ErrorMessage name="marketing.textarea1" />
               </div>
             </div>
 
@@ -287,12 +290,12 @@ export default function Register() {
                   id="expectations_from_program"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea2"
+                  name="marketing.textarea2"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea2" />
+                <ErrorMessage name="marketing.textarea2" />
               </div>
             </div>
 
@@ -315,12 +318,12 @@ export default function Register() {
                   id="currently_working_on"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea3"
+                  name="marketing.textarea3"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea3" />
+                <ErrorMessage name="marketing.textarea3" />
               </div>
             </div>
 
@@ -343,12 +346,12 @@ export default function Register() {
                   id="design_tools"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea4"
+                  name="marketing.textarea4"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea4" />
+                <ErrorMessage name="marketing.textarea4" />
               </div>
             </div>
 
@@ -370,12 +373,12 @@ export default function Register() {
                   id="proud_achievement"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea5"
+                  name="marketing.textarea5"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea5" />
+                <ErrorMessage name="marketing.textarea5" />
               </div>
             </div>
 
@@ -390,7 +393,7 @@ export default function Register() {
               <div className="">
                 <Field
                   type="radio"
-                  name="role"
+                  name="marketing.role"
                   value="highly independent role"
                   className="form-radio"
                 />
@@ -403,7 +406,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="role"
+                  name="marketing.role"
                   value="Team Based"
                   className="form-radio"
                 />
@@ -416,7 +419,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="role"
+                  name="marketing.role"
                   value="strong people skills"
                   className="form-radio"
                 />
@@ -429,7 +432,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="role"
+                  name="marketing.role"
                   value="less people focused"
                   className="form-radio"
                 />
@@ -441,7 +444,7 @@ export default function Register() {
                 </label>
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="role" />
+                <ErrorMessage name="marketing.role" />
               </div>
             </div>
 
@@ -464,12 +467,12 @@ export default function Register() {
                   id="something_you_believed_in"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea6"
+                  name="marketing.textarea6"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea6" />
+                <ErrorMessage name="marketing.textarea6" />
               </div>
             </div>
 
@@ -492,12 +495,12 @@ export default function Register() {
                   id="your_goal"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea7"
+                  name="marketing.textarea7"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea7" />
+                <ErrorMessage name="marketing.textarea7" />
               </div>
             </div>
 

@@ -13,45 +13,53 @@ export default function Register() {
 
   // form validation with yup Lib
   const validationSchema = Yup.object({
-    email: Yup.string().email("Invalid email format").required("Required"),
-    fullname: Yup.string().required("Required"),
-    telephone: Yup.string().required("Required"),
-    cv: Yup.string().required("Required"),
-    letter: Yup.string().required("Required"),
-    program: Yup.string().required("Required"),
-    textarea1: Yup.string().required("Required"),
-    textarea2: Yup.string().required("Required"),
-    textarea3: Yup.string().required("Required"),
-    textarea4: Yup.string().required("Required"),
-    textarea5: Yup.string().required("Required"),
-    role: Yup.string().required("Required"),
-    textarea6: Yup.string().required("Required"),
-    textarea7: Yup.string().required("Required"),
+    user: Yup.object({
+      email: Yup.string().email("Invalid email format").required("Required"),
+      fullname: Yup.string().required("Required"),
+    }),
 
-
+    designers: Yup.object({
+      telephone: Yup.string().required("Required"),
+      cv: Yup.string().required("Required"),
+      letter: Yup.string().required("Required"),
+      program: Yup.string().required("Required"),
+      textarea1: Yup.string().required("Required"),
+      textarea2: Yup.string().required("Required"),
+      textarea3: Yup.string().required("Required"),
+      textarea4: Yup.string().required("Required"),
+      textarea5: Yup.string().required("Required"),
+      role: Yup.string().required("Required"),
+      textarea6: Yup.string().required("Required"),
+      textarea7: Yup.string().required("Required"),
+    }),
   });
 
   // initial form value
   const initialValues = {
-    email: "",
-    fullname: "",
-    telephone: "",
-    cv: "",
-    letter: "",
-    program: "",
-    textarea1: "",
-    textarea2: "",
-    textarea3: "",
-    textarea4: "",
-    textarea5: "",
-    role: "",
-    textarea6: "",
-    textarea7: "",
+    user: {
+      email: "",
+      fullname: "",
+    },
+
+    designers: {
+      telephone: "",
+      cv: "",
+      letter: "",
+      program: "",
+      textarea1: "",
+      textarea2: "",
+      textarea3: "",
+      textarea4: "",
+      textarea5: "",
+      role: "",
+      textarea6: "",
+      textarea7: "",
+    },
   };
 
   const onSubmit = async (values, onSubmitProps) => {
     await axios
-      .post("/api/user", values)
+      .post("/api/designers", values)
       .then((response) => {
         setSuccess(true);
         setValue(response.data.name);
@@ -68,7 +76,7 @@ export default function Register() {
       {/* render success OR error modals  after registration */}
       {errorModal && <ErrorModal closeModal={setError} value={value} />}
       {successModal && <SuccessModal closeModal={setSuccess} value={value} />}
-      
+
       <div className="container mt-40 mx-auto mb-40 w-4/5 sm:w-3/5">
         <div className="container flex flex-col space-y-6 items-start justify-center px-6 py-10 border rounded border-black">
           <p className="text-3xl sm:text-4xl font-extrabold w-full">
@@ -106,12 +114,11 @@ export default function Register() {
                   type="email"
                   placeholder="Your email"
                   aria-label="email"
-                  id="email"
-                  name="email"
+                  name="user.email"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="email" />
+                <ErrorMessage name="user.email" />
               </div>
             </div>
 
@@ -132,12 +139,11 @@ export default function Register() {
                   type="text"
                   placeholder="Your answer"
                   aria-label="fullname"
-                  id="fullname"
-                  name="fullname"
+                  name="user.fullname"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="fullname" />
+                <ErrorMessage name="user.fullname" />
               </div>
             </div>
 
@@ -158,12 +164,11 @@ export default function Register() {
                   type="text"
                   placeholder="XXXX-XXXXXX"
                   aria-label="telephone"
-                  id="telephone"
-                  name="telephone"
+                  name="designers.telephone"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="telephone" />
+                <ErrorMessage name="designers.telephone" />
               </div>
             </div>
 
@@ -181,12 +186,11 @@ export default function Register() {
                   type="text"
                   placeholder="https://docs.google.com/cv"
                   aria-label="cv"
-                  id="cv"
-                  name="cv"
+                  name="designers.cv"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="cv" />
+                <ErrorMessage name="designers.cv" />
               </div>
             </div>
 
@@ -207,12 +211,11 @@ export default function Register() {
                   type="text"
                   placeholder="https://docs.google.com/cover_leter"
                   aria-label="letter"
-                  id="letter"
-                  name="letter"
+                  name="designers.letter"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="letter" />
+                <ErrorMessage name="designers.letter" />
               </div>
             </div>
 
@@ -228,7 +231,7 @@ export default function Register() {
               <div className="">
                 <Field
                   type="radio"
-                  name="program"
+                  name="designers.program"
                   value="product design"
                   className="form-radio"
                 />
@@ -241,7 +244,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="program"
+                  name="designers.program"
                   value="digital_marketing"
                   className="form-radio"
                 />
@@ -254,7 +257,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="program"
+                  name="designers.program"
                   value="software_development"
                   className="form-radio"
                 />
@@ -266,7 +269,7 @@ export default function Register() {
                 </label>
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="program" />
+                <ErrorMessage name="designers.program" />
               </div>
             </div>
 
@@ -289,12 +292,12 @@ export default function Register() {
                   id="inspiration_to_apply"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea1"
+                  name="designers.textarea1"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea1" />
+                <ErrorMessage name="designers.textarea1" />
               </div>
             </div>
 
@@ -316,12 +319,12 @@ export default function Register() {
                   id="expectations_from_program"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea2"
+                  name="designers.textarea2"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea2" />
+                <ErrorMessage name="designers.textarea2" />
               </div>
             </div>
 
@@ -344,12 +347,12 @@ export default function Register() {
                   id="currently_working_on"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea3"
+                  name="designers.textarea3"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea3" />
+                <ErrorMessage name="designers.textarea3" />
               </div>
             </div>
 
@@ -372,12 +375,12 @@ export default function Register() {
                   id="design_tools"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea4"
+                  name="designers.textarea4"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea4" />
+                <ErrorMessage name="designers.textarea4" />
               </div>
             </div>
 
@@ -399,12 +402,12 @@ export default function Register() {
                   id="proud_achievement"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea5"
+                  name="designers.textarea5"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea5" />
+                <ErrorMessage name="designers.textarea5" />
               </div>
             </div>
 
@@ -419,7 +422,7 @@ export default function Register() {
               <div className="">
                 <Field
                   type="radio"
-                  name="role"
+                  name="designers.role"
                   value="highly independent role"
                   className="form-radio"
                 />
@@ -432,7 +435,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="role"
+                  name="designers.role"
                   value="Team Based"
                   className="form-radio"
                 />
@@ -445,7 +448,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="role"
+                  name="designers.role"
                   value="strong people skills"
                   className="form-radio"
                 />
@@ -458,7 +461,7 @@ export default function Register() {
                 <br></br>
                 <Field
                   type="radio"
-                  name="role"
+                  name="designers.role"
                   value="less people focused"
                   className="form-radio"
                 />
@@ -470,7 +473,7 @@ export default function Register() {
                 </label>
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="role" />
+                <ErrorMessage name="designers.role" />
               </div>
             </div>
 
@@ -493,12 +496,12 @@ export default function Register() {
                   id="something_you_believed_in"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea6"
+                  name="designers.textarea6"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea6" />
+                <ErrorMessage name="designers.textarea6" />
               </div>
             </div>
 
@@ -521,12 +524,12 @@ export default function Register() {
                   id="your_goal"
                   rows="3"
                   placeholder="Your answer"
-                  name="textarea7"
+                  name="designers.textarea7"
                   as="textarea"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">
-                <ErrorMessage name="textarea7" />
+                <ErrorMessage name="designers.textarea7" />
               </div>
             </div>
 
