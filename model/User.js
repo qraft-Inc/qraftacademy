@@ -28,8 +28,8 @@ const userSchema = new mongoose.Schema(
       email: { type: String, required: true, unique: true },
       password: { type: String, default: "" },
       fullname: { type: String },
-      isAdmin: { type: Boolean, required: true, default: false },
       image: { type: String, default: "" },
+      isAdmin: { type: Boolean, required: true, default: false },
     },
     developers: {
       fullname: { type: String },
