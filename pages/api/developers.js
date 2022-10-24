@@ -1,5 +1,5 @@
 import db from "../../data/db";
-import UserModel from "../../model/User";
+import UserModel from "../../model/user";
 
 // display all users
 export default async function handler(req, res) {
