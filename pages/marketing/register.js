@@ -15,11 +15,10 @@ export default function Register() {
   const validationSchema = Yup.object({
     user: Yup.object({
       email: Yup.string().email("Invalid email format").required("Required"),
-      // fullname: Yup.string().required("Required"),
+      fullname: Yup.string().required("Required"),
     }),
 
     marketing: Yup.object({
-      fullname: Yup.string().required("Required"),
       telephone: Yup.string().required("Required"),
       cv: Yup.string().required("Required"),
       letter: Yup.string().required("Required"),
@@ -39,11 +38,10 @@ export default function Register() {
   const initialValues = {
     user: {
       email: "",
-      // fullname: "",
+      fullname: "",
     },
 
     marketing: {
-      fullname: "",
       telephone: "",
       cv: "",
       letter: "",
@@ -141,7 +139,7 @@ export default function Register() {
                   type="text"
                   placeholder="Your answer"
                   aria-label="fullname"
-                  name="marketing.fullname"
+                  name="user.fullname"
                 />
               </div>
               <div className="font-bold text-red-600 text-sm">

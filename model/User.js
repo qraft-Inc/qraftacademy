@@ -10,7 +10,6 @@ const userSchema = new mongoose.Schema(
       isAdmin: { type: Boolean, required: true, default: false },
     },
     developers: {
-      fullname: { type: String },
       telephone: { type: String },
       cv: { type: String },
       letter: { type: String },
