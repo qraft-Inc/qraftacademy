@@ -5,12 +5,13 @@ const userSchema = new mongoose.Schema(
     user: {
       email: { type: String, required: true, unique: true },
       password: { type: String, default: "" },
-      fullname: { type: String },
-      image: { type: String, default: "" },
+      // fullname: { type: String },
+      // image: { type: String, default: "" },
       isAdmin: { type: Boolean, required: true, default: false },
     },
     developers: {
       fullname: { type: String },
+      image: { type: String, default: "" },
       telephone: { type: String },
       cv: { type: String },
       letter: { type: String },
@@ -28,6 +29,8 @@ const userSchema = new mongoose.Schema(
       textarea7: { type: String },
     },
     marketing: {
+      fullname: { type: String },
+      image: { type: String, default: "" },
       telephone: { type: String },
       cv: { type: String },
       letter: { type: String },
@@ -42,6 +45,8 @@ const userSchema = new mongoose.Schema(
       textarea7: { type: String },
     },
     designers: {
+      fullname: { type: String },
+      image: { type: String, default: "" },
       telephone: { type: String },
       cv: { type: String },
       letter: { type: String },
