@@ -33,7 +33,7 @@ const data = [
         text2: "1.August.2022",
         text3: "2 Months",
         altText: "UI/UX designers",
-        url: "/designers"
+        url: "/marketing"
     },
     {
         id: 4,
