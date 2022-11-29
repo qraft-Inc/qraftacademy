@@ -9,6 +9,7 @@ const userSchema = new mongoose.Schema(
       image: { type: String, default: "" },
       isAdmin: { type: Boolean, required: true, default: false },
     },
+
     developers: {
       telephone: { type: String },
       cv: { type: String },
@@ -55,11 +56,7 @@ const userSchema = new mongoose.Schema(
       textarea7: { type: String },
     },
   },
-  {
-    timestamps: true,
-    resetPasswordToken: {type: String, default: "" },
-    resetPasswordExpire:{type: String, default: "" }
-  }
+  { timestamps: true }
 );
 
 const User = mongoose.models.User || mongoose.model("User", userSchema);
