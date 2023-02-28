@@ -18,7 +18,7 @@ export default function Hero1() {
         <div className="px-4 py-44 text-left text-white md:max-w-none md:text-center z-10 relative">
           <h1 className="text-4xl font-extrabold leading-10 tracking-tight md:text-center sm:leading-none md:text-6xl lg:text-7xl">
             <span className="inline-block md:block">
-              Fellowship Access To Resources For Digital Entrepreneurs
+              Fellowship And Access To Resources For Digital Entrepreneurs
             </span>
           </h1>
 
