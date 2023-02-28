@@ -24,7 +24,7 @@ export default function Hero() {
           </h1>
 
           <div className="mx-auto mt-5 md:mt-12 md:max-w-xl md:text-center lg:text-lg mb-12">
-            Rely On Qraft Academy. The marketplace for tech talent.
+            Rely On Qraft Academy. The marketplace for tech innovators
           </div>
 
           <div className="grid grid-cols-2 gap-4">
