@@ -145,6 +145,7 @@ const data = [
 export default function OurTeam() {
     return (
         // start of team area
+        // end of team area
         <div className="mb-6 pb-4 px-6 sm:px-9">
             <h2 className="font-bold text-blue-900  text-4xl mb-4 mt-20">Our Team</h2>
             <p className="font-normal text-gray-700 text-xl mb-14">Having more experienced members and mentors that have devoted to the Vision</p>
@@ -167,31 +168,31 @@ export default function OurTeam() {
                                     <h3 className="text-medium font-semibold flex text-blue-900 justify-center mt-1">{team.role}</h3>
                                     <ul className=" flex justify-center w-full mt-2">
                                         <li className="text-blue-600 ">
-                                            <Link href="#">
-                                                <a className="text-2xl">
-                                                    <AiFillLinkedin className="mr-1" />
-                                                </a>
+                                            <Link href="#" className="text-2xl">
+
+                                                <AiFillLinkedin className="mr-1" />
+
                                             </Link>
                                         </li>
                                         <li className="text-light-blue">
-                                            <Link href="#">
-                                                <a className="text-2xl">
-                                                    <AiFillTwitterSquare className="mr-1" />
-                                                </a>
+                                            <Link href="#" className="text-2xl">
+
+                                                <AiFillTwitterSquare className="mr-1" />
+
                                             </Link>
                                         </li>
                                         <li className="text-blue-900 ">
-                                            <Link href="#">
-                                                <a className="text-2xl">
-                                                    <AiFillFacebook className="mr-1" />
-                                                </a>
+                                            <Link href="#" className="text-2xl">
+
+                                                <AiFillFacebook className="mr-1" />
+
                                             </Link>
                                         </li>
                                         <li className="text-red-400 ">
-                                            <Link href="#">
-                                                <a className="text-2xl">
-                                                    <AiFillInstagram className="mr-1" />
-                                                </a>
+                                            <Link href="#" className="text-2xl">
+
+                                                <AiFillInstagram className="mr-1" />
+
                                             </Link>
                                         </li>
                                     </ul>
@@ -202,6 +203,5 @@ export default function OurTeam() {
                 }
             </div>
         </div>
-        // end of team area
-    )
+    );
 }

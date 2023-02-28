@@ -102,23 +102,23 @@ export default function CourseList() {
                                     <ul className="text-light-blue flex justify-center w-full">
                                         <li className="">
                                             <Link href="#">
-                                                <a>
-                                                    <AiFillTwitterSquare className="mr-1" ></AiFillTwitterSquare>
-                                                </a>
+
+                                                <AiFillTwitterSquare className="mr-1" ></AiFillTwitterSquare>
+
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#">
-                                                <a>
-                                                    <AiFillFacebook className="mr-1"></AiFillFacebook>
-                                                </a>
+
+                                                <AiFillFacebook className="mr-1"></AiFillFacebook>
+
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="#">
-                                                <a>
-                                                    <AiFillInstagram className="mr-1"></AiFillInstagram>
-                                                </a>
+
+                                                <AiFillInstagram className="mr-1"></AiFillInstagram>
+
                                             </Link>
                                         </li>
                                     </ul>
@@ -129,5 +129,5 @@ export default function CourseList() {
                 }
             </div>
         </div>
-    )
+    );
 }
