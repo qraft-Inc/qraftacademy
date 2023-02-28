@@ -68,7 +68,7 @@ export default function Navbar() {
               <Link href="/careers">
                 <a className="hover:border-b-2 border-blue-400 py-1">
                   Discover Talent
-                
+                  </a>
               </Link>
               <Link href="/about" className="hover:border-b-2 border-blue-400 py-1">
                 
