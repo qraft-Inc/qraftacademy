@@ -8,7 +8,7 @@ export default function Hero1() {
         <div className=" h-full absolute inset-0 " style={{ top: "110vh" }}>
           <Image
             alt="Background Image"
-            src={"/enterpenuer.jpeg"}
+            src="https://res.cloudinary.com/dwa3soopc/image/upload/v1677600066/qraft%20/mikelya-fournier-4iG91rr92Ks-unsplash_lwamc8.jpg"
             layout="fill"
             objectFit="cover"
             quality={100}
