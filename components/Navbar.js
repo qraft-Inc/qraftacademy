@@ -54,19 +54,19 @@ export default function Navbar() {
               <Link href="/" className="hover:border-b-2 border-blue-400 py-1 ">
                 Home
               </Link>
-              <Link href="/technologists" className="hover:border-b-2 border-blue-400 py-1">
-                
+              <Link href="/technologists">
+                <a className="hover:border-b-2 border-blue-400 py-1">
                   Technologists
-                
+                </a>
               </Link>
-              <Link href="/entrepreneurs" className="hover:border-b-2 border-blue-400 py-1">
-                
+              <Link href="/entrepreneurs">
+                <a className="hover:border-b-2 border-blue-400 py-1">
                 Entrepreneurs
-                
+                </a>
               </Link>
 
-              <Link href="/careers" className="hover:border-b-2 border-blue-400 py-1">
-                
+              <Link href="/careers">
+                <a className="hover:border-b-2 border-blue-400 py-1">
                   Discover Talent
                 
               </Link>
