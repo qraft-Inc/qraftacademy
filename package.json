@@ -19,7 +19,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.2.0",
     "react-player": "^2.9.0",
-    "react-scroll": "^1.8.4",
+    "react-scroll": "^1.8.9",
     "swiper": "^7.0.5",
     "tw-elements": "^1.0.0-alpha10",
     "vercel": "^28.16.7",
