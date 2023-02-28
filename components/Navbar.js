@@ -36,23 +36,23 @@ export default function Navbar() {
           <div className="flex items-center">
             <div>
               <Link href="/">
-                <a>
-                  <Image
-                    src="https://res.cloudinary.com/filipe256/image/upload/v1641806795/qraftstore/Artboard_4_mpr4mh_yrk1sm.png"
-                    alt="Qraft Academy"
-                    layout="fixed"
-                    width={95}
-                    height={80}
-                  />
-                </a>
+
+                <Image
+                  src="https://res.cloudinary.com/filipe256/image/upload/v1641806795/qraftstore/Artboard_4_mpr4mh_yrk1sm.png"
+                  alt="Qraft Academy"
+                  layout="fixed"
+                  width={95}
+                  height={80}
+                />
+
               </Link>
             </div>
           </div>
           {/* primary nav */}
           <div className="flex space-x-10 items-center">
             <div className="hidden lg:flex space-x-10">
-              <Link href="/">
-                <a className="hover:border-b-2 border-blue-400 py-1 ">Home</a>
+              <Link href="/" className="hover:border-b-2 border-blue-400 py-1 ">
+                Home
               </Link>
               <Link href="/technologists">
                 <a className="hover:border-b-2 border-blue-400 py-1">
@@ -68,19 +68,19 @@ export default function Navbar() {
               <Link href="/careers">
                 <a className="hover:border-b-2 border-blue-400 py-1">
                   Discover Talent
-                </a>
+                
               </Link>
-              <Link href="/about">
-                <a className="hover:border-b-2 border-blue-400 py-1">
+              <Link href="/about" className="hover:border-b-2 border-blue-400 py-1">
+                
                   About Us
-                </a>
+                
               </Link>
-              <Link href="/contact">
-                <a className="hover:border-b-2 border-blue-400 py-1">
+              <Link href="/contact" className="hover:border-b-2 border-blue-400 py-1">
+                
                   Contact Us
-                </a>
+                
               </Link>
-              <Link href="https://dashboard-qraftacademy.netlify.app/">
+              <Link href="https://dashboard-qraftacademy.netlify.app/" legacyBehavior>
                 <button
                   type="button"
                   className="inline-block px-6 py-2 border-2 border-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
@@ -109,19 +109,19 @@ export default function Navbar() {
           className="lg:hidden flex flex-col px-4 space-y-6 pb-4 pt-4 bg-black"
           onClick={() => setMenuVisibility(!isMenuVisible)}
         >
-          <Link href="/">
-            <a className="border-b">Home</a>
+          <Link href="/" className="border-b">
+            Home
           </Link>
-          <Link href="/about">
-            <a className="border-b">About Us</a>
+          <Link href="/about" className="border-b">
+            About Us
           </Link>
-          <Link href="/careers">
-            <a className="border-b">Careers</a>
+          <Link href="/careers" className="border-b">
+            Careers
           </Link>
-          <Link href="/contact">
-            <a className="border-b">Contact Us</a>
+          <Link href="/contact" className="border-b">
+            Contact Us
           </Link>
-          <Link href="https://dashboard-qraftacademy.netlify.app/">
+          <Link href="https://dashboard-qraftacademy.netlify.app/" legacyBehavior>
             <button
               type="button"
               className="w-24 py-2 border-2 border-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
