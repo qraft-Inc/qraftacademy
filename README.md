@@ -1,4 +1,4 @@
-# qraft-academy-api
+# qraft-academy
 
 ## Tech Stack
 
