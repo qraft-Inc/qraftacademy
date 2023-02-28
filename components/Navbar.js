@@ -54,6 +54,17 @@ export default function Navbar() {
               <Link href="/">
                 <a className="hover:border-b-2 border-blue-400 py-1 ">Home</a>
               </Link>
+              <Link href="/technologists">
+                <a className="hover:border-b-2 border-blue-400 py-1">
+                  Technologists
+                </a>
+              </Link>
+              <Link href="/entrepreneurs">
+                <a className="hover:border-b-2 border-blue-400 py-1">
+                Entrepreneurs
+                </a>
+              </Link>
+
               <Link href="/careers">
                 <a className="hover:border-b-2 border-blue-400 py-1">
                   Discover Talent
@@ -70,7 +81,6 @@ export default function Navbar() {
                 </a>
               </Link>
               <Link href="https://dashboard-qraftacademy.netlify.app/">
-            
                 <button
                   type="button"
                   className="inline-block px-6 py-2 border-2 border-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
