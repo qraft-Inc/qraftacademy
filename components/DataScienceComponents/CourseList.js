@@ -42,7 +42,7 @@ const data = [
 export default function CourseList(props) {
     return (
         <div className="mb-1  py-8 px-4 pt-0">
-            <h2 className="m-8 font-medium text-blue-900 text-xl">Course List</h2>
+            <h2 className="m-8 font-medium text-blue-900 text-xl">Learning Community</h2>
             <div className="mt-4 grid gap-y-6 md:gap-x-1 xl:grid-cols-3 sm:grid-cols-2 sm:gap-10">
                 {data.map(course => (
                     <div key={course.id} className=" flex justify-center xl:justify-even">

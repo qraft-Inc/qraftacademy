@@ -38,7 +38,7 @@ export default function Navbar() {
               <Link href="/">
 
                 <Image
-                  src="https://res.cloudinary.com/filipe256/image/upload/v1641806795/qraftstore/Artboard_4_mpr4mh_yrk1sm.png"
+                  src="https://res.cloudinary.com/dwa3soopc/image/upload/v1678291137/qraft%20/qraftacademy_udltnt.png"
                   alt="Qraft Academy"
                   layout="fixed"
                   width={95}
