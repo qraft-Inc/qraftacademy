@@ -26,28 +26,7 @@ export default function Hero1() {
             Rely On Qraft Academy. The marketplace for tech talent.
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <span className="w-full md:w-auto">
-                <Link
-                  activeClass="active"
-                  to="courseList"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  <p className="cursor-pointer inline-flex items-center justify-center w-full px-8 md:px-12 py-4 text-base md:text-lg font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
-                    Join A Fellowship
-                  </p>
-                </Link>
-              </span>
-            </div>
-
-            <div>
-              
-            </div>
-          </div>
+         
         </div>
       </header>
     </>
