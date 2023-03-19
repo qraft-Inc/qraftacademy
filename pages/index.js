@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Courses from "../components/Courses";
 import CourseList from "../components/CourseList";
 import Hero1 from "../components/Hero1";
+import ParallaxHero from '../components/ParallaxHero';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Hero image='https://res.cloudinary.com/filipe256/image/upload/v1642172209/qraftstore/hero-bg_ytthxj.png' />
 
 <Hero1 />
+<ParallaxHero/>
         {/* <Courses /> */}
         <CourseList />
         <Testimonies />
