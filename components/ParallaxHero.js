@@ -14,7 +14,7 @@ export default function ParallaxHero() {
         <Hero1 />
       </div>
       <div
-        className="w-full h-screen bg-no-repeat bg-cover"
+        className="w-full h-screen bg-no-repeat bg-cover bg-fixed"
         style={{
           backgroundImage:
             "url(https://res.cloudinary.com/dwa3soopc/image/upload/v1677600066/qraft%20/mikelya-fournier-4iG91rr92Ks-unsplash_lwamc8.jpg)",
