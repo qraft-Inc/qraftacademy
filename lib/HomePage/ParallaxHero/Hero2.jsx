@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import Link from "next/link";
 
 export default function Hero2() {
   return (
@@ -16,14 +16,7 @@ export default function Hero2() {
       <div className="grid grid-cols-2 gap-4">
         <div>
           <span className="w-full md:w-auto">
-            <Link
-              activeClass="active"
-              to="courseList"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
+            <Link href={"/entrepreneurs"}>
               <p className="cursor-pointer inline-flex items-center justify-center w-full px-8 md:px-12 py-4 text-base md:text-lg font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
                 Join A Fellowship
               </p>
