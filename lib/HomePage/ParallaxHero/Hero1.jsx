@@ -16,7 +16,7 @@ export default function Hero1() {
       <div className="grid grid-cols-2 gap-4">
         <div>
           <span className="w-full md:w-auto">
-            <Link href={"/"}>
+            <Link href={"/technologists"}>
               <p className="cursor-pointer inline-flex items-center justify-center w-full px-8 md:px-12 py-4 text-base md:text-lg font-bold leading-6 rounded-full md:w-auto bg-[#4092CF] hover:bg-blue-400 transition duration-300">
                 Join An Apprenticeship
               </p>
