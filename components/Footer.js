@@ -97,7 +97,7 @@ const Footer = () => {
           </Link>
         </li>
       </ul>
-      <div className="text-center">
+      <div className="text-center py-8">
         <span className="block text-white">
           &copy; {new Date().getFullYear()} Qraftacademy. All Rights Reserved
         </span>
