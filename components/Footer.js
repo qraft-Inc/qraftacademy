@@ -55,7 +55,7 @@ const Footer = () => {
 
         </ul>
         <div className="text-center">
-          <span className="block text-white">&copy; 2022 Qraftacademy. All Rights Reserved</span>
+          <span className="block text-white">&copy; {new Date().getFullYear()} Qraftacademy. All Rights Reserved</span>
         </div>
 
     </footer>
