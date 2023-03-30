@@ -99,7 +99,7 @@ const Footer = () => {
       </ul>
       <div className="text-center py-8">
         <span className="block text-white">
-          &copy; {new Date().getFullYear()} <a href="" className="">Qraft Academy</a>. All Rights Reserved
+          &copy; {new Date().getFullYear()} <a href="" className="" target="_blank">Qraft Academy</a>. All Rights Reserved
         </span>
       </div>
     </footer>
