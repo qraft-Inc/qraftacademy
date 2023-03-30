@@ -100,7 +100,7 @@ const Footer = () => {
       <div className="text-center py-8">
         <span className="block text-white">
           &copy; {new Date().getFullYear()}{" "}
-          <a href="" className="" target="_blank">
+          <a href="" className="underline" target="_blank">
             Qraft Academy
           </a>
           . All Rights Reserved
