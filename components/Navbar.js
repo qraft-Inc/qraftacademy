@@ -55,10 +55,10 @@ export default function Navbar() {
                 Home
               </Link>
               <Link href="/technologists" className="hover:border-b-2 border-blue-400 py-1">
-                  Technologists
+              Technologists
               </Link>
               <Link href="/entrepreneurs" className="hover:border-b-2 border-blue-400 py-1">
-                Entrepreneurs
+              Innovators
               </Link>
 
               <Link href="/careers" className="hover:border-b-2 border-blue-400 py-1">
