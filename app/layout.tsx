@@ -3,6 +3,9 @@ import "@/styles/tailwind.css"
 import GoogleAnalyticsScript from "../components/tools/google-analytics"
 import { TailwindIndicator } from "../components/tools/tailwind-indicator"
 import { siteConfig } from '@/config/site';
+import cn from "classnames";
+import { baronNeue, lato } from "./fonts";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
@@ -49,7 +52,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn(baronNeue.variable, lato.variable, "font-default")}>
       <body>
         {children}
         <GoogleAnalyticsScript />

@@ -1,14 +1,16 @@
-import { Inter, Space_Grotesk as SpaceGrotesk } from 'next/font/google';
+import localFont from 'next/font/local';
+import { Lato } from 'next/font/google';
 
-export const spaceGrotesk = SpaceGrotesk({
-  variable: '--font-grotesk',
-  subsets: ['latin'],
+export const baronNeue = localFont({
+  variable: '--font-baron-neue',
+  src: [{
+    path: "../../public/fonts/baron-neue.otf"
+  }]
 });
 
-export const inter = Inter({
-  variable: '--font-inter',
-  weight: ['400', '700', '800', '900'],
-  style: ['normal'],
+export const lato = Lato({
+  variable: '--font-lato', weight: ['400', '700'],
+  style: ['normal', 'italic'],
   subsets: ['latin'],
   display: 'swap',
-});
+})
