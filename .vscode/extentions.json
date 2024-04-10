@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag",
+    "adam-bender.commit-message-editor",
+    "dbaeumer.vscode-eslint",
+    "yzhang.markdown-all-in-one",
+    "esbenp.prettier-vscode",
+    "jock.svg",
+    "yoavbls.pretty-ts-errors",
+    "OfHumanBondage.react-proptypes-intellisense",
+    "jeremyljackson.vs-docblock",
+    "usernamehw.errorlens",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker",
+    "unifiedjs.vscode-mdx",
+    "naumovs.color-highlight",
+    "dsznajder.es7-react-js-snippets",
+    "burkeholland.simple-react-snippets",
+    "formulahendry.auto-rename-tag",
+    "bradlc.vscode-tailwindcss",
+    "EditorConfig.EditorConfig",
+    "unifiedjs.vscode-mdx",
+    "wayou.vscode-todo-highlight",
+    "meganrogge.template-string-converter"
+  ]
+}
