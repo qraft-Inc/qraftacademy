@@ -6,6 +6,8 @@ import { siteConfig } from '@/config/site';
 import cn from "classnames";
 import { baronNeue, lato } from "./fonts";
 import { Metadata } from "next";
+import Navigation from "@/components/layout/navigation";
+import Footer from "@/components/layout/footer";
 
 export const metadata: Metadata = {
   title: {
@@ -52,9 +54,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={cn(baronNeue.variable, lato.variable, "font-default")}>
+    <html lang="en" className={cn(baronNeue.variable, lato.variable, "font-default bg-primary-400 text-white")}>
       <body>
+        <Navigation/>
         {children}
+        <Footer />
         <GoogleAnalyticsScript />
         <TailwindIndicator />
       </body>

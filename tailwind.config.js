@@ -18,31 +18,17 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd",
-          400: "#60a5fa",
-          500: "#3b82f6",
-          600: "#2563eb",
-          700: "#1d4ed8",
-          800: "#1e40af",
-          900: "#1e3a8a",
+           100:"#62A8F9",
+          200: "#0978F3",
+          300: "#1A367F",
+          400: "#0B1724",
         },
       },
       fontFamily: {
        heading: ['var(--font-inter)'],
        default: ['var(--font-lato)'],
       },
-      borderWidth: {
-        DEFAULT: "1px",
-        0: "0",
-        2: "2px",
-        3: "3px",
-        4: "4px",
-        6: "6px",
-        8: "8px",
-      },
+     
       minHeight: {
         ...defaultTheme.height,
       },
