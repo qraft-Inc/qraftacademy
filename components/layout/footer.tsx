@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className="grid grid-cols-5 grid-rows-5 gap-1 h-[50vh] sm:h-[40vh] gap-1">
+        <div className="grid grid-cols-5 grid-rows-3 gap-1 h-[50vh] sm:h-[40vh] gap-1">
             <div className="col-span-5 sm:col-span-2 sm:row-span-3 bg-primary-300 flex items-center ">
                 <ul className=' ml-10'>
                     <li className="hover:translate-x-2 transition-all ease-in-out duration-30 cursor-pointer hover:text-primary-100">— Linkedin</li>

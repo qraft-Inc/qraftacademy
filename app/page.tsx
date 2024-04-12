@@ -47,8 +47,8 @@ export default function Web() {
         </figure>
       </section>
       <Testimonials />
-      <figure className="relative h-[60vh] overflow-hidden mt-4 mb-6">
-        <Image src="/images/rect.png" alt="ladies discusing qraft" className="object-cover" height={1000} width={1000} loading="lazy" />
+      <figure className="relative h-[80vh] w-full overflow-hidden mt-10 mb-20 ">
+        <Image src="/images/rect.png" alt="ladies discusing qraft" className="object-cover w-full" height={1000} width={1000} loading="lazy" />
       </figure>
     </main>
   )

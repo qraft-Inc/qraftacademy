@@ -4,13 +4,13 @@ import CourseCard from '../cards/course-card'
 
 const Courses = () => {
     return (
-        <section className='mx-8'>
-            <h1>Available Courses</h1>
-            <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-1">
+        <section className='mx-8 my-4 '>
+            <h1 className="font-bold text-xl mb-2">Available Courses.</h1>
+            <div className="flex items-center flex-wrap justify-between">
                 <CourseCard />
                 <CourseCard />
-                <CourseCard className="md:row-start-2 lg:row-start-0" />
-                <CourseCard className="md:row-start-2 lg:row-start-0" />
+                <CourseCard  />
+                <CourseCard  />
             </div>
         </section>
     )
