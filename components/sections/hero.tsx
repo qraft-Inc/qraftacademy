@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className='debug h-screen relative overflow-hidden'>
       <GridLines />
-      <Image src="-z-10 object-cover" alt="" height={1000} width={100} />
+      <Image src="/images/hero.png" className="-z-10 object-cover grayscale-[20%]" alt="" height={1000} width={100} />
     </section>
   )
 }
