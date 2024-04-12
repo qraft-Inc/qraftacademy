@@ -3,9 +3,9 @@ import TestimonialCard from '../cards/testimonial-card'
 
 const Testimonials = () => {
   return (
-    <div className='flex flex-col sm:flex-row items-center justify-between mx-4 '>
-        <TestimonialCard />
-        <TestimonialCard />
+    <div className='grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-4'>
+      <TestimonialCard />
+      <TestimonialCard className="row-start-2 md:row-start-1" />
     </div>
   )
 }
