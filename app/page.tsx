@@ -42,7 +42,7 @@ export default function Web() {
             </div>
           </div>
         </div>
-        <figure className="relative  overflow-hidden mt-4 mb-6 border-white border-2">
+        <figure className="relative  overflow-hidden border-white border-2">
           <Image src="/images/rect3.png" alt="ladies discusing qraft" className="object-cover" height={500} width={500} loading="lazy" />
         </figure>
       </section>
