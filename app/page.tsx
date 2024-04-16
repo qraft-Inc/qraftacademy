@@ -26,24 +26,24 @@ export default function Web() {
     <main>
       <Hero />
       <Courses />
-      <section className="grid grid-cols-1 md:grid-cols-2  grid-rows-2 md:grid-rows-1 gap-1">
+      <section className="grid grid-cols-1 md:grid-cols-2  grid-rows-2 md:grid-rows-1 gap-1 my-8">
         <div className="border border-white" >
           <div className="pr-2 bg-white w-full py-5 pl-2">
             <h2 className="text-primary-400 font-bold text-xl ">Upcoming Programs / Fellowships</h2>
           </div>
-          <div className="flex flex-col pl-2 items-start justify-center space-y-4">
-            <div className="">
-              <h4 className="border-b w-fit-content border-primary-200 border-1 p-2">Digital Entrepreneurs Fellowship.</h4>
+          <div className="flex flex-col pl-2 items-start justify-center space-y-5">
+            <div className="max-w-sm">
+              <h4 className="border-b border-primary-200 border-1 p-2">Digital Entrepreneurs Fellowship.</h4>
               <p className="font-light text-sm">Join the Qraft academy digital entrepreneurs fellowship and get access to long term mentorship and weekly business services. </p>
             </div>
-            <div className="">
-              <h4 className="border-b w-fit-content border-primary-200 border-1 p-2">Simulated Work Environment Apprenticeship.</h4>
+            <div className="max-w-sm">
+              <h4 className="border-b border-primary-200 border-1 p-2">Simulated Work Environment Apprenticeship.</h4>
               <p className="font-light text-sm">Level Up Your Career in A Simulated Work Environment  To Join Or Lead Tech Teams.  This  simulator program is designed to prepare tech talent  (enthusiasts and innovators included) through. </p>
             </div>
           </div>
         </div>
         <figure className="relative  overflow-hidden border-white border-2">
-          <Image src="/images/rect3.png" alt="ladies discusing qraft" className="object-cover w-full" height={500} width={500} loading="lazy" />
+          <Image src="/images/rect3.png" alt="ladies discusing qraft" className="object-cover w-full " height={500} width={500} loading="lazy" />
         </figure>
       </section>
       <Testimonials />
