@@ -7,22 +7,22 @@ import Balancer from 'react-wrap-balancer'
 const Hero = () => {
   return (
     <section className='h-screen relative overflow-hidden'>
-
-      <Image src="/images/hero.png" className="-z-10 object-contain grayscale-[55%] absolute  w-full" alt="" height={1000} width={1000} />
+      <div className="h-screen w-full absolute -z-[50] opacity-30 bg-primary-200"></div>
+      <Image src="/images/hero.png" className="-z-[100] object-cover h-screen  absolute  w-full" alt="" height={1000} width={1000} />
       <GridLines />
       <HeroContent />
     </section>
   )
 }
 
-export default Hero
+export default Heroppage
 
 
-const GridLines = () => (<div className={cn("grid grid-cols-5 grid-rows-5", "h-screen w-full absolute -z-8")}>
-  <div className="col-span-3 row-span-3 border-r-4 border-b-4 border-primary-400"></div>
+const GridLines = () => (<div className={cn("grid grid-cols-5 grid-rows-5 gap-0", "h-screen w-full absolute -z-[50] opacity-80")}>
+  <div className="col-span-3 row-span-3 border-r-2 border-b-2 border-primary-400"></div>
   <div className="col-span-2 row-span-3 col-start-4" />
   <div className="col-span-3 row-span-2 row-start-4" />
-  <div className="col-span-2 row-span-2 col-start-4 row-start-4 border-l-4 border-t-4 border-primary-400" />
+  <div className="col-span-2 row-span-2 col-start-4 row-start-4 border-l-2 border-t-2 border-primary-400" />
 </div>)
 
 

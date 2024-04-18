@@ -48,7 +48,7 @@ export default function Web() {
       </section>
       <Testimonials />
       <figure className="relative h-[80vh] w-full overflow-hidden my-20 ">
-        <Image src="/images/rect.png" alt="ladies discusing qraft" className="object-cover w-full" height={1000} width={1000} loading="lazy" />
+        <Image src="/images/rect.png" alt="ladies discusing qraft" className="object-cover h-full w-full" height={1000} width={1000} loading="lazy" />
       </figure>
     </main>
   )
