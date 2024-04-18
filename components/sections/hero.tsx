@@ -15,7 +15,7 @@ const Hero = () => {
   )
 }
 
-export default Heroppage
+export default Hero
 
 
 const GridLines = () => (<div className={cn("grid grid-cols-5 grid-rows-5 gap-0", "h-screen w-full absolute -z-[50] opacity-80")}>

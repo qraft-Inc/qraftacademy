@@ -11,7 +11,7 @@ const Navigation = () => {
       <div className={cn("md:col-start-4", boxStyle, linkStyle)}>technologists</div>
       <div className={cn("md:col-start-5", boxStyle, linkStyle)}>entreprenuers</div>
       <div className={cn("md:col-start-6", boxStyle, linkStyle)}>about</div>
-      <div className={cn("md:col-start-7", boxStyle, linkStyle, "bg-primary-300  text-white")}>login</div>
+      <div className={cn("md:col-start-7", boxStyle, linkStyle, "bg-primary-200  text-white")}>login</div>
     </nav>
   )
 }
