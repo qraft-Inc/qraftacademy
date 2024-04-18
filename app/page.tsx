@@ -26,12 +26,12 @@ export default function Web() {
     <main>
       <Hero />
       <Courses />
-      <section className="grid grid-cols-1 md:grid-cols-2  grid-rows-2 md:grid-rows-1 gap-1 container px-4 mx-auto">
+      <section className="grid grid-cols-1 md:grid-cols-2  grid-rows-2 md:grid-rows-1 gap-1 container px-4 mx-auto py-20">
         <div className="border border-white" >
-          <div className="pr-2 bg-white w-full py-5 pl-2">
+          <div className=" bg-white w-full py-5 px-2">
             <h2 className="text-primary-400 font-bold text-xl ">Upcoming Programs / Fellowships</h2>
           </div>
-          <div className="flex flex-col pl-2 items-start justify-center space-y-5  h-3/4">
+          <div className="flex flex-col pl-4 items-start justify-center space-y-5  h-3/4">
             <div className="max-w-sm space-y-2">
               <h4 className="border-b border-primary-200 border-1 font-bold p-2">Digital Entrepreneurs Fellowship.</h4>
               <p className="font-light text-sm">Join the Qraft academy digital entrepreneurs fellowship and get access to long term mentorship and weekly business services. </p>
@@ -47,7 +47,7 @@ export default function Web() {
         </figure>
       </section>
       <Testimonials />
-      <figure className="relative h-[80vh] w-full overflow-hidden mt-10 mb-20 ">
+      <figure className="relative h-[80vh] w-full overflow-hidden my-20 ">
         <Image src="/images/rect.png" alt="ladies discusing qraft" className="object-cover w-full" height={1000} width={1000} loading="lazy" />
       </figure>
     </main>
