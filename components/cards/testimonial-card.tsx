@@ -4,7 +4,7 @@ import cn from "classnames"
 
 const TestimonialCard = ({ className }: { className?: string }) => {
   return (
-    <div className={cn("max-w-md", className)}>
+    <div className={cn("max-w-md mb-4", className)}>
       <Quote size={24} className='mb-2 text-primary-300 rotate-[180deg]' />
       <div className="pl-4">
         <p className="text-gray-100 text-3xl mb-2
