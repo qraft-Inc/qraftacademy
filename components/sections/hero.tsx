@@ -27,7 +27,7 @@ const GridLines = () => (<div className={cn("grid grid-cols-5 grid-rows-5 gap-0"
 
 
 const HeroContent = () => (
-  <section className="max-w-lg pl-5 pt-24 pl-4 z-10 space-x-1 flex flex-col items-start justify-between  space-y-5 pb-6">
+  <section className="max-w-lg pl-5 pt-24 z-10 space-x-1 flex flex-col items-start justify-between  space-y-5 pb-6">
     <Balancer as="h1" className='font-bold uppercase text-4xl'>Ignite Your Tech Career with Qraft Academy</Balancer>
     <p className="font-light ">Join a Community of Tech Innovators, Gain Expert Training, and Create Your Future</p>
     <div className="bg-white border-4 border-white   ">

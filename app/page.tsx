@@ -1,6 +1,6 @@
 import Courses from "@/components/sections/courses"
-import Hero from "@/components/sections/hero"
 import Testimonials from "@/components/sections/testimonials"
+import Hero from "@/components/sections/hero"
 import { Metadata } from "next"
 import Image from "next/image"
 
