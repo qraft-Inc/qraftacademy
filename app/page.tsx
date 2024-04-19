@@ -34,11 +34,11 @@ export default function Web() {
           <div className="flex flex-col pl-4 items-start justify-center space-y-5  h-3/4">
             <div className="max-w-sm space-y-2">
               <h4 className="border-b border-primary-200 border-1 font-bold p-2">Digital Entrepreneurs Fellowship.</h4>
-              <p className="font-light text-sm">Join the Qraft academy digital entrepreneurs fellowship and get access to long term mentorship and weekly business services. </p>
+              <p className="font-light text-sm">Join the Qraft academy digital entrepreneurs fellowship and get access to long term mentorship and weekly business services.</p>
             </div>
             <div className="max-w-sm space-y-2">
               <h4 className="border-b border-primary-200 border-1 font-bold p-2">Simulated Work Environment Apprenticeship.</h4>
-              <p className="font-light text-sm">Level Up Your Career in A Simulated Work Environment  To Join Or Lead Tech Teams.  This  simulator program is designed to prepare tech talent  (enthusiasts and innovators included) through. </p>
+              <p className="font-light text-sm">Level Up Your Career in A Simulated Work Environment To Join Or Lead Tech Teams. This simulator program is designed to prepare tech talent (enthusiasts and innovators included) through.</p>
             </div>
           </div>
         </div>
