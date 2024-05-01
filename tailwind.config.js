@@ -1,41 +1,44 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { pick, omit } = require("lodash")
+const colors = require("tailwindcss/colors")
+const defaultTheme = require("tailwindcss/defaultTheme")
+
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: "jit",
-  purge: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/tw-elements/dist/js/**/*.js",
+  darkMode: "class",
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        "light-blue": "#4092CF",
+        primary: {
+           100:"#62A8F9",
+          200: "#0978F3",
+          300: "#1A367F",
+          400: "#0B1724",
+        },
       },
-      spacing: {
-        35: "7rem",
+      fontFamily: {
+       heading: ['var(--font-inter)'],
+       default: ['var(--font-lato)'],
       },
-      maxWidth: {
-        ls: "20rem",
+     
+      minHeight: {
+        ...defaultTheme.height,
       },
-      fontWeight: {
-        semiMedium: "400",
-      },
-      fontWeight: {
-        semiMedium: "400",
-      },
-      screens: {
-        xsm: "390px",
-        // => @media (min-width: 390px) { ... }
+      minWidth: {
+        ...defaultTheme.width,
       },
     },
   },
-  variants: {
-    extend: {},
+  plugins: [],
+  future: {
+    hoverOnlyWhenSupported: true,
   },
-  plugins: [
-    require("@tailwindcss/forms")({
-      strategy: "base" // only generate global styles
-    }),
-    require("tw-elements/dist/plugin"),
-  ],
-};
+}

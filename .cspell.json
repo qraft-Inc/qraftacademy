@@ -1,0 +1,35 @@
+{
+  "version": "0.2",
+  "gitignoreRoot": ".",
+  "useGitignore": true,
+  "dictionaries": [
+    "css",
+    "html",
+    "fonts",
+    "typescript",
+    "softwareTerms",
+    "companies",
+    "lorem-ipsum",
+    "project-words"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-words",
+      "path": "./.github/project-words.txt",
+      "noSuggest": true
+    }
+  ],
+  "ignorePaths": [
+    "*package.json",
+    "*yarn.lock",
+    "*pnpm-lock.yaml",
+    "pnpm-workspace.yaml",
+    ".github//project-words.txt",
+    "*.gitignore"
+  ],
+  "ignoreRegExpList": [
+    "Email",
+    "Urls",
+    "#[\\w-]*"
+  ]
+}
