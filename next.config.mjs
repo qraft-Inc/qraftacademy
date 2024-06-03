@@ -6,10 +6,11 @@ import { env } from "./env.mjs"
  * @type {import('next').NextConfig}
  */
 const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
-  reactStrictMode: true,  images: {
+  reactStrictMode: true, images: {
     remotePatterns: [
       { hostname: 'assets.website-files.com' },
       { hostname: 'images.unsplash.com' },
+      { hostname: 'res.cloudinary.com' },
       { hostname: 'pbs.twimg.com' },
       { hostname: 'framerusercontent.com' },
       { hostname: 'tailwindui.com' },
