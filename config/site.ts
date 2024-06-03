@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Qraft Academy",
-  description: "",
+  description: "Future of work and Edtech Solutions",
   logo: {
     dark: "/images/logos/dark.svg",
     light: "/images/logos/light.svg",
