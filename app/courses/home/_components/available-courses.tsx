@@ -1,10 +1,27 @@
 import { Card } from '@/components/ui/card';
 
-const courses = Array(4).fill({
-  title: 'Product Design Apprenticeship',
-  date: '01 Sept 2024 - 01 Oct 2024',
-  image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80',
-});
+const courses = [
+  {
+    title: 'Product Design Apprenticeship',
+    date: '01 Sept 2024 - 01 Oct 2024',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    title: 'Product Design Apprenticeship',
+    date: '01 Sept 2024 - 01 Oct 2024',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    title: 'Product Design Apprenticeship',
+    date: '01 Sept 2024 - 01 Oct 2024',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    title: 'Product Design Apprenticeship',
+    date: '01 Sept 2024 - 01 Oct 2024',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80',
+  }
+];
 
 export function AvailableCourses() {
   return (

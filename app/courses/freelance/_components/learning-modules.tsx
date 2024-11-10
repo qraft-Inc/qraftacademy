@@ -1,8 +1,8 @@
-import { Card } from '@/components/ui/card';
 import { 
-  Briefcase, Users, PiggyBank, Megaphone, Clock, 
-  Network, Palette, TrendingUp 
+  Briefcase, Clock, Megaphone, Network, Palette, 
+  PiggyBank, TrendingUp, Users 
 } from 'lucide-react';
+import { Card } from '@/components/ui/card';
 
 const modules = [
   {
@@ -54,10 +54,10 @@ export function LearningModules() {
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {modules.map((module) => (
           <Card 
-            key={module.title}
             className="group bg-gradient-to-br from-blue-500/10 to-blue-600/20 border-0 p-6 hover:scale-105 transition-all duration-300"
+            key={module.title}
           >
-            <module.icon className="w-6 h-6 text-blue-400 mb-4" />
+            <module.icon className="size-6 text-blue-400 mb-4" />
             <h3 className="text-lg font-semibold mb-3 text-white">
               {module.title}
             </h3>
