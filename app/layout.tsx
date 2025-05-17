@@ -1,4 +1,5 @@
-import React from "react"
+ import React from "react"
+import Image from 'next/image'
 import "@/styles/tailwind.css"
 import GoogleAnalyticsScript from "../components/tools/google-analytics"
 import { TailwindIndicator } from "../components/tools/tailwind-indicator"
@@ -55,10 +56,32 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={cn(baronNeue.variable, lato.variable, "font-default bg-primary-400 text-white")}>
+    <html lang="en" className={cn(baronNeue.variable, lato.variable, "font-default bg-white text-gray-900")}>
       <Providers>
 
         <body>
+          {/* Header Bar */}
+          <div className="bg-blue-800 text-white py-3 px-4">
+            <div className="container mx-auto flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12">
+                  <Image 
+                    src="/favicon.ico" 
+                    alt="Qraft Logo"
+                    width={48}
+                    height={48}
+                    className="rounded-full"
+                    priority
+                  />
+                </div>
+                <span className="text-xl font-bold">Qraft Academy</span>
+              </div>
+              <div className="flex flex-col items-end">
+                <span className="text-xl font-bold">Future of Work & EdTech</span>
+                <span className="text-sm italic">Where Innovation Meets Opportunity</span>
+              </div>
+            </div>
+          </div>
           <Navigation />
           {children}
           <Footer />

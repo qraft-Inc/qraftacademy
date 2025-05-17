@@ -16,7 +16,7 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
       { hostname: 'tailwindui.com' },
     ],
   },
-  experimental: { instrumentationHook: true },
+  experimental: {},
   rewrites() {
     return [
       { source: "/healthz", destination: "/api/health" },

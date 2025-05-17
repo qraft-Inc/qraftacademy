@@ -3,23 +3,29 @@ import Script from 'next/script';
 
 const GoogleAnalyticsScript = () => {
     const gaId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
-    return (
-        <>   <Script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-        />
+    
+    if (!gaId) {
+        console.warn('Google Analytics ID not found. Skipping GA script injection.');
+        return null;
+    }
 
-            <Script id="google-analytics"
+    return (
+        <>
+            <Script
+                strategy="afterInteractive"
+                src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+            />
+            <Script 
+                id="google-analytics"
+                strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                     __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-        
-                  gtag('config', '${gaId}');
-                `,
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', '${gaId}');
+                    `,
                 }}
-
             />
         </>
     )

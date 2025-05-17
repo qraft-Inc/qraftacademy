@@ -1,151 +1,100 @@
-import Courses from "@/components/sections/courses"
-import Testimonials from "@/components/sections/testimonials"
-import Hero from "@/components/sections/hero"
-import { Metadata } from "next"
-import Image from "next/image"
-import { seoKeywords, siteConfig } from "@/config/site"
-import { Card } from '@/components/ui/card';
-import { DevelopmentTracks } from "@/components/sections/development-tracks"
-import { Programs } from "@/components/sections/programs"
+import React from 'react'
+import Image from 'next/image'
+import { DevelopmentTracks } from '@/components/sections/development-tracks'
+import Programs from '@/components/sections/programs'
+import SuccessStories from '@/components/sections/success-stories'
+import GetInvolved from '@/components/sections/get-involved'
 
-
-export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-  keywords: seoKeywords,
-  twitter: {
-    card: "summary_large_image",
-    title: `${siteConfig.name} - ${siteConfig.description}`,
-    description: siteConfig.description,
-    images: [`${siteConfig.url}opengraph-image`],
-    creator: "@Kolynz_b",
-  },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: siteConfig.url,
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: [
-      {
-        url: `${siteConfig.url}opengraph-image`,
-      },
-    ],
-  },
-  alternates: {
-    types: {
-      'application/rss+xml': `${siteConfig.url}rss.xml`,
-    },
-  },
-  creator: "Atuhaire Collins Benda",
-  publisher: "Atuhaire Collins Benda",
-  metadataBase: new URL(siteConfig.url),
-  authors: [
-    { name: "Atuhaire Collins Benda", url: "https://collinsbenda.com" },
-    { name: "Andrew Tugume" },
-  ],
-  applicationName: siteConfig.name,
-  icons: [
-    {
-      rel: "apple-touch-icon",
-      url: "/favicon/apple-touch-icon.png",
-    },
-    {
-      rel: "mask-icon",
-      url: "/favicon/safari-pinned-tab.svg",
-    },
-    {
-      rel: "icon",
-      url: "/favicon/favicon-32x32.png",
-    },
-    {
-      rel: "icon",
-      url: "/favicon/favicon-16x16.png",
-    },
-  ],
-  manifest: "/favicon/site.webmanifest",
-};
-
-const opportunities = [
-  {
-    title: 'Work With Us',
-    description: 'Join our team and make a difference.',
-    href: '/work-with-us',
-  },
-  {
-    title: 'Partner With Us',
-    description: 'Collaborate with us for mutual growth.',
-    href: '/partner-with-us',
-  },
-  {
-    title: 'Donate',
-    description: 'Support our mission and help us grow.',
-    href: '/donate',
-  },
-];
-
-
-export default function Web() {
+export default function Home() {
   return (
-    <div className="min-h-screen">
-    {/* <div className="min-h-screen bg-gradient-to-b from-[#0A1628] to-[#1a2942]"> */}
-      <Hero />
-      <main className="relative">
-        <div className="max-w-7xl mx-auto px-6 py-24 space-y-32">
+    <React.Fragment>
+      <main className="min-h-screen">
+        {/* Hero Section */}
+        <div className="relative w-full h-[80vh]">
+            <div className="absolute inset-0">
+              <Image
+                src="/images/hero.png"
+                alt="Qraft Academy Hero"
+                width={1920}
+                height={1080}
+                className="object-cover w-full h-full"
+                priority
+              />
+            </div>
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
+              <h1 className="text-4xl font-bold text-white mb-4">Qraft Academy</h1>
+              <p className="text-xl text-white">Empowering the next generation of tech leaders</p>
+            </div>
+          </div>
 
-          <DevelopmentTracks />
+        {/* Development Tracks Section */}
+        <DevelopmentTracks />
 
-          {/* <Courses /> */}
-          <section className="grid grid-cols-1 md:grid-cols-2  grid-rows-2 md:grid-rows-1 gap-1 container px-4 mx-auto py-20">
-            <div className="border border-white" >
-              <div className=" bg-white w-full py-5 px-2">
-                <h2 className="text-primary-400 font-bold text-xl ">Upcoming Programs / Fellowships</h2>
-              </div>
-              <div className="flex flex-col pl-4 items-start justify-center space-y-5  h-3/4">
-                <div className="max-w-sm space-y-2">
-                  <h4 className="border-b border-primary-200 border-1 font-bold p-2">Digital Entrepreneurs Fellowship.</h4>
-                  <p className="font-light text-sm">Join the Qraft academy digital entrepreneurs fellowship and get access to long term mentorship and weekly business services.</p>
-                </div>
-                <div className="max-w-sm space-y-2">
-                  <h4 className="border-b border-primary-200 border-1 font-bold p-2">Simulated Work Environment Apprenticeship.</h4>
-                  <p className="font-light text-sm">Level Up Your Career in A Simulated Work Environment To Join Or Lead Tech Teams. This simulator program is designed to prepare tech talent (enthusiasts and innovators included) through.</p>
-                </div>
+        {/* Apprenticeship Split Screen */}
+        <div className="w-full flex flex-col lg:flex-row bg-white">
+            <div className="w-full lg:w-1/2 h-96 relative">
+              <Image
+                src="/images/rect3.png"
+                alt="Digital entrepreneurs learning"
+                width={800}
+                height={600}
+                className="object-cover w-full h-full"
+                priority
+              />
+            </div>
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-8">
+              <div className="max-w-md text-center">
+                <h3 className="text-3xl font-bold text-blue-800 mb-4">
+                  Learn by Doing
+                </h3>
+                <p className="text-lg text-gray-700 mb-6">
+                  Our simulated work environment gives digital entrepreneurs real-world experience from day one.
+                </p>
+                <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                  Join the Fellowship
+                </button>
               </div>
             </div>
-            <figure className="relative  overflow-hidden border-white border-2 ">
-              <Image src="/images/rect3.png" alt="ladies discusing qraft" className="object-cover w-full " height={500} width={500} loading="lazy" />
-            </figure>
-          </section>
-          <Programs />
+          </div>
 
-          <Testimonials />
+        {/* Programs Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <Programs />
+          </div>
+        </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold text-white mb-8">Get Involved</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {opportunities.map((opportunity) => (
-                <Card
-                  key={opportunity.title}
-                  className="bg-gradient-to-br from-blue-500/10 to-blue-600/20 border-0 p-6 hover:scale-105 transition-all duration-300 cursor-pointer"
-                >
-                  <h3 className="text-xl font-semibold mb-3 text-white">{opportunity.title}</h3>
-                  <p className="text-blue-200">{opportunity.description}</p>
-                </Card>
-              ))}
+        {/* Success Stories Section */}
+        <SuccessStories />
+
+        {/* Get Involved Section */}
+        <GetInvolved />
+
+        {/* Centered Image with Text */}
+        <div className="w-full py-16 bg-white">
+          <div className="container mx-auto px-4 flex flex-col items-center">
+            <div className="w-full max-w-4xl h-96 rounded-lg overflow-hidden shadow-lg mb-8">
+              <Image
+                src="/images/image.webp"
+                alt="Future of Education"
+                width={1200}
+                height={600}
+                className="object-cover w-full h-full"
+                quality={100}
+                priority
+              />
             </div>
-          </section>
-
-
+            <div className="text-center max-w-3xl">
+              <h3 className="text-6xl font-bold text-gray-900 mb-4">
+                Join the Future of Work & EdTech
+              </h3>
+              <p className="text-xl text-gray-600">
+                Liberate your potential through innovative learning experiences
+              </p>
+            </div>
+          </div>
         </div>
       </main>
-
-      <figure className="relative h-[80vh] w-full overflow-hidden my-20 ">
-        <Image src="/images/rect.png" alt="ladies discusing qraft" className="object-cover h-full w-full" height={1000} width={1000} loading="lazy" />
-      </figure>
-
-    </div>
+    </React.Fragment>
   )
 }
