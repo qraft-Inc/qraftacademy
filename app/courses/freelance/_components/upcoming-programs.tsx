@@ -1,11 +1,11 @@
-import { Card } from '@/components/ui/card';
+import Image from 'next/image';
 
 export function UpcomingPrograms() {
   return (
     <section className="grid md:grid-cols-2 gap-8">
       <div className="space-y-6">
         <h2 className="text-2xl font-semibold text-white">Upcoming Programs / Fellowships</h2>
-        
+
         <div className="space-y-6">
           <div className="text-white">
             <h3 className="text-lg font-medium text-blue-300 mb-2">
@@ -28,10 +28,11 @@ export function UpcomingPrograms() {
       </div>
 
       <div className="relative h-[400px]">
-        <img
-          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+        <Image
           alt="Students collaborating"
-          className="w-full h-full object-cover rounded-lg"
+          className="size-full object-cover rounded-lg"
+          fill
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
         />
       </div>
     </section>

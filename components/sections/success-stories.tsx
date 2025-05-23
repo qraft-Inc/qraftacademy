@@ -31,13 +31,13 @@ export default function SuccessStories() {
           {stories.map((story, index) => (
             <div key={index} className="group p-8 rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-4 border-2 border-blue-500">
+                <div className="size-16 rounded-full overflow-hidden mr-4 border-2 border-blue-500">
                   <Image
-                    src={story.image}
                     alt={story.name}
-                    width={64}
+                    className="object-cover size-full"
                     height={64}
-                    className="object-cover w-full h-full"
+                    src={story.image}
+                    width={64}
                   />
                 </div>
                 <div>
@@ -46,7 +46,7 @@ export default function SuccessStories() {
                 </div>
               </div>
               <blockquote className="text-lg italic text-gray-700 mb-6">
-                "{story.quote}"
+                &quot;{story.quote}&quot;
               </blockquote>
             </div>
           ))}

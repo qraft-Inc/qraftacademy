@@ -1,15 +1,17 @@
- import React from "react"
-import Image from 'next/image'
-import "@/styles/tailwind.css"
-import GoogleAnalyticsScript from "../components/tools/google-analytics"
-import { TailwindIndicator } from "../components/tools/tailwind-indicator"
-import { siteConfig } from '@/config/site';
+import type { Metadata } from "next";
+import Image from 'next/image';
+import React from "react";
 import cn from "classnames";
-import { baronNeue, lato } from "./fonts";
-import { Metadata } from "next";
+
+import "@/styles/tailwind.css";
+import { siteConfig } from '@/config/site';
 import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer";
+
+import { baronNeue, lato } from "./fonts";
 import Providers from "./providers";
+import GoogleAnalyticsScript from "../components/tools/google-analytics";
+import { TailwindIndicator } from "../components/tools/tailwind-indicator";
 
 export const metadata: Metadata = {
   title: {
@@ -58,20 +60,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={cn(baronNeue.variable, lato.variable, "font-default bg-white text-gray-900")}>
       <Providers>
-
         <body>
           {/* Header Bar */}
           <div className="bg-blue-800 text-white py-3 px-4">
             <div className="container mx-auto flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12">
+                <div className="size-12"> {/* Changed to size-12 */}
                   <Image 
                     src="/favicon.ico" 
                     alt="Qraft Logo"
-                    width={48}
-                    height={48}
                     className="rounded-full"
+                    height={48}
                     priority
+                    width={48}
                   />
                 </div>
                 <span className="text-xl font-bold">Qraft Academy</span>
@@ -89,7 +90,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <TailwindIndicator />
         </body>
       </Providers>
-
     </html>
-  )
+  );
 }

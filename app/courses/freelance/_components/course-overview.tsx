@@ -1,5 +1,5 @@
-import { Card } from '@/components/ui/card';
 import { Clock, Layout, Users } from 'lucide-react';
+import { Card } from '@/components/ui/card';
 
 const overviewCards = [
   {
@@ -31,11 +31,11 @@ export function CourseOverview() {
 
       <div className="grid md:grid-cols-3 gap-8">
         {overviewCards.map((card) => (
-          <Card 
-            key={card.title}
+          <Card
             className="group bg-white/5 backdrop-blur-sm border-0 p-8 hover:bg-white/10 transition-all duration-500"
+            key={card.title}
           >
-            <card.icon className="w-8 h-8 text-blue-400 mb-6" />
+            <card.icon className="size-8 text-blue-400 mb-6" />
             <h3 className="text-xl font-semibold mb-4 text-white">
               {card.title}
             </h3>

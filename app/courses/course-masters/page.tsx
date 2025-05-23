@@ -1,10 +1,10 @@
-'use client'
+'use client'; // Add this directive at the top
 
-import React from 'react'
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'; // Moved this import above next/image
+import Image from 'next/image';
+import React from 'react';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 
 export default function CourseMastersPage() {
   return (
@@ -25,14 +25,14 @@ export default function CourseMastersPage() {
               </p>
               <div className="flex gap-4 pt-4">
                 <Button 
-                  variant="default" 
                   className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 shadow-lg"
+                  variant="default" 
                 >
                   📥 Apply to Learn Course Production
                 </Button>
                 <Button 
-                  variant="outline" 
                   className="border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3"
+                  variant="outline" 
                 >
                   🎬 Get Your Course Developed
                 </Button>
@@ -41,10 +41,10 @@ export default function CourseMastersPage() {
             <div className="md:w-1/2">
               <div className="relative h-80 rounded-xl overflow-hidden bg-blue-50">
                 <Image
-                  src="/images/hero.png"
                   alt="Course production"
-                  fill
                   className="object-cover"
+                  fill
+                  src="/images/hero.png"
                 />
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function CourseMastersPage() {
             About CourseMasters
           </h2>
           <p className="mb-10 text-lg text-gray-700 max-w-3xl mx-auto text-center">
-            CourseMasters is Qraft Academy's flagship e-learning course production service - designed to help institutions, 
+            CourseMasters is a Qraft Academy flagship e-learning course production service - designed to help institutions, 
             enterprises, and development partners create high-quality, inclusive, and visually engaging digital learning content.
           </p>
           <p className="mb-10 text-lg text-gray-700 max-w-3xl mx-auto text-center">
@@ -154,10 +154,10 @@ export default function CourseMastersPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               "Corporations: For workforce training programs",
-              "Non-Governmental Organizations (NGOs): Organizations focused on community development, advocacy, and education", 
               "Educators: Professionals seeking to enhance their teaching methods",
-              "Subject Matter Experts / Thought Leaders: Individuals looking to share their expertise",
-              "Institutions: Schools, Colleges, Universities aiming to expand online offerings"
+              "Institutions: Schools, Colleges, Universities aiming to expand online offerings",
+              "Non-Governmental Organizations (NGOs): Organizations focused on community development, advocacy, and education", 
+              "Subject Matter Experts / Thought Leaders: Individuals looking to share their expertise"
             ].map((item, i) => (
               <Card 
                 key={i} 
@@ -217,11 +217,11 @@ export default function CourseMastersPage() {
       <section className="relative text-center py-20 rounded-xl overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-blue-800 to-purple-800">
           <Image
-            src="/images/hero.png"
             alt="CTA background"
-            fill
             className="object-cover mix-blend-overlay opacity-20"
+            fill
             priority
+            src="/images/hero.png"
           />
         </div>
         <div className="max-w-4xl mx-auto px-4">
@@ -230,14 +230,14 @@ export default function CourseMastersPage() {
           </h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
-              variant="default" 
               className="bg-white text-blue-700 hover:bg-gray-50 px-8 py-4 text-lg font-medium transition-all hover:scale-105"
+              variant="default" 
             >
               Get Started
             </Button>
             <Button 
-              variant="outline" 
               className="text-white border-white hover:bg-white/20 px-8 py-4 text-lg font-medium transition-all hover:scale-105"
+              variant="outline" 
             >
               Learn More
             </Button>
@@ -245,5 +245,5 @@ export default function CourseMastersPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }

@@ -1,9 +1,10 @@
+import Image from 'next/image';
+
 import { Button } from '@/components/ui/button';
-import { Navigation } from './_components/navigation';
-import { CourseOverview } from './_components/course-overview';
 import { Benefits } from './_components/benefits';
-import { PackageDetails } from './_components/package-details';
+import { CourseOverview } from './_components/course-overview';
 import { LearningModules } from './_components/learning-modules';
+import { PackageDetails } from './_components/package-details';
 import { Requirements } from './_components/requirements';
 
 export default function App() {
@@ -12,13 +13,14 @@ export default function App() {
       {/* <Navigation /> */}
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center  ">
+      <section className="relative min-h-[70vh] flex items-center">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-transparent z-10" />
-          <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+          <Image
             alt="Freelancers working"
-            className="w-full h-full object-cover"
+            className="size-full object-cover"
+            fill
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
           />
         </div>
         <div className="relative z-20 max-w-7xl mx-auto px-6">
@@ -35,8 +37,8 @@ export default function App() {
               <p>Last Updated: October 2024</p>
             </div>
             <Button
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg"
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg "
             >
               Enroll Now
             </Button>
@@ -53,7 +55,6 @@ export default function App() {
           <Requirements />
         </div>
       </main>
-
     </div>
   );
 }

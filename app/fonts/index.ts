@@ -1,5 +1,5 @@
-import localFont from 'next/font/local';
 import { Lato } from 'next/font/google';
+import localFont from 'next/font/local';
 
 export const baronNeue = localFont({
   variable: '--font-baron-neue',

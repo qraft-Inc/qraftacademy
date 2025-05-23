@@ -37,7 +37,7 @@ const Navigation = () => {
             {/* Mobile menu button */}
             <button
               className="md:hidden text-gray-500 p-2"
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => { setIsOpen(!isOpen) }}
               aria-label="Menu"
             >
               <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -58,7 +58,7 @@ const Navigation = () => {
                   key={item.name}
                   href={item.href}
                   className="block px-6 py-3 text-gray-700 hover:bg-gray-100 border-t border-gray-200"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => { setIsOpen(false) }}
                 >
                   {item.name}
                 </Link>

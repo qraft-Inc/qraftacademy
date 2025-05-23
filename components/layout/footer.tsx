@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -9,14 +9,14 @@ const Footer = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-12 h-12">
-                <Image 
-                  src="/favicon.ico" 
+              <div className="size-12">
+                <Image
                   alt="Qraft Logo"
-                  width={48}
-                  height={48}
                   className="rounded-full"
+                  height={48}
                   priority
+                  src="/favicon.ico"
+                  width={48}
                 />
               </div>
               <span className="text-xl font-bold text-white">Qraft Academy</span>
@@ -29,30 +29,30 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/courses" className="text-blue-100 hover:text-white transition-colors">Courses</Link></li>
-              <li><Link href="/programs" className="text-blue-100 hover:text-white transition-colors">Programs</Link></li>
-              <li><Link href="/about" className="text-blue-100 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/contact" className="text-blue-100 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link className="text-blue-100 hover:text-white transition-colors" href="/courses">Courses</Link></li>
+              <li><Link className="text-blue-100 hover:text-white transition-colors" href="/programs">Programs</Link></li>
+              <li><Link className="text-blue-100 hover:text-white transition-colors" href="/about">About Us</Link></li>
+              <li><Link className="text-blue-100 hover:text-white transition-colors" href="/contact">Contact</Link></li>
             </ul>
           </div>
 
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Connect</h3>
             <div className="flex gap-4">
-              <a href="#" className="text-white hover:text-blue-200 transition-colors">
-                <Facebook className="w-6 h-6" />
+              <a className="text-white hover:text-blue-200 transition-colors" href="https://www.facebook.com/yourpage">
+                <Facebook className="size-6" />
               </a>
-              <a href="#" className="text-white hover:text-blue-200 transition-colors">
-                <Twitter className="w-6 h-6" />
+              <a className="text-white hover:text-blue-200 transition-colors" href="https://twitter.com/yourhandle">
+                <Twitter className="size-6" />
               </a>
-              <a href="#" className="text-white hover:text-blue-200 transition-colors">
-                <Instagram className="w-6 h-6" />
+              <a className="text-white hover:text-blue-200 transition-colors" href="https://www.instagram.com/yourhandle">
+                <Instagram className="size-6" />
               </a>
-              <a href="#" className="text-white hover:text-blue-200 transition-colors">
-                <Linkedin className="w-6 h-6" />
+              <a className="text-white hover:text-blue-200 transition-colors" href="https://www.linkedin.com/in/yourprofile">
+                <Linkedin className="size-6" />
               </a>
-              <a href="#" className="text-white hover:text-blue-200 transition-colors">
-                <Youtube className="w-6 h-6" />
+              <a className="text-white hover:text-blue-200 transition-colors" href="https://www.youtube.com/yourchannel">
+                <Youtube className="size-6" />
               </a>
             </div>
           </div>
@@ -60,10 +60,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Newsletter</h3>
             <div className="flex">
-              <input 
-                type="email" 
-                placeholder="Your email" 
+              <input
                 className="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full"
+                placeholder="Your email"
+                type="email"
               />
               <button className="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition-colors">
                 Subscribe

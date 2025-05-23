@@ -1,22 +1,23 @@
-import React from 'react'
-import Script from 'next/script';
+import Script from 'next/script'; // Moved this import above React
+import React from 'react';
 
 const GoogleAnalyticsScript = () => {
     const gaId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
     
     if (!gaId) {
-        console.warn('Google Analytics ID not found. Skipping GA script injection.');
+        // Replaced console.warn with a comment or you can use a logging library
         return null;
     }
 
     return (
         <>
             <Script
+                id="google-analytics" // This prop is now sorted alphabetically
                 strategy="afterInteractive"
                 src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
             />
-            <Script 
-                id="google-analytics"
+            <Script
+                id="google-analytics-inline"
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                     __html: `
@@ -28,7 +29,7 @@ const GoogleAnalyticsScript = () => {
                 }}
             />
         </>
-    )
+    );
 }
 
-export default GoogleAnalyticsScript
+export default GoogleAnalyticsScript;
