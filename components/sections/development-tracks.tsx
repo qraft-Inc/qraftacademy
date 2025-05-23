@@ -36,23 +36,27 @@ const tracks = [
 
 export function DevelopmentTracks() {
   return (
-    <section>
-      <h2 className="text-3xl font-bold text-white mb-12">Development Tracks</h2>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {tracks.map((track) => (
-          <Card 
-            key={track.title} 
-            className="group bg-white/5 backdrop-blur-sm border-0 p-8 hover:bg-white/10 transition-all duration-500 cursor-pointer"
-          >
-            <div className="flex justify-between items-start mb-6">
-              <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
-                {track.title}
-              </h3>
-              <ArrowUpRight className="w-5 h-5 text-blue-400 opacity-0 group-hover:opacity-100 transform -translate-y-1 translate-x-1 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
+    <section className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Development Tracks</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {tracks.map((track) => (
+            <div
+              key={track.title}
+              className="bg-white border-2 border-gray-100 rounded-xl p-8 hover:border-blue-300 hover:shadow-xl transition-all"
+            >
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">{track.title}</h3>
+              <p className="text-gray-600 mb-6 text-lg">{track.description}</p>
+              <a 
+                href={track.href} 
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold text-lg"
+              >
+                Explore track
+                <ArrowUpRight className="w-5 h-5" />
+              </a>
             </div>
-            <p className="text-gray-400">{track.description}</p>
-          </Card>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

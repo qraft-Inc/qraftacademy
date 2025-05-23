@@ -1,37 +1,23 @@
-import { Card } from '@/components/ui/card';
+"use client";
 
-const opportunities = [
-  {
-    title: 'Work With Us',
-    description: 'Join our team and make a difference.',
-    href: '/work-with-us',
-  },
-  {
-    title: 'Partner With Us',
-    description: 'Collaborate with us for mutual growth.',
-    href: '/partner-with-us',
-  },
-  {
-    title: 'Donate',
-    description: 'Support our mission and help us grow.',
-    href: '/donate',
-  },
-];
-
-export function GetInvolved() {
+export default function GetInvolved() {
   return (
-    <section>
-      <h2 className="text-2xl font-semibold text-white mb-8">Get Involved</h2>
-      <div className="grid md:grid-cols-3 gap-6">
-        {opportunities.map((opportunity) => (
-          <Card 
-            key={opportunity.title} 
-            className="bg-gradient-to-br from-blue-500/10 to-blue-600/20 border-0 p-6 hover:scale-105 transition-all duration-300 cursor-pointer"
-          >
-            <h3 className="text-xl font-semibold mb-3 text-white">{opportunity.title}</h3>
-            <p className="text-blue-200">{opportunity.description}</p>
-          </Card>
-        ))}
+    <section className="py-16 bg-gray-100">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-4xl font-extrabold text-gray-900 mb-8">GET INVOLVED</h2>
+        <div className="max-w-2xl mx-auto">
+          <p className="text-lg text-gray-800 mb-8">
+          Join our community of learners and innovators. Whether you&apos;re a student, mentor, or partner, there&apos;s a place for you at Qraft Academy.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="px-6 py-3 bg-blue-700 text-white font-bold rounded-lg hover:bg-blue-800 transition-colors">
+              Apply Now
+            </button>
+            <button className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors">
+              Learn More
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   );

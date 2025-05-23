@@ -1,30 +1,74 @@
-import React, { HTMLAttributes } from 'react'
-import cn from "classnames"
+"use client"
+
+import React, { useState } from 'react'
 import Link from "next/link"
+import Image from "next/image"
 
 const Navigation = () => {
-  const linkStyle: HTMLAttributes<HTMLDivElement>["className"] = "font-heading uppercase font-bold hover:scale-9  transition-colors  relative group"
-  const boxStyle: HTMLAttributes<HTMLDivElement>["className"] = "bg-white text-primary-400  h-[6.2vh]  flex items-center justify-center border-primary-400 border  md:border-3 cursor-pointer transition-all ease-in-out duration-30"
+  const [isOpen, setIsOpen] = useState(false)
+  
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "Courses", href: "/courses" },
+    { name: "Freelance Hub", href: "/courses/freelance" },
+    { name: "Course Masters", href: "/courses/course-masters" },
+    { name: "QraftLabs", href: "https://labs.qraftacademy.com/" }
+  ]
+
   return (
-    <nav className={cn("grid grid-cols-3 md:grid-cols-7 grid-rows-2 md:grid-rows-1 ", "border-primary-400/40   border-[0.5px] md:border-1")}>
-      <div className={cn("md:col-span-2", boxStyle, "justify-start font-extrabold")}>QRAFT</div>
-      <Link className={cn("md:col-start-3", boxStyle, linkStyle)} href="https://labs.qraftacademy.com/">r&d
-        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300" />
-      </Link>
-      <Link className={cn("md:col-start-4", boxStyle, linkStyle)}  href="/courses/freelance">programs
-        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300" />
-      </Link>
-      <Link className={cn("md:col-start-5", boxStyle, linkStyle)} href="https://classroom.qraftacademy.com/">courses
-        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300" />
-      </Link>
-      <div className={cn("md:col-start-6", boxStyle, linkStyle)}>about
-        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300" />
+    <header className="sticky top-0 z-50 bg-white shadow-sm">
+      {/* Navigation Bar Only */}
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex justify-between items-center h-16">
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex w-full justify-center space-x-8">
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-700 hover:text-blue-600 font-medium py-2 px-1 transition-colors"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+
+            {/* Mobile menu button */}
+            <button
+              className="md:hidden text-gray-500 p-2"
+              onClick={() => { setIsOpen(!isOpen) }}
+              aria-label="Menu"
+            >
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                {isOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          {isOpen && (
+            <div className="md:hidden bg-gray-50 pb-4">
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="block px-6 py-3 text-gray-700 hover:bg-gray-100 border-t border-gray-200"
+                  onClick={() => { setIsOpen(false) }}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
-      <div className={cn("md:col-start-7 bg-primary-200 ", boxStyle, linkStyle, "text-white")}>login</div>
-    </nav>
+    </header>
   )
 }
 
 export default Navigation
-
-

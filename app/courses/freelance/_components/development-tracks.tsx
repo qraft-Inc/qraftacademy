@@ -1,5 +1,5 @@
-import { Card } from '@/components/ui/card';
 import { ArrowUpRight } from 'lucide-react';
+import { Card } from '@/components/ui/card';
 
 const tracks = [
   {
@@ -40,15 +40,15 @@ export function DevelopmentTracks() {
       <h2 className="text-3xl font-bold text-white mb-12">Development Tracks</h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {tracks.map((track) => (
-          <Card 
-            key={track.title} 
+          <Card
             className="group bg-white/5 backdrop-blur-sm border-0 p-8 hover:bg-white/10 transition-all duration-500 cursor-pointer"
+            key={track.title}
           >
             <div className="flex justify-between items-start mb-6">
               <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
                 {track.title}
               </h3>
-              <ArrowUpRight className="w-5 h-5 text-blue-400 opacity-0 group-hover:opacity-100 transform -translate-y-1 translate-x-1 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
+              <ArrowUpRight className="size-5 text-blue-400 opacity-0 group-hover:opacity-100 -translate-y-1 translate-x-1 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
             </div>
             <p className="text-gray-400">{track.description}</p>
           </Card>

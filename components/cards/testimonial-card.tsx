@@ -1,11 +1,11 @@
-import React from 'react'
 import { Quote } from "lucide-react"
 import cn from "classnames"
+import React from 'react'
 
 const TestimonialCard = ({ className }: { className?: string }) => {
   return (
     <div className={cn("max-w-md mb-4", className)}>
-      <Quote size={24} className='mb-2 text-primary-300 rotate-[180deg]' />
+      <Quote className='mb-2 text-primary-300 rotate-180' size={24} />
       <div className="pl-4">
         <p className="text-gray-100 text-3xl mb-2
         ">
