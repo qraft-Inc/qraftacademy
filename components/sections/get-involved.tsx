@@ -2,7 +2,7 @@
 
 export default function GetInvolved() {
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16 bg-gray-100">k
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-extrabold text-gray-900 mb-8">GET INVOLVED</h2>
         <div className="max-w-2xl mx-auto">
