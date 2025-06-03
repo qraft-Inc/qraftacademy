@@ -9,8 +9,6 @@ const Navigation = () => {
   
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Courses", href: "/courses" },
-    { name: "Freelance Hub", href: "/courses/freelance" },
     {
       name: "WorkMasters",
       href: "/courses/workmasters",
@@ -91,9 +89,9 @@ const Navigation = () => {
               {navItems.map((item) => (
                 item.dropdown ? (
                   <div key={item.name} className="relative group flex items-center"> {/* Added flex items-center */}
-                    <button className="text-gray-700 hover:text-blue-600 font-medium py-2 px-1 transition-colors">
+                    <Link href={item.href} className="text-gray-700 hover:text-blue-600 font-medium py-2 px-1 transition-colors">
                       {item.name}
-                    </button>
+                    </Link>
                     <div className="absolute left-0 top-full mt-0 w-48 bg-white rounded-md shadow-lg z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200"> {/* Adjusted top and mt */}
                       {item.dropdown.map((dropdownItem) => (
                         <Link
@@ -140,9 +138,9 @@ const Navigation = () => {
               {navItems.map((item) => (
                 item.dropdown ? (
                   <div key={item.name}>
-                    <button className="block px-6 py-3 text-gray-700 hover:bg-gray-100 border-t border-gray-200 w-full text-left">
+                    <Link href={item.href} className="block px-6 py-3 text-gray-700 hover:bg-gray-100 border-t border-gray-200 w-full text-left" onClick={() => { setIsOpen(false) }}>
                       {item.name}
-                    </button>
+                    </Link>
                     <div className="pl-8 bg-gray-100">
                       {item.dropdown.map((dropdownItem) => (
                         <Link
