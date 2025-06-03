@@ -1,8 +1,17 @@
+"use client";
+
+import { useEffect, useState } from 'react';
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const Footer = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <footer className="bg-blue-800 text-white">
       <div className="max-w-7xl mx-auto px-4 py-8 sm:py-12 md:py-16">
@@ -57,19 +66,21 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h3 className="font-semibold text-lg">Newsletter</h3>
-            <div className="flex">
-              <input
-                className="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full"
-                placeholder="Your email"
-                type="email"
-              />
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition-colors">
-                Subscribe
-              </button>
+          {isClient && (
+            <div className="space-y-4">
+              <h3 className="font-semibold text-lg">Newsletter</h3>
+              <div className="flex">
+                <input
+                  className="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full"
+                  placeholder="Your email"
+                  type="email"
+                />
+                <button className="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition-colors">
+                  Subscribe
+                </button>
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         <div className="border-t border-blue-700 mt-8 pt-8 text-center text-blue-200 text-sm">
