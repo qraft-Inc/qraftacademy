@@ -79,7 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
               <div className="flex flex-col items-end">
                 <span className="text-xl font-bold">Future of Work & EdTech</span>
-                <span className="text-sm italic">Where Innovation Meets Opportunity</span>
+                <span className="text-sm italic">Modern Work Development</span>
               </div>
             </div>
           </div>

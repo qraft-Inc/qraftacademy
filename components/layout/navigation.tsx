@@ -14,7 +14,7 @@ const Navigation = () => {
       href: "/courses/workmasters",
       dropdown: [
         { name: "Work Readiness Bootcamp", href: "/courses/workmasters/readiness-bootcamp" }, // Placeholder href
-        { name: "Apprenticeship &Employability Opportunities", href: "/courses/workmasters/apprenticeship-employability" }, // Placeholder href
+        { name: "Apprenticeship & Employability Opportunities", href: "/courses/workmasters/apprenticeship-employability" }, // Placeholder href
         { name: "Browse All Our Freelance Talent", href: "/courses/workmasters/browse-talent" }, // Placeholder href
       ]
     },
@@ -32,7 +32,7 @@ const Navigation = () => {
       href: "/courses/capitalmasters",
       dropdown: [
         { name: "Investor Network", href: "/courses/capitalmasters/investor-network" }, // Placeholder href
-        { name: "Startup&Business Growth Hub", href: "/courses/capitalmasters/startup-business-growth-hub" }, // Placeholder href
+        { name: "Startup & Business Growth", href: "/courses/capitalmasters/startup-business-growth-hub" }, // Placeholder href
         { name: "Browse All Our StartUps", href: "/courses/capitalmasters/browse-startups" }, // Placeholder href
       ]
     },
@@ -41,16 +41,16 @@ const Navigation = () => {
       href: "/courses/techmasters",
       dropdown: [
         { name: "Hackathons And Open Source", href: "/courses/techmasters/hackathons-open-source" }, // Placeholder href
-        { name: "Research &Development Labs", href: "/courses/techmasters/research-development-labs" }, // Placeholder href
-        { name: "Browse All Our EdTech Solutions", href: "/courses/techmasters/browse-edtech-solutions" }, // Placeholder href
+        { name: "Research &Development", href: "/courses/techmasters/research-development-labs" }, // Placeholder href
+        { name: "Browse All Our Tech Solutions", href: "/courses/techmasters/browse-edtech-solutions" }, // Placeholder href
       ]
     },
     {
       name: "Future of Work Consortium",
       href: "/future-of-work-consortium",
       dropdown: [
-        { name: "Board", href: "/future-of-work-consortium/board" }, // Placeholder href
-        { name: "Policies", href: "/future-of-work-consortium/policies" }, // Placeholder href
+        { name: "Boards And Committees", href: "/future-of-work-consortium/board" }, // Placeholder href
+        { name: "Policies And Advocacy", href: "/future-of-work-consortium/policies" }, // Placeholder href
         { name: "Members", href: "/future-of-work-consortium/members" }, // Placeholder href
       ]
     },
@@ -71,11 +71,18 @@ const Navigation = () => {
       href: "/community",
       dropdown: [
         { name: "Future of work tour", href: "/future-of-work-consortium" },
-        { name: "events", href: "#" },
-        { name: "special groups", href: "#" },
+        { name: "Events", href: "#" },
+        { name: "Special groups", href: "#" },
       ]
     },
-    { name: "QraftLabs", href: "https://labs.qraftacademy.com/" }
+    {
+      name: "Our Spaces",
+      href: "/spaces",
+      dropdown: [
+        { name: "QraftLabs", href: "https://labs.qraftacademy.com/" },
+        { name: "Qraft Solutions Hub", href: "#" }
+      ]
+    }
   ]
 
   return (

@@ -31,7 +31,7 @@ const Footer = () => {
               <span className="text-xl font-bold text-white">Qraft Academy</span>
             </div>
             <p className="text-blue-100">
-              Empowering the next generation of tech leaders.
+            Learn. Work. Achieve.
             </p>
           </div>
 
