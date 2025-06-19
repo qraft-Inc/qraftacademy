@@ -32,7 +32,7 @@ const Navigation = () => {
       href: "/courses/capitalmasters",
       dropdown: [
         { name: "Investor Network", href: "/courses/capitalmasters/investor-network" }, // Placeholder href
-        { name: "Startup & Business Growth", href: "/courses/capitalmasters/startup-business-growth-hub" }, // Placeholder href
+        { name: "Financial Literacy & Business Growth", href: "/courses/capitalmasters/startup-business-growth-hub" }, // Placeholder href
         { name: "Browse All Our StartUps", href: "/courses/capitalmasters/browse-startups" }, // Placeholder href
       ]
     },
@@ -43,6 +43,14 @@ const Navigation = () => {
         { name: "Hackathons And Open Source", href: "/courses/techmasters/hackathons-open-source" }, // Placeholder href
         { name: "Research &Development", href: "/courses/techmasters/research-development-labs" }, // Placeholder href
         { name: "Browse All Our Tech Solutions", href: "/courses/techmasters/browse-edtech-solutions" }, // Placeholder href
+      ]
+    },
+    {
+      name: "Our Spaces",
+      href: "/spaces",
+      dropdown: [
+        { name: "QraftLabs", href: "https://labs.qraftacademy.com/" },
+        { name: "Qraft Solutions Hub", href: "#" }
       ]
     },
     {
@@ -73,14 +81,6 @@ const Navigation = () => {
         { name: "Future of work tour", href: "/future-of-work-consortium" },
         { name: "Events", href: "#" },
         { name: "Special groups", href: "#" },
-      ]
-    },
-    {
-      name: "Our Spaces",
-      href: "/spaces",
-      dropdown: [
-        { name: "QraftLabs", href: "https://labs.qraftacademy.com/" },
-        { name: "Qraft Solutions Hub", href: "#" }
       ]
     }
   ]

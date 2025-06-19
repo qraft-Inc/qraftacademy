@@ -3,55 +3,45 @@ import { ArrowUpRight } from 'lucide-react';
 
 const tracks = [
   {
-    title: 'Personal Development',
-    description: 'Enhance your personal skills and growth.',
+    title: 'Personal Development, Quality Of Life And Wellbeing',
+    description: 'Cultivating Skills for an Integrated and Purposeful Life',
     href: '/courses/personal-development',
   },
   {
-    title: 'Professional Development',
-    description: 'Explore courses and books on professional growth.',
+    title: 'Productivity And Professional Development',
+    description: 'Unlocking Potential for Skills, Performance, and Career Excellence Through Continuous Learning.',
     href: '/courses/professional-development',
   },
   {
-    title: 'Digital Skilling',
-    description: 'Learn essential digital skills for the modern workplace.',
-    href: '/courses/digital-skilling',
+    title: 'Leadership Development, Governance, Policies And Advocacy',
+    description: 'Empowering Executives Through Strategic Leadership, Governance Excellence, and Advocacy for Impactful Change',
+    href: '/courses/leadership-development',
   },
   {
-    title: 'Freelancing',
-    description: 'Resources for starting and succeeding in freelancing.',
-    href: '/courses/freelancing',
-  },
-  {
-    title: 'Entrepreneurship',
-    description: 'Courses and books to help you start your own business.',
-    href: '/courses/entrepreneurship',
-  },
-  {
-    title: 'Investment Education',
-    description: 'Learn how to manage and grow your investments.',
-    href: '/courses/investment-education',
-  },
+    title: 'Strategic Organizational And Business Expansion',
+    description: 'Driving Sustainable Development and Scalable Growth Through Strategic Organizational Expansion..',
+    href: '/courses/strategic-organizational-expansion',
+  }
 ];
 
 export function DevelopmentTracks() {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Development Tracks</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center"> Our Thematic Areas</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {tracks.map((track) => (
             <div
               key={track.title}
-              className="bg-white border-2 border-gray-100 rounded-xl p-8 hover:border-blue-300 hover:shadow-xl transition-all"
+              className="bg-white border-2 border-gray-100 rounded-xl p-6 hover:border-blue-300 hover:shadow-xl transition-all"
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">{track.title}</h3>
-              <p className="text-gray-600 mb-6 text-lg">{track.description}</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">{track.title}</h3>
+              <p className="text-gray-600 mb-4 text-base">{track.description}</p>
               <a 
                 href={track.href} 
-                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold text-lg"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold text-base"
               >
-                Explore track
+                Explore This Theme
                 <ArrowUpRight className="w-5 h-5" />
               </a>
             </div>

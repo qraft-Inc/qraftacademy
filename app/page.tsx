@@ -27,7 +27,7 @@ export default function Home() {
             </div>
           </div>
 
-        {/* Development Tracks Section */}
+        {/* Thematic Areas Section */}
         <DevelopmentTracks />
 
         {/* Apprenticeship Split Screen */}
@@ -45,13 +45,13 @@ export default function Home() {
             <div className="w-full lg:w-1/2 flex items-center justify-center p-8">
               <div className="max-w-md text-center">
                 <h3 className="text-3xl font-bold text-blue-800 mb-4">
-                  Learn by Doing
+                  Master Your Craft
                 </h3>
                 <p className="text-lg text-gray-700 mb-6">
-                  Our simulated work environment gives digital entrepreneurs real-world experience from day one.
+                  Your Skill Is Your Career.
                 </p>
                 <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                  Join the Fellowship
+                  Join Qraft Academy
                 </button>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
             <div className="text-center max-w-3xl">
               <h3 className="text-6xl font-bold text-gray-900 mb-4">
-                Join the Future of Work & EdTech
+                Join the Future of Work
               </h3>
               <p className="text-xl text-gray-600">
                 Liberate your potential through innovative learning experiences

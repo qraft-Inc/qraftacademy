@@ -4,14 +4,14 @@ import Image from 'next/image';
 export default function SuccessStories() {
   const stories = [
     {
-      name: "Jane Doe",
+      name: "Claire",
       role: "Web Developer",
       quote: "Qraft Academy transformed my career completely.",
       company: "Tech Corp",
       image: "/images/rect.png"
     },
     {
-      name: "John Smith", 
+      name: "Colins", 
       role: "UX Designer",
       quote: "The hands-on training prepared me for real-world challenges.",
       company: "Design Co",
