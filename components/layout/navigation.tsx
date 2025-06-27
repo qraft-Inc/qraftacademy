@@ -31,9 +31,9 @@ const Navigation = () => {
       name: "CapitalMasters",
       href: "/courses/capitalmasters",
       dropdown: [
-        { name: "Investor Network", href: "/courses/capitalmasters/investor-network" }, // Placeholder href
-        { name: "Financial Literacy & Business Growth", href: "/courses/capitalmasters/startup-business-growth-hub" }, // Placeholder href
-        { name: "Browse All Our StartUps", href: "/courses/capitalmasters/browse-startups" }, // Placeholder href
+        { name: "Investor Network", href: "/courses/capitalmasters/investor-network" },
+        { name: "Financial Literacy & Business Growth", href: "/courses/capitalmasters/startup-business-growth-hub" },
+        { name: "Browse All Our StartUps", href: "/courses/capitalmasters/browse-startups" },
       ]
     },
     {

@@ -30,7 +30,7 @@ export default function Programs() {
           </div>
           <div className="p-8 border rounded-lg bg-purple-50">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">CapitalMasters</h3>
-            <p className="text-lg text-gray-800 mb-6"> Build financial acumen and strategic insights with comprehensive training programs focused on capital growth and managemen.</p>
+            <p className="text-lg text-gray-800 mb-6"> Build financial acumen and strategic insights with comprehensive training programs focused on capital growth and management.</p>
             <button className="font-bold text-blue-700 hover:text-blue-900">
               Learn more →
             </button>
