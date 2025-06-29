@@ -11,51 +11,51 @@ export default function Home() {
       <main className="min-h-screen">
         {/* Hero Section */}
         <div className="relative w-full h-[80vh]">
-            <div className="absolute inset-0">
-              <Image
-                src="/images/hero.png"
-                alt="Qraft Academy Hero"
-                width={1920}
-                height={1080}
-                className="object-cover w-full h-full"
-                priority
-              />
-            </div>
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
-              <h1 className="text-4xl font-bold text-white mb-4">Qraft Academy</h1>
-              <p className="text-xl text-white">Learn. Work. Achieve. </p>
-            </div>
+          <div className="absolute inset-0">
+            <Image
+              alt="Qraft Academy Hero"
+              className="object-cover w-full h-full"
+              height={1080}
+              priority
+              src="/images/hero.png"
+              width={1920}
+            />
           </div>
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
+            <h1 className="text-4xl font-bold text-white mb-4">Qraft Academy</h1>
+            <p className="text-xl text-white">Learn. Work. Achieve.</p>
+          </div>
+        </div>
 
         {/* Thematic Areas Section */}
         <DevelopmentTracks />
 
         {/* Apprenticeship Split Screen */}
         <div className="w-full flex flex-col lg:flex-row bg-white">
-            <div className="w-full lg:w-1/2 h-96 relative">
-              <Image
-                src="/images/rect3.png"
-                alt="Digital entrepreneurs learning"
-                width={800}
-                height={600}
-                className="object-cover w-full h-full"
-                priority
-              />
-            </div>
-            <div className="w-full lg:w-1/2 flex items-center justify-center p-8">
-              <div className="max-w-md text-center">
-                <h3 className="text-3xl font-bold text-blue-800 mb-4">
-                  Master Your Craft
-                </h3>
-                <p className="text-lg text-gray-700 mb-6">
-                  Your Skill Is Your Career.
-                </p>
-                <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                  Join Qraft Academy
-                </button>
-              </div>
+          <div className="w-full lg:w-1/2 h-96 relative">
+            <Image
+              alt="Digital entrepreneurs learning"
+              className="object-cover w-full h-full"
+              height={600}
+              priority
+              src="/images/rect3.png"
+              width={800}
+            />
+          </div>
+          <div className="w-full lg:w-1/2 flex items-center justify-center p-8">
+            <div className="max-w-md text-center">
+              <h3 className="text-3xl font-bold text-blue-800 mb-4">
+                Master Your Craft
+              </h3>
+              <p className="text-lg text-gray-700 mb-6">
+                Your Skill Is Your Career.
+              </p>
+              <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                Join Qraft Academy
+              </button>
             </div>
           </div>
+        </div>
 
         {/* Programs Section */}
         <section className="py-16 bg-white">
@@ -75,13 +75,13 @@ export default function Home() {
           <div className="container mx-auto px-4 flex flex-col items-center">
             <div className="w-full max-w-4xl h-96 rounded-lg overflow-hidden shadow-lg mb-8">
               <Image
-                src="/images/image.webp"
                 alt="Future of Education"
-                width={1200}
-                height={600}
                 className="object-cover w-full h-full"
-                quality={100}
+                height={600}
                 priority
+                quality={100}
+                src="/images/image.webp"
+                width={1200}
               />
             </div>
             <div className="text-center max-w-3xl">
