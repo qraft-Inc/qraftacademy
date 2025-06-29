@@ -35,13 +35,13 @@ export function AvailableCourses() {
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {courses.map((course, index) => (
           <Card 
-            key={index} 
-            className="bg-gradient-to-br from-blue-500/10 to-blue-600/20 border-0 overflow-hidden hover:scale-105 transition-transform duration-300"
+            className="bg-gradient-to-br from-blue-500/10 to-blue-600/20 border-0 overflow-hidden hover:scale-105 transition-transform duration-300" 
+            key={index}
           >
             <img
-              src={course.image}
               alt={course.title}
               className="w-full h-48 object-cover"
+              src={course.image}
             />
             <div className="p-4 text-white">
               <h3 className="font-medium mb-2">{course.title}</h3>

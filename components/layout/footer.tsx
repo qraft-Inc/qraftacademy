@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from 'react';
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from 'react';
 
 const Footer = () => {
   const [isClient, setIsClient] = useState(false);
@@ -66,8 +66,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {isClient && (
-            <div className="space-y-4">
+          {isClient ? <div className="space-y-4">
               <h3 className="font-semibold text-lg">Newsletter</h3>
               <div className="flex">
                 <input
@@ -79,8 +78,7 @@ const Footer = () => {
                   Subscribe
                 </button>
               </div>
-            </div>
-          )}
+            </div> : null}
         </div>
 
         <div className="border-t border-blue-700 mt-8 pt-8 text-center text-blue-200 text-sm">

@@ -29,9 +29,9 @@ export function UpcomingPrograms() {
 
       <div className="relative h-[400px]">
         <img
-          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
           alt="Students collaborating"
-          className="w-full h-full object-cover rounded-lg"
+          className="size-full object-cover rounded-lg"
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
         />
       </div>
     </section>

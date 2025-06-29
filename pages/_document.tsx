@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
@@ -13,9 +13,9 @@ export default function Document() {
           }}
         />
         <script
-          src="https://chat-widget.neexa.ai/main.js?nonce=1750849971084.2542"
           async
-        ></script>
+          src="https://chat-widget.neexa.ai/main.js?nonce=1750849971084.2542"
+         />
       </Head>
       <body>
         <Main />

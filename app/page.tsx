@@ -1,20 +1,19 @@
-import React from 'react'
 import Image from 'next/image'
+import React from 'react'
 import { DevelopmentTracks } from '@/components/sections/development-tracks'
+import GetInvolved from '@/components/sections/get-involved'
 import Programs from '@/components/sections/programs'
 import SuccessStories from '@/components/sections/success-stories'
-import GetInvolved from '@/components/sections/get-involved'
 
 export default function Home() {
   return (
-    <React.Fragment>
-      <main className="min-h-screen">
+    <main className="min-h-screen">
         {/* Hero Section */}
         <div className="relative w-full h-[80vh]">
           <div className="absolute inset-0">
             <Image
               alt="Qraft Academy Hero"
-              className="object-cover w-full h-full"
+              className="object-cover size-full"
               height={1080}
               priority
               src="/images/hero.png"
@@ -35,7 +34,7 @@ export default function Home() {
           <div className="w-full lg:w-1/2 h-96 relative">
             <Image
               alt="Digital entrepreneurs learning"
-              className="object-cover w-full h-full"
+              className="object-cover size-full"
               height={600}
               priority
               src="/images/rect3.png"
@@ -76,7 +75,7 @@ export default function Home() {
             <div className="w-full max-w-4xl h-96 rounded-lg overflow-hidden shadow-lg mb-8">
               <Image
                 alt="Future of Education"
-                className="object-cover w-full h-full"
+                className="object-cover size-full"
                 height={600}
                 priority
                 quality={100}
@@ -95,6 +94,5 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </React.Fragment>
   )
 }

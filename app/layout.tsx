@@ -1,12 +1,12 @@
+import cn from "classnames";
 import type { Metadata } from "next";
 import Image from 'next/image';
 import React from "react";
-import cn from "classnames";
 
 import "@/styles/tailwind.css";
-import { siteConfig } from '@/config/site';
-import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer";
+import Navigation from "@/components/layout/navigation";
+import { siteConfig } from '@/config/site';
 
 import { baronNeue, lato } from "./fonts";
 import Providers from "./providers";
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={cn(baronNeue.variable, lato.variable, "font-default bg-white text-gray-900")}>
+    <html className={cn(baronNeue.variable, lato.variable, "font-default bg-white text-gray-900")} lang="en">
       <Providers>
         <body>
           {/* Header Bar */}
@@ -67,11 +67,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div className="flex items-center gap-3">
                 <div className="size-12"> {/* Changed to size-12 */}
                   <Image 
-                    src="/favicon.ico" 
-                    alt="Qraft Logo"
+                    alt="Qraft Logo" 
                     className="rounded-full"
                     height={48}
                     priority
+                    src="/favicon.ico"
                     width={48}
                   />
                 </div>

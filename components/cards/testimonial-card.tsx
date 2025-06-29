@@ -1,5 +1,5 @@
-import { Quote } from "lucide-react"
 import cn from "classnames"
+import { Quote } from "lucide-react"
 import React from 'react'
 
 const TestimonialCard = ({ className }: { className?: string }) => {

@@ -30,7 +30,7 @@ const Courses = () => {
         <section className='container px-4 mx-auto my-28'>
             <h1 className="text-lg  tracking-wider  font-bold lg:text-xl mb-4">Available Programs.</h1>
             <div className="flex flex-wrap items-center">
-                {programs.map((program) => <CourseCard key={program.name} name={program.name} desc={program.date} image={program.image} />)}
+                {programs.map((program) => <CourseCard desc={program.date} image={program.image} key={program.name} name={program.name} />)}
 
             </div>
         </section>

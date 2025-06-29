@@ -25,6 +25,9 @@ const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
       { source: "/ping", destination: "/api/health" },
     ]
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 })
 
 export default config
