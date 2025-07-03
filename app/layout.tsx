@@ -65,14 +65,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="bg-blue-800 text-white py-3 px-4">
             <div className="container mx-auto flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="size-12"> {/* Changed to size-12 */}
-                  <Image 
-                    src="/favicon.ico" 
+                <div className="size-16 bg-black rounded-full"> {/* Increased size for visibility and added black background */}
+                  <Image
+                    src="https://res.cloudinary.com/dwa3soopc/image/upload/v1741593598/WhatsApp_Image_2025-02-23_at_00.01.59-removebg-preview_d20kvk.png"
                     alt="Qraft Logo"
-                    className="rounded-full"
-                    height={48}
+                    height={64}
                     priority
-                    width={48}
+                    width={64}
                   />
                 </div>
                 <span className="text-xl font-bold">Qraft Academy</span>
