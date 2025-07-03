@@ -24,7 +24,7 @@ export default function SuccessStories() {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-16">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-            Success Stories
+            Success Stories.
           </span>
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
