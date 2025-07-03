@@ -1,12 +1,12 @@
+import cn from "classnames";
 import type { Metadata } from "next";
 import Image from 'next/image';
 import React from "react";
-import cn from "classnames";
 
 import "@/styles/tailwind.css";
-import { siteConfig } from '@/config/site';
-import Navigation from "@/components/layout/navigation";
 import Footer from "@/components/layout/footer";
+import Navigation from "@/components/layout/navigation";
+import { siteConfig } from '@/config/site';
 
 import { baronNeue, lato } from "./fonts";
 import Providers from "./providers";
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={cn(baronNeue.variable, lato.variable, "font-default bg-white text-gray-900")}>
+    <html className={cn(baronNeue.variable, lato.variable, "font-default bg-white text-gray-900")} lang="en">
       <Providers>
         <body>
           {/* Header Bar */}
@@ -71,14 +71,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     alt="Qraft Logo"
                     height={64}
                     priority
-                    width={64}
+                    width={48}
                   />
                 </div>
                 <span className="text-xl font-bold">Qraft Academy</span>
               </div>
               <div className="flex flex-col items-end">
                 <span className="text-xl font-bold">Future of Work & EdTech</span>
-                <span className="text-sm italic">Where Innovation Meets Opportunity</span>
+                <span className="text-sm italic">Modern Work Development</span>
               </div>
             </div>
           </div>

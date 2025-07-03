@@ -40,7 +40,7 @@ export function CourseOverview() {
               {card.title}
             </h3>
             {card.description.map((desc, index) => (
-              <p key={index} className="text-blue-200 mb-2">{desc}</p>
+              <p className="text-blue-200 mb-2" key={index}>{desc}</p>
             ))}
           </Card>
         ))}

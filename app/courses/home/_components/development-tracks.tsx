@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/card';
 
 const tracks = [
   {
-    title: 'Personal Development',
+    title: 'Personal Development, Quality Of Life And Wellbeing',
     description: 'Enhance your personal skills and growth.',
     href: '/courses/personal-development',
   },
@@ -37,7 +37,7 @@ const tracks = [
 export function DevelopmentTracks() {
   return (
     <section>
-      <h2 className="text-3xl font-bold text-white mb-12">Development Tracks</h2>
+      <h2 className="text-3xl font-bold text-white mb-12"> Our Thematic Areas</h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {tracks.map((track) => (
           <Card

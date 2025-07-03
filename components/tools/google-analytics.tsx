@@ -13,12 +13,10 @@ const GoogleAnalyticsScript = () => {
         <>
             <Script
                 id="google-analytics" // This prop is now sorted alphabetically
-                strategy="afterInteractive"
                 src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+                strategy="afterInteractive"
             />
             <Script
-                id="google-analytics-inline"
-                strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                     __html: `
                         window.dataLayer = window.dataLayer || [];
@@ -27,6 +25,8 @@ const GoogleAnalyticsScript = () => {
                         gtag('config', '${gaId}');
                     `,
                 }}
+                id="google-analytics-inline"
+                strategy="afterInteractive"
             />
         </>
     );

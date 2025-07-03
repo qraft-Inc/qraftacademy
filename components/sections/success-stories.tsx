@@ -5,6 +5,7 @@ export default function SuccessStories() {
   const stories = [
     {
       name: "Claire",
+      name: "Claire",
       role: "Web Developer",
       quote: "Qraft Academy transformed my  web s n career completely.",
       company: "Tech Corp",
@@ -29,7 +30,7 @@ export default function SuccessStories() {
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {stories.map((story, index) => (
-            <div key={index} className="group p-8 rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="group p-8 rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300" key={index}>
               <div className="flex items-center mb-6">
                 <div className="size-16 rounded-full overflow-hidden mr-4 border-2 border-blue-500">
                   <Image

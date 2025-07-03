@@ -5,15 +5,15 @@ const Loading = () => {
     return (
         <main className="bg-primary-400 h-screen w-full absolute z-[1000] inset-0 flex items-center justify-center">
             <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="200px"
-                width="200px"
-                viewBox="0 0 200 200"
                 className="pencil"
+                height="200px"
+                viewBox="0 0 200 200"
+                width="200px"
+                xmlns="http://www.w3.org/2000/svg"
             >
                 <defs>
                     <clipPath id="pencil-eraser">
-                        <rect height={30} width={30} ry={5} rx={5} />
+                        <rect height={30} rx={5} ry={5} width={30} />
                     </clipPath>
                 </defs>
                 <circle
@@ -27,7 +27,7 @@ const Loading = () => {
                     strokeWidth={2}
                     transform="rotate(-113,100,100)"
                 />
-                <g transform="translate(100,100)" className="pencil__rotate">
+                <g className="pencil__rotate" transform="translate(100,100)">
                     <g fill="none">
                         <circle
                             className="pencil__body1"
@@ -60,26 +60,26 @@ const Loading = () => {
                             transform="rotate(-90)"
                         />
                     </g>
-                    <g transform="rotate(-90) translate(49,0)" className="pencil__eraser">
+                    <g className="pencil__eraser" transform="rotate(-90) translate(49,0)">
                         <g className="pencil__eraser-skew">
-                            <rect height={30} width={30} ry={5} rx={5} fill="hsl(223,90%,70%)" />
+                            <rect fill="hsl(223,90%,70%)" height={30} rx={5} ry={5} width={30} />
                             <rect
                                 clipPath="url(#pencil-eraser)"
+                                fill="hsl(223,90%,60%)"
                                 height={30}
                                 width={5}
-                                fill="hsl(223,90%,60%)"
                             />
-                            <rect height={20} width={30} fill="hsl(223,10%,90%)" />
-                            <rect height={20} width={15} fill="hsl(223,10%,70%)" />
-                            <rect height={20} width={5} fill="hsl(223,10%,80%)" />
-                            <rect height={2} width={30} y={6} fill="hsla(223,10%,10%,0.2)" />
-                            <rect height={2} width={30} y={13} fill="hsla(223,10%,10%,0.2)" />
+                            <rect fill="hsl(223,10%,90%)" height={20} width={30} />
+                            <rect fill="hsl(223,10%,70%)" height={20} width={15} />
+                            <rect fill="hsl(223,10%,80%)" height={20} width={5} />
+                            <rect fill="hsla(223,10%,10%,0.2)" height={2} width={30} y={6} />
+                            <rect fill="hsla(223,10%,10%,0.2)" height={2} width={30} y={13} />
                         </g>
                     </g>
-                    <g transform="rotate(-90) translate(49,-30)" className="pencil__point">
-                        <polygon points="15 0,30 30,0 30" fill="hsl(33,90%,70%)" />
-                        <polygon points="15 0,6 30,0 30" fill="hsl(33,90%,50%)" />
-                        <polygon points="15 0,20 10,10 10" fill="hsl(223,10%,10%)" />
+                    <g className="pencil__point" transform="rotate(-90) translate(49,-30)">
+                        <polygon fill="hsl(33,90%,70%)" points="15 0,30 30,0 30" />
+                        <polygon fill="hsl(33,90%,50%)" points="15 0,6 30,0 30" />
+                        <polygon fill="hsl(223,10%,10%)" points="15 0,20 10,10 10" />
                     </g>
                 </g>
             </svg>

@@ -9,8 +9,8 @@
 
 const gzSize = require("gzip-size")
 const mkdirp = require("mkdirp")
-const fs = require("fs")
-const path = require("path")
+const fs = require("node:fs")
+const path = require("node:path")
 
 // Pull options from `package.json`
 const options = getOptions()
