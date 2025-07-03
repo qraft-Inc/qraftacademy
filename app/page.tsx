@@ -27,8 +27,12 @@ export default function Home() {
             </div>
           </div>
 
-        {/* Development Tracks Section */}
-        <DevelopmentTracks />
+        {/* Programs Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <Programs />
+          </div>
+        </section>
 
         {/* Apprenticeship Split Screen */}
         <div className="w-full flex flex-col lg:flex-row bg-white">
@@ -57,12 +61,8 @@ export default function Home() {
             </div>
           </div>
 
-        {/* Programs Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <Programs />
-          </div>
-        </section>
+        {/* Development Tracks Section */}
+        <DevelopmentTracks />
 
         {/* Success Stories Section */}
         <SuccessStories />

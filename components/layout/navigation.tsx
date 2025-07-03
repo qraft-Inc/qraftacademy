@@ -2,13 +2,10 @@
 
 import React, { useState } from 'react'
 import Link from "next/link"
-import Image from "next/image"
-
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
   
   const navItems = [
-    { name: "Home", href: "/" },
     {
       name: "WorkMasters",
       href: "/courses/workmasters",
@@ -24,7 +21,7 @@ const Navigation = () => {
       dropdown: [
         { name: "Become A Course Creator", href: "/courses/coursemasters/become-creator" }, // Placeholder href
         { name: "Let Us Build Your Course", href: "/courses/coursemasters/build-your-course" }, // Placeholder href
-        { name: "Browse All Our Courses", href: "/courses/coursemasters/browse-courses" }, // Placeholder href
+        { name: "Browse All Our Courses", href :"/courses/coursemasters/browse-courses" }, // Placeholder href
       ]
     },
     {
@@ -47,7 +44,7 @@ const Navigation = () => {
     },
     {
       name: "Future of Work Consortium",
-      href: "/future-of-work-consortium",
+      href: "https://futureofworkconsortium.netlify.app",
       dropdown: [
         { name: "Board", href: "/future-of-work-consortium/board" }, // Placeholder href
         { name: "Policies", href: "/future-of-work-consortium/policies" }, // Placeholder href
