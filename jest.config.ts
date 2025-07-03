@@ -1,11 +1,10 @@
-import type { Config } from 'jest';
 import nextJest from 'next/jest';
 
 const createJestConfig = nextJest({
   dir: './',
 });
 
-const config: Config = {
+const config = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
     '^@/public/(.*)$': '<rootDir>/public/$1',
@@ -31,9 +30,8 @@ const config: Config = {
   testEnvironment: 'jest-environment-jsdom',
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/tests/'],
   transform: {
-    '^.+\\.(ts|tsx|js|jsx)$': 'babel-jest', // Ensure this matches Jest's expected type
+    '^.+\\.(ts|tsx|js|jsx)$': 'babel-jest',
   },
 };
 
-// Export the Jest configuration
 export default createJestConfig(config);
