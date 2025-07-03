@@ -5,9 +5,8 @@ export default function SuccessStories() {
   const stories = [
     {
       name: "Claire",
-      name: "Claire",
       role: "Web Developer",
-      quote: "Qraft Academy transformed my  web s n career completely.",
+      quote: "Qraft Academy transformed my web design career completely.",
       company: "Tech Corp",
       image: "/images/rect.png"
     },
