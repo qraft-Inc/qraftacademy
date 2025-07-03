@@ -150,7 +150,7 @@
     "webpack": "5.99.9"
   },
   "engines": {
-    "node": ">=18.18.0"
+    "node": ">=20.9.0"
   },
   "packageManager": "yarn@1.22.19"
 }
