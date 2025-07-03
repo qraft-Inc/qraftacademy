@@ -24,7 +24,7 @@ const Navigation = () => {
       dropdown: [
         { name: "Become A Course Creator", href: "/courses/coursemasters/become-creator" },
         { name: "Let Us Build Your Course", href: "/courses/coursemasters/build-your-course" },
-        { name: "Browse All Our Courses", href: "/courses/coursemasters/browse-courses" },
+        { name: "Browse All Our Courses", href: "https://classroom.qraftacademy.com/" }, // Updated to external link
       ],
     },
     {
