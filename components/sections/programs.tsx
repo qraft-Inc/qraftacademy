@@ -1,5 +1,7 @@
 "use client";
 
+import Link from 'next/link';
+
 export default function Programs() {
   return (
     <div className="w-full bg-white py-16">
@@ -9,16 +11,16 @@ export default function Programs() {
           <div className="p-8 border rounded-lg bg-blue-50">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">2 Months Hybrid Internship</h3>
             <p className="text-lg text-gray-800 mb-6">Gain practical experience and skills.</p>
-            <button className="font-bold text-blue-700 hover:text-blue-900">
+            <Link href="/courses/workmasters" className="font-bold text-blue-700 hover:text-blue-900">
               Learn more →
-            </button>
+            </Link>
           </div>
           <div className="p-8 border rounded-lg bg-purple-50">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">1 Year Residential Apprenticeship</h3>
             <p className="text-lg text-gray-800 mb-6">Deep dive with comprehensive training.</p>
-            <button className="font-bold text-blue-700 hover:text-blue-900">
+            <Link href="/courses/workmasters" className="font-bold text-blue-700 hover:text-blue-900">
               Learn more →
-            </button>
+            </Link>
           </div>
         </div>
       </div>
