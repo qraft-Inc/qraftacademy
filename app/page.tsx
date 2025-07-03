@@ -27,6 +27,9 @@ export default function Home() {
             </div>
           </div>
 
+
+
+
         {/* Programs Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
@@ -34,38 +37,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Apprenticeship Split Screen */}
-        <div className="w-full flex flex-col lg:flex-row bg-white">
-            <div className="w-full lg:w-1/2 h-96 relative">
-              <Image
-                src="/images/rect3.png"
-                alt="Digital entrepreneurs learning"
-                width={800}
-                height={600}
-                className="object-cover w-full h-full"
-                priority
-              />
-            </div>
-            <div className="w-full lg:w-1/2 flex items-center justify-center p-8">
-              <div className="max-w-md text-center">
-                <h3 className="text-3xl font-bold text-blue-800 mb-4">
-                  Learn by Doing
-                </h3>
-                <p className="text-lg text-gray-700 mb-6">
-                  Our simulated work environment gives digital entrepreneurs real-world experience from day one.
-                </p>
-                <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                  Join the Fellowship
-                </button>
-              </div>
-            </div>
-          </div>
-
         {/* Development Tracks Section */}
         <DevelopmentTracks />
-
-        {/* Success Stories Section */}
-        <SuccessStories />
 
         {/* Get Involved Section */}
         <GetInvolved />

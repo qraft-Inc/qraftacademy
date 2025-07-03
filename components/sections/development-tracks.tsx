@@ -3,34 +3,24 @@ import { ArrowUpRight } from 'lucide-react';
 
 const tracks = [
   {
-    title: 'Personal Development',
-    description: 'Enhance your personal skills and growth.',
-    href: '/courses/personal-development',
+    title: 'WorkMasters',
+    description: 'Master the skills needed for the modern workforce.',
+    href: '/courses/workmasters',
   },
   {
-    title: 'Professional Development',
-    description: 'Explore courses and books on professional growth.',
-    href: '/courses/professional-development',
+    title: 'CourseMasters',
+    description: 'Become an expert in creating and delivering online courses.',
+    href: '/courses/coursemasters',
   },
   {
-    title: 'Digital Skilling',
-    description: 'Learn essential digital skills for the modern workplace.',
-    href: '/courses/digital-skilling',
+    title: 'CapitalMasters',
+    description: 'Learn about investment and growing your capital.',
+    href: '/courses/capitalmasters',
   },
   {
-    title: 'Freelancing',
-    description: 'Resources for starting and succeeding in freelancing.',
-    href: '/courses/freelancing',
-  },
-  {
-    title: 'Entrepreneurship',
-    description: 'Courses and books to help you start your own business.',
-    href: '/courses/entrepreneurship',
-  },
-  {
-    title: 'Investment Education',
-    description: 'Learn how to manage and grow your investments.',
-    href: '/courses/investment-education',
+    title: 'TechMasters',
+    description: 'Advance your skills in cutting-edge technology.',
+    href: '/courses/techmasters',
   },
 ];
 
@@ -38,8 +28,8 @@ export function DevelopmentTracks() {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Development Tracks</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Thematic Types</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8"> {/* Adjusted grid columns */}
           {tracks.map((track) => (
             <div
               key={track.title}
@@ -47,8 +37,8 @@ export function DevelopmentTracks() {
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-4">{track.title}</h3>
               <p className="text-gray-600 mb-6 text-lg">{track.description}</p>
-              <a 
-                href={track.href} 
+              <a
+                href={track.href}
                 className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold text-lg"
               >
                 Explore track

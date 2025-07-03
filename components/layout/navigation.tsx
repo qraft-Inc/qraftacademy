@@ -71,8 +71,7 @@ const Navigation = () => {
         { name: "events", href: "#" },
         { name: "special groups", href: "#" },
       ]
-    },
-    { name: "QraftLabs", href: "https://labs.qraftacademy.com/" }
+    }
   ]
 
   return (
@@ -82,7 +81,7 @@ const Navigation = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-between items-center h-16">
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex w-full justify-center space-x-8">
+            <nav className="hidden md:flex w-full justify-center space-x-8 list-none">
               {navItems.map((item) => (
                 item.dropdown ? (
                   <div key={item.name} className="relative group flex items-center"> {/* Added flex items-center */}
@@ -131,7 +130,7 @@ const Navigation = () => {
 
           {/* Mobile Navigation */}
           {isOpen && (
-            <div className="md:hidden bg-gray-50 pb-4">
+            <div className="md:hidden bg-gray-50 pb-4 list-none">
               {navItems.map((item) => (
                 item.dropdown ? (
                   <div key={item.name}>
