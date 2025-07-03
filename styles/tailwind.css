@@ -8,5 +8,5 @@
 }
 
 h1{
-    @apply font-heading;
+    @apply font-sans;
 }
