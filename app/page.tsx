@@ -40,6 +40,14 @@ export default function Home() {
         {/* Development Tracks Section */}
         <DevelopmentTracks />
 
+        {/* Success Stories Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <SuccessStories />
+          </div>
+        </section>
+        {/* End Success Stories Section */}
+
         {/* Get Involved Section */}
         <GetInvolved />
 

@@ -6,6 +6,7 @@ import { CourseOverview } from './_components/course-overview';
 import { LearningModules } from './_components/learning-modules';
 import { PackageDetails } from './_components/package-details';
 import { Requirements } from './_components/requirements';
+import SuccessStories from '@/components/sections/success-stories';
 
 export default function App() {
   return (
@@ -46,10 +47,19 @@ export default function App() {
         </div>
       </section>
 
-      <LearningModules />
-
       <main className="relative">
         <div className="max-w-7xl mx-auto px-6 py-24 space-y-32">
+          {/* Split Screen Section */}
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex-1">
+              <LearningModules />
+            </div>
+            <div className="flex-1">
+              <SuccessStories />
+            </div>
+          </div>
+          {/* End Split Screen Section */}
+
           <CourseOverview />
           <Benefits />
           <PackageDetails />
