@@ -63,6 +63,26 @@ export default function Home() {
           </div>
         </section>
 
+<SuccessStories />
+      
+        {/* Testimonials Section
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">          
+            <h2 className="text-4xl font-bold text-center mb-16">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Testimonials</span>
+            </h2>
+            <Testimonials />
+          </div>
+        </section> */}
+        {/* Upcoming Programs Section   
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-16">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Upcoming Programs</span>
+            </h2>
+            <UpcomingPrograms />
+          </div>
+        </section> */}
         {/* Get Involved Section */}
         <GetInvolved />
 
