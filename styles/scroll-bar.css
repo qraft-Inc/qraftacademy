@@ -42,7 +42,7 @@
   box-shadow: 0 4px 30px #93c4fd;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid 1a5ba6;
+  border: 1px solid #1a5ba6;
   cursor: all-scroll;
 }
 
@@ -55,30 +55,26 @@
 
 .scrollbar-hide {
   /* IE and Edge */
-  -ms-overflow-style: 'none',
+  -ms-overflow-style: none;
 
   /* Firefox */
-  /* scrollbar-width: 'none', */
-
-
+  scrollbar-width: none;
 }
 
 /* Safari and Chrome */
 .scrollbar-hide::-webkit-scrollbar {
-    display: 'none'
+    display: none;
 }
 
 .scrollbar-default {
   /* IE and Edge */
-  -ms-overflow-style: 'auto',
+  -ms-overflow-style: auto;
 
   /* Firefox */
-  /* scrollbar-width: 'auto', */
-
- 
+  scrollbar-width: auto;
 } 
 
 /* Safari and Chrome */
 .scrollbar-default::-webkit-scrollbar {
-    display: 'block'
+    display: block;
 }
