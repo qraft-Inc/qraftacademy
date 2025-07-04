@@ -10,6 +10,22 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./styles/**/*.{css}",
+    "./public/**/*.html",
+    "./layouts/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./features/**/*.{js,ts,jsx,tsx,mdx}",
+    "./widgets/**/*.{js,ts,jsx,tsx,mdx}",
+    "./ui/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./features/**/*.{js,ts,jsx,tsx,mdx}",
+    "./widgets/**/*.{js,ts,jsx,tsx,mdx}",
+    "./ui/**/*.{js,ts,jsx,tsx,mdx}",        
+    "./utils/**/*.{js,ts,jsx,tsx}",
+    "./lib/**/*.{js,ts,jsx,tsx}",    
+    "./node_modules/some-library/**/*.{js,ts,jsx,tsx}",    
+    "./content/**/*.{md,mdx}",    
+    "./scripts/**/*.{js,ts}"
   ],
   theme: {
     extend: {
@@ -22,10 +38,10 @@ module.exports = {
         },
       },
       fontFamily: {
-       heading: ['var(--font-baron-neue)'],
-       default: ['var(--font-lato)'],
+        heading: ['var(--font-baron-neue)'],
+        default: ['var(--font-lato)'],
       },
-     
+
       minHeight: {
         ...defaultTheme.height,
       },

@@ -1,6 +1,15 @@
+// Before:
 module.exports = {
-  plugins: {
-    tailwindcss: {}, // Correct plugin name
-    autoprefixer: {}, // Adds vendor prefixes for cross-browser compatibility
-  },
-};
+  plugins: [
+    'tailwindcss',
+    'autoprefixer',
+  ],
+}
+
+// After:
+module.exports = {
+  plugins: [
+    '@tailwindcss/postcss',
+    'autoprefixer',
+  ],
+}

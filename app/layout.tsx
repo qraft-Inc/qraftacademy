@@ -58,9 +58,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html className={cn(baronNeue.variable, lato.variable, "font-default bg-white text-gray-900")} lang="en">
-      <Providers>
-        <body className="min-h-screen bg-gray-100">
+    <html
+      className={cn(baronNeue.variable, lato.variable, "font-default bg-white text-gray-900")}
+      lang="en"
+      suppressHydrationWarning
+    >
+      <body className="min-h-screen bg-gray-100">
+        <Providers>
           {/* Header Bar */}
           <div className="bg-blue-800 text-white py-3 px-4">
             <div className="container mx-auto flex items-center justify-between">
@@ -70,8 +74,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     src="https://res.cloudinary.com/dwa3soopc/image/upload/v1741593598/WhatsApp_Image_2025-02-23_at_00.01.59-removebg-preview_d20kvk.png"
                     alt="Qraft Logo"
                     height={64}
-                    priority
                     width={48}
+                    priority
                   />
                 </div>
                 <span className="text-xl font-bold">Qraft Academy</span>
@@ -87,8 +91,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
           <GoogleAnalyticsScript />
           <TailwindIndicator />
-        </body>
-      </Providers>
+        </Providers>
+      </body>
     </html>
   );
 }
