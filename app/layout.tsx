@@ -60,12 +60,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html className={cn(baronNeue.variable, lato.variable, "font-default bg-white text-gray-900")} lang="en">
       <Providers>
-        <body>
+        <body className="min-h-screen bg-gray-100">
           {/* Header Bar */}
           <div className="bg-blue-800 text-white py-3 px-4">
             <div className="container mx-auto flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="size-16 bg-black rounded-full"> {/* Increased size for visibility and added black background */}
+                <div className="w-16 h-16 bg-black rounded-full">
                   <Image
                     src="https://res.cloudinary.com/dwa3soopc/image/upload/v1741593598/WhatsApp_Image_2025-02-23_at_00.01.59-removebg-preview_d20kvk.png"
                     alt="Qraft Logo"
