@@ -22,8 +22,15 @@ module.exports = {
         },
       },
       fontFamily: {
-        heading: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
-        default: ["var(--font-lato)", ...defaultTheme.fontFamily.sans],
+       heading: ['var(--font-baron-neue)'],
+       default: ['var(--font-lato)'],
+      },
+     
+      minHeight: {
+        ...defaultTheme.height,
+      },
+      minWidth: {
+        ...defaultTheme.width,
       },
     },
   },
