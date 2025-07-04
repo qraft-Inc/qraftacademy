@@ -26,7 +26,7 @@ module.exports = {
         },
       },
       fontFamily: {
-       heading: ['var(--font-inter)'],
+       heading: ['var(--font-baron-neue)'],
        default: ['var(--font-lato)'],
       },
      
