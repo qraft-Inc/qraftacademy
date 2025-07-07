@@ -2,11 +2,11 @@ import Image from 'next/image';
 import React from 'react';
 
 import { Button } from '@/components/ui/button';
-import { AvailableCourses } from '../../../components/sections/available-courses';
-import { DevelopmentTracks } from '../../../components/sections/development-tracks';
-import GetInvolved from '../../../components/sections/get-involved';
-import Programs from '../../../components/sections/programs';
-import Testimonials from '../../../components/sections/testimonials';
+import { AvailableCourses } from './_components/available-courses';
+import { DevelopmentTracks } from './_components/development-tracks';
+import { GetInvolved } from './_components/get-involved';
+import { Programs } from './_components/programs';
+import { Testimonials } from './_components/testimonials';
 import { UpcomingPrograms } from './_components/upcoming-programs'; // Keep this one local if no shared version exists
 
 export default function App() {
@@ -58,7 +58,7 @@ export default function App() {
           <UpcomingPrograms />
           <DevelopmentTracks />
           <Testimonials />
-          <GetInvolved />
+          {typeof window !== 'undefined' && <GetInvolved />}
         </div>
       </main>
 
