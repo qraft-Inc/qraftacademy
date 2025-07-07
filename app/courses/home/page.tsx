@@ -7,7 +7,7 @@ import { DevelopmentTracks } from './_components/development-tracks';
 import { GetInvolved } from './_components/get-involved';
 import { Programs } from './_components/programs';
 import { Testimonials } from './_components/testimonials';
-import { UpcomingPrograms } from './_components/upcoming-programs';
+import { UpcomingPrograms } from './_components/upcoming-programs'; // Keep this one local if no shared version exists
 
 export default function App() {
   return (
@@ -58,7 +58,7 @@ export default function App() {
           <UpcomingPrograms />
           <DevelopmentTracks />
           <Testimonials />
-          <GetInvolved />
+          {typeof window !== 'undefined' && <GetInvolved />}
         </div>
       </main>
 

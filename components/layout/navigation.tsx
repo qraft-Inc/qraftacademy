@@ -9,6 +9,10 @@ const Navigation = () => {
 
   const navItems = [
     {
+      name: "Home",
+      href: "/",
+    },
+    {
       name: "WorkMasters",
       href: "/courses/workmasters",
       dropdown: [
