@@ -63,6 +63,32 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Success Stories Split Screen */}
+        <div className="w-full flex flex-col lg:flex-row bg-gray-100 py-16">
+          <div className="w-full lg:w-1/2 flex items-center justify-center p-8">
+            <div className="max-w-md text-center lg:text-left">
+              <h3 className="text-3xl font-bold text-blue-800 mb-4">
+                Hear From Our Graduates
+              </h3>
+              <blockquote className="text-lg italic text-gray-700 mb-6">
+                "The apprenticeship program gave me the hands-on skills I needed to get ahead in my career as an engineer"
+              </blockquote>
+              <p className="font-bold text-xl text-gray-900">- Collin</p>
+              {/* Potentially add more testimonials or a general success message here */}
+            </div>
+          </div>
+          <div className="w-full lg:w-1/2 h-96 relative">
+             <Image
+              alt="Success Story"
+              className="object-cover size-full"
+              height={600}
+              priority
+              src="/images/WhatsApp Image 2025-07-03 at 19.35.13_a0b68414.jpg"
+              width={800}
+            />
+          </div>
+        </div>
+
         {/* Get Involved Section */}
         <GetInvolved />
 
