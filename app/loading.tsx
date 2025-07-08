@@ -1,5 +1,6 @@
 import React from 'react'; // Moved this import to the top
-import "@/styles/loading.css";
+import "@/styles/tailwind.css";
+import "@/styles/loading.css"; // Import the loading styles
 
 const Loading = () => {
     return (

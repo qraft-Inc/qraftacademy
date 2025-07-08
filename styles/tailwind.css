@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Custom styles */
 .debug {
-    @apply border-red-800 border;
+  @apply border-red-800 border;
 }
 
-h1{
-    @apply font-heading;
+h1 {
+  @apply font-sans;
 }

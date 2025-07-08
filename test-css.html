@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Test</title>
+    <style>
+        /* Basic CSS test for syntax validation */
+        @import url('styles/tailwind.css');
+        
+        .test-class {
+            color: red;
+        }
+        
+        /* Test font variables */
+        .font-test {
+            font-family: var(--font-lato);
+        }
+        
+        /* Test primary colors */
+        .primary-test {
+            background-color: #62A8F9;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="font-heading text-primary-200">CSS Test Page</h1>
+    <p class="font-default text-gray-900">This is a test of the CSS configuration.</p>
+    
+    <div class="bg-blue-800 text-white p-4">
+        <p>Test primary colors and spacing</p>
+    </div>
+    
+    <div class="font-test">
+        <p>Test font loading</p>
+    </div>
+    
+    <div class="primary-test p-4">
+        <p>Test custom primary color</p>
+    </div>
+</body>
+</html>
