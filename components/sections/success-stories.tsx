@@ -4,14 +4,6 @@ import Image from 'next/image';
 export default function SuccessStories() {
   const stories = [
     {
-      name: "Claire",
-      name: "Claire",
-      role: "Web Developer",
-      quote: "Qraft Academy transformed my  web s n career completely.",
-      company: "Tech Corp",
-      image: "/images/rect.png"
-    },
-    {
       name: "Collins",
       role: "UX Designer",
       quote: "The hands-on training prepared me for real-world challenges.",
@@ -35,7 +27,7 @@ export default function SuccessStories() {
                 <div className="size-16 rounded-full overflow-hidden mr-4 border-2 border-blue-500">
                   <Image
                     alt={story.name}
-                    className="object-cover size-full"
+                    className="object-cover size-full rounded-full"
                     height={64}
                     src={story.image}
                     width={64}
@@ -47,7 +39,7 @@ export default function SuccessStories() {
                 </div>
               </div>
               <blockquote className="text-lg italic text-gray-700 mb-6">
-                &quot;{story.quote}&quot;
+                "{story.quote}"
               </blockquote>
             </div>
           ))}
