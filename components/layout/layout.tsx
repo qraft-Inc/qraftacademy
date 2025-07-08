@@ -1,5 +1,5 @@
 "use client";
-
+import "@/styles/globals.css";
 import Navigation from "./navigation"; // Ensure Navigation is imported correctly
 import Footer from "./footer"; // Ensure Footer is imported correctly
 
