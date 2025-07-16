@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 /* Custom styles */
-.debug {
-  @apply border-red-800 border;
-}
-
 h1 {
   @apply font-sans;
+}
+
+.debug {
+  border:red 10px solid;
 }
