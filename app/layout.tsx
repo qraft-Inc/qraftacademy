@@ -78,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     priority
                   />
                 </div>
-                <span className="text-xl font-bold">Qraft Academy</span>
+                <span className="text-xl font-bold ">Qraft Academy</span>
               </div>
               <div className="flex flex-col items-end">
                 <span className="text-xl font-bold">Future of Work & EdTech</span>
