@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth !important;
+    --scroll-behavior: smooth !important;
+  }
+}
+
+
+@layer utilities {
+
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+}
+
+::-webkit-scrollbar {
+  background-color: whitesmoke;
+  width: 0.4vw;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(43, 43, 43);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a5ba6;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px #93c4fd;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid 1a5ba6;
+  cursor: all-scroll;
+}
+
+::webkit-scrollbar-thumb:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+.scrollbar-hide {
+  /* IE and Edge */
+  -ms-overflow-style: 'none',
+
+  /* Firefox */
+  /* scrollbar-width: 'none', */
+
+
+}
+
+/* Safari and Chrome */
+.scrollbar-hide::-webkit-scrollbar {
+    display: 'none'
+}
+
+.scrollbar-default {
+  /* IE and Edge */
+  -ms-overflow-style: 'auto',
+
+  /* Firefox */
+  /* scrollbar-width: 'auto', */
+
+ 
+} 
+
+/* Safari and Chrome */
+.scrollbar-default::-webkit-scrollbar {
+    display: 'block'
+}
