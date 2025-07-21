@@ -1,4 +1,5 @@
- 
+
+/* eslint-disable @typescript-eslint/no-var-requires */
 const { pick, omit } = require("lodash")
 const colors = require("tailwindcss/colors")
 const defaultTheme = require("tailwindcss/defaultTheme")
@@ -7,12 +8,9 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 module.exports = {
   darkMode: "class",
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -25,7 +23,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        heading: ['var(--font-baron-neue)'],
+       heading: ['var(--font-inter)'],
        default: ['var(--font-lato)'],
       },
      

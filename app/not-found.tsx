@@ -1,9 +1,10 @@
-import React from 'react'; // Moved this import to the top
+import React from 'react';
 import "@/styles/not-found.css";
+import { montserrat } from '@/app/fonts';
 
 const NotFound = () => {
     return (
-        <main className='flex items-center justify-center'>
+        <main className={`flex items-center justify-center ${montserrat.variable} font-sans`}>
             <div className="main_wrapper">
                 <div className="main">
                     <div className="antenna">
@@ -15,7 +16,7 @@ const NotFound = () => {
                         <div className="a_base" />
                     </div>
                     <div className="tv">
-                        <div className="cruve">
+                    <div className="curve">
                             <svg
                                 className="curve_svg"
                                 version="1.1"
